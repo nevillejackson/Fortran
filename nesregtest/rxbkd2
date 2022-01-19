@@ -1,0 +1,9 @@
+      SUBROUTINE READX(XID,X)                                           RXB20001          
+C-----VERSION 2                                                         RXB20002          
+C-----READX FOR BECKER PROBLEMS                                         RXB20003          
+      DIMENSION XID(1),X(1)                                             RXB20004          
+      COMMON/CMBLK1/ I1,I2,N3,N4,N5,N6,IS,ID,IM,IF,N1,ITLE(9),Y,KPUT    RXB20005          
+      READ(5,1)(XID(J),J=1,I2),(X(J),J=1,I1)                            RXB20006          
+    1 FORMAT(2F2.0,2X,2F4.0)                                            RXB20007          
+      RETURN                                                            RXB20008          
+      END                                                               RXB20009          

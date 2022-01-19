@@ -1,0 +1,19 @@
+f77   -f -lskym -c pamfun.f
+pamfun.f:
+   MAIN pamfun:
+f77   -f -lskym -c diagmy.f
+diagmy.f:
+   diagmy:
+f77   -f -lskym -c quadf.f
+quadf.f:
+   quadf:
+f77   -f -lskym -c hermf.f
+hermf.f:
+   hermf:
+f77 -f -v -lskym -o pamfun pamfun.o diagmy.o quadf.o hermf.o
+
+Integrated Solutions F77, $Revision: 2.8 $
+LOAD.
+size pamfun
+text	data	bss	dec	hex
+53248	12288	38440	103976	19628

@@ -1,0 +1,168 @@
++ resi3 ex2.lib 
+  1  1  1  4
+"example 3 - Becker pg 60 - h2=.4,n=10,d=10"
+  1  1  0  0
+ 10 5 1
+  4 "beckeg" 1 1 0 0 1.
+
+
+ RESI VERSION 3.0
+
+ SELECTION INDEX PROGRAM FOR COMBINED SELECTION WITH RESTRICTION
+
+
+ njobs =   1
+ liop =   1
+ miop =   1
+ ltr = no. library traits =   4
+   eof on file 
+  ex2.lib                                                                         
+
+  example 3 - Becker pg 60 - h2=.4,n=10,d=10                                                          
+  job no =   1
+  no. traits =   1
+  no. econ. wt. indices =   1
+  no. desired gain indices =   0
+  no. restricted indices =   0
+ nh = no per half sib family =  10
+ nf = no per full sib family =   5
+ no = no per progeny test group =   1
+trait in index as - individual value
+                  - half sib family mean
+                  - full sib family mean
+                  - progeny test mean
+  1  4  beckeg      1  1  0  0
+
+ economic weights for indices 1 to   1
+      trait      index  1    index 
+  1beckeg          1.0000
+
+ phenotypic (co)variances - I,H,F,O partitions
+               1.0000
+               0.1900              0.1900
+               0.3600              0.2300              0.3600
+               0.2000              0.0650              0.1200              1.0000
+
+ genetic (co)variances - I,H,F,O partitions
+               0.4000
+               0.1300              0.1300
+               0.2400              0.1700              0.2400
+               0.2000              0.0650              0.1200              0.4000
+
+ phenotypic standard deviations - I,H,F,O partitions
+               1.0000              0.4359              0.6000              1.0000
+
+ genetic standard deviations - I,H,F,O partitions
+               0.6325              0.3606              0.4899              0.6325
+
+          ----------------------------------------------------------------------------------------------------
+
+          ----------------------------------------------------------------------------------------------------
+
+          ----------------------------------------------------------------------------------------------------
+
+ ALL TRAITS UNRESTRICTED COMBINED INDEX
+
+0inverse ph covariance matrix
+               1.6727
+               1.5212             24.6860
+              -2.6043            -17.3506             16.5808
+              -0.1209              0.1732             -0.3411              1.0538
+0p-inverse * g = x
+               0.2176             -0.0354              0.0205              0.0725
+              -0.3118              0.4686              0.4184             -0.1039
+               0.6139              0.2024              0.3638              0.2046
+               0.1031              0.0173              0.0450              0.3677
+0g-inverse
+            -142.9167           -600.0000            568.7500             -1.6667
+            -600.0000          -2400.0000           2300.0000              0.0000
+             568.7500           2300.0000          -2193.7500             -0.0000
+              -1.6667              0.0000             -0.0000              3.3333
+
+          ----------------------------------------------------------------------------------------------------
+0  economic wts set  1
+               1.0000
+0 coefficients for unrestricted index
+0              0.2176             -0.3118              0.6139              0.1031
+0genetic gain for unrestricted index in economic weight units per unit selection differential per generation =         0.4631
+0cov(hi) =              0.2145
+0v(i) =               0.2145   v(h) =               0.4000   r(ih) =               0.7322
+
+ genetic covariance between y(j) and index
+               0.2145              0.0988              0.1589              0.1382
+0correlated change in y(j) in actual units per unit selection differential per generation
+               0.4631              0.2134              0.3432              0.2983
+
+ genetic correlation between y(j) and index
+               0.5362              0.4333              0.5129              0.3454
+
+          ----------------------------------------------------------------------------------------------------
+
+          ----------------------------------------------------------------------------------------------------
+
+          ----------------------------------------------------------------------------------------------------
+
+ SELECTED TRAITS UNRESTRICTED COMBINED INDEX
+
+
+ q matrix - constraint equations lhs
+               0.                  0.                  1.0000              0.    
+               0.                  0.                  0.                  1.0000
+
+ u vector - constraint equations rhs
+               0.                  0.    
+0q * p-inverse * q = w
+              16.5808             -0.3411
+              -0.3411              1.0538
+0w-inverse
+               0.0607              0.0196
+               0.0196              0.9553
+0q * w-inverse * q = v
+               0.                  0.                  0.                  0.    
+               0.                  0.                  0.                  0.    
+               0.                  0.                  0.0607              0.0196
+               0.                  0.                  0.0196              0.9553
+0p-inverse * v = pv
+               0.                  0.                 -0.1605             -0.1667
+               0.                  0.                 -1.0500             -0.1754
+               0.                  0.                  1.0000              0.    
+               0.                  0.                  0.                  1.0000
+0i - pv = pv
+               1.0000              0.                  0.1605              0.1667
+               0.                  1.0000              1.0500              0.1754
+               0.                  0.                  0.0000              0.    
+               0.                  0.                  0.                 -0.0000
+0q * w-inverse * u = s
+               0.                  0.                  0.                  0.    
+0p-inverse * s = ps
+               0.                  0.                  0.                  0.    
+
+          ----------------------------------------------------------------------------------------------------
+
+ economic weights set no   1
+0pv * unrestricted-b = t
+               0.3333              0.3509              0.0000             -0.0000
+0restricted index coefficients
+               0.3333              0.3509              0.0000             -0.0000
+0genetic gain for restricted index in economic weight units per unit selection differential per generation =              0.4230
+0cov(hi) =              0.1789
+
+ v(i) =               0.1789   v(h) =               0.4000   r(i,h) =               0.6689
+0genetic covariance between y(j) and i
+               0.1789              0.0889              0.1396              0.0895
+
+ correlated change in y(j) in actual units per unit selection differential per generation
+               0.4230              0.2103              0.3301              0.2115
+0genetic correlation between y(j) and i
+               0.4474              0.3901              0.4507              0.2237
+
+          ----------------------------------------------------------------------------------------------------
+
+          ----------------------------------------------------------------------------------------------------
+
+          ----------------------------------------------------------------------------------------------------
+
+ SELECTED TRAITS RESTRICTED COMBINED INDEX
+
+
+ no of sets of restrictions =    0

@@ -1,0 +1,45 @@
+      SUBROUTINE READX(XID,X)                                           RXT30001          
+C-----VERSION 3                                                         RXT30002          
+      DIMENSION XID(1),X(1)                                             RXT30003          
+      COMMON/CMBLK1/I1,I2,N3,N4,N5,N6,IS,ID,IM,IF,N1,ITLE(9),Y,KPUT     RXT30004          
+      COMMON/CMBLK7/ MI1,MIS,MID,MIM,MIF,M1,M2,ICYC,LUI,LUS             RXT30005          
+      DIMENSION BUF(12)                                                 RXT30006          
+      DATA (XIDMIS=9.0)                                                 RXT30007          
+      DATA (XMIS=99.0)                                                  RXT30008          
+      GO TO(10),N1                                                      RXT30009          
+   10 READ(LUS,1)(XID(J),J=1,I2),(BUF(J),J=1,MI1)                       RXT30010          
+    1 FORMAT(3F1.0,2F3.0,12F2.0)                                        RXT30011          
+C-----                                                                  RXT30012          
+C-----CHECK FOR MISSING XID                                             RXT30013          
+C-----                                                                  RXT30014          
+      DO 5 J=1,I2                                                       RXT30015          
+      IF(XID(J)-XIDMIS) 5,10,5                                          RXT30016          
+    5 CONTINUE                                                          RXT30017          
+C-----                                                                  RXT30018          
+C-----SINGLE TRAIT OR PAIR                                              RXT30019          
+C-----                                                                  RXT30020          
+      IF(M1-M2) 3,2,3                                                   RXT30021          
+C                                                                       RXT30022          
+    2 X(1)=BUF(M1)                                                      RXT30023          
+      X(2)=BUF(M1+MIS)                                                  RXT30024          
+      X(3)=BUF(M1+MIS+MID)                                              RXT30025          
+      X(4)=BUF(M1+MIS+MID+MIM)                                          RXT30026          
+      GO TO 4                                                           RXT30027          
+C                                                                       RXT30028          
+    3 X(1)=BUF(M1)                                                      RXT30029          
+      X(2)=BUF(M2)                                                      RXT30030          
+      X(3)=BUF(M1+MIS)                                                  RXT30031          
+      X(4)=BUF(M2+MIS)                                                  RXT30032          
+      X(5)=BUF(M1+MIS+MID)                                              RXT30033          
+      X(6)=BUF(M2+MIS+MID)                                              RXT30034          
+      X(7)=BUF(M1+MIS+MID+MIM)                                          RXT30035          
+      X(8)=BUF(M2+MIS+MID+MIM)                                          RXT30036          
+    4 CONTINUE                                                          RXT30037          
+C-----                                                                  RXT30038          
+C-----CHECK FOR MISSING X                                               RXT30039          
+C-----                                                                  RXT30040          
+      DO 6 J=1,I1                                                       RXT30041          
+      IF(X(J)-XMIS) 6,10,6                                              RXT30042          
+    6 CONTINUE                                                          RXT30043          
+      RETURN                                                            RXT30044          
+      END                                                               RXT30045          

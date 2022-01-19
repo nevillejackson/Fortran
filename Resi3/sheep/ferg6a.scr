@@ -1,0 +1,13 @@
+resi3 ferg.lib <<finis
+  1  0  1  15
+"FERGUSON index - cww,mfd,sdfd,cvfd,col,char,hand,qn"
+  7  2  0  1
+  0  0  0
+  1 "GFW"     1 0 0 0  0.0  0.0  1
+  2 "CWW"     1 0 0 0  14.5 14.5 1
+  4 "MFD"     1 0 0 0 -2.03 -4.0 0
+ 12 "COL"     0 0 0 0  0.0  0.0 1
+ 13 "CHAR"    0 0 0 0  0.0  0.0 1
+ 14 "HAND"    0 0 0 0  0.0  0.0 1
+ 15 "QN"      0 0 0 0  0.0  0.0 1
+finis

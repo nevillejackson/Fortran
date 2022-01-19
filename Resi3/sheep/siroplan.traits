@@ -1,0 +1,8 @@
+    1	GFW	kg
+    2	CFW	kg
+    3	FD	microns
+    4	NLW	no	dam's no lambs weaned (=RR reproductive rate of dam)
+    5	HW	kg	hogget liveweight (=SW sale weight of offspring)
+    6	MW	kg	weight of cfa ewes
+    7   FH	microns fleece hairiness = Dp
+    8   FF      microns fleece fineness  = Ds

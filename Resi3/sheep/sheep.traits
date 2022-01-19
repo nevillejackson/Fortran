@@ -1,0 +1,23 @@
+    1	G
+    2	Y
+    3	W
+    4	B
+    5	Wr
+    6	F
+    7	N (cast method)
+    8	D (cast method)
+    9	L (staple length)
+   10	Cr (crimps per inch)
+   11	V  (volume = Dsquared * L)
+   12	S.A. (surface area = B^0.67 * Wr^0.2)
+   13	Dp
+   14	Ds
+   15	Np
+   16	Ns
+   17	T.F.N. (millions per head)
+   18	Np+Ns (density per mm_squared)
+   19	S.A. (surface area = B^0.67 - metre_squared)
+   20	Follicle depth
+   21	Follicle curvature
+   22	birthcoat - side
+   23	birthcoat - back

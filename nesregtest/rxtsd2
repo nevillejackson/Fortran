@@ -1,0 +1,8 @@
+      SUBROUTINE READX(XID,X)                                           RXT20001          
+      DIMENSION XID(1),X(1)                                             RXT20002          
+      COMMON/CMBLK1/I1,I2,N3,N4,N5,N6,IS,ID,IM,IF,N1,ITLE(9),Y,KPUT     RXT20003          
+      GO TO (10),N1                                                     RXT20004          
+   10 READ( 5,1) (XID(J),J=1,I2),(X(J),J=1,I1)                          RXT20005          
+    1 FORMAT(3F1.0,2F3.0,F2.0,3(2X,2F2.0),2X,F2.0)                      RXT20006          
+      RETURN                                                            RXT20007          
+      END                                                               RXT20008          

@@ -1,0 +1,1564 @@
+
+
+                               RESI VERSION 3.1
+
+ CSIRO PROGRAM FOR MULTI_TRAIT COMBINED SELECTION INDEX WITH RESTRICTION
+
+
+     N. JACKSON                             C.A.DEAN & P.P.COTTERILL
+     CSIRO                                  CSIRO
+     DIVISION OF ANIMAL PRODUCTION          DIVISION OF FOREST RESEARCH
+     P.O. BOX 239 BLACKTOWN                 CUNNINGHAM LABORATORY
+     N.S.W.,2148                            306 CARMODY ROAD
+     AUSTRALIA                              ST.LUCIA,QLD.,4067
+                                            AUSTRALIA
+
+
+                                                          #                     
+                                                          #                     
+                                                         # #                    
+                                                         # #                    
+                                                        #   #                   
+                                                        #   #                   
+                                                       #     #                  
+                                                       #     #                  
+                                                      ###   ###                 
+                                                       #     #                  
+                                                       #     #                  
+                                                      #       #                 
+                                                      #       #                 
+                                                     #         #                
+                                                     #         #                
+                                                    ###       ###               
+                                                     #         #                
+                                                     #         #                
+                                                    #           #               
+                                                    #           #               
+                                                   #             #              
+          ##################                       #             #              
+         ####################                     ###           ###             
+        ####     ####     ####                     #             #              
+       ###    ## #### ##    ###                    #             #              
+      ###     ## #### ##     ###                  #               #             
+      ###        ####        ###                  #               #             
+      ###   ##   ####   ##   ###                 #                 #            
+      ###   ###  ####  ###   ###                 #                 #            
+      ###    ### #### ###    ###                #########   #########           
+       ###   ### #### ###   ###                         #   #                   
+        ######## #### ########                          #   #                   
+         ######  ####  ######                           #   #                   
+          ####   ####   ####                            #   #                   
+                 ####                                   #   #                   
+                 ####                                   #   #                   
+                  ##                                    #####                   
+
+
+
+ JOB PARAMETERS AS READ FROM STANDARD INPUT FILE
+
+ njobs =   1
+ liop =  -1
+ miop =   1
+ ltr = no. library traits =   6
+
+
+
+ POPULATION PARAMETERS AS READ FROM LIBRARY FILE woolplan.lib                                                                    
+
+ TRAIT-A   TRAIT-B    R(P) OR    R(G) OR   R(CH) OR   R(CF) OR
+                       SD(P)        HSQ       CHSQ       CFSQ
+       1         1     0.5292     0.3500     0.         0.    
+       1         2     0.8500     0.7500     0.         0.    
+       1         3     0.1300     0.1600     0.         0.    
+       1         4     0.        -0.1000     0.         0.    
+       1         5     0.3000     0.2000     0.         0.    
+       1         6     0.         0.2000     0.         0.    
+       2         2     0.5000     0.4000     0.         0.    
+       2         3     0.2000     0.2500     0.         0.    
+       2         4     0.        -0.1000     0.         0.    
+       2         5     0.3000     0.2000     0.         0.    
+       2         6     0.         0.2000     0.         0.    
+       3         3     2.1680     0.5000     0.         0.    
+       3         4     0.        -0.1000     0.         0.    
+       3         5     0.1300     0.1000     0.         0.    
+       3         6     0.         0.1000     0.         0.    
+       4         4     0.4690     0.1000     0.         0.    
+       4         5     0.         0.2500     0.         0.    
+       4         6     0.         0.2500     0.         0.    
+       5         5     4.5000     0.4000     0.         0.    
+       5         6     0.         0.8000     0.         0.    
+       6         6     4.5000     0.4000     0.         0.    
+
+
+
+ INDEX PARAMETERS AS READ FROM STANDARD INPUT FILE
+
+  WOOLPLAN index 1 - CFW,FD                                                                           
+  job no =   1
+  no. traits =   5
+  no. econ. wt. indices =   2
+  no. desired gain indices =   0
+  no. restricted indices =   3
+ nh = no per half sib family =   0
+ nf = no per full sib family =   0
+ no = no per progeny test group =   0
+ trait in index as - I - individual value
+                   - H - half sib family mean
+                   - F - full sib family mean
+                   - O - progeny test mean
+
+                     I  H  F  O
+   1   2 CFW         1  0  0  0
+   2   3 FD          1  0  0  0
+   3   4 dNLW/RR     0  0  0  0
+   4   5 HW/SW       0  0  0  0
+   5   6 MW          0  0  0  0
+
+ economic weights for indices 1 to   2
+       trait      index  1    index  2    index 
+  1 CFW            14.5000     14.5000
+  2 FD             -2.0300     -2.0300
+  3 dNLW/RR        30.9500      0.    
+  4 HW/SW           0.5000     -0.5000
+  5 MW              0.1200      0.1200
+
+ restricted indices 1 to   3
+      trait       index  1    index  2    index  3    index 
+  1 CFW             1.0000      1.0000      1.0000
+  2 FD              0.          1.0000      0.    
+  3 dNLW/RR         1.0000      0.          0.    
+  4 HW/SW           1.0000      1.0000      1.0000
+  5 MW              1.0000      1.0000      1.0000
+
+
+ALL TRAITS UNRESTRICTED COMBINED INDEX                                                              
+
+WOOLPLAN index 1 - CFW,FD                                                                           
+
+ECONOMIC WT SET  1
+
+NO RESTRICTIONS
+
+ LIB  IND TRAIT NAME *     ECON     INDEX_B  COV(TRAIT    DELTA_G   RG(TRAIT
+  NO   NO            *       WT COEFFICIENT    ,INDEX)    (TRAIT)    ,INDEX)
+   2    1 CFW        I    14.50      4.5112     0.4623     0.1050     0.2020
+   3    2 FD         I    -2.03     -1.0493    -1.6213    -0.3682    -0.1461
+   4    3 dNLW/RR    I    30.95      3.2931     0.1653     0.0375     0.1540
+   5    4 HW/SW      I     0.50      0.4002     6.8879     1.5641     0.3343
+   6    5 MW         I     0.12      0.4544     6.9758     1.5841     0.3386
+
+ ** - I = individual value
+    - H = half sib family mean (individual included)
+    - F = full sib family mean (individual included)
+    - O = progeny test mean (individual not included, parents unselected)
+
+ genetic gains for each trait on selection for index (delta_G)
+are in trait_units per unit selection differential per generation
+
+
+ genetic gain in aggregate genotype on selection for index
+   - in economic weight units
+  - per unit selection differential per generation =         4.4037
+
+ covariance of aggregate genotype & index =        19.3928
+
+ variance of index =         19.3928
+
+ variance of aggregate genotype =         52.3996
+
+ correlation of aggregate genotype & index =          0.6084
+
+ heritability of index =          0.3701
+
+
+ALL TRAITS UNRESTRICTED COMBINED INDEX                                                              
+
+WOOLPLAN index 1 - CFW,FD                                                                           
+
+ECONOMIC WT SET  2
+
+NO RESTRICTIONS
+
+ LIB  IND TRAIT NAME *     ECON     INDEX_B  COV(TRAIT    DELTA_G   RG(TRAIT
+  NO   NO            *       WT COEFFICIENT    ,INDEX)    (TRAIT)    ,INDEX)
+   2    1 CFW        I    14.50      5.9011     0.4396     0.1397     0.2860
+   3    2 FD         I    -2.03     -0.8899    -1.4764    -0.4693    -0.1981
+   4    3 dNLW/RR    I     0.       -0.2816    -0.0394    -0.0125    -0.0547
+   5    4 HW/SW      I    -0.50     -0.2174    -1.2908    -0.4103    -0.0933
+   6    5 MW         I     0.12     -0.0268    -0.9821    -0.3122    -0.0710
+
+ ** - I = individual value
+    - H = half sib family mean (individual included)
+    - F = full sib family mean (individual included)
+    - O = progeny test mean (individual not included, parents unselected)
+
+ genetic gains for each trait on selection for index (delta_G)
+are in trait_units per unit selection differential per generation
+
+
+ genetic gain in aggregate genotype on selection for index
+   - in economic weight units
+  - per unit selection differential per generation =         3.1463
+
+ covariance of aggregate genotype & index =         9.8989
+
+ variance of index =          9.8989
+
+ variance of aggregate genotype =         23.6284
+
+ correlation of aggregate genotype & index =          0.6473
+
+ heritability of index =          0.4189
+
+
+SELECTED TRAITS UNRESTRICTED COMBINED INDEX                                                         
+
+WOOLPLAN index 1 - CFW,FD                                                                           
+
+ECONOMIC WT SET  1
+
+NO RESTRICTIONS
+
+ LIB  IND TRAIT NAME *     ECON     INDEX_B  COV(TRAIT    DELTA_G   RG(TRAIT
+  NO   NO            *       WT COEFFICIENT    ,INDEX)    (TRAIT)    ,INDEX)
+   2    1 CFW        I    14.50      5.5391     0.4341     0.1380     0.1896
+   3    2 FD         I    -2.03     -0.9888    -1.6524    -0.5254    -0.1489
+   4    3 dNLW/RR    I    30.95      0.        -0.0035    -0.0011    -0.0033
+   5    4 HW/SW      I     0.50      0.         0.5656     0.1799     0.0275
+   6    5 MW         I     0.12      0.         0.5656     0.1799     0.0275
+
+ ** - I = individual value
+    - H = half sib family mean (individual included)
+    - F = full sib family mean (individual included)
+    - O = progeny test mean (individual not included, parents unselected)
+
+ genetic gains for each trait on selection for index (delta_G)
+are in trait_units per unit selection differential per generation
+
+
+ genetic gain in aggregate genotype on selection for index
+   - in economic weight units
+  - per unit selection differential per generation =         3.1450
+
+ covariance of aggregate genotype & index =         9.8910
+
+ variance of index =          9.8910
+
+ variance of aggregate genotype =         52.3996
+
+ correlation of aggregate genotype & index =          0.4345
+
+ heritability of index =          0.1888
+
+
+SELECTED TRAITS UNRESTRICTED COMBINED INDEX                                                         
+
+WOOLPLAN index 1 - CFW,FD                                                                           
+
+ECONOMIC WT SET  2
+
+NO RESTRICTIONS
+
+ LIB  IND TRAIT NAME *     ECON     INDEX_B  COV(TRAIT    DELTA_G   RG(TRAIT
+  NO   NO            *       WT COEFFICIENT    ,INDEX)    (TRAIT)    ,INDEX)
+   2    1 CFW        I    14.50      5.3426     0.4224     0.1408     0.2748
+   3    2 FD         I    -2.03     -0.9228    -1.5212    -0.5071    -0.2041
+   4    3 dNLW/RR    I     0.        0.        -0.0041    -0.0014    -0.0057
+   5    4 HW/SW      I    -0.50      0.         0.5590     0.1863     0.0404
+   6    5 MW         I     0.12      0.         0.5590     0.1863     0.0404
+
+ ** - I = individual value
+    - H = half sib family mean (individual included)
+    - F = full sib family mean (individual included)
+    - O = progeny test mean (individual not included, parents unselected)
+
+ genetic gains for each trait on selection for index (delta_G)
+are in trait_units per unit selection differential per generation
+
+
+ genetic gain in aggregate genotype on selection for index
+   - in economic weight units
+  - per unit selection differential per generation =         3.0001
+
+ covariance of aggregate genotype & index =         9.0007
+
+ variance of index =          9.0007
+
+ variance of aggregate genotype =         23.6284
+
+ correlation of aggregate genotype & index =          0.6172
+
+ heritability of index =          0.3809
+
+
+SELECTED TRAITS RESTRICTED COMBINED INDEX                                                           
+
+WOOLPLAN index 1 - CFW,FD                                                                           
+
+ECONOMIC WT SET  1
+
+RESTRICTION SET  1
+
+ LIB  IND TRAIT NAME *     ECON     INDEX_B  COV(TRAIT    DELTA_G   RG(TRAIT
+  NO   NO            *       WT COEFFICIENT    ,INDEX)    (TRAIT)    ,INDEX)
+   2    1 CFW        I    14.50      5.6141     0.5263     0.1913     0.2299
+   3    2 FD         I    -2.03     -0.2895    -0.0000    -0.0000    -0.0000
+   4    3 dNLW/RR    I    30.95     -0.0000    -0.0197    -0.0072    -0.0184
+   5    4 HW/SW      I     0.50     -0.0000     0.8842     0.3214     0.0429
+   6    5 MW         I     0.12     -0.0000     0.8842     0.3214     0.0429
+
+ ** - I = individual value
+    - H = half sib family mean (individual included)
+    - F = full sib family mean (individual included)
+    - O = progeny test mean (individual not included, parents unselected)
+
+ genetic gains for each trait on selection for index (delta_G)
+are in trait_units per unit selection differential per generation
+
+
+ genetic gain in aggregate genotype on selection for index
+   - in economic weight units
+  - per unit selection differential per generation =         2.7511
+
+ covariance of aggregate genotype & index =         7.5687
+
+ variance of index =          7.5687
+
+ variance of aggregate genotype =         52.3996
+
+ correlation of aggregate genotype & index =          0.3801
+
+ heritability of index =          0.1444
+
+
+SELECTED TRAITS RESTRICTED COMBINED INDEX                                                           
+
+WOOLPLAN index 1 - CFW,FD                                                                           
+
+ECONOMIC WT SET  2
+
+RESTRICTION SET  1
+
+ LIB  IND TRAIT NAME *     ECON     INDEX_B  COV(TRAIT    DELTA_G   RG(TRAIT
+  NO   NO            *       WT COEFFICIENT    ,INDEX)    (TRAIT)    ,INDEX)
+   2    1 CFW        I    14.50      5.4115     0.5073     0.1913     0.3300
+   3    2 FD         I    -2.03     -0.2791    -0.0000    -0.0000    -0.0000
+   4    3 dNLW/RR    I     0.        0.0000    -0.0190    -0.0072    -0.0264
+   5    4 HW/SW      I    -0.50      0.0000     0.8523     0.3214     0.0616
+   6    5 MW         I     0.12     -0.0000     0.8523     0.3214     0.0616
+
+ ** - I = individual value
+    - H = half sib family mean (individual included)
+    - F = full sib family mean (individual included)
+    - O = progeny test mean (individual not included, parents unselected)
+
+ genetic gains for each trait on selection for index (delta_G)
+are in trait_units per unit selection differential per generation
+
+
+ genetic gain in aggregate genotype on selection for index
+   - in economic weight units
+  - per unit selection differential per generation =         2.6519
+
+ covariance of aggregate genotype & index =         7.0324
+
+ variance of index =          7.0324
+
+ variance of aggregate genotype =         23.6284
+
+ correlation of aggregate genotype & index =          0.5456
+
+ heritability of index =          0.2976
+
+
+SELECTED TRAITS RESTRICTED COMBINED INDEX                                                           
+
+WOOLPLAN index 1 - CFW,FD                                                                           
+
+ECONOMIC WT SET  1
+
+RESTRICTION SET  2
+
+ LIB  IND TRAIT NAME *     ECON     INDEX_B  COV(TRAIT    DELTA_G   RG(TRAIT
+  NO   NO            *       WT COEFFICIENT    ,INDEX)    (TRAIT)    ,INDEX)
+   2    1 CFW        I    14.50      5.2180     0.3913     0.1249     0.1710
+   3    2 FD         I    -2.03     -1.0764    -1.8972    -0.6055    -0.1710
+   4    3 dNLW/RR    I    30.95      0.0000     0.0000     0.0000     0.0000
+   5    4 HW/SW      I     0.50      0.0000     0.4696     0.1499     0.0228
+   6    5 MW         I     0.12      0.0000     0.4696     0.1499     0.0228
+
+ ** - I = individual value
+    - H = half sib family mean (individual included)
+    - F = full sib family mean (individual included)
+    - O = progeny test mean (individual not included, parents unselected)
+
+ genetic gains for each trait on selection for index (delta_G)
+are in trait_units per unit selection differential per generation
+
+
+ genetic gain in aggregate genotype on selection for index
+   - in economic weight units
+  - per unit selection differential per generation =         3.1332
+
+ covariance of aggregate genotype & index =         9.8170
+
+ variance of index =          9.8170
+
+ variance of aggregate genotype =         52.3996
+
+ correlation of aggregate genotype & index =          0.4328
+
+ heritability of index =          0.1873
+
+
+SELECTED TRAITS RESTRICTED COMBINED INDEX                                                           
+
+WOOLPLAN index 1 - CFW,FD                                                                           
+
+ECONOMIC WT SET  2
+
+RESTRICTION SET  2
+
+ LIB  IND TRAIT NAME *     ECON     INDEX_B  COV(TRAIT    DELTA_G   RG(TRAIT
+  NO   NO            *       WT COEFFICIENT    ,INDEX)    (TRAIT)    ,INDEX)
+   2    1 CFW        I    14.50      4.9684     0.3726     0.1249     0.2424
+   3    2 FD         I    -2.03     -1.0249    -1.8064    -0.6055    -0.2424
+   4    3 dNLW/RR    I     0.       -0.0000    -0.0000    -0.0000    -0.0000
+   5    4 HW/SW      I    -0.50     -0.0000     0.4472     0.1499     0.0323
+   6    5 MW         I     0.12     -0.0000     0.4472     0.1499     0.0323
+
+ ** - I = individual value
+    - H = half sib family mean (individual included)
+    - F = full sib family mean (individual included)
+    - O = progeny test mean (individual not included, parents unselected)
+
+ genetic gains for each trait on selection for index (delta_G)
+are in trait_units per unit selection differential per generation
+
+
+ genetic gain in aggregate genotype on selection for index
+   - in economic weight units
+  - per unit selection differential per generation =         2.9833
+
+ covariance of aggregate genotype & index =         8.9002
+
+ variance of index =          8.9002
+
+ variance of aggregate genotype =         23.6284
+
+ correlation of aggregate genotype & index =          0.6137
+
+ heritability of index =          0.3767
+ nr+ns must not exceed ntr4
+
+
+                               RESI VERSION 3.1
+
+ CSIRO PROGRAM FOR MULTI_TRAIT COMBINED SELECTION INDEX WITH RESTRICTION
+
+
+     N. JACKSON                             C.A.DEAN & P.P.COTTERILL
+     CSIRO                                  CSIRO
+     DIVISION OF ANIMAL PRODUCTION          DIVISION OF FOREST RESEARCH
+     P.O. BOX 239 BLACKTOWN                 CUNNINGHAM LABORATORY
+     N.S.W.,2148                            306 CARMODY ROAD
+     AUSTRALIA                              ST.LUCIA,QLD.,4067
+                                            AUSTRALIA
+
+
+                                                          #                     
+                                                          #                     
+                                                         # #                    
+                                                         # #                    
+                                                        #   #                   
+                                                        #   #                   
+                                                       #     #                  
+                                                       #     #                  
+                                                      ###   ###                 
+                                                       #     #                  
+                                                       #     #                  
+                                                      #       #                 
+                                                      #       #                 
+                                                     #         #                
+                                                     #         #                
+                                                    ###       ###               
+                                                     #         #                
+                                                     #         #                
+                                                    #           #               
+                                                    #           #               
+                                                   #             #              
+          ##################                       #             #              
+         ####################                     ###           ###             
+        ####     ####     ####                     #             #              
+       ###    ## #### ##    ###                    #             #              
+      ###     ## #### ##     ###                  #               #             
+      ###        ####        ###                  #               #             
+      ###   ##   ####   ##   ###                 #                 #            
+      ###   ###  ####  ###   ###                 #                 #            
+      ###    ### #### ###    ###                #########   #########           
+       ###   ### #### ###   ###                         #   #                   
+        ######## #### ########                          #   #                   
+         ######  ####  ######                           #   #                   
+          ####   ####   ####                            #   #                   
+                 ####                                   #   #                   
+                 ####                                   #   #                   
+                  ##                                    #####                   
+
+
+
+ JOB PARAMETERS AS READ FROM STANDARD INPUT FILE
+
+ njobs =   1
+ liop =  -1
+ miop =   1
+ ltr = no. library traits =   6
+
+
+
+ POPULATION PARAMETERS AS READ FROM LIBRARY FILE woolplan.lib                                                                    
+
+ TRAIT-A   TRAIT-B    R(P) OR    R(G) OR   R(CH) OR   R(CF) OR
+                       SD(P)        HSQ       CHSQ       CFSQ
+       1         1     0.5292     0.3500     0.         0.    
+       1         2     0.8500     0.7500     0.         0.    
+       1         3     0.1300     0.1600     0.         0.    
+       1         4     0.        -0.1000     0.         0.    
+       1         5     0.3000     0.2000     0.         0.    
+       1         6     0.         0.2000     0.         0.    
+       2         2     0.5000     0.4000     0.         0.    
+       2         3     0.2000     0.2500     0.         0.    
+       2         4     0.        -0.1000     0.         0.    
+       2         5     0.3000     0.2000     0.         0.    
+       2         6     0.         0.2000     0.         0.    
+       3         3     2.1680     0.5000     0.         0.    
+       3         4     0.        -0.1000     0.         0.    
+       3         5     0.1300     0.1000     0.         0.    
+       3         6     0.         0.1000     0.         0.    
+       4         4     0.4690     0.1000     0.         0.    
+       4         5     0.         0.2500     0.         0.    
+       4         6     0.         0.2500     0.         0.    
+       5         5     4.5000     0.4000     0.         0.    
+       5         6     0.         0.8000     0.         0.    
+       6         6     4.5000     0.4000     0.         0.    
+
+
+
+ INDEX PARAMETERS AS READ FROM STANDARD INPUT FILE
+
+  WOOLPLAN index 2 - CFW,FD,HW                                                                        
+  job no =   1
+  no. traits =   5
+  no. econ. wt. indices =   2
+  no. desired gain indices =   0
+  no. restricted indices =   3
+ nh = no per half sib family =   0
+ nf = no per full sib family =   0
+ no = no per progeny test group =   0
+ trait in index as - I - individual value
+                   - H - half sib family mean
+                   - F - full sib family mean
+                   - O - progeny test mean
+
+                     I  H  F  O
+   1   2 CFW         1  0  0  0
+   2   3 FD          1  0  0  0
+   3   4 dNLW/RR     0  0  0  0
+   4   5 HW/SW       1  0  0  0
+   5   6 MW          0  0  0  0
+
+ economic weights for indices 1 to   2
+       trait      index  1    index  2    index 
+  1 CFW            14.5000     14.5000
+  2 FD             -2.0300     -2.0300
+  3 dNLW/RR        30.9500      0.    
+  4 HW/SW           0.5000      0.5000
+  5 MW              0.1200      0.1200
+
+ restricted indices 1 to   3
+      trait       index  1    index  2    index  3    index 
+  1 CFW             1.0000      1.0000      1.0000
+  2 FD              0.          1.0000      0.    
+  3 dNLW/RR         1.0000      0.          0.    
+  4 HW/SW           1.0000      1.0000      1.0000
+  5 MW              1.0000      1.0000      1.0000
+
+
+ALL TRAITS UNRESTRICTED COMBINED INDEX                                                              
+
+WOOLPLAN index 2 - CFW,FD,HW                                                                        
+
+ECONOMIC WT SET  1
+
+NO RESTRICTIONS
+
+ LIB  IND TRAIT NAME *     ECON     INDEX_B  COV(TRAIT    DELTA_G   RG(TRAIT
+  NO   NO            *       WT COEFFICIENT    ,INDEX)    (TRAIT)    ,INDEX)
+   2    1 CFW        I    14.50      4.5112     0.4623     0.1050     0.2020
+   3    2 FD         I    -2.03     -1.0493    -1.6213    -0.3682    -0.1461
+   4    3 dNLW/RR    I    30.95      3.2931     0.1653     0.0375     0.1540
+   5    4 HW/SW      I     0.50      0.4002     6.8879     1.5641     0.3343
+   6    5 MW         I     0.12      0.4544     6.9758     1.5841     0.3386
+
+ ** - I = individual value
+    - H = half sib family mean (individual included)
+    - F = full sib family mean (individual included)
+    - O = progeny test mean (individual not included, parents unselected)
+
+ genetic gains for each trait on selection for index (delta_G)
+are in trait_units per unit selection differential per generation
+
+
+ genetic gain in aggregate genotype on selection for index
+   - in economic weight units
+  - per unit selection differential per generation =         4.4037
+
+ covariance of aggregate genotype & index =        19.3928
+
+ variance of index =         19.3928
+
+ variance of aggregate genotype =         52.3996
+
+ correlation of aggregate genotype & index =          0.6084
+
+ heritability of index =          0.3701
+
+
+ALL TRAITS UNRESTRICTED COMBINED INDEX                                                              
+
+WOOLPLAN index 2 - CFW,FD,HW                                                                        
+
+ECONOMIC WT SET  2
+
+NO RESTRICTIONS
+
+ LIB  IND TRAIT NAME *     ECON     INDEX_B  COV(TRAIT    DELTA_G   RG(TRAIT
+  NO   NO            *       WT COEFFICIENT    ,INDEX)    (TRAIT)    ,INDEX)
+   2    1 CFW        I    14.50      5.5058     0.5298     0.1486     0.3131
+   3    2 FD         I    -2.03     -0.8904    -1.2163    -0.3411    -0.1483
+   4    3 dNLW/RR    I     0.        0.1981     0.0504     0.0141     0.0635
+   5    4 HW/SW      I     0.50      0.1958     4.1090     1.1522     0.2698
+   6    5 MW         I     0.12      0.2932     4.2667     1.1965     0.2802
+
+ ** - I = individual value
+    - H = half sib family mean (individual included)
+    - F = full sib family mean (individual included)
+    - O = progeny test mean (individual not included, parents unselected)
+
+ genetic gains for each trait on selection for index (delta_G)
+are in trait_units per unit selection differential per generation
+
+
+ genetic gain in aggregate genotype on selection for index
+   - in economic weight units
+  - per unit selection differential per generation =         3.5661
+
+ covariance of aggregate genotype & index =        12.7171
+
+ variance of index =         12.7171
+
+ variance of aggregate genotype =         28.6322
+
+ correlation of aggregate genotype & index =          0.6664
+
+ heritability of index =          0.4442
+
+
+SELECTED TRAITS UNRESTRICTED COMBINED INDEX                                                         
+
+WOOLPLAN index 2 - CFW,FD,HW                                                                        
+
+ECONOMIC WT SET  1
+
+NO RESTRICTIONS
+
+ LIB  IND TRAIT NAME *     ECON     INDEX_B  COV(TRAIT    DELTA_G   RG(TRAIT
+  NO   NO            *       WT COEFFICIENT    ,INDEX)    (TRAIT)    ,INDEX)
+   2    1 CFW        I    14.50      4.5112     0.3960     0.1106     0.1730
+   3    2 FD         I    -2.03     -1.0493    -1.7447    -0.4872    -0.1572
+   4    3 dNLW/RR    I    30.95      0.         0.0449     0.0125     0.0419
+   5    4 HW/SW      I     0.50      0.4002     3.5957     1.0040     0.1745
+   6    5 MW         I     0.12      0.         2.9474     0.8230     0.1431
+
+ ** - I = individual value
+    - H = half sib family mean (individual included)
+    - F = full sib family mean (individual included)
+    - O = progeny test mean (individual not included, parents unselected)
+
+ genetic gains for each trait on selection for index (delta_G)
+are in trait_units per unit selection differential per generation
+
+
+ genetic gain in aggregate genotype on selection for index
+   - in economic weight units
+  - per unit selection differential per generation =         3.5813
+
+ covariance of aggregate genotype & index =        12.8256
+
+ variance of index =         12.8256
+
+ variance of aggregate genotype =         52.3996
+
+ correlation of aggregate genotype & index =          0.4947
+
+ heritability of index =          0.2448
+
+
+SELECTED TRAITS UNRESTRICTED COMBINED INDEX                                                         
+
+WOOLPLAN index 2 - CFW,FD,HW                                                                        
+
+ECONOMIC WT SET  2
+
+NO RESTRICTIONS
+
+ LIB  IND TRAIT NAME *     ECON     INDEX_B  COV(TRAIT    DELTA_G   RG(TRAIT
+  NO   NO            *       WT COEFFICIENT    ,INDEX)    (TRAIT)    ,INDEX)
+   2    1 CFW        I    14.50      5.5058     0.4779     0.1443     0.2824
+   3    2 FD         I    -2.03     -0.8904    -1.3397    -0.4045    -0.1633
+   4    3 dNLW/RR    I     0.        0.         0.0151     0.0046     0.0190
+   5    4 HW/SW      I     0.50      0.1958     2.1885     0.6608     0.1437
+   6    5 MW         I     0.12      0.         1.8713     0.5650     0.1229
+
+ ** - I = individual value
+    - H = half sib family mean (individual included)
+    - F = full sib family mean (individual included)
+    - O = progeny test mean (individual not included, parents unselected)
+
+ genetic gains for each trait on selection for index (delta_G)
+are in trait_units per unit selection differential per generation
+
+
+ genetic gain in aggregate genotype on selection for index
+   - in economic weight units
+  - per unit selection differential per generation =         3.3118
+
+ covariance of aggregate genotype & index =        10.9682
+
+ variance of index =         10.9682
+
+ variance of aggregate genotype =         28.6322
+
+ correlation of aggregate genotype & index =          0.6189
+
+ heritability of index =          0.3831
+
+
+SELECTED TRAITS RESTRICTED COMBINED INDEX                                                           
+
+WOOLPLAN index 2 - CFW,FD,HW                                                                        
+
+ECONOMIC WT SET  1
+
+RESTRICTION SET  1
+
+ LIB  IND TRAIT NAME *     ECON     INDEX_B  COV(TRAIT    DELTA_G   RG(TRAIT
+  NO   NO            *       WT COEFFICIENT    ,INDEX)    (TRAIT)    ,INDEX)
+   2    1 CFW        I    14.50      4.6380     0.4949     0.1546     0.2162
+   3    2 FD         I    -2.03     -0.3100     0.0000     0.0000     0.0000
+   4    3 dNLW/RR    I    30.95      0.         0.0256     0.0080     0.0238
+   5    4 HW/SW      I     0.50      0.3815     3.7901     1.1842     0.1840
+   6    5 MW         I     0.12     -0.0000     3.1720     0.9911     0.1540
+
+ ** - I = individual value
+    - H = half sib family mean (individual included)
+    - F = full sib family mean (individual included)
+    - O = progeny test mean (individual not included, parents unselected)
+
+ genetic gains for each trait on selection for index (delta_G)
+are in trait_units per unit selection differential per generation
+
+
+ genetic gain in aggregate genotype on selection for index
+   - in economic weight units
+  - per unit selection differential per generation =         3.2004
+
+ covariance of aggregate genotype & index =        10.2428
+
+ variance of index =         10.2428
+
+ variance of aggregate genotype =         52.3996
+
+ correlation of aggregate genotype & index =          0.4421
+
+ heritability of index =          0.1955
+
+
+SELECTED TRAITS RESTRICTED COMBINED INDEX                                                           
+
+WOOLPLAN index 2 - CFW,FD,HW                                                                        
+
+ECONOMIC WT SET  2
+
+RESTRICTION SET  1
+
+ LIB  IND TRAIT NAME *     ECON     INDEX_B  COV(TRAIT    DELTA_G   RG(TRAIT
+  NO   NO            *       WT COEFFICIENT    ,INDEX)    (TRAIT)    ,INDEX)
+   2    1 CFW        I    14.50      5.6031     0.5539     0.1802     0.3273
+   3    2 FD         I    -2.03     -0.3226     0.0000     0.0000     0.0000
+   4    3 dNLW/RR    I     0.        0.         0.0002     0.0001     0.0003
+   5    4 HW/SW      I     0.50      0.1815     2.3378     0.7607     0.1535
+   6    5 MW         I     0.12     -0.0000     2.0438     0.6650     0.1342
+
+ ** - I = individual value
+    - H = half sib family mean (individual included)
+    - F = full sib family mean (individual included)
+    - O = progeny test mean (individual not included, parents unselected)
+
+ genetic gains for each trait on selection for index (delta_G)
+are in trait_units per unit selection differential per generation
+
+
+ genetic gain in aggregate genotype on selection for index
+   - in economic weight units
+  - per unit selection differential per generation =         3.0733
+
+ covariance of aggregate genotype & index =         9.4454
+
+ variance of index =          9.4454
+
+ variance of aggregate genotype =         28.6322
+
+ correlation of aggregate genotype & index =          0.5744
+
+ heritability of index =          0.3299
+
+
+SELECTED TRAITS RESTRICTED COMBINED INDEX                                                           
+
+WOOLPLAN index 2 - CFW,FD,HW                                                                        
+
+ECONOMIC WT SET  1
+
+RESTRICTION SET  2
+
+ LIB  IND TRAIT NAME *     ECON     INDEX_B  COV(TRAIT    DELTA_G   RG(TRAIT
+  NO   NO            *       WT COEFFICIENT    ,INDEX)    (TRAIT)    ,INDEX)
+   2    1 CFW        I    14.50      6.0083     0.5193     0.1585     0.2269
+   3    2 FD         I    -2.03     -0.8100    -1.1351    -0.3465    -0.1023
+   4    3 dNLW/RR    I    30.95      0.0000     0.0000     0.0000     0.0000
+   5    4 HW/SW      I     0.50      0.0925     1.4774     0.4510     0.0717
+   6    5 MW         I     0.12     -0.0000     1.3276     0.4052     0.0644
+
+ ** - I = individual value
+    - H = half sib family mean (individual included)
+    - F = full sib family mean (individual included)
+    - O = progeny test mean (individual not included, parents unselected)
+
+ genetic gains for each trait on selection for index (delta_G)
+are in trait_units per unit selection differential per generation
+
+
+ genetic gain in aggregate genotype on selection for index
+   - in economic weight units
+  - per unit selection differential per generation =         3.2760
+
+ covariance of aggregate genotype & index =        10.7324
+
+ variance of index =         10.7324
+
+ variance of aggregate genotype =         52.3996
+
+ correlation of aggregate genotype & index =          0.4526
+
+ heritability of index =          0.2048
+
+
+SELECTED TRAITS RESTRICTED COMBINED INDEX                                                           
+
+WOOLPLAN index 2 - CFW,FD,HW                                                                        
+
+ECONOMIC WT SET  2
+
+RESTRICTION SET  2
+
+ LIB  IND TRAIT NAME *     ECON     INDEX_B  COV(TRAIT    DELTA_G   RG(TRAIT
+  NO   NO            *       WT COEFFICIENT    ,INDEX)    (TRAIT)    ,INDEX)
+   2    1 CFW        I    14.50      6.0083     0.5193     0.1585     0.3069
+   3    2 FD         I    -2.03     -0.8100    -1.1351    -0.3465    -0.1384
+   4    3 dNLW/RR    I     0.        0.0000     0.0000     0.0000     0.0000
+   5    4 HW/SW      I     0.50      0.0925     1.4774     0.4510     0.0970
+   6    5 MW         I     0.12     -0.0000     1.3276     0.4052     0.0872
+
+ ** - I = individual value
+    - H = half sib family mean (individual included)
+    - F = full sib family mean (individual included)
+    - O = progeny test mean (individual not included, parents unselected)
+
+ genetic gains for each trait on selection for index (delta_G)
+are in trait_units per unit selection differential per generation
+
+
+ genetic gain in aggregate genotype on selection for index
+   - in economic weight units
+  - per unit selection differential per generation =         3.2760
+
+ covariance of aggregate genotype & index =        10.7324
+
+ variance of index =         10.7324
+
+ variance of aggregate genotype =         28.6322
+
+ correlation of aggregate genotype & index =          0.6122
+
+ heritability of index =          0.3748
+
+
+SELECTED TRAITS RESTRICTED COMBINED INDEX                                                           
+
+WOOLPLAN index 2 - CFW,FD,HW                                                                        
+
+ECONOMIC WT SET  1
+
+RESTRICTION SET  3
+
+ LIB  IND TRAIT NAME *     ECON     INDEX_B  COV(TRAIT    DELTA_G   RG(TRAIT
+  NO   NO            *       WT COEFFICIENT    ,INDEX)    (TRAIT)    ,INDEX)
+   2    1 CFW        I    14.50      5.6110     0.5544     0.1804     0.2422
+   3    2 FD         I    -2.03     -0.3227     0.0000     0.0000     0.0000
+   4    3 dNLW/RR    I    30.95      0.0000    -0.0000    -0.0000    -0.0000
+   5    4 HW/SW      I     0.50      0.1798     2.3259     0.7568     0.1129
+   6    5 MW         I     0.12     -0.0000     2.0345     0.6620     0.0988
+
+ ** - I = individual value
+    - H = half sib family mean (individual included)
+    - F = full sib family mean (individual included)
+    - O = progeny test mean (individual not included, parents unselected)
+
+ genetic gains for each trait on selection for index (delta_G)
+are in trait_units per unit selection differential per generation
+
+
+ genetic gain in aggregate genotype on selection for index
+   - in economic weight units
+  - per unit selection differential per generation =         3.0733
+
+ covariance of aggregate genotype & index =         9.4453
+
+ variance of index =          9.4453
+
+ variance of aggregate genotype =         52.3996
+
+ correlation of aggregate genotype & index =          0.4246
+
+ heritability of index =          0.1803
+
+
+SELECTED TRAITS RESTRICTED COMBINED INDEX                                                           
+
+WOOLPLAN index 2 - CFW,FD,HW                                                                        
+
+ECONOMIC WT SET  2
+
+RESTRICTION SET  3
+
+ LIB  IND TRAIT NAME *     ECON     INDEX_B  COV(TRAIT    DELTA_G   RG(TRAIT
+  NO   NO            *       WT COEFFICIENT    ,INDEX)    (TRAIT)    ,INDEX)
+   2    1 CFW        I    14.50      5.6110     0.5544     0.1804     0.3276
+   3    2 FD         I    -2.03     -0.3227     0.0000     0.0000     0.0000
+   4    3 dNLW/RR    I     0.        0.0000     0.0000     0.0000     0.0000
+   5    4 HW/SW      I     0.50      0.1798     2.3259     0.7568     0.1527
+   6    5 MW         I     0.12     -0.0000     2.0345     0.6620     0.1336
+
+ ** - I = individual value
+    - H = half sib family mean (individual included)
+    - F = full sib family mean (individual included)
+    - O = progeny test mean (individual not included, parents unselected)
+
+ genetic gains for each trait on selection for index (delta_G)
+are in trait_units per unit selection differential per generation
+
+
+ genetic gain in aggregate genotype on selection for index
+   - in economic weight units
+  - per unit selection differential per generation =         3.0733
+
+ covariance of aggregate genotype & index =         9.4453
+
+ variance of index =          9.4453
+
+ variance of aggregate genotype =         28.6322
+
+ correlation of aggregate genotype & index =          0.5744
+
+ heritability of index =          0.3299
+
+
+                               RESI VERSION 3.1
+
+ CSIRO PROGRAM FOR MULTI_TRAIT COMBINED SELECTION INDEX WITH RESTRICTION
+
+
+     N. JACKSON                             C.A.DEAN & P.P.COTTERILL
+     CSIRO                                  CSIRO
+     DIVISION OF ANIMAL PRODUCTION          DIVISION OF FOREST RESEARCH
+     P.O. BOX 239 BLACKTOWN                 CUNNINGHAM LABORATORY
+     N.S.W.,2148                            306 CARMODY ROAD
+     AUSTRALIA                              ST.LUCIA,QLD.,4067
+                                            AUSTRALIA
+
+
+                                                          #                     
+                                                          #                     
+                                                         # #                    
+                                                         # #                    
+                                                        #   #                   
+                                                        #   #                   
+                                                       #     #                  
+                                                       #     #                  
+                                                      ###   ###                 
+                                                       #     #                  
+                                                       #     #                  
+                                                      #       #                 
+                                                      #       #                 
+                                                     #         #                
+                                                     #         #                
+                                                    ###       ###               
+                                                     #         #                
+                                                     #         #                
+                                                    #           #               
+                                                    #           #               
+                                                   #             #              
+          ##################                       #             #              
+         ####################                     ###           ###             
+        ####     ####     ####                     #             #              
+       ###    ## #### ##    ###                    #             #              
+      ###     ## #### ##     ###                  #               #             
+      ###        ####        ###                  #               #             
+      ###   ##   ####   ##   ###                 #                 #            
+      ###   ###  ####  ###   ###                 #                 #            
+      ###    ### #### ###    ###                #########   #########           
+       ###   ### #### ###   ###                         #   #                   
+        ######## #### ########                          #   #                   
+         ######  ####  ######                           #   #                   
+          ####   ####   ####                            #   #                   
+                 ####                                   #   #                   
+                 ####                                   #   #                   
+                  ##                                    #####                   
+
+
+
+ JOB PARAMETERS AS READ FROM STANDARD INPUT FILE
+
+ njobs =   1
+ liop =  -1
+ miop =   1
+ ltr = no. library traits =   6
+
+
+
+ POPULATION PARAMETERS AS READ FROM LIBRARY FILE woolplan.lib                                                                    
+
+ TRAIT-A   TRAIT-B    R(P) OR    R(G) OR   R(CH) OR   R(CF) OR
+                       SD(P)        HSQ       CHSQ       CFSQ
+       1         1     0.5292     0.3500     0.         0.    
+       1         2     0.8500     0.7500     0.         0.    
+       1         3     0.1300     0.1600     0.         0.    
+       1         4     0.        -0.1000     0.         0.    
+       1         5     0.3000     0.2000     0.         0.    
+       1         6     0.         0.2000     0.         0.    
+       2         2     0.5000     0.4000     0.         0.    
+       2         3     0.2000     0.2500     0.         0.    
+       2         4     0.        -0.1000     0.         0.    
+       2         5     0.3000     0.2000     0.         0.    
+       2         6     0.         0.2000     0.         0.    
+       3         3     2.1680     0.5000     0.         0.    
+       3         4     0.        -0.1000     0.         0.    
+       3         5     0.1300     0.1000     0.         0.    
+       3         6     0.         0.1000     0.         0.    
+       4         4     0.4690     0.1000     0.         0.    
+       4         5     0.         0.2500     0.         0.    
+       4         6     0.         0.2500     0.         0.    
+       5         5     4.5000     0.4000     0.         0.    
+       5         6     0.         0.8000     0.         0.    
+       6         6     4.5000     0.4000     0.         0.    
+
+
+
+ INDEX PARAMETERS AS READ FROM STANDARD INPUT FILE
+
+  WOOLPLAN index 3 - CFW,FD,HW,dNLW                                                                   
+  job no =   1
+  no. traits =   5
+  no. econ. wt. indices =   2
+  no. desired gain indices =   0
+  no. restricted indices =   3
+ nh = no per half sib family =   0
+ nf = no per full sib family =   0
+ no = no per progeny test group =   1
+ trait in index as - I - individual value
+                   - H - half sib family mean
+                   - F - full sib family mean
+                   - O - progeny test mean
+
+                     I  H  F  O
+   1   2 CFW         1  0  0  0
+   2   3 FD          1  0  0  0
+   3   4 dNLW/RR     0  0  0  1
+   4   5 HW/SW       1  0  0  0
+   5   6 MW          0  0  0  0
+
+ economic weights for indices 1 to   2
+       trait      index  1    index  2    index 
+  1 CFW            14.5000     14.5000
+  2 FD             -2.0300     -2.0300
+  3 dNLW/RR        30.9500      0.    
+  4 HW/SW           0.5000      0.5000
+  5 MW              0.1200      0.1200
+
+ restricted indices 1 to   3
+      trait       index  1    index  2    index  3    index 
+  1 CFW             1.0000      1.0000      1.0000
+  2 FD              0.          1.0000      0.    
+  3 dNLW/RR         1.0000      0.          0.    
+  4 HW/SW           1.0000      1.0000      1.0000
+  5 MW              1.0000      1.0000      1.0000
+
+
+ALL TRAITS UNRESTRICTED COMBINED INDEX                                                              
+
+WOOLPLAN index 3 - CFW,FD,HW,dNLW                                                                   
+
+ECONOMIC WT SET  1
+
+NO RESTRICTIONS
+
+ LIB  IND TRAIT NAME *     ECON     INDEX_B  COV(TRAIT    DELTA_G   RG(TRAIT
+  NO   NO            *       WT COEFFICIENT    ,INDEX)    (TRAIT)    ,INDEX)
+   2    1 CFW        I    14.50      4.2340     0.5037     0.1106     0.2200
+   3    2 FD         I    -2.03     -0.9802    -1.7490    -0.3842    -0.1576
+   4    3 dNLW/RR    I    30.95      3.2038     0.1774     0.0390     0.1653
+   5    4 HW/SW      I     0.50      0.3780     7.0474     1.5480     0.3421
+   6    5 MW         I     0.12      0.4266     7.1406     1.5685     0.3466
+   2   16 CFW        O     0.        1.5986     0.3557     0.0781     0.1554
+   3   17 FD         O     0.       -0.2922    -1.2295    -0.2701    -0.1108
+   4   18 dNLW/RR    O     0.        1.2878     0.1182     0.0260     0.1101
+   5   19 HW/SW      O     0.        0.0470     4.3460     0.9546     0.2110
+   6   20 MW         O     0.        0.0648     4.4143     0.9696     0.2143
+
+ ** - I = individual value
+    - H = half sib family mean (individual included)
+    - F = full sib family mean (individual included)
+    - O = progeny test mean (individual not included, parents unselected)
+
+ genetic gains for each trait on selection for index (delta_G)
+are in trait_units per unit selection differential per generation
+
+
+ genetic gain in aggregate genotype on selection for index
+   - in economic weight units
+  - per unit selection differential per generation =         4.5526
+
+ covariance of aggregate genotype & index =        20.7263
+
+ variance of index =         20.7263
+
+ variance of aggregate genotype =         52.3996
+
+ correlation of aggregate genotype & index =          0.6289
+
+ heritability of index =          0.3955
+
+
+ALL TRAITS UNRESTRICTED COMBINED INDEX                                                              
+
+WOOLPLAN index 3 - CFW,FD,HW,dNLW                                                                   
+
+ECONOMIC WT SET  2
+
+NO RESTRICTIONS
+
+ LIB  IND TRAIT NAME *     ECON     INDEX_B  COV(TRAIT    DELTA_G   RG(TRAIT
+  NO   NO            *       WT COEFFICIENT    ,INDEX)    (TRAIT)    ,INDEX)
+   2    1 CFW        I    14.50      5.1586     0.5777     0.1561     0.3414
+   3    2 FD         I    -2.03     -0.8333    -1.3172    -0.3560    -0.1606
+   4    3 dNLW/RR    I     0.        0.1877     0.0499     0.0135     0.0629
+   5    4 HW/SW      I     0.50      0.1866     4.2261     1.1422     0.2775
+   6    5 MW         I     0.12      0.2749     4.3895     1.1863     0.2882
+   2   16 CFW        O     0.        1.8025     0.4098     0.1108     0.2422
+   3   17 FD         O     0.       -0.2601    -0.9302    -0.2514    -0.1134
+   4   18 dNLW/RR    O     0.       -0.0091     0.0284     0.0077     0.0358
+   5   19 HW/SW      O     0.        0.0222     2.6355     0.7123     0.1731
+   6   20 MW         O     0.        0.0473     2.7476     0.7426     0.1804
+
+ ** - I = individual value
+    - H = half sib family mean (individual included)
+    - F = full sib family mean (individual included)
+    - O = progeny test mean (individual not included, parents unselected)
+
+ genetic gains for each trait on selection for index (delta_G)
+are in trait_units per unit selection differential per generation
+
+
+ genetic gain in aggregate genotype on selection for index
+   - in economic weight units
+  - per unit selection differential per generation =         3.7001
+
+ covariance of aggregate genotype & index =        13.6905
+
+ variance of index =         13.6905
+
+ variance of aggregate genotype =         28.6322
+
+ correlation of aggregate genotype & index =          0.6915
+
+ heritability of index =          0.4781
+
+
+SELECTED TRAITS UNRESTRICTED COMBINED INDEX                                                         
+
+WOOLPLAN index 3 - CFW,FD,HW,dNLW                                                                   
+
+ECONOMIC WT SET  1
+
+NO RESTRICTIONS
+
+ LIB  IND TRAIT NAME *     ECON     INDEX_B  COV(TRAIT    DELTA_G   RG(TRAIT
+  NO   NO            *       WT COEFFICIENT    ,INDEX)    (TRAIT)    ,INDEX)
+   2    1 CFW        I    14.50      4.5360     0.3944     0.1079     0.1723
+   3    2 FD         I    -2.03     -1.0454    -1.7522    -0.4795    -0.1579
+   4    3 dNLW/RR    I    30.95     -0.0000     0.0612     0.0167     0.0570
+   5    4 HW/SW      I     0.50      0.3951     3.6421     0.9968     0.1768
+   6    5 MW         I     0.12     -0.0000     3.0021     0.8216     0.1457
+   2   16 CFW        O     0.       -0.0000     0.1918     0.0525     0.0838
+   3   17 FD         O     0.        0.0000    -0.9025    -0.2470    -0.0813
+   4   18 dNLW/RR    O     0.        1.5461     0.0561     0.0154     0.0523
+   5   19 HW/SW      O     0.        0.0000     1.9434     0.5319     0.0943
+   6   20 MW         O     0.        0.0000     1.6234     0.4443     0.0788
+
+ ** - I = individual value
+    - H = half sib family mean (individual included)
+    - F = full sib family mean (individual included)
+    - O = progeny test mean (individual not included, parents unselected)
+
+ genetic gains for each trait on selection for index (delta_G)
+are in trait_units per unit selection differential per generation
+
+
+ genetic gain in aggregate genotype on selection for index
+   - in economic weight units
+  - per unit selection differential per generation =         3.6539
+
+ covariance of aggregate genotype & index =        13.3508
+
+ variance of index =         13.3508
+
+ variance of aggregate genotype =         52.3996
+
+ correlation of aggregate genotype & index =          0.5048
+
+ heritability of index =          0.2548
+
+
+SELECTED TRAITS UNRESTRICTED COMBINED INDEX                                                         
+
+WOOLPLAN index 3 - CFW,FD,HW,dNLW                                                                   
+
+ECONOMIC WT SET  2
+
+NO RESTRICTIONS
+
+ LIB  IND TRAIT NAME *     ECON     INDEX_B  COV(TRAIT    DELTA_G   RG(TRAIT
+  NO   NO            *       WT COEFFICIENT    ,INDEX)    (TRAIT)    ,INDEX)
+   2    1 CFW        I    14.50      5.5068     0.4778     0.1443     0.2824
+   3    2 FD         I    -2.03     -0.8902    -1.3400    -0.4046    -0.1634
+   4    3 dNLW/RR    I     0.       -0.0000     0.0158     0.0048     0.0199
+   5    4 HW/SW      I     0.50      0.1956     2.1904     0.6614     0.1438
+   6    5 MW         I     0.12     -0.0000     1.8736     0.5657     0.1230
+   2   16 CFW        O     0.       -0.0000     0.2387     0.0721     0.1411
+   3   17 FD         O     0.        0.0000    -0.6711    -0.2026    -0.0818
+   4   18 dNLW/RR    O     0.        0.0648     0.0090     0.0027     0.0113
+   5   19 HW/SW      O     0.        0.0000     1.1003     0.3322     0.0723
+   6   20 MW         O     0.        0.0000     0.9419     0.2844     0.0619
+
+ ** - I = individual value
+    - H = half sib family mean (individual included)
+    - F = full sib family mean (individual included)
+    - O = progeny test mean (individual not included, parents unselected)
+
+ genetic gains for each trait on selection for index (delta_G)
+are in trait_units per unit selection differential per generation
+
+
+ genetic gain in aggregate genotype on selection for index
+   - in economic weight units
+  - per unit selection differential per generation =         3.3120
+
+ covariance of aggregate genotype & index =        10.9691
+
+ variance of index =         10.9691
+
+ variance of aggregate genotype =         28.6322
+
+ correlation of aggregate genotype & index =          0.6190
+
+ heritability of index =          0.3831
+
+
+SELECTED TRAITS RESTRICTED COMBINED INDEX                                                           
+
+WOOLPLAN index 3 - CFW,FD,HW,dNLW                                                                   
+
+ECONOMIC WT SET  1
+
+RESTRICTION SET  1
+
+ LIB  IND TRAIT NAME *     ECON     INDEX_B  COV(TRAIT    DELTA_G   RG(TRAIT
+  NO   NO            *       WT COEFFICIENT    ,INDEX)    (TRAIT)    ,INDEX)
+   2    1 CFW        I    14.50      4.6628     0.4938     0.1506     0.2157
+   3    2 FD         I    -2.03     -0.3030    -0.0000    -0.0000    -0.0000
+   4    3 dNLW/RR    I    30.95      0.0000     0.0414     0.0126     0.0386
+   5    4 HW/SW      I     0.50      0.3765     3.8364     1.1703     0.1862
+   6    5 MW         I     0.12     -0.0000     3.2265     0.9842     0.1566
+   2   16 CFW        O     0.        0.0000     0.2416     0.0737     0.1055
+   3   17 FD         O     0.       -0.0000    -0.0258    -0.0079    -0.0023
+   4   18 dNLW/RR    O     0.        1.5135     0.0457     0.0139     0.0425
+   5   19 HW/SW      O     0.        0.0000     2.0380     0.6217     0.0989
+   6   20 MW         O     0.        0.0000     1.7330     0.5287     0.0841
+
+ ** - I = individual value
+    - H = half sib family mean (individual included)
+    - F = full sib family mean (individual included)
+    - O = progeny test mean (individual not included, parents unselected)
+
+ genetic gains for each trait on selection for index (delta_G)
+are in trait_units per unit selection differential per generation
+
+
+ genetic gain in aggregate genotype on selection for index
+   - in economic weight units
+  - per unit selection differential per generation =         3.2781
+
+ covariance of aggregate genotype & index =        10.7462
+
+ variance of index =         10.7462
+
+ variance of aggregate genotype =         52.3996
+
+ correlation of aggregate genotype & index =          0.4529
+
+ heritability of index =          0.2051
+
+
+SELECTED TRAITS RESTRICTED COMBINED INDEX                                                           
+
+WOOLPLAN index 3 - CFW,FD,HW,dNLW                                                                   
+
+ECONOMIC WT SET  2
+
+RESTRICTION SET  1
+
+ LIB  IND TRAIT NAME *     ECON     INDEX_B  COV(TRAIT    DELTA_G   RG(TRAIT
+  NO   NO            *       WT COEFFICIENT    ,INDEX)    (TRAIT)    ,INDEX)
+   2    1 CFW        I    14.50      5.6038     0.5538     0.1802     0.3273
+   3    2 FD         I    -2.03     -0.3225    -0.0000    -0.0000    -0.0000
+   4    3 dNLW/RR    I     0.        0.0000     0.0006     0.0002     0.0008
+   5    4 HW/SW      I     0.50      0.1813     2.3390     0.7610     0.1536
+   6    5 MW         I     0.12     -0.0000     2.0452     0.6655     0.1343
+   2   16 CFW        O     0.        0.0000     0.2768     0.0901     0.1636
+   3   17 FD         O     0.       -0.0000    -0.0007    -0.0002    -0.0001
+   4   18 dNLW/RR    O     0.        0.0399     0.0010     0.0003     0.0012
+   5   19 HW/SW      O     0.        0.0000     1.1726     0.3815     0.0770
+   6   20 MW         O     0.        0.0000     1.0258     0.3338     0.0674
+
+ ** - I = individual value
+    - H = half sib family mean (individual included)
+    - F = full sib family mean (individual included)
+    - O = progeny test mean (individual not included, parents unselected)
+
+ genetic gains for each trait on selection for index (delta_G)
+are in trait_units per unit selection differential per generation
+
+
+ genetic gain in aggregate genotype on selection for index
+   - in economic weight units
+  - per unit selection differential per generation =         3.0734
+
+ covariance of aggregate genotype & index =         9.4457
+
+ variance of index =          9.4457
+
+ variance of aggregate genotype =         28.6322
+
+ correlation of aggregate genotype & index =          0.5744
+
+ heritability of index =          0.3299
+
+
+SELECTED TRAITS RESTRICTED COMBINED INDEX                                                           
+
+WOOLPLAN index 3 - CFW,FD,HW,dNLW                                                                   
+
+ECONOMIC WT SET  1
+
+RESTRICTION SET  2
+
+ LIB  IND TRAIT NAME *     ECON     INDEX_B  COV(TRAIT    DELTA_G   RG(TRAIT
+  NO   NO            *       WT COEFFICIENT    ,INDEX)    (TRAIT)    ,INDEX)
+   2    1 CFW        I    14.50      5.8437     0.5068     0.1542     0.2214
+   3    2 FD         I    -2.03     -0.8363    -1.1970    -0.3642    -0.1079
+   4    3 dNLW/RR    I    30.95     -0.0000    -0.0000    -0.0000    -0.0000
+   5    4 HW/SW      I     0.50      0.1263     1.6866     0.5132     0.0819
+   6    5 MW         I     0.12     -0.0000     1.4820     0.4510     0.0719
+   2   16 CFW        O     0.        0.0000     0.2550     0.0776     0.1114
+   3   17 FD         O     0.       -0.0000    -0.5909    -0.1798    -0.0532
+   4   18 dNLW/RR    O     0.       -0.4492    -0.0074    -0.0023    -0.0069
+   5   19 HW/SW      O     0.       -0.0000     0.8078     0.2458     0.0392
+   6   20 MW         O     0.        0.0000     0.7054     0.2147     0.0342
+
+ ** - I = individual value
+    - H = half sib family mean (individual included)
+    - F = full sib family mean (individual included)
+    - O = progeny test mean (individual not included, parents unselected)
+
+ genetic gains for each trait on selection for index (delta_G)
+are in trait_units per unit selection differential per generation
+
+
+ genetic gain in aggregate genotype on selection for index
+   - in economic weight units
+  - per unit selection differential per generation =         3.2863
+
+ covariance of aggregate genotype & index =        10.7998
+
+ variance of index =         10.7998
+
+ variance of aggregate genotype =         52.3996
+
+ correlation of aggregate genotype & index =          0.4540
+
+ heritability of index =          0.2061
+
+
+SELECTED TRAITS RESTRICTED COMBINED INDEX                                                           
+
+WOOLPLAN index 3 - CFW,FD,HW,dNLW                                                                   
+
+ECONOMIC WT SET  2
+
+RESTRICTION SET  2
+
+ LIB  IND TRAIT NAME *     ECON     INDEX_B  COV(TRAIT    DELTA_G   RG(TRAIT
+  NO   NO            *       WT COEFFICIENT    ,INDEX)    (TRAIT)    ,INDEX)
+   2    1 CFW        I    14.50      5.8437     0.5068     0.1542     0.2995
+   3    2 FD         I    -2.03     -0.8363    -1.1970    -0.3642    -0.1459
+   4    3 dNLW/RR    I     0.       -0.0000    -0.0000    -0.0000    -0.0000
+   5    4 HW/SW      I     0.50      0.1263     1.6866     0.5132     0.1108
+   6    5 MW         I     0.12     -0.0000     1.4820     0.4510     0.0973
+   2   16 CFW        O     0.        0.0000     0.2550     0.0776     0.1507
+   3   17 FD         O     0.       -0.0000    -0.5909    -0.1798    -0.0720
+   4   18 dNLW/RR    O     0.       -0.4492    -0.0074    -0.0023    -0.0093
+   5   19 HW/SW      O     0.       -0.0000     0.8078     0.2458     0.0530
+   6   20 MW         O     0.        0.0000     0.7054     0.2147     0.0463
+
+ ** - I = individual value
+    - H = half sib family mean (individual included)
+    - F = full sib family mean (individual included)
+    - O = progeny test mean (individual not included, parents unselected)
+
+ genetic gains for each trait on selection for index (delta_G)
+are in trait_units per unit selection differential per generation
+
+
+ genetic gain in aggregate genotype on selection for index
+   - in economic weight units
+  - per unit selection differential per generation =         3.2863
+
+ covariance of aggregate genotype & index =        10.7998
+
+ variance of index =         10.7998
+
+ variance of aggregate genotype =         28.6322
+
+ correlation of aggregate genotype & index =          0.6142
+
+ heritability of index =          0.3772
+
+
+SELECTED TRAITS RESTRICTED COMBINED INDEX                                                           
+
+WOOLPLAN index 3 - CFW,FD,HW,dNLW                                                                   
+
+ECONOMIC WT SET  1
+
+RESTRICTION SET  3
+
+ LIB  IND TRAIT NAME *     ECON     INDEX_B  COV(TRAIT    DELTA_G   RG(TRAIT
+  NO   NO            *       WT COEFFICIENT    ,INDEX)    (TRAIT)    ,INDEX)
+   2    1 CFW        I    14.50      5.6182     0.5548     0.1805     0.2424
+   3    2 FD         I    -2.03     -0.3228    -0.0000    -0.0000    -0.0000
+   4    3 dNLW/RR    I    30.95     -0.0000    -0.0000    -0.0000    -0.0000
+   5    4 HW/SW      I     0.50      0.1784     2.3160     0.7536     0.1124
+   6    5 MW         I     0.12     -0.0000     2.0271     0.6596     0.0984
+   2   16 CFW        O     0.       -0.0000     0.2773     0.0902     0.1211
+   3   17 FD         O     0.       -0.0000    -0.0003    -0.0001    -0.0000
+   4   18 dNLW/RR    O     0.        0.0173     0.0003     0.0001     0.0003
+   5   19 HW/SW      O     0.       -0.0000     1.1594     0.3772     0.0563
+   6   20 MW         O     0.        0.0000     1.0149     0.3302     0.0493
+
+ ** - I = individual value
+    - H = half sib family mean (individual included)
+    - F = full sib family mean (individual included)
+    - O = progeny test mean (individual not included, parents unselected)
+
+ genetic gains for each trait on selection for index (delta_G)
+are in trait_units per unit selection differential per generation
+
+
+ genetic gain in aggregate genotype on selection for index
+   - in economic weight units
+  - per unit selection differential per generation =         3.0733
+
+ covariance of aggregate genotype & index =         9.4454
+
+ variance of index =          9.4454
+
+ variance of aggregate genotype =         52.3996
+
+ correlation of aggregate genotype & index =          0.4246
+
+ heritability of index =          0.1803
+
+
+SELECTED TRAITS RESTRICTED COMBINED INDEX                                                           
+
+WOOLPLAN index 3 - CFW,FD,HW,dNLW                                                                   
+
+ECONOMIC WT SET  2
+
+RESTRICTION SET  3
+
+ LIB  IND TRAIT NAME *     ECON     INDEX_B  COV(TRAIT    DELTA_G   RG(TRAIT
+  NO   NO            *       WT COEFFICIENT    ,INDEX)    (TRAIT)    ,INDEX)
+   2    1 CFW        I    14.50      5.6182     0.5548     0.1805     0.3279
+   3    2 FD         I    -2.03     -0.3228    -0.0000    -0.0000    -0.0000
+   4    3 dNLW/RR    I     0.       -0.0000    -0.0000    -0.0000    -0.0000
+   5    4 HW/SW      I     0.50      0.1784     2.3160     0.7536     0.1521
+   6    5 MW         I     0.12     -0.0000     2.0271     0.6596     0.1331
+   2   16 CFW        O     0.       -0.0000     0.2773     0.0902     0.1639
+   3   17 FD         O     0.       -0.0000    -0.0003    -0.0001    -0.0000
+   4   18 dNLW/RR    O     0.        0.0173     0.0003     0.0001     0.0004
+   5   19 HW/SW      O     0.        0.0000     1.1594     0.3772     0.0761
+   6   20 MW         O     0.        0.0000     1.0149     0.3302     0.0666
+
+ ** - I = individual value
+    - H = half sib family mean (individual included)
+    - F = full sib family mean (individual included)
+    - O = progeny test mean (individual not included, parents unselected)
+
+ genetic gains for each trait on selection for index (delta_G)
+are in trait_units per unit selection differential per generation
+
+
+ genetic gain in aggregate genotype on selection for index
+   - in economic weight units
+  - per unit selection differential per generation =         3.0733
+
+ covariance of aggregate genotype & index =         9.4454
+
+ variance of index =          9.4454
+
+ variance of aggregate genotype =         28.6322
+
+ correlation of aggregate genotype & index =          0.5744
+
+ heritability of index =          0.3299

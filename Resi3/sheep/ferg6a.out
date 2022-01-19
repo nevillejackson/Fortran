@@ -1,0 +1,488 @@
+
+
+                               RESI VERSION 3.1
+
+ CSIRO PROGRAM FOR MULTI_TRAIT COMBINED SELECTION INDEX WITH RESTRICTION
+
+
+     N. JACKSON                             C.A.DEAN & P.P.COTTERILL
+     CSIRO                                  CSIRO
+     DIVISION OF ANIMAL PRODUCTION          DIVISION OF FOREST RESEARCH
+     P.O. BOX 239 BLACKTOWN                 CUNNINGHAM LABORATORY
+     N.S.W.,2148                            306 CARMODY ROAD
+     AUSTRALIA                              ST.LUCIA,QLD.,4067
+                                            AUSTRALIA
+
+
+                                                          #                     
+                                                          #                     
+                                                         # #                    
+                                                         # #                    
+                                                        #   #                   
+                                                        #   #                   
+                                                       #     #                  
+                                                       #     #                  
+                                                      ###   ###                 
+                                                       #     #                  
+                                                       #     #                  
+                                                      #       #                 
+                                                      #       #                 
+                                                     #         #                
+                                                     #         #                
+                                                    ###       ###               
+                                                     #         #                
+                                                     #         #                
+                                                    #           #               
+                                                    #           #               
+                                                   #             #              
+          ##################                       #             #              
+         ####################                     ###           ###             
+        ####     ####     ####                     #             #              
+       ###    ## #### ##    ###                    #             #              
+      ###     ## #### ##     ###                  #               #             
+      ###        ####        ###                  #               #             
+      ###   ##   ####   ##   ###                 #                 #            
+      ###   ###  ####  ###   ###                 #                 #            
+      ###    ### #### ###    ###                #########   #########           
+       ###   ### #### ###   ###                         #   #                   
+        ######## #### ########                          #   #                   
+         ######  ####  ######                           #   #                   
+          ####   ####   ####                            #   #                   
+                 ####                                   #   #                   
+                 ####                                   #   #                   
+                  ##                                    #####                   
+
+
+
+ JOB PARAMETERS AS READ FROM STANDARD INPUT FILE
+
+ njobs =   1
+ liop =   0
+ miop =   1
+ ltr = no. library traits =  15
+
+
+
+ POPULATION PARAMETERS AS READ FROM LIBRARY FILE ferg.lib                                                                        
+
+ TRAIT-A   TRAIT-B    R(P) OR    R(G) OR   R(CH) OR   R(CF) OR
+                       SD(P)        HSQ       CHSQ       CFSQ
+       1         1     0.3400     0.7000     0.0000     0.0000
+       1         2     0.9600     0.9300     0.0000     0.0000
+       1         3     0.0600    -0.0800     0.0000     0.0000
+       1         4     0.0100     0.3300     0.0000     0.0000
+       1         5    -0.3900     0.1900     0.0000     0.0000
+       1         6    -0.3400     0.0100     0.0000     0.0000
+       1         7    -0.3500    -0.0300     0.0000     0.0000
+       1         8    -0.5500    -0.0400     0.0000     0.0000
+       1         9     0.4800     0.1500     0.0000     0.0000
+       1        10     0.0000     0.0000     0.0000     0.0000
+       1        11     0.0000     0.0000     0.0000     0.0000
+       1        12     0.0000     0.0000     0.0000     0.0000
+       1        13     0.0000     0.0000     0.0000     0.0000
+       1        14     0.0000     0.0000     0.0000     0.0000
+       1        15     0.0000     0.0000     0.0000     0.0000
+       2         2     0.3900     0.5500     0.0000     0.0000
+       2         3     0.3400     0.2700     0.0000     0.0000
+       2         4    -0.1200     0.2900     0.0000     0.0000
+       2         5    -0.3100     0.1200     0.0000     0.0000
+       2         6    -0.3200    -0.0500     0.0000     0.0000
+       2         7    -0.4600     0.1600     0.0000     0.0000
+       2         8    -0.6700    -0.0200     0.0000     0.0000
+       2         9     0.5100     0.1100     0.0000     0.0000
+       2        10    -0.0500    -0.1200     0.0000     0.0000
+       2        11    -0.4600    -0.2600     0.0000     0.0000
+       2        12    -0.4400     0.0300     0.0000     0.0000
+       2        13    -0.6100    -0.0800     0.0000     0.0000
+       2        14    -0.5500    -0.0100     0.0000     0.0000
+       2        15     0.0600     0.2800     0.0000     0.0000
+       3         3     0.4100     3.8600     0.0000     0.0000
+       3         4    -0.4100    -0.0600     0.0000     0.0000
+       3         5    -0.1800    -0.1800     0.0000     0.0000
+       3         6     0.0800    -0.1600     0.0000     0.0000
+       3         7    -0.4900    -0.3700     0.0000     0.0000
+       3         8    -0.4800     0.0200     0.0000     0.0000
+       3         9     0.1900    -0.0700     0.0000     0.0000
+       3        10     0.0000     0.0000     0.0000     0.0000
+       3        11     0.0000     0.0000     0.0000     0.0000
+       3        12     0.0000     0.0000     0.0000     0.0000
+       3        13     0.0000     0.0000     0.0000     0.0000
+       3        14     0.0000     0.0000     0.0000     0.0000
+       3        15     0.0000     0.0000     0.0000     0.0000
+       4         4     0.4200     1.5300     0.0000     0.0000
+       4         5     0.5600     0.5000     0.0000     0.0000
+       4         6     0.0100     0.0300     0.0000     0.0000
+       4         7     0.4400     0.2400     0.0000     0.0000
+       4         8     0.1600     0.1100     0.0000     0.0000
+       4         9    -0.0200    -0.0400     0.0000     0.0000
+       4        10     0.4500     0.0500     0.0000     0.0000
+       4        11     0.1600    -0.1000     0.0000     0.0000
+       4        12     0.1400     0.0800     0.0000     0.0000
+       4        13     0.1800     0.1500     0.0000     0.0000
+       4        14     0.8000     0.4100     0.0000     0.0000
+       4        15     0.4000     0.3800     0.0000     0.0000
+       5         5     0.4400     0.7400     0.0000     0.0000
+       5         6     0.8200     0.8300     0.0000     0.0000
+       5         7     0.1100     0.0900     0.0000     0.0000
+       5         8    -0.1400    -0.0100     0.0000     0.0000
+       5         9     0.0900     0.0500     0.0000     0.0000
+       5        10     0.0000     0.0000     0.0000     0.0000
+       5        11     0.0000     0.0000     0.0000     0.0000
+       5        12     0.0000     0.0000     0.0000     0.0000
+       5        13     0.0000     0.0000     0.0000     0.0000
+       5        14     0.0000     0.0000     0.0000     0.0000
+       5        15     0.0000     0.0000     0.0000     0.0000
+       6         6     0.4700     3.0500     0.0000     0.0000
+       6         7    -0.1900    -0.0400     0.0000     0.0000
+       6         8    -0.3400    -0.0700     0.0000     0.0000
+       6         9     0.1700     0.0800     0.0000     0.0000
+       6        10     0.0000     0.0000     0.0000     0.0000
+       6        11     0.0000     0.0000     0.0000     0.0000
+       6        12     0.0000     0.0000     0.0000     0.0000
+       6        13     0.0000     0.0000     0.0000     0.0000
+       6        14     0.0000     0.0000     0.0000     0.0000
+       6        15     0.0000     0.0000     0.0000     0.0000
+       7         7     0.5700     6.2700     0.0000     0.0000
+       7         8     0.0900    -0.0500     0.0000     0.0000
+       7         9     0.2900     0.1500     0.0000     0.0000
+       7        10     0.0000     0.0000     0.0000     0.0000
+       7        11     0.0000     0.0000     0.0000     0.0000
+       7        12     0.0000     0.0000     0.0000     0.0000
+       7        13     0.0000     0.0000     0.0000     0.0000
+       7        14     0.0000     0.0000     0.0000     0.0000
+       7        15     0.0000     0.0000     0.0000     0.0000
+       8         8     0.4200     0.7900     0.0000     0.0000
+       8         9    -0.8300    -0.6900     0.0000     0.0000
+       8        10     0.0000     0.0000     0.0000     0.0000
+       8        11     0.7900     0.2100     0.0000     0.0000
+       8        12     0.0000     0.0000     0.0000     0.0000
+       8        13     0.0000     0.0000     0.0000     0.0000
+       8        14     0.0000     0.0000     0.0000     0.0000
+       8        15     0.0000     0.0000     0.0000     0.0000
+       9         9     0.5500     1.3600     0.0000     0.0000
+       9        10     0.0000     0.0000     0.0000     0.0000
+       9        11    -0.4900    -0.1200     0.0000     0.0000
+       9        12     0.0000     0.0000     0.0000     0.0000
+       9        13     0.0000     0.0000     0.0000     0.0000
+       9        14     0.0000     0.0000     0.0000     0.0000
+       9        15     0.0000     0.0000     0.0000     0.0000
+      10        10     0.2400     5.4400     0.0000     0.0000
+      10        11    -0.0100     0.0400     0.0000     0.0000
+      10        12    -0.2300     0.0100     0.0000     0.0000
+      10        13     0.3500     0.0800     0.0000     0.0000
+      10        14     0.1200     0.0600     0.0000     0.0000
+      10        15     0.1000    -0.1100     0.0000     0.0000
+      11        11     0.4400     3.0300     0.0000     0.0000
+      11        12     0.9300     0.4400     0.0000     0.0000
+      11        13     0.0500     0.0400     0.0000     0.0000
+      11        14     0.4300     0.1700     0.0000     0.0000
+      11        15     0.2200    -0.2100     0.0000     0.0000
+      12        12     0.4200     0.8100     0.0000     0.0000
+      12        13     0.3000     0.0500     0.0000     0.0000
+      12        14     0.5400     0.3300     0.0000     0.0000
+      12        15     0.1600    -0.0100     0.0000     0.0000
+      13        13     0.2200     0.7100     0.0000     0.0000
+      13        14     0.6300     0.3900     0.0000     0.0000
+      13        15     0.4100     0.0300     0.0000     0.0000
+      14        14     0.4500     0.8300     0.0000     0.0000
+      14        15     0.0700     0.1500     0.0000     0.0000
+      15        15     0.5100     0.6400     0.0000     0.0000
+
+
+
+ INDEX PARAMETERS AS READ FROM STANDARD INPUT FILE
+
+FERGUSON index - cww,mfd,sdfd,cvfd,col,char,hand,qn                                                 
+  job no =   1
+  no. traits =   7
+  no. econ. wt. indices =   2
+  no. desired gain indices =   0
+  no. restricted indices =   1
+ nh = no per half sib family =   0
+ nf = no per full sib family =   0
+ no = no per progeny test group =   0
+ trait in index as - I - individual value
+                   - H - half sib family mean
+                   - F - full sib family mean
+                   - O - progeny test mean
+
+                     I  H  F  O
+   1   1 GFW         1  0  0  0
+   2   2 CWW         1  0  0  0
+   3   4 MFD         1  0  0  0
+   4  12 COL         0  0  0  0
+   5  13 CHAR        0  0  0  0
+   6  14 HAND        0  0  0  0
+   7  15 QN          0  0  0  0
+
+ economic weights for indices 1 to   2
+       trait      index  1    index  2    index 
+  1 GFW             0.0000      0.0000
+  2 CWW            14.5000     14.5000
+  3 MFD            -2.0300     -4.0000
+  4 COL             0.0000      0.0000
+  5 CHAR            0.0000      0.0000
+  6 HAND            0.0000      0.0000
+  7 QN              0.0000      0.0000
+
+ restricted indices 1 to   1
+      trait       index  1    index 
+  1 GFW             1.0000
+  2 CWW             1.0000
+  3 MFD             0.0000
+  4 COL             1.0000
+  5 CHAR            1.0000
+  6 HAND            1.0000
+  7 QN              1.0000
+
+
+ALL TRAITS UNRESTRICTED COMBINED INDEX                                                              
+
+FERGUSON index - cww,mfd,sdfd,cvfd,col,char,hand,qn                                                 
+
+ECONOMIC WT SET  1
+
+NO RESTRICTIONS
+
+ LIB  IND TRAIT NAME *     ECON     INDEX_B  COV(TRAIT    DELTA_G   RG(TRAIT
+  NO   NO            *       WT COEFFICIENT    ,INDEX)    (TRAIT)    ,INDEX)
+   1    1 GFW        I     0.00      5.7255     0.6349     0.2086     0.5556
+   2    2 CWW        I    14.50      2.7476     0.6921     0.2274     0.5957
+   4    3 MFD        I    -2.03     -0.7920     0.3800     0.1249     0.1821
+  12    4 COL        I     0.00      0.7291     0.1436     0.0472     0.0946
+  13    5 CHAR       I     0.00     -1.7950    -0.0491    -0.0161    -0.0659
+  14    6 HAND       I     0.00      1.0066     0.1187     0.0390     0.0721
+  15    7 QN         I     0.00      1.5074     0.2980     0.0979     0.1818
+
+ ** - I = individual value
+    - H = half sib family mean (individual included)
+    - F = full sib family mean (individual included)
+    - O = progeny test mean (individual not included, parents unselected)
+
+ genetic gains for each trait on selection for index (delta_G)
+are in trait_units per unit selection differential per generation
+
+
+ genetic gain in aggregate genotype on selection for index
+   - in economic weight units
+  - per unit selection differential per generation =         3.0438
+
+ covariance of aggregate genotype & index =         9.2646
+
+ variance of index =          9.2646
+
+ variance of aggregate genotype =         16.1354
+
+ correlation of aggregate genotype & index =          0.7577
+
+ heritability of index =          0.5742
+
+
+ALL TRAITS UNRESTRICTED COMBINED INDEX                                                              
+
+FERGUSON index - cww,mfd,sdfd,cvfd,col,char,hand,qn                                                 
+
+ECONOMIC WT SET  2
+
+NO RESTRICTIONS
+
+ LIB  IND TRAIT NAME *     ECON     INDEX_B  COV(TRAIT    DELTA_G   RG(TRAIT
+  NO   NO            *       WT COEFFICIENT    ,INDEX)    (TRAIT)    ,INDEX)
+   1    1 GFW        I     0.00      6.3464     0.7368     0.2691     0.6310
+   2    2 CWW        I    14.50      1.3933     0.6596     0.2409     0.5555
+   4    3 MFD        I    -4.00      2.3918     0.5164     0.1886     0.2421
+  12    4 COL        I     0.00      3.0212     0.1868     0.0682     0.1203
+  13    5 CHAR       I     0.00      5.4039     0.0436     0.0159     0.0573
+  14    6 HAND       I     0.00     -6.0210    -0.5210    -0.1903    -0.3096
+  15    7 QN         I     0.00     -1.2304    -0.1096    -0.0400    -0.0654
+
+ ** - I = individual value
+    - H = half sib family mean (individual included)
+    - F = full sib family mean (individual included)
+    - O = progeny test mean (individual not included, parents unselected)
+
+ genetic gains for each trait on selection for index (delta_G)
+are in trait_units per unit selection differential per generation
+
+
+ genetic gain in aggregate genotype on selection for index
+   - in economic weight units
+  - per unit selection differential per generation =         2.7384
+
+ covariance of aggregate genotype & index =         7.4987
+
+ variance of index =          7.4987
+
+ variance of aggregate genotype =         16.8520
+
+ correlation of aggregate genotype & index =          0.6671
+
+ heritability of index =          0.4450
+
+
+SELECTED TRAITS UNRESTRICTED COMBINED INDEX                                                         
+
+FERGUSON index - cww,mfd,sdfd,cvfd,col,char,hand,qn                                                 
+
+ECONOMIC WT SET  1
+
+NO RESTRICTIONS
+
+ LIB  IND TRAIT NAME *     ECON     INDEX_B  COV(TRAIT    DELTA_G   RG(TRAIT
+  NO   NO            *       WT COEFFICIENT    ,INDEX)    (TRAIT)    ,INDEX)
+   1    1 GFW        I     0.00      6.3344     0.7118     0.2385     0.6229
+   2    2 CWW        I    14.50      2.1783     0.6960     0.2332     0.5991
+   4    3 MFD        I    -2.03      0.6674     0.5840     0.1957     0.2798
+  12    4 COL        I     0.00      0.0000     0.0176     0.0059     0.0116
+  13    5 CHAR       I     0.00      0.0000     0.0003     0.0001     0.0004
+  14    6 HAND       I     0.00      0.0000     0.0557     0.0187     0.0338
+  15    7 QN         I     0.00      0.0000     0.1257     0.0421     0.0767
+
+ ** - I = individual value
+    - H = half sib family mean (individual included)
+    - F = full sib family mean (individual included)
+    - O = progeny test mean (individual not included, parents unselected)
+
+ genetic gains for each trait on selection for index (delta_G)
+are in trait_units per unit selection differential per generation
+
+
+ genetic gain in aggregate genotype on selection for index
+   - in economic weight units
+  - per unit selection differential per generation =         2.9844
+
+ covariance of aggregate genotype & index =         8.9065
+
+ variance of index =          8.9065
+
+ variance of aggregate genotype =         16.1354
+
+ correlation of aggregate genotype & index =          0.7430
+
+ heritability of index =          0.5520
+
+
+SELECTED TRAITS UNRESTRICTED COMBINED INDEX                                                         
+
+FERGUSON index - cww,mfd,sdfd,cvfd,col,char,hand,qn                                                 
+
+ECONOMIC WT SET  2
+
+NO RESTRICTIONS
+
+ LIB  IND TRAIT NAME *     ECON     INDEX_B  COV(TRAIT    DELTA_G   RG(TRAIT
+  NO   NO            *       WT COEFFICIENT    ,INDEX)    (TRAIT)    ,INDEX)
+   1    1 GFW        I     0.00     10.7065     0.5329     0.1829     0.4564
+   2    2 CWW        I    14.50     -2.5068     0.4830     0.1658     0.4068
+   4    3 MFD        I    -4.00     -2.9041    -0.3709    -0.1273    -0.1739
+  12    4 COL        I     0.00      0.0000    -0.0538    -0.0185    -0.0347
+  13    5 CHAR       I     0.00      0.0000    -0.0312    -0.0107    -0.0410
+  14    6 HAND       I     0.00      0.0000    -0.2506    -0.0860    -0.1489
+  15    7 QN         I     0.00      0.0000    -0.3167    -0.1087    -0.1891
+
+ ** - I = individual value
+    - H = half sib family mean (individual included)
+    - F = full sib family mean (individual included)
+    - O = progeny test mean (individual not included, parents unselected)
+
+ genetic gains for each trait on selection for index (delta_G)
+are in trait_units per unit selection differential per generation
+
+
+ genetic gain in aggregate genotype on selection for index
+   - in economic weight units
+  - per unit selection differential per generation =         2.9132
+
+ covariance of aggregate genotype & index =         8.4867
+
+ variance of index =          8.4867
+
+ variance of aggregate genotype =         16.8520
+
+ correlation of aggregate genotype & index =          0.7096
+
+ heritability of index =          0.5036
+
+
+SELECTED TRAITS RESTRICTED COMBINED INDEX                                                           
+
+FERGUSON index - cww,mfd,sdfd,cvfd,col,char,hand,qn                                                 
+
+ECONOMIC WT SET  1
+
+RESTRICTION SET  1
+
+ LIB  IND TRAIT NAME *     ECON     INDEX_B  COV(TRAIT    DELTA_G   RG(TRAIT
+  NO   NO            *       WT COEFFICIENT    ,INDEX)    (TRAIT)    ,INDEX)
+   1    1 GFW        I     0.00      9.0082     0.6024     0.2103     0.5272
+   2    2 CWW        I    14.50     -0.6869     0.5657     0.1975     0.4869
+   4    3 MFD        I    -2.03     -1.5168     0.0000     0.0000     0.0000
+  12    4 COL        I     0.00      0.0000    -0.0261    -0.0091    -0.0172
+  13    5 CHAR       I     0.00      0.0000    -0.0190    -0.0066    -0.0255
+  14    6 HAND       I     0.00      0.0000    -0.1316    -0.0460    -0.0799
+  15    7 QN         I     0.00      0.0000    -0.1449    -0.0506    -0.0884
+
+ ** - I = individual value
+    - H = half sib family mean (individual included)
+    - F = full sib family mean (individual included)
+    - O = progeny test mean (individual not included, parents unselected)
+
+ genetic gains for each trait on selection for index (delta_G)
+are in trait_units per unit selection differential per generation
+
+
+ genetic gain in aggregate genotype on selection for index
+   - in economic weight units
+  - per unit selection differential per generation =         2.8641
+
+ covariance of aggregate genotype & index =         8.2029
+
+ variance of index =          8.2029
+
+ variance of aggregate genotype =         16.1354
+
+ correlation of aggregate genotype & index =          0.7130
+
+ heritability of index =          0.5084
+
+
+SELECTED TRAITS RESTRICTED COMBINED INDEX                                                           
+
+FERGUSON index - cww,mfd,sdfd,cvfd,col,char,hand,qn                                                 
+
+ECONOMIC WT SET  2
+
+RESTRICTION SET  1
+
+ LIB  IND TRAIT NAME *     ECON     INDEX_B  COV(TRAIT    DELTA_G   RG(TRAIT
+  NO   NO            *       WT COEFFICIENT    ,INDEX)    (TRAIT)    ,INDEX)
+   1    1 GFW        I     0.00      9.0082     0.6024     0.2103     0.5159
+   2    2 CWW        I    14.50     -0.6869     0.5657     0.1975     0.4765
+   4    3 MFD        I    -4.00     -1.5168     0.0000     0.0000     0.0000
+  12    4 COL        I     0.00      0.0000    -0.0261    -0.0091    -0.0168
+  13    5 CHAR       I     0.00      0.0000    -0.0190    -0.0066    -0.0249
+  14    6 HAND       I     0.00      0.0000    -0.1316    -0.0460    -0.0782
+  15    7 QN         I     0.00      0.0000    -0.1449    -0.0506    -0.0865
+
+ ** - I = individual value
+    - H = half sib family mean (individual included)
+    - F = full sib family mean (individual included)
+    - O = progeny test mean (individual not included, parents unselected)
+
+ genetic gains for each trait on selection for index (delta_G)
+are in trait_units per unit selection differential per generation
+
+
+ genetic gain in aggregate genotype on selection for index
+   - in economic weight units
+  - per unit selection differential per generation =         2.8641
+
+ covariance of aggregate genotype & index =         8.2029
+
+ variance of index =          8.2029
+
+ variance of aggregate genotype =         16.8520
+
+ correlation of aggregate genotype & index =          0.6977
+
+ heritability of index =          0.4868

@@ -1,0 +1,262 @@
+ resi run
+0njobs =   2   liop =   1   miop =   0   moop =   0
+ job no   1
+0ntr =   4
+ variable input format
+ (8F10.0)                                                                        
+  heritabilities
+                .3500               .1500               .2000               .2000
+  ph variances
+                .9025              4.8400              1.0000               .8100
+  ph correlations
+               1.0000
+                .7000              1.0000
+                .3000               .2000              1.0000
+               0.0000              -.2500               .2500              1.0000
+  gen correlations
+               1.0000
+                .7500              1.0000
+                .3500               .4000              1.0000
+               0.0000              0.0000               .4500              1.0000
+           ----------------------------------------------------------------------------------------------------
+ ph stand devns
+                .9500              2.2000              1.0000               .9000
+ gen stand devns
+                .5620               .8521               .4472               .4025
+ ph (co)variances
+                .9025
+               1.4630              4.8400
+                .2850               .4400              1.0000
+               0.0000              -.4950               .2250               .8100
+ gen (co)variances
+                .3159
+                .3592               .7260
+                .0880               .1524               .2000
+               0.0000              0.0000               .0810               .1620
+ inverse ph covariance matrix
+               2.3838
+               -.7339               .4651
+               -.2726              -.0634              1.1886
+               -.3728               .3018              -.3689              1.5215
+ p-inverse * g = x
+                .4654               .2818               .0131              -.0825
+               -.0704               .0644               .0181               .0438
+               -.0043               .0372               .1742               .0365
+               -.0418               .0290               .0627               .2166
+ g-inverse
+               7.3016             -3.4611              -.7197               .3598
+              -3.4611              3.3637             -1.3055               .6527
+               -.7197             -1.3055              7.9141             -3.9570
+                .3598               .6527             -3.9570              8.1514
+ no of sets of economic weights =   2
+ no of sets of desired gains =   1
+ variable input format
+ (8F10.0)                                                                        
+           ----------------------------------------------------------------------------------------------------
+   economic wts set  1
+              10.0000              2.0000              1.0000             -1.0000
+ coefficients for unrestricted index
+0              5.3134              -.6005               .1691              -.5139
+genetic gain for unrestricted index in economic weight units per unit selection differential per generation =         4.2673
+ cov(hi) =             18.2098
+ v(i) =              18.2098   v(h) =              51.4270   r(ih) =                .5951
+ genetic covariance between y(j) and i
+               1.4776              1.4982               .3681              -.0696
+ correlated change in y(j) in actual units per unit selection differential per generation
+                .3463               .3511               .0863              -.0163
+ genetic correlation between y(j) and i
+                .3666               .2452               .1148              -.0241
+           ----------------------------------------------------------------------------------------------------
+   economic wts set  2
+              10.0000              4.0000              9.0000             10.0000
+ coefficients for unrestricted index
+0              5.0749               .1545              2.0388              2.4281
+genetic gain for unrestricted index in economic weight units per unit selection differential per generation =         6.5281
+ cov(hi) =             42.6156
+ v(i) =              42.6156   v(h) =             145.7253   r(ih) =                .5408
+ genetic covariance between y(j) and i
+               1.8379              2.2456              1.0744               .5585
+ correlated change in y(j) in actual units per unit selection differential per generation
+                .2815               .3440               .1646               .0856
+ genetic correlation between y(j) and i
+                .2709               .2183               .1990               .1149
+           ----------------------------------------------------------------------------------------------------
+   economic wts set  3
+ desired gains
+               1.0000              1.0000               .5000               .2500
+ weights
+              10.4687             -3.1265              5.0993              5.9124
+ coefficients for unrestricted index
+0              3.5706              -.5869               .9426              1.0719
+genetic gain for unrestricted index in economic weight units per unit selection differential per generation =         3.3719
+ cov(hi) =             11.3700
+ v(i) =              11.3700   v(h) =              38.4837   r(ih) =                .5436
+ genetic covariance between y(j) and i
+               1.0000              1.0000               .5000               .2500
+ correlated change in y(j) in actual units per unit selection differential per generation
+                .2966               .2966               .1483               .0741
+ genetic correlation between y(j) and i
+                .2868               .1892               .1802               .1001
+           ----------------------------------------------------------------------------------------------------
+ restricted indices
+ no of sets of restrictions =    0
+ job no   2
+0ntr =   4
+ variable input format
+ (8F10.0)                                                                        
+  heritabilities
+                .2500               .4000               .3000               .2500
+  ph variances
+               1.9600              4.8400               .4225               .2500
+  ph correlations
+               1.0000
+                .8000              1.0000
+                .2000               .1500              1.0000
+               -.4000              -.4500              0.0000              1.0000
+  gen correlations
+               1.0000
+                .8000              1.0000
+               -.1000              -.1000              1.0000
+               -.5500              -.8000               .3500              1.0000
+           ----------------------------------------------------------------------------------------------------
+ ph stand devns
+               1.4000              2.2000               .6500               .5000
+ gen stand devns
+                .7000              1.3914               .3560               .2500
+ ph (co)variances
+               1.9600
+               2.4640              4.8400
+                .1820               .2145               .4225
+               -.2800              -.4950              0.0000               .2500
+ gen (co)variances
+                .4900
+                .7792              1.9360
+               -.0249              -.0495               .1267
+               -.0962              -.2783               .0312               .0625
+ inverse ph covariance matrix
+               1.4542
+               -.7045               .6079
+               -.2688              -.0051              2.4853
+                .2338               .4146              -.3112              5.0828
+ p-inverse * g = x
+                .1478              -.2826              -.0281               .0623
+                .0887               .5128              -.0003              -.0756
+               -.1677              -.2559               .3123               .0853
+               -.0439              -.4142               .0925               .1701
+ g-inverse
+               6.2262             -3.3064              1.3602             -5.8111
+              -3.3064              3.3546             -2.0040             10.8433
+               1.3602             -2.0040             10.3156            -11.9698
+              -5.8111             10.8433            -11.9698             61.2967
+ no of sets of economic weights =   1
+ no of sets of desired gains =   1
+ variable input format
+ (8F10.0)                                                                        
+           ----------------------------------------------------------------------------------------------------
+   economic wts set  1
+               4.0000              2.0000              8.0000             10.0000
+ coefficients for unrestricted index
+0               .4244               .6220              2.1683              1.4374
+genetic gain for unrestricted index in economic weight units per unit selection differential per generation =         2.3908
+ cov(hi) =              5.7159
+ v(i) =               5.7159   v(h) =              25.3859   r(ih) =                .4745
+ genetic covariance between y(j) and i
+                .5002              1.0274               .2782              -.0565
+ correlated change in y(j) in actual units per unit selection differential per generation
+                .2092               .4297               .1164              -.0237
+ genetic correlation between y(j) and i
+                .1418               .1466               .1551              -.0449
+           ----------------------------------------------------------------------------------------------------
+   economic wts set  2
+ desired gains
+               1.0000              1.0000               .5000               .2500
+ weights
+              -3.7525             27.8484            -18.3751            161.3251
+ coefficients for unrestricted index
+0              2.1472              1.7570              1.5215             14.3715
+genetic gain for unrestricted index in economic weight units per unit selection differential per generation =         7.4323
+ cov(hi) =             55.2396
+ v(i) =              55.2396   v(h) =             493.5626   r(ih) =                .3345
+ genetic covariance between y(j) and i
+               1.0000              1.0000               .5000               .2500
+ correlated change in y(j) in actual units per unit selection differential per generation
+                .1345               .1345               .0673               .0336
+ genetic correlation between y(j) and i
+                .0643               .0324               .0632               .0450
+           ----------------------------------------------------------------------------------------------------
+ restricted indices
+ no of sets of restrictions =    1
+ variable input format
+ (80F1.0)                                                                        
+           ----------------------------------------------------------------------------------------------------
+ restriction set no    1
+ no of resi binet type =    1
+0no of resi kempthorne or tallis type =    1
+ k matrix
+               0.0000              1.0000              0.0000              0.0000
+ d vector
+               0.0000
+ c matrix
+               0.0000              0.0000              0.0000              1.0000
+ l vector
+               0.0000
+ q matrix
+               0.0000              1.0000              0.0000              0.0000
+               -.0962              -.2783               .0312               .0625
+ u vector
+               0.0000              0.0000
+ q * p-inverse * q = w
+                .6079              -.0756
+               -.0756               .0283
+ w-inverse
+               2.4623              6.5717
+               6.5717             52.8388
+ q * w-inverse * q = v
+                .4895               .7827              -.1584              -.3179
+                .7827              2.8966              -.2533              -.5083
+               -.1584              -.2533               .0513               .1029
+               -.3179              -.5083               .1029               .2064
+ p-inverse * v = pv
+                .1287              -.9532              -.0416              -.0835
+               -.0000              1.0000              -.0000              -.000*
+               -.4304              -.6967               .1393               .2795
+              -1.1273             -1.1207               .3649               .7320
+ i - pv = pv
+                .8713               .9532               .0416               .0835
+                .0000              -.000*               .000*               .000*
+                .4304               .6967               .8607              -.2795
+               1.1273              1.1207              -.3649               .2680
+ q * w-inverse * u = s
+               0.0000              0.0000              0.0000              0.0000
+ p-inverse * s = ps
+               0.0000              0.0000              0.0000              0.0000
+           ----------------------------------------------------------------------------------------------------
+   economic wts set  1
+ pv * unrestricted-b = t
+               1.1730               .0000              2.0805               .7695
+ restricted index coefficients
+               1.1730               .0000              2.0805               .7695
+ genetic gain for restricted index in economic weight units per unit selection differential per generation =              2.24
+0cov(hi) =              5.0567
+ v(i) =               5.0567   v(h) =              25.3859   r(ih) =                .4463
+ genetic covariance between y(j) and i
+                .4489               .5968               .2584               .0000
+ correlated change in y(j) in actual units per unit selection differential per generation
+                .1996               .2654               .1149               .0000
+ genetic correlation between y(j) and i
+                .1273               .0851               .1441               .0000
+           ----------------------------------------------------------------------------------------------------
+   economic wts set  2
+ pv * unrestricted-b = t
+               4.8098               .0000              -.5587              7.6855
+ restricted index coefficients
+               4.8098               .0000              -.5587              7.6855
+ genetic gain for restricted index in economic weight units per unit selection differential per generation =              6.20
+0cov(hi) =             38.5622
+ v(i) =              38.5622   v(h) =             493.5626   r(ih) =                .2795
+ genetic covariance between y(j) and i
+               1.6310              1.6366               .0487              -.0000
+ correlated change in y(j) in actual units per unit selection differential per generation
+                .2626               .2636               .0078              -.0000
+ genetic correlation between y(j) and i
+                .1049               .0529               .0062              -.0000

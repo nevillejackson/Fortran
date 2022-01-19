@@ -1,0 +1,13 @@
+f77 -v -sun4 -c  resi3.f
+/usr/lang/SC1.0/f77pass1 "-P -cg87" resi3.f /tmp/f77pass1.12434.s.0.s /tmp/f77pass1.12434.i.1.s /tmp/f77pass1.12434.d.2.s
+resi3.f:
+ MAIN resi3:
+/usr/lang/SC1.0/as -o resi3.o -Q -cg87 /tmp/f77pass1.12434.s.0.s /tmp/f77pass1.12434.i.1.s /tmp/f77pass1.12434.d.2.s
+rm /tmp/f77pass1.12434.s.0.s
+rm /tmp/f77pass1.12434.i.1.s
+rm /tmp/f77pass1.12434.d.2.s
+f77 -v  -o resi3 absf.o binset.o covset.o iloc.o kemset.o parind.o  parlib.o parold.o pivot.o resa.o resi3.o sqrtf.o squp.o  unresa.o weight.o indout.o logo.o exsing.o 
+/bin/ld -dc -dp -e start -u _MAIN_ -X -o resi3 /usr/lang/SC1.0/crt0.o /usr/lang/SC1.0/cg87/_crt1.o -L/usr/lang/SC1.0/cg87 -L/usr/lang/SC1.0 absf.o binset.o covset.o iloc.o kemset.o parind.o parlib.o parold.o pivot.o resa.o resi3.o sqrtf.o squp.o unresa.o weight.o indout.o logo.o exsing.o -lF77 -lm -lc
+size resi3
+text	data	bss	dec	hex
+212992	40960	627488	881440	d7320

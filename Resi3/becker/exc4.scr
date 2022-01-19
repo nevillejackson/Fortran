@@ -1,0 +1,7 @@
+resi3 ex2.lib <<eoi
+  1  1  1  4
+"example 4 - Becker pg 61 - h2=.4,n=10,d=10"
+  1  1  0  0
+ 100 10 2
+  4 "imagtr" 0 1 1 0 1.
+eoi

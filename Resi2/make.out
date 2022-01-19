@@ -1,0 +1,15 @@
+f77   -f -lskym -c resi2.f
+resi2.f:
+   MAIN resi2:
+   sqrtf:
+   squp:
+   absf:
+   pivot:
+   weight:
+f77 -f -v -lskym -o resi2 resi2.o
+
+Integrated Solutions F77, $Revision: 2.2 $
+LOAD.
+size resi2
+text	data	bss	dec	hex
+57344	16384	653912	727640	b1a58

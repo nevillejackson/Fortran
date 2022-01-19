@@ -1,5 +1,5 @@
 # Fortran #
-This repository contains various Fortran programs and subroutine libraries useful in statistical analysis and quantitative genetics. Some are my own software and some are collected from the public domain. All are fre of copyright or other usage restrictions.
+This repository contains various Fortran programs and subroutine libraries useful in statistical analysis and quantitative genetics. Some are my own software and some are collected from the public domain. All are free of copyright or other usage restrictions.
 
 ## ab ##
 The subdirectory _ab_ contains programs used in animal breeding calculations
