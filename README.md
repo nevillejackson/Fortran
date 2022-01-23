@@ -6,7 +6,7 @@ The subdirectory _ab_ contains programs used in animal breeding calculations
 The subdirectory _abtest_ contains test data for the routines in subdirectory _ab_.
 
 ## Data manipulation ##
-The subdirectory _Charm_ contains Fortran5 programs for data manipulation using unit record principles, written by Anne Swinton The subdirectory _charmcodedftn4_ contains older Fortran4 programs for the same purpose, written by Neville Jackson and Rod Evans..
+The subdirectory _Charm_ contains Fortran5 programs for data manipulation using unit record principles, written by Anne Swinton. Charm is documented by man pages to be found in the _doc_ subdirectory. The subdirectory _charmcodedftn4_ contains older Fortran4 programs for the same purpose, written by Neville Jackson and Rod Evans..
 
 ## DFREML ##
 The derivative-free REML program written by Karen Meyer. Estimates variance components and quantitative genetic parameters for mixed models.
