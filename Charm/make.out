@@ -1,0 +1,1047 @@
+f77   -v -c calc.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 calc.f -quiet -dumpbase calc.f -version -fversion -o /tmp/ccFSg6Ni.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o calc.o /tmp/ccFSg6Ni.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c calcrd.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 calcrd.f -quiet -dumpbase calcrd.f -version -fversion -o /tmp/ccmOxOEg.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o calcrd.o /tmp/ccmOxOEg.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c nextdp.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 nextdp.f -quiet -dumpbase nextdp.f -version -fversion -o /tmp/ccNZf1JI.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o nextdp.o /tmp/ccNZf1JI.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c nextc.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 nextc.f -quiet -dumpbase nextc.f -version -fversion -o /tmp/cczuF1yn.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o nextc.o /tmp/cczuF1yn.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c intch.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 intch.f -quiet -dumpbase intch.f -version -fversion -o /tmp/ccnJH9i2.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o intch.o /tmp/ccnJH9i2.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c recout.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 recout.f -quiet -dumpbase recout.f -version -fversion -o /tmp/ccTvY1R4.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o recout.o /tmp/ccTvY1R4.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c recoutc.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 recoutc.f -quiet -dumpbase recoutc.f -version -fversion -o /tmp/ccz1LUz0.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o recoutc.o /tmp/ccz1LUz0.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c dpchar.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 dpchar.f -quiet -dumpbase dpchar.f -version -fversion -o /tmp/ccbSMwYx.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o dpchar.o /tmp/ccbSMwYx.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c rltst.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 rltst.f -quiet -dumpbase rltst.f -version -fversion -o /tmp/ccLtcFrQ.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o rltst.o /tmp/ccLtcFrQ.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c argopn.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 argopn.f -quiet -dumpbase argopn.f -version -fversion -o /tmp/ccu4eeqW.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o argopn.o /tmp/ccu4eeqW.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c errr.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 errr.f -quiet -dumpbase errr.f -version -fversion -o /tmp/ccnvR06v.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o errr.o /tmp/ccnvR06v.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c eofr.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 eofr.f -quiet -dumpbase eofr.f -version -fversion -o /tmp/ccPaC77q.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o eofr.o /tmp/ccPaC77q.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c eofw.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 eofw.f -quiet -dumpbase eofw.f -version -fversion -o /tmp/ccCyYp81.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o eofw.o /tmp/ccCyYp81.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c jobend.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 jobend.f -quiet -dumpbase jobend.f -version -fversion -o /tmp/cc2VATik.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o jobend.o /tmp/cc2VATik.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c blkdta.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 blkdta.f -quiet -dumpbase blkdta.f -version -fversion -o /tmp/ccFPHU2w.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o blkdta.o /tmp/ccFPHU2w.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c recwr.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 recwr.f -quiet -dumpbase recwr.f -version -fversion -o /tmp/ccoD2Gzd.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o recwr.o /tmp/ccoD2Gzd.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c exceed.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 exceed.f -quiet -dumpbase exceed.f -version -fversion -o /tmp/ccEsUCre.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o exceed.o /tmp/ccEsUCre.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c intck.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 intck.f -quiet -dumpbase intck.f -version -fversion -o /tmp/cc12owxK.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o intck.o /tmp/cc12owxK.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c chint.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 chint.f -quiet -dumpbase chint.f -version -fversion -o /tmp/cc1v01t8.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o chint.o /tmp/cc1v01t8.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c readch.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 readch.f -quiet -dumpbase readch.f -version -fversion -o /tmp/cccZRXiW.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o readch.o /tmp/cccZRXiW.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c reof.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 reof.f -quiet -dumpbase reof.f -version -fversion -o /tmp/ccWxCj3u.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o reof.o /tmp/ccWxCj3u.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c weof.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 weof.f -quiet -dumpbase weof.f -version -fversion -o /tmp/ccgz10mc.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o weof.o /tmp/ccgz10mc.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c nextrf.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 nextrf.f -quiet -dumpbase nextrf.f -version -fversion -o /tmp/ccWG4Qnk.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o nextrf.o /tmp/ccWG4Qnk.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77 -v -c  calc.o calcrd.o nextdp.o nextc.o intch.o recout.o recoutc.o dpchar.o rltst.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o reof.o weof.o nextrf.o 
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+f77: calc.o: linker input file unused since linking not done
+f77: calcrd.o: linker input file unused since linking not done
+f77: nextdp.o: linker input file unused since linking not done
+f77: nextc.o: linker input file unused since linking not done
+f77: intch.o: linker input file unused since linking not done
+f77: recout.o: linker input file unused since linking not done
+f77: recoutc.o: linker input file unused since linking not done
+f77: dpchar.o: linker input file unused since linking not done
+f77: rltst.o: linker input file unused since linking not done
+f77: argopn.o: linker input file unused since linking not done
+f77: errr.o: linker input file unused since linking not done
+f77: eofr.o: linker input file unused since linking not done
+f77: eofw.o: linker input file unused since linking not done
+f77: jobend.o: linker input file unused since linking not done
+f77: blkdta.o: linker input file unused since linking not done
+f77: recwr.o: linker input file unused since linking not done
+f77: exceed.o: linker input file unused since linking not done
+f77: intck.o: linker input file unused since linking not done
+f77: chint.o: linker input file unused since linking not done
+f77: readch.o: linker input file unused since linking not done
+f77: reof.o: linker input file unused since linking not done
+f77: weof.o: linker input file unused since linking not done
+f77: nextrf.o: linker input file unused since linking not done
+ar rcv calc.a calc.o calcrd.o nextdp.o nextc.o intch.o recout.o recoutc.o dpchar.o rltst.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o reof.o weof.o nextrf.o
+a - calc.o
+a - calcrd.o
+a - nextdp.o
+a - nextc.o
+a - intch.o
+a - recout.o
+a - recoutc.o
+a - dpchar.o
+a - rltst.o
+a - argopn.o
+a - errr.o
+a - eofr.o
+a - eofw.o
+a - jobend.o
+a - blkdta.o
+a - recwr.o
+a - exceed.o
+a - intck.o
+a - chint.o
+a - readch.o
+a - reof.o
+a - weof.o
+a - nextrf.o
+ranlib calc.a
+f77   -v -c cardim.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 cardim.f -quiet -dumpbase cardim.f -version -fversion -o /tmp/cc5gscC5.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o cardim.o /tmp/cc5gscC5.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77 -v -o cardim cardim.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o 
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Driving: f77 -v -o cardim cardim.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o -lg2c -lm
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/elf/ld -dynamic-linker /usr/libexec/ld-elf.so.1 -o cardim /usr/lib/crt1.o /usr/lib/crti.o /usr/lib/crtbegin.o -L/usr/lib cardim.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o -lg2c -lm -lgcc -lc -lgcc /usr/lib/crtend.o /usr/lib/crtn.o
+/usr/lib/libg2c.so: warning: tempnam() possibly used unsafely; consider using mkstemp()
+size cardim
+   text	   data	    bss	    dec	    hex	filename
+   3894	   2304	     28	   6226	   1852	cardim
+f77   -v -c ckcalc.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 ckcalc.f -quiet -dumpbase ckcalc.f -version -fversion -o /tmp/cchVvmF0.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o ckcalc.o /tmp/cchVvmF0.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77  -o ckcalc ckcalc.o 
+/usr/lib/libg2c.so: warning: tempnam() possibly used unsafely; consider using mkstemp()
+size ckcalc
+   text	   data	    bss	    dec	    hex	filename
+   1627	    388	     28	   2043	    7fb	ckcalc
+f77   -v -c count.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 count.f -quiet -dumpbase count.f -version -fversion -o /tmp/ccVUp5gf.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o count.o /tmp/ccVUp5gf.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c cntrd.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 cntrd.f -quiet -dumpbase cntrd.f -version -fversion -o /tmp/ccIXIooN.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o cntrd.o /tmp/ccIXIooN.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c hdset.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 hdset.f -quiet -dumpbase hdset.f -version -fversion -o /tmp/cc27VQJZ.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o hdset.o /tmp/cc27VQJZ.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c chdp.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 chdp.f -quiet -dumpbase chdp.f -version -fversion -o /tmp/cchgkctO.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o chdp.o /tmp/cchgkctO.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c dpform.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 dpform.f -quiet -dumpbase dpform.f -version -fversion -o /tmp/cc8bwm1R.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o dpform.o /tmp/cc8bwm1R.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c flist.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 flist.f -quiet -dumpbase flist.f -version -fversion -o /tmp/ccs5BsTz.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o flist.o /tmp/ccs5BsTz.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c blankc.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 blankc.f -quiet -dumpbase blankc.f -version -fversion -o /tmp/ccAQXr5p.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o blankc.o /tmp/ccAQXr5p.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c blanks.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 blanks.f -quiet -dumpbase blanks.f -version -fversion -o /tmp/ccxrXlqX.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o blanks.o /tmp/ccxrXlqX.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c sdest.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 sdest.f -quiet -dumpbase sdest.f -version -fversion -o /tmp/cc5GToxn.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o sdest.o /tmp/cc5GToxn.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c seqerr.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 seqerr.f -quiet -dumpbase seqerr.f -version -fversion -o /tmp/ccwZfmO8.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o seqerr.o /tmp/ccwZfmO8.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c nextct.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 nextct.f -quiet -dumpbase nextct.f -version -fversion -o /tmp/ccMsUYOb.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o nextct.o /tmp/ccMsUYOb.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c rlform.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 rlform.f -quiet -dumpbase rlform.f -version -fversion -o /tmp/ccaH8JAl.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o rlform.o /tmp/ccaH8JAl.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c cnthd.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 cnthd.f -quiet -dumpbase cnthd.f -version -fversion -o /tmp/ccprtYQX.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o cnthd.o /tmp/ccprtYQX.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77 -v -o count count.o cntrd.o hdset.o chdp.o dpform.o flist.o blankc.o blanks.o sdest.o seqerr.o nextct.o rlform.o cnthd.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o reof.o weof.o nextrf.o 
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Driving: f77 -v -o count count.o cntrd.o hdset.o chdp.o dpform.o flist.o blankc.o blanks.o sdest.o seqerr.o nextct.o rlform.o cnthd.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o reof.o weof.o nextrf.o -lg2c -lm
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/elf/ld -dynamic-linker /usr/libexec/ld-elf.so.1 -o count /usr/lib/crt1.o /usr/lib/crti.o /usr/lib/crtbegin.o -L/usr/lib count.o cntrd.o hdset.o chdp.o dpform.o flist.o blankc.o blanks.o sdest.o seqerr.o nextct.o rlform.o cnthd.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o reof.o weof.o nextrf.o -lg2c -lm -lgcc -lc -lgcc /usr/lib/crtend.o /usr/lib/crtn.o
+/usr/lib/libg2c.so: warning: tempnam() possibly used unsafely; consider using mkstemp()
+size count
+   text	   data	    bss	    dec	    hex	filename
+  21715	  55052	   1544	  78311	  131e7	count
+f77   -v -c create.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 create.f -quiet -dumpbase create.f -version -fversion -o /tmp/ccduHCRE.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o create.o /tmp/ccduHCRE.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77 -v -o create create.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o 
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Driving: f77 -v -o create create.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o -lg2c -lm
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/elf/ld -dynamic-linker /usr/libexec/ld-elf.so.1 -o create /usr/lib/crt1.o /usr/lib/crti.o /usr/lib/crtbegin.o -L/usr/lib create.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o -lg2c -lm -lgcc -lc -lgcc /usr/lib/crtend.o /usr/lib/crtn.o
+/usr/lib/libg2c.so: warning: tempnam() possibly used unsafely; consider using mkstemp()
+size create
+   text	   data	    bss	    dec	    hex	filename
+   3430	   2304	     28	   5762	   1682	create
+f77   -v -c dupchk.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 dupchk.f -quiet -dumpbase dupchk.f -version -fversion -o /tmp/cclQVJ4v.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o dupchk.o /tmp/cclQVJ4v.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c duprd.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 duprd.f -quiet -dumpbase duprd.f -version -fversion -o /tmp/ccrgGLAp.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o duprd.o /tmp/ccrgGLAp.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c comfld.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 comfld.f -quiet -dumpbase comfld.f -version -fversion -o /tmp/ccSZLpoB.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o comfld.o /tmp/ccSZLpoB.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77 -v -o dupchk dupchk.o duprd.o comfld.o nextrf.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o 
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Driving: f77 -v -o dupchk dupchk.o duprd.o comfld.o nextrf.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o -lg2c -lm
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/elf/ld -dynamic-linker /usr/libexec/ld-elf.so.1 -o dupchk /usr/lib/crt1.o /usr/lib/crti.o /usr/lib/crtbegin.o -L/usr/lib dupchk.o duprd.o comfld.o nextrf.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o -lg2c -lm -lgcc -lc -lgcc /usr/lib/crtend.o /usr/lib/crtn.o
+/usr/lib/libg2c.so: warning: tempnam() possibly used unsafely; consider using mkstemp()
+size dupchk
+   text	   data	    bss	    dec	    hex	filename
+   6169	   4496	     28	  10693	   29c5	dupchk
+f77   -v -c editr.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 editr.f -quiet -dumpbase editr.f -version -fversion -o /tmp/cc0m5aSa.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o editr.o /tmp/cc0m5aSa.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c linest.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 linest.f -quiet -dumpbase linest.f -version -fversion -o /tmp/ccRtuLDF.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o linest.o /tmp/ccRtuLDF.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c edrd.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 edrd.f -quiet -dumpbase edrd.f -version -fversion -o /tmp/cc1AfDyO.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o edrd.o /tmp/cc1AfDyO.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c setlen.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 setlen.f -quiet -dumpbase setlen.f -version -fversion -o /tmp/ccfszf9X.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o setlen.o /tmp/ccfszf9X.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c recadd.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 recadd.f -quiet -dumpbase recadd.f -version -fversion -o /tmp/ccyl3hxe.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o recadd.o /tmp/ccyl3hxe.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c inted.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 inted.f -quiet -dumpbase inted.f -version -fversion -o /tmp/cclwmRON.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o inted.o /tmp/cclwmRON.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c nexted.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 nexted.f -quiet -dumpbase nexted.f -version -fversion -o /tmp/ccSJnk2T.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o nexted.o /tmp/ccSJnk2T.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77 -v -o editr editr.o linest.o edrd.o setlen.o recadd.o inted.o nexted.o  argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o 
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Driving: f77 -v -o editr editr.o linest.o edrd.o setlen.o recadd.o inted.o nexted.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o -lg2c -lm
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/elf/ld -dynamic-linker /usr/libexec/ld-elf.so.1 -o editr /usr/lib/crt1.o /usr/lib/crti.o /usr/lib/crtbegin.o -L/usr/lib editr.o linest.o edrd.o setlen.o recadd.o inted.o nexted.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o -lg2c -lm -lgcc -lc -lgcc /usr/lib/crtend.o /usr/lib/crtn.o
+/usr/lib/libg2c.so: warning: tempnam() possibly used unsafely; consider using mkstemp()
+size editr
+   text	   data	    bss	    dec	    hex	filename
+   9689	  12752	   2184	  24625	   6031	editr
+f77   -v -c join9.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 join9.f -quiet -dumpbase join9.f -version -fversion -o /tmp/ccJgsTGI.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o join9.o /tmp/ccJgsTGI.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c setblk.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 setblk.f -quiet -dumpbase setblk.f -version -fversion -o /tmp/cc7F0rCP.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o setblk.o /tmp/cc7F0rCP.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77 -v -o join9 join9.o readch.o setblk.o  argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o 
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Driving: f77 -v -o join9 join9.o readch.o setblk.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o -lg2c -lm
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/elf/ld -dynamic-linker /usr/libexec/ld-elf.so.1 -o join9 /usr/lib/crt1.o /usr/lib/crti.o /usr/lib/crtbegin.o -L/usr/lib join9.o readch.o setblk.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o -lg2c -lm -lgcc -lc -lgcc /usr/lib/crtend.o /usr/lib/crtn.o
+/usr/lib/libg2c.so: warning: tempnam() possibly used unsafely; consider using mkstemp()
+size join9
+   text	   data	    bss	    dec	    hex	filename
+   4304	   1396	     32	   5732	   1664	join9
+f77   -v -c listnf.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 listnf.f -quiet -dumpbase listnf.f -version -fversion -o /tmp/ccpywgEo.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o listnf.o /tmp/ccpywgEo.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c cntset.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 cntset.f -quiet -dumpbase cntset.f -version -fversion -o /tmp/cc5VNNHO.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o cntset.o /tmp/cc5VNNHO.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c lincnt.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 lincnt.f -quiet -dumpbase lincnt.f -version -fversion -o /tmp/ccELG95h.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o lincnt.o /tmp/ccELG95h.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c rdrec.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 rdrec.f -quiet -dumpbase rdrec.f -version -fversion -o /tmp/cc93HHzE.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+rdrec.f: In subroutine `rdrec':
+rdrec.f:21: warning:
+      15 format (' file unit ',i3,' record length read ='i9,' characters')
+                                                         ^
+Missing comma in FORMAT statement at (^)
+ /usr/libexec/elf/as -v -o rdrec.o /tmp/cc93HHzE.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77 -v -o listnf listnf.o cntset.o lincnt.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o rdrec.o 
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Driving: f77 -v -o listnf listnf.o cntset.o lincnt.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o rdrec.o -lg2c -lm
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/elf/ld -dynamic-linker /usr/libexec/ld-elf.so.1 -o listnf /usr/lib/crt1.o /usr/lib/crti.o /usr/lib/crtbegin.o -L/usr/lib listnf.o cntset.o lincnt.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o rdrec.o -lg2c -lm -lgcc -lc -lgcc /usr/lib/crtend.o /usr/lib/crtn.o
+/usr/lib/libg2c.so: warning: tempnam() possibly used unsafely; consider using mkstemp()
+size listnf
+   text	   data	    bss	    dec	    hex	filename
+   5011	   3948	     28	   8987	   231b	listnf
+f77   -v -c listns.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 listns.f -quiet -dumpbase listns.f -version -fversion -o /tmp/cc04QoEn.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o listns.o /tmp/cc04QoEn.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c cntse1.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 cntse1.f -quiet -dumpbase cntse1.f -version -fversion -o /tmp/ccG6TQxm.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o cntse1.o /tmp/ccG6TQxm.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c lincn1.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 lincn1.f -quiet -dumpbase lincn1.f -version -fversion -o /tmp/ccAq9cSE.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o lincn1.o /tmp/ccAq9cSE.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77 -v -o listns listns.o cntse1.o lincn1.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o 
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Driving: f77 -v -o listns listns.o cntse1.o lincn1.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o -lg2c -lm
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/elf/ld -dynamic-linker /usr/libexec/ld-elf.so.1 -o listns /usr/lib/crt1.o /usr/lib/crti.o /usr/lib/crtbegin.o -L/usr/lib listns.o cntse1.o lincn1.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o -lg2c -lm -lgcc -lc -lgcc /usr/lib/crtend.o /usr/lib/crtn.o
+/usr/lib/libg2c.so: warning: tempnam() possibly used unsafely; consider using mkstemp()
+size listns
+   text	   data	    bss	    dec	    hex	filename
+   4399	   2796	     28	   7223	   1c37	listns
+f77   -v -c marry.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 marry.f -quiet -dumpbase marry.f -version -fversion -o /tmp/ccPdnUUk.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o marry.o /tmp/ccPdnUUk.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77 -v -o marry marry.o readch.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o 
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Driving: f77 -v -o marry marry.o readch.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o -lg2c -lm
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/elf/ld -dynamic-linker /usr/libexec/ld-elf.so.1 -o marry /usr/lib/crt1.o /usr/lib/crti.o /usr/lib/crtbegin.o -L/usr/lib marry.o readch.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o -lg2c -lm -lgcc -lc -lgcc /usr/lib/crtend.o /usr/lib/crtn.o
+/usr/lib/libg2c.so: warning: tempnam() possibly used unsafely; consider using mkstemp()
+size marry
+   text	   data	    bss	    dec	    hex	filename
+   4539	   1620	   2060	   8219	   201b	marry
+f77   -v -c match.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 match.f -quiet -dumpbase match.f -version -fversion -o /tmp/ccUPYSHJ.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o match.o /tmp/ccUPYSHJ.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c matrd.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 matrd.f -quiet -dumpbase matrd.f -version -fversion -o /tmp/cc6ePbPX.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o matrd.o /tmp/cc6ePbPX.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c ckseq.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 ckseq.f -quiet -dumpbase ckseq.f -version -fversion -o /tmp/ccL2JPTR.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o ckseq.o /tmp/ccL2JPTR.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77 -v -o match match.o matrd.o comfld.o nextrf.o ckseq.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o 
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Driving: f77 -v -o match match.o matrd.o comfld.o nextrf.o ckseq.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o -lg2c -lm
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/elf/ld -dynamic-linker /usr/libexec/ld-elf.so.1 -o match /usr/lib/crt1.o /usr/lib/crti.o /usr/lib/crtbegin.o -L/usr/lib match.o matrd.o comfld.o nextrf.o ckseq.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o -lg2c -lm -lgcc -lc -lgcc /usr/lib/crtend.o /usr/lib/crtn.o
+/usr/lib/libg2c.so: warning: tempnam() possibly used unsafely; consider using mkstemp()
+size match
+   text	   data	    bss	    dec	    hex	filename
+   7853	   2960	   2056	  12869	   3245	match
+f77   -v -c nuform.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 nuform.f -quiet -dumpbase nuform.f -version -fversion -o /tmp/cc772sqb.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o nuform.o /tmp/cc772sqb.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c recrd1.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 recrd1.f -quiet -dumpbase recrd1.f -version -fversion -o /tmp/ccIoKK4F.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o recrd1.o /tmp/ccIoKK4F.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c recwr1.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 recwr1.f -quiet -dumpbase recwr1.f -version -fversion -o /tmp/ccxxhyYJ.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o recwr1.o /tmp/ccxxhyYJ.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77 -v -o nuform nuform.o recrd1.o recwr1.o  argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o 
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Driving: f77 -v -o nuform nuform.o recrd1.o recwr1.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o -lg2c -lm
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/elf/ld -dynamic-linker /usr/libexec/ld-elf.so.1 -o nuform /usr/lib/crt1.o /usr/lib/crti.o /usr/lib/crtbegin.o -L/usr/lib nuform.o recrd1.o recwr1.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o -lg2c -lm -lgcc -lc -lgcc /usr/lib/crtend.o /usr/lib/crtn.o
+/usr/lib/libg2c.so: warning: tempnam() possibly used unsafely; consider using mkstemp()
+size nuform
+   text	   data	    bss	    dec	    hex	filename
+   4590	   1464	     32	   6086	   17c6	nuform
+f77   -v -c reclen.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 reclen.f -quiet -dumpbase reclen.f -version -fversion -o /tmp/ccsjQJXn.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o reclen.o /tmp/ccsjQJXn.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77 -v -o reclen reclen.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o 
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Driving: f77 -v -o reclen reclen.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o -lg2c -lm
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/elf/ld -dynamic-linker /usr/libexec/ld-elf.so.1 -o reclen /usr/lib/crt1.o /usr/lib/crti.o /usr/lib/crtbegin.o -L/usr/lib reclen.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o -lg2c -lm -lgcc -lc -lgcc /usr/lib/crtend.o /usr/lib/crtn.o
+/usr/lib/libg2c.so: warning: tempnam() possibly used unsafely; consider using mkstemp()
+size reclen
+   text	   data	    bss	    dec	    hex	filename
+   3284	   1208	     28	   4520	   11a8	reclen
+f77   -v -c recode.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 recode.f -quiet -dumpbase recode.f -version -fversion -o /tmp/ccrm7JNn.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o recode.o /tmp/ccrm7JNn.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c recrd.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 recrd.f -quiet -dumpbase recrd.f -version -fversion -o /tmp/ccSvLGto.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+recrd.f: In subroutine `recrd':
+recrd.f:39: warning:
+         call nextrf (ipos,',',string,dest,len,nonc)
+              1
+recrd.f:53: (continued):
+         call nextrf (ipos,' ',string,flc,len,nonc)
+              2
+Argument #4 of `nextrf' is one type at (2) but is some other type at (1) [info -f g77 M GLOBALS]
+recrd.f:40: warning:
+         call chint (len,dest,idesta(i))
+              1
+recrd.f:54: (continued):
+         call chint (len,flc,icla(i))
+              2
+Argument #2 of `chint' is one type at (2) but is some other type at (1) [info -f g77 M GLOBALS]
+recrd.f:39: warning:
+         call nextrf (ipos,',',string,dest,len,nonc)
+              1
+recrd.f:82: (continued):
+         call nextrf (ipos,' ',string,flc,len,nonc)
+              2
+Argument #4 of `nextrf' is one type at (2) but is some other type at (1) [info -f g77 M GLOBALS]
+recrd.f:40: warning:
+         call chint (len,dest,idesta(i))
+              1
+recrd.f:83: (continued):
+         call chint (len,flc,icl(i))
+              2
+Argument #2 of `chint' is one type at (2) but is some other type at (1) [info -f g77 M GLOBALS]
+ /usr/libexec/elf/as -v -o recrd.o /tmp/ccSvLGto.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c nextrs.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 nextrs.f -quiet -dumpbase nextrs.f -version -fversion -o /tmp/cc57h5Te.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o nextrs.o /tmp/cc57h5Te.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c selcomr.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 selcomr.f -quiet -dumpbase selcomr.f -version -fversion -o /tmp/ccy6RBYq.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o selcomr.o /tmp/ccy6RBYq.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c setlitf.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 setlitf.f -quiet -dumpbase setlitf.f -version -fversion -o /tmp/cc3M4Wfw.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o setlitf.o /tmp/cc3M4Wfw.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c maxrl.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 maxrl.f -quiet -dumpbase maxrl.f -version -fversion -o /tmp/ccm3zTBC.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o maxrl.o /tmp/ccm3zTBC.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c recif.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 recif.f -quiet -dumpbase recif.f -version -fversion -o /tmp/cc4c5FDk.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o recif.o /tmp/cc4c5FDk.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c fldckc.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 fldckc.f -quiet -dumpbase fldckc.f -version -fversion -o /tmp/ccDl1Iy1.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o fldckc.o /tmp/ccDl1Iy1.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77 -v -o recode recode.o recrd.o nextrs.o selcomr.o setlitf.o  maxrl.o recif.o fldckc.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o reof.o weof.o nextrf.o 
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Driving: f77 -v -o recode recode.o recrd.o nextrs.o selcomr.o setlitf.o maxrl.o recif.o fldckc.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o reof.o weof.o nextrf.o -lg2c -lm
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/elf/ld -dynamic-linker /usr/libexec/ld-elf.so.1 -o recode /usr/lib/crt1.o /usr/lib/crti.o /usr/lib/crtbegin.o -L/usr/lib recode.o recrd.o nextrs.o selcomr.o setlitf.o maxrl.o recif.o fldckc.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o reof.o weof.o nextrf.o -lg2c -lm -lgcc -lc -lgcc /usr/lib/crtend.o /usr/lib/crtn.o
+/usr/lib/libg2c.so: warning: tempnam() possibly used unsafely; consider using mkstemp()
+size recode
+   text	   data	    bss	    dec	    hex	filename
+  13585	   9328	   3176	  26089	   65e9	recode
+f77   -v -c reform.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 reform.f -quiet -dumpbase reform.f -version -fversion -o /tmp/ccvTRkl0.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+reform.f: In program `reform':
+reform.f:43: warning:
+      10 format (' file tape ',i3,' record length read ='i7,' characters')
+                                                         ^
+Missing comma in FORMAT statement at (^)
+ /usr/libexec/elf/as -v -o reform.o /tmp/ccvTRkl0.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c refrd.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 refrd.f -quiet -dumpbase refrd.f -version -fversion -o /tmp/ccVcRAA4.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o refrd.o /tmp/ccVcRAA4.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c rlmax.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 rlmax.f -quiet -dumpbase rlmax.f -version -fversion -o /tmp/cc6apG49.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o rlmax.o /tmp/cc6apG49.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c fldckf.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 fldckf.f -quiet -dumpbase fldckf.f -version -fversion -o /tmp/ccmdDnRm.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o fldckf.o /tmp/ccmdDnRm.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77 -v -o reform reform.o nextrf.f refrd.o rlmax.o fldckf.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o 
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Driving: f77 -v -o reform reform.o nextrf.f refrd.o rlmax.o fldckf.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o -lg2c -lm
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 nextrf.f -quiet -dumpbase nextrf.f -version -fversion -o /tmp/ccX6144R.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o /tmp/cc1Q3HNb.o /tmp/ccX6144R.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+ /usr/libexec/elf/ld -dynamic-linker /usr/libexec/ld-elf.so.1 -o reform /usr/lib/crt1.o /usr/lib/crti.o /usr/lib/crtbegin.o -L/usr/lib reform.o /tmp/cc1Q3HNb.o refrd.o rlmax.o fldckf.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o -lg2c -lm -lgcc -lc -lgcc /usr/lib/crtend.o /usr/lib/crtn.o
+/usr/lib/libg2c.so: warning: tempnam() possibly used unsafely; consider using mkstemp()
+size reform
+   text	   data	    bss	    dec	    hex	filename
+   6569	   3120	   2056	  11745	   2de1	reform
+f77   -v -c remake.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 remake.f -quiet -dumpbase remake.f -version -fversion -o /tmp/cclxKKiy.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o remake.o /tmp/cclxKKiy.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77 -v -o remake remake.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o 
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Driving: f77 -v -o remake remake.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o -lg2c -lm
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/elf/ld -dynamic-linker /usr/libexec/ld-elf.so.1 -o remake /usr/lib/crt1.o /usr/lib/crti.o /usr/lib/crtbegin.o -L/usr/lib remake.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o -lg2c -lm -lgcc -lc -lgcc /usr/lib/crtend.o /usr/lib/crtn.o
+/usr/lib/libg2c.so: warning: tempnam() possibly used unsafely; consider using mkstemp()
+size remake
+   text	   data	    bss	    dec	    hex	filename
+   3320	   2264	     28	   5612	   15ec	remake
+f77   -v -c reseq.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 reseq.f -quiet -dumpbase reseq.f -version -fversion -o /tmp/cc5eugqN.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o reseq.o /tmp/cc5eugqN.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77 -v -o reseq reseq.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o 
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Driving: f77 -v -o reseq reseq.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o -lg2c -lm
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/elf/ld -dynamic-linker /usr/libexec/ld-elf.so.1 -o reseq /usr/lib/crt1.o /usr/lib/crti.o /usr/lib/crtbegin.o -L/usr/lib reseq.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o -lg2c -lm -lgcc -lc -lgcc /usr/lib/crtend.o /usr/lib/crtn.o
+/usr/lib/libg2c.so: warning: tempnam() possibly used unsafely; consider using mkstemp()
+size reseq
+   text	   data	    bss	    dec	    hex	filename
+   3628	   2280	     28	   5936	   1730	reseq
+f77   -v -c select.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 select.f -quiet -dumpbase select.f -version -fversion -o /tmp/ccZPVE6w.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o select.o /tmp/ccZPVE6w.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c selrd.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 selrd.f -quiet -dumpbase selrd.f -version -fversion -o /tmp/ccFgASdk.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o selrd.o /tmp/ccFgASdk.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c nextsf.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 nextsf.f -quiet -dumpbase nextsf.f -version -fversion -o /tmp/ccx33KKb.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o nextsf.o /tmp/ccx33KKb.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c selcomp.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 selcomp.f -quiet -dumpbase selcomp.f -version -fversion -o /tmp/ccnR9vqU.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o selcomp.o /tmp/ccnR9vqU.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77 -v -o select select.o selrd.o nextsf.o intck.o selcomp.o setlitf.o  chint.o readch.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o 
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Driving: f77 -v -o select select.o selrd.o nextsf.o intck.o selcomp.o setlitf.o chint.o readch.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o -lg2c -lm
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/elf/ld -dynamic-linker /usr/libexec/ld-elf.so.1 -o select /usr/lib/crt1.o /usr/lib/crti.o /usr/lib/crtbegin.o -L/usr/lib select.o selrd.o nextsf.o intck.o selcomp.o setlitf.o chint.o readch.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o -lg2c -lm -lgcc -lc -lgcc /usr/lib/crtend.o /usr/lib/crtn.o
+/usr/lib/libg2c.so: warning: tempnam() possibly used unsafely; consider using mkstemp()
+size select
+   text	   data	    bss	    dec	    hex	filename
+   8270	   6984	   2256	  17510	   4466	select
+f77   -v -c sheet.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 sheet.f -quiet -dumpbase sheet.f -version -fversion -o /tmp/ccA7piDf.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+sheet.f: In program `sheet':
+sheet.f:53: warning:
+         data page/6200*' '/
+                   ^
+Initialization of large (806000-unit) aggregate area `page' at (^) currently very slow and takes lots of memory during g77 compile -- to be improved in 0.6
+sheet.f:38: warning:
+         common /ca/ page
+                 ^
+Initialization of large (806000-unit) aggregate area `ca' at (^) currently very slow and takes lots of memory during g77 compile -- to be improved in 0.6
+f77: Internal compiler error: program f771 got fatal signal 9
+*** Error code 1
+
+Stop in /usr2/home/nevj/src/Charm.

@@ -1,0 +1,912 @@
+f77 -v -Nx300 -sun4 -c  calc.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" calc.f /tmp/f77pass1.00929.s.0.s /tmp/f77pass1.00929.i.1.s /tmp/f77pass1.00929.d.2.s
+calc.f:
+ MAIN calc:
+/usr/lang/SC0.0/as -o calc.o -Q -cg87 /tmp/f77pass1.00929.s.0.s /tmp/f77pass1.00929.i.1.s /tmp/f77pass1.00929.d.2.s
+rm /tmp/f77pass1.00929.s.0.s
+rm /tmp/f77pass1.00929.i.1.s
+rm /tmp/f77pass1.00929.d.2.s
+f77 -v -Nx300 -sun4 -c  calcrd.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" calcrd.f /tmp/f77pass1.00933.s.0.s /tmp/f77pass1.00933.i.1.s /tmp/f77pass1.00933.d.2.s
+calcrd.f:
+	calcrd:
+/usr/lang/SC0.0/as -o calcrd.o -Q -cg87 /tmp/f77pass1.00933.s.0.s /tmp/f77pass1.00933.i.1.s /tmp/f77pass1.00933.d.2.s
+rm /tmp/f77pass1.00933.s.0.s
+rm /tmp/f77pass1.00933.i.1.s
+rm /tmp/f77pass1.00933.d.2.s
+f77 -v -Nx300 -sun4 -c  nextdp.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" nextdp.f /tmp/f77pass1.00937.s.0.s /tmp/f77pass1.00937.i.1.s /tmp/f77pass1.00937.d.2.s
+nextdp.f:
+	nextdp:
+/usr/lang/SC0.0/as -o nextdp.o -Q -cg87 /tmp/f77pass1.00937.s.0.s /tmp/f77pass1.00937.i.1.s /tmp/f77pass1.00937.d.2.s
+rm /tmp/f77pass1.00937.s.0.s
+rm /tmp/f77pass1.00937.i.1.s
+rm /tmp/f77pass1.00937.d.2.s
+f77 -v -Nx300 -sun4 -c  nextc.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" nextc.f /tmp/f77pass1.00941.s.0.s /tmp/f77pass1.00941.i.1.s /tmp/f77pass1.00941.d.2.s
+nextc.f:
+	nextc:
+/usr/lang/SC0.0/as -o nextc.o -Q -cg87 /tmp/f77pass1.00941.s.0.s /tmp/f77pass1.00941.i.1.s /tmp/f77pass1.00941.d.2.s
+rm /tmp/f77pass1.00941.s.0.s
+rm /tmp/f77pass1.00941.i.1.s
+rm /tmp/f77pass1.00941.d.2.s
+f77 -v -Nx300 -sun4 -c  intch.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" intch.f /tmp/f77pass1.00945.s.0.s /tmp/f77pass1.00945.i.1.s /tmp/f77pass1.00945.d.2.s
+intch.f:
+	intch:
+/usr/lang/SC0.0/as -o intch.o -Q -cg87 /tmp/f77pass1.00945.s.0.s /tmp/f77pass1.00945.i.1.s /tmp/f77pass1.00945.d.2.s
+rm /tmp/f77pass1.00945.s.0.s
+rm /tmp/f77pass1.00945.i.1.s
+rm /tmp/f77pass1.00945.d.2.s
+f77 -v -Nx300 -sun4 -c  recout.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" recout.f /tmp/f77pass1.00949.s.0.s /tmp/f77pass1.00949.i.1.s /tmp/f77pass1.00949.d.2.s
+recout.f:
+	recout:
+/usr/lang/SC0.0/as -o recout.o -Q -cg87 /tmp/f77pass1.00949.s.0.s /tmp/f77pass1.00949.i.1.s /tmp/f77pass1.00949.d.2.s
+rm /tmp/f77pass1.00949.s.0.s
+rm /tmp/f77pass1.00949.i.1.s
+rm /tmp/f77pass1.00949.d.2.s
+f77 -v -Nx300 -sun4 -c  recoutc.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" recoutc.f /tmp/f77pass1.00953.s.0.s /tmp/f77pass1.00953.i.1.s /tmp/f77pass1.00953.d.2.s
+recoutc.f:
+	recoutc:
+/usr/lang/SC0.0/as -o recoutc.o -Q -cg87 /tmp/f77pass1.00953.s.0.s /tmp/f77pass1.00953.i.1.s /tmp/f77pass1.00953.d.2.s
+rm /tmp/f77pass1.00953.s.0.s
+rm /tmp/f77pass1.00953.i.1.s
+rm /tmp/f77pass1.00953.d.2.s
+f77 -v -Nx300 -sun4 -c  dpchar.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" dpchar.f /tmp/f77pass1.00957.s.0.s /tmp/f77pass1.00957.i.1.s /tmp/f77pass1.00957.d.2.s
+dpchar.f:
+	dpchar:
+/usr/lang/SC0.0/as -o dpchar.o -Q -cg87 /tmp/f77pass1.00957.s.0.s /tmp/f77pass1.00957.i.1.s /tmp/f77pass1.00957.d.2.s
+rm /tmp/f77pass1.00957.s.0.s
+rm /tmp/f77pass1.00957.i.1.s
+rm /tmp/f77pass1.00957.d.2.s
+f77 -v -Nx300 -sun4 -c  rltst.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" rltst.f /tmp/f77pass1.00961.s.0.s /tmp/f77pass1.00961.i.1.s /tmp/f77pass1.00961.d.2.s
+rltst.f:
+	rltst:
+/usr/lang/SC0.0/as -o rltst.o -Q -cg87 /tmp/f77pass1.00961.s.0.s /tmp/f77pass1.00961.i.1.s /tmp/f77pass1.00961.d.2.s
+rm /tmp/f77pass1.00961.s.0.s
+rm /tmp/f77pass1.00961.i.1.s
+rm /tmp/f77pass1.00961.d.2.s
+f77 -v -Nx300 -sun4 -c  argopn.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" argopn.f /tmp/f77pass1.00965.s.0.s /tmp/f77pass1.00965.i.1.s /tmp/f77pass1.00965.d.2.s
+argopn.f:
+	argopn:
+/usr/lang/SC0.0/as -o argopn.o -Q -cg87 /tmp/f77pass1.00965.s.0.s /tmp/f77pass1.00965.i.1.s /tmp/f77pass1.00965.d.2.s
+rm /tmp/f77pass1.00965.s.0.s
+rm /tmp/f77pass1.00965.i.1.s
+rm /tmp/f77pass1.00965.d.2.s
+f77 -v -Nx300 -sun4 -c  errr.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" errr.f /tmp/f77pass1.00969.s.0.s /tmp/f77pass1.00969.i.1.s /tmp/f77pass1.00969.d.2.s
+errr.f:
+	errr:
+/usr/lang/SC0.0/as -o errr.o -Q -cg87 /tmp/f77pass1.00969.s.0.s /tmp/f77pass1.00969.i.1.s /tmp/f77pass1.00969.d.2.s
+rm /tmp/f77pass1.00969.s.0.s
+rm /tmp/f77pass1.00969.i.1.s
+rm /tmp/f77pass1.00969.d.2.s
+f77 -v -Nx300 -sun4 -c  eofr.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" eofr.f /tmp/f77pass1.00973.s.0.s /tmp/f77pass1.00973.i.1.s /tmp/f77pass1.00973.d.2.s
+eofr.f:
+	eofr:
+/usr/lang/SC0.0/as -o eofr.o -Q -cg87 /tmp/f77pass1.00973.s.0.s /tmp/f77pass1.00973.i.1.s /tmp/f77pass1.00973.d.2.s
+rm /tmp/f77pass1.00973.s.0.s
+rm /tmp/f77pass1.00973.i.1.s
+rm /tmp/f77pass1.00973.d.2.s
+f77 -v -Nx300 -sun4 -c  eofw.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" eofw.f /tmp/f77pass1.00977.s.0.s /tmp/f77pass1.00977.i.1.s /tmp/f77pass1.00977.d.2.s
+eofw.f:
+	eofw:
+/usr/lang/SC0.0/as -o eofw.o -Q -cg87 /tmp/f77pass1.00977.s.0.s /tmp/f77pass1.00977.i.1.s /tmp/f77pass1.00977.d.2.s
+rm /tmp/f77pass1.00977.s.0.s
+rm /tmp/f77pass1.00977.i.1.s
+rm /tmp/f77pass1.00977.d.2.s
+f77 -v -Nx300 -sun4 -c  jobend.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" jobend.f /tmp/f77pass1.00981.s.0.s /tmp/f77pass1.00981.i.1.s /tmp/f77pass1.00981.d.2.s
+jobend.f:
+	jobend:
+/usr/lang/SC0.0/as -o jobend.o -Q -cg87 /tmp/f77pass1.00981.s.0.s /tmp/f77pass1.00981.i.1.s /tmp/f77pass1.00981.d.2.s
+rm /tmp/f77pass1.00981.s.0.s
+rm /tmp/f77pass1.00981.i.1.s
+rm /tmp/f77pass1.00981.d.2.s
+f77 -v -Nx300 -sun4 -c  blkdta.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" blkdta.f /tmp/f77pass1.00985.s.0.s /tmp/f77pass1.00985.i.1.s /tmp/f77pass1.00985.d.2.s
+blkdta.f:
+ BLOCK DATA:
+/usr/lang/SC0.0/as -o blkdta.o -Q -cg87 /tmp/f77pass1.00985.s.0.s /tmp/f77pass1.00985.i.1.s /tmp/f77pass1.00985.d.2.s
+rm /tmp/f77pass1.00985.s.0.s
+rm /tmp/f77pass1.00985.i.1.s
+rm /tmp/f77pass1.00985.d.2.s
+f77 -v -Nx300 -sun4 -c  recwr.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" recwr.f /tmp/f77pass1.00989.s.0.s /tmp/f77pass1.00989.i.1.s /tmp/f77pass1.00989.d.2.s
+recwr.f:
+	recwr:
+/usr/lang/SC0.0/as -o recwr.o -Q -cg87 /tmp/f77pass1.00989.s.0.s /tmp/f77pass1.00989.i.1.s /tmp/f77pass1.00989.d.2.s
+rm /tmp/f77pass1.00989.s.0.s
+rm /tmp/f77pass1.00989.i.1.s
+rm /tmp/f77pass1.00989.d.2.s
+f77 -v -Nx300 -sun4 -c  exceed.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" exceed.f /tmp/f77pass1.00993.s.0.s /tmp/f77pass1.00993.i.1.s /tmp/f77pass1.00993.d.2.s
+exceed.f:
+	exceed:
+/usr/lang/SC0.0/as -o exceed.o -Q -cg87 /tmp/f77pass1.00993.s.0.s /tmp/f77pass1.00993.i.1.s /tmp/f77pass1.00993.d.2.s
+rm /tmp/f77pass1.00993.s.0.s
+rm /tmp/f77pass1.00993.i.1.s
+rm /tmp/f77pass1.00993.d.2.s
+f77 -v -Nx300 -sun4 -c  intck.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" intck.f /tmp/f77pass1.00997.s.0.s /tmp/f77pass1.00997.i.1.s /tmp/f77pass1.00997.d.2.s
+intck.f:
+	intck:
+/usr/lang/SC0.0/as -o intck.o -Q -cg87 /tmp/f77pass1.00997.s.0.s /tmp/f77pass1.00997.i.1.s /tmp/f77pass1.00997.d.2.s
+rm /tmp/f77pass1.00997.s.0.s
+rm /tmp/f77pass1.00997.i.1.s
+rm /tmp/f77pass1.00997.d.2.s
+f77 -v -Nx300 -sun4 -c  chint.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" chint.f /tmp/f77pass1.01001.s.0.s /tmp/f77pass1.01001.i.1.s /tmp/f77pass1.01001.d.2.s
+chint.f:
+	chint:
+/usr/lang/SC0.0/as -o chint.o -Q -cg87 /tmp/f77pass1.01001.s.0.s /tmp/f77pass1.01001.i.1.s /tmp/f77pass1.01001.d.2.s
+rm /tmp/f77pass1.01001.s.0.s
+rm /tmp/f77pass1.01001.i.1.s
+rm /tmp/f77pass1.01001.d.2.s
+f77 -v -Nx300 -sun4 -c  readch.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" readch.f /tmp/f77pass1.01005.s.0.s /tmp/f77pass1.01005.i.1.s /tmp/f77pass1.01005.d.2.s
+readch.f:
+	readch:
+/usr/lang/SC0.0/as -o readch.o -Q -cg87 /tmp/f77pass1.01005.s.0.s /tmp/f77pass1.01005.i.1.s /tmp/f77pass1.01005.d.2.s
+rm /tmp/f77pass1.01005.s.0.s
+rm /tmp/f77pass1.01005.i.1.s
+rm /tmp/f77pass1.01005.d.2.s
+f77 -v -Nx300 -sun4 -c  reof.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" reof.f /tmp/f77pass1.01009.s.0.s /tmp/f77pass1.01009.i.1.s /tmp/f77pass1.01009.d.2.s
+reof.f:
+	reof:
+/usr/lang/SC0.0/as -o reof.o -Q -cg87 /tmp/f77pass1.01009.s.0.s /tmp/f77pass1.01009.i.1.s /tmp/f77pass1.01009.d.2.s
+rm /tmp/f77pass1.01009.s.0.s
+rm /tmp/f77pass1.01009.i.1.s
+rm /tmp/f77pass1.01009.d.2.s
+f77 -v -Nx300 -sun4 -c  weof.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" weof.f /tmp/f77pass1.01013.s.0.s /tmp/f77pass1.01013.i.1.s /tmp/f77pass1.01013.d.2.s
+weof.f:
+	weof:
+/usr/lang/SC0.0/as -o weof.o -Q -cg87 /tmp/f77pass1.01013.s.0.s /tmp/f77pass1.01013.i.1.s /tmp/f77pass1.01013.d.2.s
+rm /tmp/f77pass1.01013.s.0.s
+rm /tmp/f77pass1.01013.i.1.s
+rm /tmp/f77pass1.01013.d.2.s
+f77 -v -Nx300 -sun4 -c  nextrf.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" nextrf.f /tmp/f77pass1.01017.s.0.s /tmp/f77pass1.01017.i.1.s /tmp/f77pass1.01017.d.2.s
+nextrf.f:
+	nextrf:
+/usr/lang/SC0.0/as -o nextrf.o -Q -cg87 /tmp/f77pass1.01017.s.0.s /tmp/f77pass1.01017.i.1.s /tmp/f77pass1.01017.d.2.s
+rm /tmp/f77pass1.01017.s.0.s
+rm /tmp/f77pass1.01017.i.1.s
+rm /tmp/f77pass1.01017.d.2.s
+f77 -v -Nx300 -c  calc.o calcrd.o nextdp.o nextc.o intch.o recout.o recoutc.o dpchar.o rltst.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o reof.o weof.o nextrf.o 
+ar rcv calc.a calc.o calcrd.o nextdp.o nextc.o intch.o recout.o recoutc.o dpchar.o rltst.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o reof.o weof.o nextrf.o
+a - calc.o
+a - calcrd.o
+a - nextdp.o
+a - nextc.o
+a - intch.o
+a - recout.o
+a - recoutc.o
+a - dpchar.o
+a - rltst.o
+a - argopn.o
+a - errr.o
+a - eofr.o
+a - eofw.o
+a - jobend.o
+a - blkdta.o
+a - recwr.o
+a - exceed.o
+a - intck.o
+a - chint.o
+a - readch.o
+a - reof.o
+a - weof.o
+a - nextrf.o
+ranlib calc.a
+f77 -v -Nx300 -sun4 -c  cardim.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" cardim.f /tmp/f77pass1.01027.s.0.s /tmp/f77pass1.01027.i.1.s /tmp/f77pass1.01027.d.2.s
+cardim.f:
+ MAIN cardim:
+	lnread:
+	readcf:
+/usr/lang/SC0.0/as -o cardim.o -Q -cg87 /tmp/f77pass1.01027.s.0.s /tmp/f77pass1.01027.i.1.s /tmp/f77pass1.01027.d.2.s
+rm /tmp/f77pass1.01027.s.0.s
+rm /tmp/f77pass1.01027.i.1.s
+rm /tmp/f77pass1.01027.d.2.s
+f77 -v -Nx300 -o cardim cardim.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o 
+/bin/ld -dc -dp -e start -u _MAIN_ -X -o cardim /usr/lang/SC0.0/crt0.o /usr/lang/SC0.0/cg87/_crt1.o -L/usr/lang/SC0.0/cg87 -L/usr/lang/SC0.0 cardim.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o -lF77 -lm -lc
+size cardim
+text	data	bss	dec	hex
+122880	16384	0	139264	22000
+f77 -v -Nx300 -sun4 -c  ckcalc.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" ckcalc.f /tmp/f77pass1.01035.s.0.s /tmp/f77pass1.01035.i.1.s /tmp/f77pass1.01035.d.2.s
+ckcalc.f:
+ MAIN ckcalc:
+/usr/lang/SC0.0/as -o ckcalc.o -Q -cg87 /tmp/f77pass1.01035.s.0.s /tmp/f77pass1.01035.i.1.s /tmp/f77pass1.01035.d.2.s
+rm /tmp/f77pass1.01035.s.0.s
+rm /tmp/f77pass1.01035.i.1.s
+rm /tmp/f77pass1.01035.d.2.s
+f77  -o ckcalc ckcalc.o 
+size ckcalc
+text	data	bss	dec	hex
+122880	16384	0	139264	22000
+f77 -v -Nx300 -sun4 -c  count.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" count.f /tmp/f77pass1.01043.s.0.s /tmp/f77pass1.01043.i.1.s /tmp/f77pass1.01043.d.2.s
+count.f:
+ MAIN count:
+/usr/lang/SC0.0/as -o count.o -Q -cg87 /tmp/f77pass1.01043.s.0.s /tmp/f77pass1.01043.i.1.s /tmp/f77pass1.01043.d.2.s
+rm /tmp/f77pass1.01043.s.0.s
+rm /tmp/f77pass1.01043.i.1.s
+rm /tmp/f77pass1.01043.d.2.s
+f77 -v -Nx300 -sun4 -c  cntrd.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" cntrd.f /tmp/f77pass1.01048.s.0.s /tmp/f77pass1.01048.i.1.s /tmp/f77pass1.01048.d.2.s
+cntrd.f:
+	cntrd:
+/usr/lang/SC0.0/as -o cntrd.o -Q -cg87 /tmp/f77pass1.01048.s.0.s /tmp/f77pass1.01048.i.1.s /tmp/f77pass1.01048.d.2.s
+rm /tmp/f77pass1.01048.s.0.s
+rm /tmp/f77pass1.01048.i.1.s
+rm /tmp/f77pass1.01048.d.2.s
+f77 -v -Nx300 -sun4 -c  hdset.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" hdset.f /tmp/f77pass1.01052.s.0.s /tmp/f77pass1.01052.i.1.s /tmp/f77pass1.01052.d.2.s
+hdset.f:
+	hdset:
+/usr/lang/SC0.0/as -o hdset.o -Q -cg87 /tmp/f77pass1.01052.s.0.s /tmp/f77pass1.01052.i.1.s /tmp/f77pass1.01052.d.2.s
+rm /tmp/f77pass1.01052.s.0.s
+rm /tmp/f77pass1.01052.i.1.s
+rm /tmp/f77pass1.01052.d.2.s
+f77 -v -Nx300 -sun4 -c  chdp.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" chdp.f /tmp/f77pass1.01056.s.0.s /tmp/f77pass1.01056.i.1.s /tmp/f77pass1.01056.d.2.s
+chdp.f:
+	chdp:
+/usr/lang/SC0.0/as -o chdp.o -Q -cg87 /tmp/f77pass1.01056.s.0.s /tmp/f77pass1.01056.i.1.s /tmp/f77pass1.01056.d.2.s
+rm /tmp/f77pass1.01056.s.0.s
+rm /tmp/f77pass1.01056.i.1.s
+rm /tmp/f77pass1.01056.d.2.s
+f77 -v -Nx300 -sun4 -c  dpform.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" dpform.f /tmp/f77pass1.01060.s.0.s /tmp/f77pass1.01060.i.1.s /tmp/f77pass1.01060.d.2.s
+dpform.f:
+	dpform:
+/usr/lang/SC0.0/as -o dpform.o -Q -cg87 /tmp/f77pass1.01060.s.0.s /tmp/f77pass1.01060.i.1.s /tmp/f77pass1.01060.d.2.s
+rm /tmp/f77pass1.01060.s.0.s
+rm /tmp/f77pass1.01060.i.1.s
+rm /tmp/f77pass1.01060.d.2.s
+f77 -v -Nx300 -sun4 -c  flist.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" flist.f /tmp/f77pass1.01064.s.0.s /tmp/f77pass1.01064.i.1.s /tmp/f77pass1.01064.d.2.s
+flist.f:
+	flist:
+/usr/lang/SC0.0/as -o flist.o -Q -cg87 /tmp/f77pass1.01064.s.0.s /tmp/f77pass1.01064.i.1.s /tmp/f77pass1.01064.d.2.s
+rm /tmp/f77pass1.01064.s.0.s
+rm /tmp/f77pass1.01064.i.1.s
+rm /tmp/f77pass1.01064.d.2.s
+f77 -v -Nx300 -sun4 -c  blankc.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" blankc.f /tmp/f77pass1.01068.s.0.s /tmp/f77pass1.01068.i.1.s /tmp/f77pass1.01068.d.2.s
+blankc.f:
+	blankc:
+/usr/lang/SC0.0/as -o blankc.o -Q -cg87 /tmp/f77pass1.01068.s.0.s /tmp/f77pass1.01068.i.1.s /tmp/f77pass1.01068.d.2.s
+rm /tmp/f77pass1.01068.s.0.s
+rm /tmp/f77pass1.01068.i.1.s
+rm /tmp/f77pass1.01068.d.2.s
+f77 -v -Nx300 -sun4 -c  blanks.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" blanks.f /tmp/f77pass1.01072.s.0.s /tmp/f77pass1.01072.i.1.s /tmp/f77pass1.01072.d.2.s
+blanks.f:
+	blanks:
+/usr/lang/SC0.0/as -o blanks.o -Q -cg87 /tmp/f77pass1.01072.s.0.s /tmp/f77pass1.01072.i.1.s /tmp/f77pass1.01072.d.2.s
+rm /tmp/f77pass1.01072.s.0.s
+rm /tmp/f77pass1.01072.i.1.s
+rm /tmp/f77pass1.01072.d.2.s
+f77 -v -Nx300 -sun4 -c  sdest.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" sdest.f /tmp/f77pass1.01076.s.0.s /tmp/f77pass1.01076.i.1.s /tmp/f77pass1.01076.d.2.s
+sdest.f:
+	sdest:
+/usr/lang/SC0.0/as -o sdest.o -Q -cg87 /tmp/f77pass1.01076.s.0.s /tmp/f77pass1.01076.i.1.s /tmp/f77pass1.01076.d.2.s
+rm /tmp/f77pass1.01076.s.0.s
+rm /tmp/f77pass1.01076.i.1.s
+rm /tmp/f77pass1.01076.d.2.s
+f77 -v -Nx300 -sun4 -c  seqerr.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" seqerr.f /tmp/f77pass1.01080.s.0.s /tmp/f77pass1.01080.i.1.s /tmp/f77pass1.01080.d.2.s
+seqerr.f:
+	seqerr:
+/usr/lang/SC0.0/as -o seqerr.o -Q -cg87 /tmp/f77pass1.01080.s.0.s /tmp/f77pass1.01080.i.1.s /tmp/f77pass1.01080.d.2.s
+rm /tmp/f77pass1.01080.s.0.s
+rm /tmp/f77pass1.01080.i.1.s
+rm /tmp/f77pass1.01080.d.2.s
+f77 -v -Nx300 -sun4 -c  nextct.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" nextct.f /tmp/f77pass1.01084.s.0.s /tmp/f77pass1.01084.i.1.s /tmp/f77pass1.01084.d.2.s
+nextct.f:
+	nextct:
+/usr/lang/SC0.0/as -o nextct.o -Q -cg87 /tmp/f77pass1.01084.s.0.s /tmp/f77pass1.01084.i.1.s /tmp/f77pass1.01084.d.2.s
+rm /tmp/f77pass1.01084.s.0.s
+rm /tmp/f77pass1.01084.i.1.s
+rm /tmp/f77pass1.01084.d.2.s
+f77 -v -Nx300 -sun4 -c  rlform.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" rlform.f /tmp/f77pass1.01088.s.0.s /tmp/f77pass1.01088.i.1.s /tmp/f77pass1.01088.d.2.s
+rlform.f:
+	rlform:
+/usr/lang/SC0.0/as -o rlform.o -Q -cg87 /tmp/f77pass1.01088.s.0.s /tmp/f77pass1.01088.i.1.s /tmp/f77pass1.01088.d.2.s
+rm /tmp/f77pass1.01088.s.0.s
+rm /tmp/f77pass1.01088.i.1.s
+rm /tmp/f77pass1.01088.d.2.s
+f77 -v -Nx300 -sun4 -c  cnthd.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" cnthd.f /tmp/f77pass1.01092.s.0.s /tmp/f77pass1.01092.i.1.s /tmp/f77pass1.01092.d.2.s
+cnthd.f:
+	cnthd:
+/usr/lang/SC0.0/as -o cnthd.o -Q -cg87 /tmp/f77pass1.01092.s.0.s /tmp/f77pass1.01092.i.1.s /tmp/f77pass1.01092.d.2.s
+rm /tmp/f77pass1.01092.s.0.s
+rm /tmp/f77pass1.01092.i.1.s
+rm /tmp/f77pass1.01092.d.2.s
+f77 -v -Nx300 -o count count.o cntrd.o hdset.o chdp.o dpform.o flist.o blankc.o blanks.o sdest.o seqerr.o nextct.o rlform.o cnthd.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o reof.o weof.o nextrf.o 
+/bin/ld -dc -dp -e start -u _MAIN_ -X -o count /usr/lang/SC0.0/crt0.o /usr/lang/SC0.0/cg87/_crt1.o -L/usr/lang/SC0.0/cg87 -L/usr/lang/SC0.0 count.o cntrd.o hdset.o chdp.o dpform.o flist.o blankc.o blanks.o sdest.o seqerr.o nextct.o rlform.o cnthd.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o reof.o weof.o nextrf.o -lF77 -lm -lc
+size count
+text	data	bss	dec	hex
+147456	73728	18304	239488	3a780
+f77 -v -Nx300 -sun4 -c  create.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" create.f /tmp/f77pass1.01100.s.0.s /tmp/f77pass1.01100.i.1.s /tmp/f77pass1.01100.d.2.s
+create.f:
+ MAIN create:
+/usr/lang/SC0.0/as -o create.o -Q -cg87 /tmp/f77pass1.01100.s.0.s /tmp/f77pass1.01100.i.1.s /tmp/f77pass1.01100.d.2.s
+rm /tmp/f77pass1.01100.s.0.s
+rm /tmp/f77pass1.01100.i.1.s
+rm /tmp/f77pass1.01100.d.2.s
+f77 -v -Nx300 -o create create.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o 
+/bin/ld -dc -dp -e start -u _MAIN_ -X -o create /usr/lang/SC0.0/crt0.o /usr/lang/SC0.0/cg87/_crt1.o -L/usr/lang/SC0.0/cg87 -L/usr/lang/SC0.0 create.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o -lF77 -lm -lc
+size create
+text	data	bss	dec	hex
+122880	16384	0	139264	22000
+f77 -v -Nx300 -sun4 -c  dupchk.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" dupchk.f /tmp/f77pass1.01108.s.0.s /tmp/f77pass1.01108.i.1.s /tmp/f77pass1.01108.d.2.s
+dupchk.f:
+ MAIN dupchk:
+/usr/lang/SC0.0/as -o dupchk.o -Q -cg87 /tmp/f77pass1.01108.s.0.s /tmp/f77pass1.01108.i.1.s /tmp/f77pass1.01108.d.2.s
+rm /tmp/f77pass1.01108.s.0.s
+rm /tmp/f77pass1.01108.i.1.s
+rm /tmp/f77pass1.01108.d.2.s
+f77 -v -Nx300 -sun4 -c  duprd.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" duprd.f /tmp/f77pass1.01112.s.0.s /tmp/f77pass1.01112.i.1.s /tmp/f77pass1.01112.d.2.s
+duprd.f:
+	duprd:
+/usr/lang/SC0.0/as -o duprd.o -Q -cg87 /tmp/f77pass1.01112.s.0.s /tmp/f77pass1.01112.i.1.s /tmp/f77pass1.01112.d.2.s
+rm /tmp/f77pass1.01112.s.0.s
+rm /tmp/f77pass1.01112.i.1.s
+rm /tmp/f77pass1.01112.d.2.s
+f77 -v -Nx300 -sun4 -c  comfld.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" comfld.f /tmp/f77pass1.01116.s.0.s /tmp/f77pass1.01116.i.1.s /tmp/f77pass1.01116.d.2.s
+comfld.f:
+	comfld:
+/usr/lang/SC0.0/as -o comfld.o -Q -cg87 /tmp/f77pass1.01116.s.0.s /tmp/f77pass1.01116.i.1.s /tmp/f77pass1.01116.d.2.s
+rm /tmp/f77pass1.01116.s.0.s
+rm /tmp/f77pass1.01116.i.1.s
+rm /tmp/f77pass1.01116.d.2.s
+f77 -v -Nx300 -o dupchk dupchk.o duprd.o comfld.o nextrf.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o 
+/bin/ld -dc -dp -e start -u _MAIN_ -X -o dupchk /usr/lang/SC0.0/crt0.o /usr/lang/SC0.0/cg87/_crt1.o -L/usr/lang/SC0.0/cg87 -L/usr/lang/SC0.0 dupchk.o duprd.o comfld.o nextrf.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o -lF77 -lm -lc
+size dupchk
+text	data	bss	dec	hex
+131072	16384	312	147768	24138
+f77 -v -Nx300 -sun4 -c  editr.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" editr.f /tmp/f77pass1.01124.s.0.s /tmp/f77pass1.01124.i.1.s /tmp/f77pass1.01124.d.2.s
+editr.f:
+ MAIN editr:
+/usr/lang/SC0.0/as -o editr.o -Q -cg87 /tmp/f77pass1.01124.s.0.s /tmp/f77pass1.01124.i.1.s /tmp/f77pass1.01124.d.2.s
+rm /tmp/f77pass1.01124.s.0.s
+rm /tmp/f77pass1.01124.i.1.s
+rm /tmp/f77pass1.01124.d.2.s
+f77 -v -Nx300 -sun4 -c  linest.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" linest.f /tmp/f77pass1.01128.s.0.s /tmp/f77pass1.01128.i.1.s /tmp/f77pass1.01128.d.2.s
+linest.f:
+	linest:
+/usr/lang/SC0.0/as -o linest.o -Q -cg87 /tmp/f77pass1.01128.s.0.s /tmp/f77pass1.01128.i.1.s /tmp/f77pass1.01128.d.2.s
+rm /tmp/f77pass1.01128.s.0.s
+rm /tmp/f77pass1.01128.i.1.s
+rm /tmp/f77pass1.01128.d.2.s
+f77 -v -Nx300 -sun4 -c  edrd.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" edrd.f /tmp/f77pass1.01132.s.0.s /tmp/f77pass1.01132.i.1.s /tmp/f77pass1.01132.d.2.s
+edrd.f:
+	edrd:
+/usr/lang/SC0.0/as -o edrd.o -Q -cg87 /tmp/f77pass1.01132.s.0.s /tmp/f77pass1.01132.i.1.s /tmp/f77pass1.01132.d.2.s
+rm /tmp/f77pass1.01132.s.0.s
+rm /tmp/f77pass1.01132.i.1.s
+rm /tmp/f77pass1.01132.d.2.s
+f77 -v -Nx300 -sun4 -c  setlen.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" setlen.f /tmp/f77pass1.01136.s.0.s /tmp/f77pass1.01136.i.1.s /tmp/f77pass1.01136.d.2.s
+setlen.f:
+	setlen:
+/usr/lang/SC0.0/as -o setlen.o -Q -cg87 /tmp/f77pass1.01136.s.0.s /tmp/f77pass1.01136.i.1.s /tmp/f77pass1.01136.d.2.s
+rm /tmp/f77pass1.01136.s.0.s
+rm /tmp/f77pass1.01136.i.1.s
+rm /tmp/f77pass1.01136.d.2.s
+f77 -v -Nx300 -sun4 -c  recadd.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" recadd.f /tmp/f77pass1.01140.s.0.s /tmp/f77pass1.01140.i.1.s /tmp/f77pass1.01140.d.2.s
+recadd.f:
+	recadd:
+/usr/lang/SC0.0/as -o recadd.o -Q -cg87 /tmp/f77pass1.01140.s.0.s /tmp/f77pass1.01140.i.1.s /tmp/f77pass1.01140.d.2.s
+rm /tmp/f77pass1.01140.s.0.s
+rm /tmp/f77pass1.01140.i.1.s
+rm /tmp/f77pass1.01140.d.2.s
+f77 -v -Nx300 -sun4 -c  inted.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" inted.f /tmp/f77pass1.01144.s.0.s /tmp/f77pass1.01144.i.1.s /tmp/f77pass1.01144.d.2.s
+inted.f:
+	inted:
+/usr/lang/SC0.0/as -o inted.o -Q -cg87 /tmp/f77pass1.01144.s.0.s /tmp/f77pass1.01144.i.1.s /tmp/f77pass1.01144.d.2.s
+rm /tmp/f77pass1.01144.s.0.s
+rm /tmp/f77pass1.01144.i.1.s
+rm /tmp/f77pass1.01144.d.2.s
+f77 -v -Nx300 -sun4 -c  nexted.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" nexted.f /tmp/f77pass1.01148.s.0.s /tmp/f77pass1.01148.i.1.s /tmp/f77pass1.01148.d.2.s
+nexted.f:
+	nexted:
+/usr/lang/SC0.0/as -o nexted.o -Q -cg87 /tmp/f77pass1.01148.s.0.s /tmp/f77pass1.01148.i.1.s /tmp/f77pass1.01148.d.2.s
+rm /tmp/f77pass1.01148.s.0.s
+rm /tmp/f77pass1.01148.i.1.s
+rm /tmp/f77pass1.01148.d.2.s
+f77 -v -Nx300 -o editr editr.o linest.o edrd.o setlen.o recadd.o inted.o nexted.o  argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o 
+/bin/ld -dc -dp -e start -u _MAIN_ -X -o editr /usr/lang/SC0.0/crt0.o /usr/lang/SC0.0/cg87/_crt1.o -L/usr/lang/SC0.0/cg87 -L/usr/lang/SC0.0 editr.o linest.o edrd.o setlen.o recadd.o inted.o nexted.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o -lF77 -lm -lc
+size editr
+text	data	bss	dec	hex
+131072	32768	0	163840	28000
+f77 -v -Nx300 -sun4 -c  join9.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" join9.f /tmp/f77pass1.01156.s.0.s /tmp/f77pass1.01156.i.1.s /tmp/f77pass1.01156.d.2.s
+join9.f:
+ MAIN join9:
+/usr/lang/SC0.0/as -o join9.o -Q -cg87 /tmp/f77pass1.01156.s.0.s /tmp/f77pass1.01156.i.1.s /tmp/f77pass1.01156.d.2.s
+rm /tmp/f77pass1.01156.s.0.s
+rm /tmp/f77pass1.01156.i.1.s
+rm /tmp/f77pass1.01156.d.2.s
+f77 -v -Nx300 -sun4 -c  setblk.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" setblk.f /tmp/f77pass1.01162.s.0.s /tmp/f77pass1.01162.i.1.s /tmp/f77pass1.01162.d.2.s
+setblk.f:
+	setblk:
+/usr/lang/SC0.0/as -o setblk.o -Q -cg87 /tmp/f77pass1.01162.s.0.s /tmp/f77pass1.01162.i.1.s /tmp/f77pass1.01162.d.2.s
+rm /tmp/f77pass1.01162.s.0.s
+rm /tmp/f77pass1.01162.i.1.s
+rm /tmp/f77pass1.01162.d.2.s
+f77 -v -Nx300 -o join9 join9.o readch.o setblk.o  argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o 
+/bin/ld -dc -dp -e start -u _MAIN_ -X -o join9 /usr/lang/SC0.0/crt0.o /usr/lang/SC0.0/cg87/_crt1.o -L/usr/lang/SC0.0/cg87 -L/usr/lang/SC0.0 join9.o readch.o setblk.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o -lF77 -lm -lc
+size join9
+text	data	bss	dec	hex
+122880	16384	0	139264	22000
+f77 -v -Nx300 -sun4 -c  listnf.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" listnf.f /tmp/f77pass1.01170.s.0.s /tmp/f77pass1.01170.i.1.s /tmp/f77pass1.01170.d.2.s
+listnf.f:
+ MAIN listnf:
+/usr/lang/SC0.0/as -o listnf.o -Q -cg87 /tmp/f77pass1.01170.s.0.s /tmp/f77pass1.01170.i.1.s /tmp/f77pass1.01170.d.2.s
+rm /tmp/f77pass1.01170.s.0.s
+rm /tmp/f77pass1.01170.i.1.s
+rm /tmp/f77pass1.01170.d.2.s
+f77 -v -Nx300 -sun4 -c  cntset.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" cntset.f /tmp/f77pass1.01174.s.0.s /tmp/f77pass1.01174.i.1.s /tmp/f77pass1.01174.d.2.s
+cntset.f:
+	cntset:
+/usr/lang/SC0.0/as -o cntset.o -Q -cg87 /tmp/f77pass1.01174.s.0.s /tmp/f77pass1.01174.i.1.s /tmp/f77pass1.01174.d.2.s
+rm /tmp/f77pass1.01174.s.0.s
+rm /tmp/f77pass1.01174.i.1.s
+rm /tmp/f77pass1.01174.d.2.s
+f77 -v -Nx300 -sun4 -c  lincnt.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" lincnt.f /tmp/f77pass1.01178.s.0.s /tmp/f77pass1.01178.i.1.s /tmp/f77pass1.01178.d.2.s
+lincnt.f:
+	lincnt:
+/usr/lang/SC0.0/as -o lincnt.o -Q -cg87 /tmp/f77pass1.01178.s.0.s /tmp/f77pass1.01178.i.1.s /tmp/f77pass1.01178.d.2.s
+rm /tmp/f77pass1.01178.s.0.s
+rm /tmp/f77pass1.01178.i.1.s
+rm /tmp/f77pass1.01178.d.2.s
+f77 -v -Nx300 -sun4 -c  rdrec.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" rdrec.f /tmp/f77pass1.01182.s.0.s /tmp/f77pass1.01182.i.1.s /tmp/f77pass1.01182.d.2.s
+rdrec.f:
+	rdrec:
+/usr/lang/SC0.0/as -o rdrec.o -Q -cg87 /tmp/f77pass1.01182.s.0.s /tmp/f77pass1.01182.i.1.s /tmp/f77pass1.01182.d.2.s
+rm /tmp/f77pass1.01182.s.0.s
+rm /tmp/f77pass1.01182.i.1.s
+rm /tmp/f77pass1.01182.d.2.s
+f77 -v -Nx300 -o listnf listnf.o cntset.o lincnt.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o rdrec.o 
+/bin/ld -dc -dp -e start -u _MAIN_ -X -o listnf /usr/lang/SC0.0/crt0.o /usr/lang/SC0.0/cg87/_crt1.o -L/usr/lang/SC0.0/cg87 -L/usr/lang/SC0.0 listnf.o cntset.o lincnt.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o rdrec.o -lF77 -lm -lc
+size listnf
+text	data	bss	dec	hex
+131072	16384	0	147456	24000
+f77 -v -Nx300 -sun4 -c  listns.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" listns.f /tmp/f77pass1.01190.s.0.s /tmp/f77pass1.01190.i.1.s /tmp/f77pass1.01190.d.2.s
+listns.f:
+ MAIN listns:
+/usr/lang/SC0.0/as -o listns.o -Q -cg87 /tmp/f77pass1.01190.s.0.s /tmp/f77pass1.01190.i.1.s /tmp/f77pass1.01190.d.2.s
+rm /tmp/f77pass1.01190.s.0.s
+rm /tmp/f77pass1.01190.i.1.s
+rm /tmp/f77pass1.01190.d.2.s
+f77 -v -Nx300 -sun4 -c  cntse1.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" cntse1.f /tmp/f77pass1.01194.s.0.s /tmp/f77pass1.01194.i.1.s /tmp/f77pass1.01194.d.2.s
+cntse1.f:
+	cntse1:
+/usr/lang/SC0.0/as -o cntse1.o -Q -cg87 /tmp/f77pass1.01194.s.0.s /tmp/f77pass1.01194.i.1.s /tmp/f77pass1.01194.d.2.s
+rm /tmp/f77pass1.01194.s.0.s
+rm /tmp/f77pass1.01194.i.1.s
+rm /tmp/f77pass1.01194.d.2.s
+f77 -v -Nx300 -sun4 -c  lincn1.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" lincn1.f /tmp/f77pass1.01198.s.0.s /tmp/f77pass1.01198.i.1.s /tmp/f77pass1.01198.d.2.s
+lincn1.f:
+	lincn1:
+/usr/lang/SC0.0/as -o lincn1.o -Q -cg87 /tmp/f77pass1.01198.s.0.s /tmp/f77pass1.01198.i.1.s /tmp/f77pass1.01198.d.2.s
+rm /tmp/f77pass1.01198.s.0.s
+rm /tmp/f77pass1.01198.i.1.s
+rm /tmp/f77pass1.01198.d.2.s
+f77 -v -Nx300 -o listns listns.o cntse1.o lincn1.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o 
+/bin/ld -dc -dp -e start -u _MAIN_ -X -o listns /usr/lang/SC0.0/crt0.o /usr/lang/SC0.0/cg87/_crt1.o -L/usr/lang/SC0.0/cg87 -L/usr/lang/SC0.0 listns.o cntse1.o lincn1.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o -lF77 -lm -lc
+size listns
+text	data	bss	dec	hex
+122880	16384	0	139264	22000
+f77 -v -Nx300 -sun4 -c  marry.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" marry.f /tmp/f77pass1.01206.s.0.s /tmp/f77pass1.01206.i.1.s /tmp/f77pass1.01206.d.2.s
+marry.f:
+ MAIN marry:
+/usr/lang/SC0.0/as -o marry.o -Q -cg87 /tmp/f77pass1.01206.s.0.s /tmp/f77pass1.01206.i.1.s /tmp/f77pass1.01206.d.2.s
+rm /tmp/f77pass1.01206.s.0.s
+rm /tmp/f77pass1.01206.i.1.s
+rm /tmp/f77pass1.01206.d.2.s
+f77 -v -Nx300 -o marry marry.o readch.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o 
+/bin/ld -dc -dp -e start -u _MAIN_ -X -o marry /usr/lang/SC0.0/crt0.o /usr/lang/SC0.0/cg87/_crt1.o -L/usr/lang/SC0.0/cg87 -L/usr/lang/SC0.0 marry.o readch.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o -lF77 -lm -lc
+size marry
+text	data	bss	dec	hex
+122880	16384	0	139264	22000
+f77 -v -Nx300 -sun4 -c  match.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" match.f /tmp/f77pass1.01214.s.0.s /tmp/f77pass1.01214.i.1.s /tmp/f77pass1.01214.d.2.s
+match.f:
+ MAIN match:
+/usr/lang/SC0.0/as -o match.o -Q -cg87 /tmp/f77pass1.01214.s.0.s /tmp/f77pass1.01214.i.1.s /tmp/f77pass1.01214.d.2.s
+rm /tmp/f77pass1.01214.s.0.s
+rm /tmp/f77pass1.01214.i.1.s
+rm /tmp/f77pass1.01214.d.2.s
+f77 -v -Nx300 -sun4 -c  matrd.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" matrd.f /tmp/f77pass1.01218.s.0.s /tmp/f77pass1.01218.i.1.s /tmp/f77pass1.01218.d.2.s
+matrd.f:
+	matrd:
+/usr/lang/SC0.0/as -o matrd.o -Q -cg87 /tmp/f77pass1.01218.s.0.s /tmp/f77pass1.01218.i.1.s /tmp/f77pass1.01218.d.2.s
+rm /tmp/f77pass1.01218.s.0.s
+rm /tmp/f77pass1.01218.i.1.s
+rm /tmp/f77pass1.01218.d.2.s
+f77 -v -Nx300 -sun4 -c  ckseq.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" ckseq.f /tmp/f77pass1.01222.s.0.s /tmp/f77pass1.01222.i.1.s /tmp/f77pass1.01222.d.2.s
+ckseq.f:
+	ckseq:
+/usr/lang/SC0.0/as -o ckseq.o -Q -cg87 /tmp/f77pass1.01222.s.0.s /tmp/f77pass1.01222.i.1.s /tmp/f77pass1.01222.d.2.s
+rm /tmp/f77pass1.01222.s.0.s
+rm /tmp/f77pass1.01222.i.1.s
+rm /tmp/f77pass1.01222.d.2.s
+f77 -v -Nx300 -o match match.o matrd.o comfld.o nextrf.o ckseq.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o 
+/bin/ld -dc -dp -e start -u _MAIN_ -X -o match /usr/lang/SC0.0/crt0.o /usr/lang/SC0.0/cg87/_crt1.o -L/usr/lang/SC0.0/cg87 -L/usr/lang/SC0.0 match.o matrd.o comfld.o nextrf.o ckseq.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o -lF77 -lm -lc
+size match
+text	data	bss	dec	hex
+131072	16384	1176	148632	24498
+f77 -v -Nx300 -sun4 -c  nuform.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" nuform.f /tmp/f77pass1.01232.s.0.s /tmp/f77pass1.01232.i.1.s /tmp/f77pass1.01232.d.2.s
+nuform.f:
+ MAIN nuform:
+/usr/lang/SC0.0/as -o nuform.o -Q -cg87 /tmp/f77pass1.01232.s.0.s /tmp/f77pass1.01232.i.1.s /tmp/f77pass1.01232.d.2.s
+rm /tmp/f77pass1.01232.s.0.s
+rm /tmp/f77pass1.01232.i.1.s
+rm /tmp/f77pass1.01232.d.2.s
+f77 -v -Nx300 -sun4 -c  recrd1.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" recrd1.f /tmp/f77pass1.01236.s.0.s /tmp/f77pass1.01236.i.1.s /tmp/f77pass1.01236.d.2.s
+recrd1.f:
+	recrd1:
+/usr/lang/SC0.0/as -o recrd1.o -Q -cg87 /tmp/f77pass1.01236.s.0.s /tmp/f77pass1.01236.i.1.s /tmp/f77pass1.01236.d.2.s
+rm /tmp/f77pass1.01236.s.0.s
+rm /tmp/f77pass1.01236.i.1.s
+rm /tmp/f77pass1.01236.d.2.s
+f77 -v -Nx300 -sun4 -c  recwr1.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" recwr1.f /tmp/f77pass1.01240.s.0.s /tmp/f77pass1.01240.i.1.s /tmp/f77pass1.01240.d.2.s
+recwr1.f:
+	recwr1:
+/usr/lang/SC0.0/as -o recwr1.o -Q -cg87 /tmp/f77pass1.01240.s.0.s /tmp/f77pass1.01240.i.1.s /tmp/f77pass1.01240.d.2.s
+rm /tmp/f77pass1.01240.s.0.s
+rm /tmp/f77pass1.01240.i.1.s
+rm /tmp/f77pass1.01240.d.2.s
+f77 -v -Nx300 -o nuform nuform.o recrd1.o recwr1.o  argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o 
+/bin/ld -dc -dp -e start -u _MAIN_ -X -o nuform /usr/lang/SC0.0/crt0.o /usr/lang/SC0.0/cg87/_crt1.o -L/usr/lang/SC0.0/cg87 -L/usr/lang/SC0.0 nuform.o recrd1.o recwr1.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o -lF77 -lm -lc
+size nuform
+text	data	bss	dec	hex
+122880	16384	0	139264	22000
+f77 -v -Nx300 -sun4 -c  reclen.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" reclen.f /tmp/f77pass1.01248.s.0.s /tmp/f77pass1.01248.i.1.s /tmp/f77pass1.01248.d.2.s
+reclen.f:
+ MAIN reclen:
+/usr/lang/SC0.0/as -o reclen.o -Q -cg87 /tmp/f77pass1.01248.s.0.s /tmp/f77pass1.01248.i.1.s /tmp/f77pass1.01248.d.2.s
+rm /tmp/f77pass1.01248.s.0.s
+rm /tmp/f77pass1.01248.i.1.s
+rm /tmp/f77pass1.01248.d.2.s
+f77 -v -Nx300 -o reclen reclen.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o 
+/bin/ld -dc -dp -e start -u _MAIN_ -X -o reclen /usr/lang/SC0.0/crt0.o /usr/lang/SC0.0/cg87/_crt1.o -L/usr/lang/SC0.0/cg87 -L/usr/lang/SC0.0 reclen.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o -lF77 -lm -lc
+size reclen
+text	data	bss	dec	hex
+122880	16384	0	139264	22000
+f77 -v -Nx300 -sun4 -c  recode.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" recode.f /tmp/f77pass1.01256.s.0.s /tmp/f77pass1.01256.i.1.s /tmp/f77pass1.01256.d.2.s
+recode.f:
+ MAIN recode:
+/usr/lang/SC0.0/as -o recode.o -Q -cg87 /tmp/f77pass1.01256.s.0.s /tmp/f77pass1.01256.i.1.s /tmp/f77pass1.01256.d.2.s
+rm /tmp/f77pass1.01256.s.0.s
+rm /tmp/f77pass1.01256.i.1.s
+rm /tmp/f77pass1.01256.d.2.s
+f77 -v -Nx300 -sun4 -c  recrd.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" recrd.f /tmp/f77pass1.01260.s.0.s /tmp/f77pass1.01260.i.1.s /tmp/f77pass1.01260.d.2.s
+recrd.f:
+	recrd:
+/usr/lang/SC0.0/as -o recrd.o -Q -cg87 /tmp/f77pass1.01260.s.0.s /tmp/f77pass1.01260.i.1.s /tmp/f77pass1.01260.d.2.s
+rm /tmp/f77pass1.01260.s.0.s
+rm /tmp/f77pass1.01260.i.1.s
+rm /tmp/f77pass1.01260.d.2.s
+f77 -v -Nx300 -sun4 -c  nextrs.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" nextrs.f /tmp/f77pass1.01264.s.0.s /tmp/f77pass1.01264.i.1.s /tmp/f77pass1.01264.d.2.s
+nextrs.f:
+	nextrs:
+/usr/lang/SC0.0/as -o nextrs.o -Q -cg87 /tmp/f77pass1.01264.s.0.s /tmp/f77pass1.01264.i.1.s /tmp/f77pass1.01264.d.2.s
+rm /tmp/f77pass1.01264.s.0.s
+rm /tmp/f77pass1.01264.i.1.s
+rm /tmp/f77pass1.01264.d.2.s
+f77 -v -Nx300 -sun4 -c  selcomr.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" selcomr.f /tmp/f77pass1.01268.s.0.s /tmp/f77pass1.01268.i.1.s /tmp/f77pass1.01268.d.2.s
+selcomr.f:
+	selcomr:
+/usr/lang/SC0.0/as -o selcomr.o -Q -cg87 /tmp/f77pass1.01268.s.0.s /tmp/f77pass1.01268.i.1.s /tmp/f77pass1.01268.d.2.s
+rm /tmp/f77pass1.01268.s.0.s
+rm /tmp/f77pass1.01268.i.1.s
+rm /tmp/f77pass1.01268.d.2.s
+f77 -v -Nx300 -sun4 -c  setlitf.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" setlitf.f /tmp/f77pass1.01272.s.0.s /tmp/f77pass1.01272.i.1.s /tmp/f77pass1.01272.d.2.s
+setlitf.f:
+	setlitf:
+/usr/lang/SC0.0/as -o setlitf.o -Q -cg87 /tmp/f77pass1.01272.s.0.s /tmp/f77pass1.01272.i.1.s /tmp/f77pass1.01272.d.2.s
+rm /tmp/f77pass1.01272.s.0.s
+rm /tmp/f77pass1.01272.i.1.s
+rm /tmp/f77pass1.01272.d.2.s
+f77 -v -Nx300 -sun4 -c  maxrl.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" maxrl.f /tmp/f77pass1.01276.s.0.s /tmp/f77pass1.01276.i.1.s /tmp/f77pass1.01276.d.2.s
+maxrl.f:
+	maxrl:
+/usr/lang/SC0.0/as -o maxrl.o -Q -cg87 /tmp/f77pass1.01276.s.0.s /tmp/f77pass1.01276.i.1.s /tmp/f77pass1.01276.d.2.s
+rm /tmp/f77pass1.01276.s.0.s
+rm /tmp/f77pass1.01276.i.1.s
+rm /tmp/f77pass1.01276.d.2.s
+f77 -v -Nx300 -sun4 -c  recif.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" recif.f /tmp/f77pass1.01280.s.0.s /tmp/f77pass1.01280.i.1.s /tmp/f77pass1.01280.d.2.s
+recif.f:
+	recif:
+/usr/lang/SC0.0/as -o recif.o -Q -cg87 /tmp/f77pass1.01280.s.0.s /tmp/f77pass1.01280.i.1.s /tmp/f77pass1.01280.d.2.s
+rm /tmp/f77pass1.01280.s.0.s
+rm /tmp/f77pass1.01280.i.1.s
+rm /tmp/f77pass1.01280.d.2.s
+f77 -v -Nx300 -sun4 -c  fldckc.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" fldckc.f /tmp/f77pass1.01284.s.0.s /tmp/f77pass1.01284.i.1.s /tmp/f77pass1.01284.d.2.s
+fldckc.f:
+	fldckc:
+/usr/lang/SC0.0/as -o fldckc.o -Q -cg87 /tmp/f77pass1.01284.s.0.s /tmp/f77pass1.01284.i.1.s /tmp/f77pass1.01284.d.2.s
+rm /tmp/f77pass1.01284.s.0.s
+rm /tmp/f77pass1.01284.i.1.s
+rm /tmp/f77pass1.01284.d.2.s
+f77 -v -Nx300 -o recode recode.o recrd.o nextrs.o selcomr.o setlitf.o  maxrl.o recif.o fldckc.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o reof.o weof.o nextrf.o 
+/bin/ld -dc -dp -e start -u _MAIN_ -X -o recode /usr/lang/SC0.0/crt0.o /usr/lang/SC0.0/cg87/_crt1.o -L/usr/lang/SC0.0/cg87 -L/usr/lang/SC0.0 recode.o recrd.o nextrs.o selcomr.o setlitf.o maxrl.o recif.o fldckc.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o reof.o weof.o nextrf.o -lF77 -lm -lc
+size recode
+text	data	bss	dec	hex
+139264	24576	6000	169840	29770
+f77 -v -Nx300 -sun4 -c  reform.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" reform.f /tmp/f77pass1.01292.s.0.s /tmp/f77pass1.01292.i.1.s /tmp/f77pass1.01292.d.2.s
+reform.f:
+ MAIN reform:
+/usr/lang/SC0.0/as -o reform.o -Q -cg87 /tmp/f77pass1.01292.s.0.s /tmp/f77pass1.01292.i.1.s /tmp/f77pass1.01292.d.2.s
+rm /tmp/f77pass1.01292.s.0.s
+rm /tmp/f77pass1.01292.i.1.s
+rm /tmp/f77pass1.01292.d.2.s
+f77 -v -Nx300 -sun4 -c  refrd.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" refrd.f /tmp/f77pass1.01296.s.0.s /tmp/f77pass1.01296.i.1.s /tmp/f77pass1.01296.d.2.s
+refrd.f:
+	refrd:
+/usr/lang/SC0.0/as -o refrd.o -Q -cg87 /tmp/f77pass1.01296.s.0.s /tmp/f77pass1.01296.i.1.s /tmp/f77pass1.01296.d.2.s
+rm /tmp/f77pass1.01296.s.0.s
+rm /tmp/f77pass1.01296.i.1.s
+rm /tmp/f77pass1.01296.d.2.s
+f77 -v -Nx300 -sun4 -c  rlmax.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" rlmax.f /tmp/f77pass1.01300.s.0.s /tmp/f77pass1.01300.i.1.s /tmp/f77pass1.01300.d.2.s
+rlmax.f:
+	rlmax:
+/usr/lang/SC0.0/as -o rlmax.o -Q -cg87 /tmp/f77pass1.01300.s.0.s /tmp/f77pass1.01300.i.1.s /tmp/f77pass1.01300.d.2.s
+rm /tmp/f77pass1.01300.s.0.s
+rm /tmp/f77pass1.01300.i.1.s
+rm /tmp/f77pass1.01300.d.2.s
+f77 -v -Nx300 -sun4 -c  fldckf.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" fldckf.f /tmp/f77pass1.01304.s.0.s /tmp/f77pass1.01304.i.1.s /tmp/f77pass1.01304.d.2.s
+fldckf.f:
+	fldckf:
+/usr/lang/SC0.0/as -o fldckf.o -Q -cg87 /tmp/f77pass1.01304.s.0.s /tmp/f77pass1.01304.i.1.s /tmp/f77pass1.01304.d.2.s
+rm /tmp/f77pass1.01304.s.0.s
+rm /tmp/f77pass1.01304.i.1.s
+rm /tmp/f77pass1.01304.d.2.s
+f77 -v -Nx300 -o reform reform.o nextrf.f refrd.o rlmax.o fldckf.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o 
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" nextrf.f /tmp/f77pass1.01308.s.0.s /tmp/f77pass1.01308.i.1.s /tmp/f77pass1.01308.d.2.s
+nextrf.f:
+	nextrf:
+/usr/lang/SC0.0/as -o nextrf.o -Q -cg87 /tmp/f77pass1.01308.s.0.s /tmp/f77pass1.01308.i.1.s /tmp/f77pass1.01308.d.2.s
+rm /tmp/f77pass1.01308.s.0.s
+rm /tmp/f77pass1.01308.i.1.s
+rm /tmp/f77pass1.01308.d.2.s
+/bin/ld -dc -dp -e start -u _MAIN_ -X -o reform /usr/lang/SC0.0/crt0.o /usr/lang/SC0.0/cg87/_crt1.o -L/usr/lang/SC0.0/cg87 -L/usr/lang/SC0.0 reform.o nextrf.o refrd.o rlmax.o fldckf.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o -lF77 -lm -lc
+rm nextrf.o
+size reform
+text	data	bss	dec	hex
+131072	16384	2488	149944	249b8
+f77 -v -Nx300 -sun4 -c  remake.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" remake.f /tmp/f77pass1.01314.s.0.s /tmp/f77pass1.01314.i.1.s /tmp/f77pass1.01314.d.2.s
+remake.f:
+ MAIN remake:
+/usr/lang/SC0.0/as -o remake.o -Q -cg87 /tmp/f77pass1.01314.s.0.s /tmp/f77pass1.01314.i.1.s /tmp/f77pass1.01314.d.2.s
+rm /tmp/f77pass1.01314.s.0.s
+rm /tmp/f77pass1.01314.i.1.s
+rm /tmp/f77pass1.01314.d.2.s
+f77 -v -Nx300 -o remake remake.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o 
+/bin/ld -dc -dp -e start -u _MAIN_ -X -o remake /usr/lang/SC0.0/crt0.o /usr/lang/SC0.0/cg87/_crt1.o -L/usr/lang/SC0.0/cg87 -L/usr/lang/SC0.0 remake.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o -lF77 -lm -lc
+size remake
+text	data	bss	dec	hex
+122880	16384	0	139264	22000
+f77 -v -Nx300 -sun4 -c  reseq.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" reseq.f /tmp/f77pass1.01322.s.0.s /tmp/f77pass1.01322.i.1.s /tmp/f77pass1.01322.d.2.s
+reseq.f:
+ MAIN reseq:
+/usr/lang/SC0.0/as -o reseq.o -Q -cg87 /tmp/f77pass1.01322.s.0.s /tmp/f77pass1.01322.i.1.s /tmp/f77pass1.01322.d.2.s
+rm /tmp/f77pass1.01322.s.0.s
+rm /tmp/f77pass1.01322.i.1.s
+rm /tmp/f77pass1.01322.d.2.s
+f77 -v -Nx300 -o reseq reseq.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o 
+/bin/ld -dc -dp -e start -u _MAIN_ -X -o reseq /usr/lang/SC0.0/crt0.o /usr/lang/SC0.0/cg87/_crt1.o -L/usr/lang/SC0.0/cg87 -L/usr/lang/SC0.0 reseq.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o -lF77 -lm -lc
+size reseq
+text	data	bss	dec	hex
+122880	16384	0	139264	22000
+f77 -v -Nx300 -sun4 -c  select.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" select.f /tmp/f77pass1.01330.s.0.s /tmp/f77pass1.01330.i.1.s /tmp/f77pass1.01330.d.2.s
+select.f:
+ MAIN select:
+/usr/lang/SC0.0/as -o select.o -Q -cg87 /tmp/f77pass1.01330.s.0.s /tmp/f77pass1.01330.i.1.s /tmp/f77pass1.01330.d.2.s
+rm /tmp/f77pass1.01330.s.0.s
+rm /tmp/f77pass1.01330.i.1.s
+rm /tmp/f77pass1.01330.d.2.s
+f77 -v -Nx300 -sun4 -c  selrd.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" selrd.f /tmp/f77pass1.01334.s.0.s /tmp/f77pass1.01334.i.1.s /tmp/f77pass1.01334.d.2.s
+selrd.f:
+	selrd:
+/usr/lang/SC0.0/as -o selrd.o -Q -cg87 /tmp/f77pass1.01334.s.0.s /tmp/f77pass1.01334.i.1.s /tmp/f77pass1.01334.d.2.s
+rm /tmp/f77pass1.01334.s.0.s
+rm /tmp/f77pass1.01334.i.1.s
+rm /tmp/f77pass1.01334.d.2.s
+f77 -v -Nx300 -sun4 -c  nextsf.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" nextsf.f /tmp/f77pass1.01338.s.0.s /tmp/f77pass1.01338.i.1.s /tmp/f77pass1.01338.d.2.s
+nextsf.f:
+	nextsf:
+/usr/lang/SC0.0/as -o nextsf.o -Q -cg87 /tmp/f77pass1.01338.s.0.s /tmp/f77pass1.01338.i.1.s /tmp/f77pass1.01338.d.2.s
+rm /tmp/f77pass1.01338.s.0.s
+rm /tmp/f77pass1.01338.i.1.s
+rm /tmp/f77pass1.01338.d.2.s
+f77 -v -Nx300 -sun4 -c  selcomp.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" selcomp.f /tmp/f77pass1.01342.s.0.s /tmp/f77pass1.01342.i.1.s /tmp/f77pass1.01342.d.2.s
+selcomp.f:
+	selcomp:
+/usr/lang/SC0.0/as -o selcomp.o -Q -cg87 /tmp/f77pass1.01342.s.0.s /tmp/f77pass1.01342.i.1.s /tmp/f77pass1.01342.d.2.s
+rm /tmp/f77pass1.01342.s.0.s
+rm /tmp/f77pass1.01342.i.1.s
+rm /tmp/f77pass1.01342.d.2.s
+f77 -v -Nx300 -o select select.o selrd.o nextsf.o intck.o selcomp.o setlitf.o  chint.o readch.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o 
+/bin/ld -dc -dp -e start -u _MAIN_ -X -o select /usr/lang/SC0.0/crt0.o /usr/lang/SC0.0/cg87/_crt1.o -L/usr/lang/SC0.0/cg87 -L/usr/lang/SC0.0 select.o selrd.o nextsf.o intck.o selcomp.o setlitf.o chint.o readch.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o -lF77 -lm -lc
+size select
+text	data	bss	dec	hex
+131072	24576	0	155648	26000
+f77 -v -Nx300 -sun4 -c  sheet.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" sheet.f /tmp/f77pass1.01350.s.0.s /tmp/f77pass1.01350.i.1.s /tmp/f77pass1.01350.d.2.s
+sheet.f:
+ MAIN sheet:
+/usr/lang/SC0.0/as -o sheet.o -Q -cg87 /tmp/f77pass1.01350.s.0.s /tmp/f77pass1.01350.i.1.s /tmp/f77pass1.01350.d.2.s
+rm /tmp/f77pass1.01350.s.0.s
+rm /tmp/f77pass1.01350.i.1.s
+rm /tmp/f77pass1.01350.d.2.s
+f77 -v -Nx300 -sun4 -c  shtrd.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" shtrd.f /tmp/f77pass1.01354.s.0.s /tmp/f77pass1.01354.i.1.s /tmp/f77pass1.01354.d.2.s
+shtrd.f:
+	shtrd:
+/usr/lang/SC0.0/as -o shtrd.o -Q -cg87 /tmp/f77pass1.01354.s.0.s /tmp/f77pass1.01354.i.1.s /tmp/f77pass1.01354.d.2.s
+rm /tmp/f77pass1.01354.s.0.s
+rm /tmp/f77pass1.01354.i.1.s
+rm /tmp/f77pass1.01354.d.2.s
+f77 -v -Nx300 -sun4 -c  nextsh.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" nextsh.f /tmp/f77pass1.01358.s.0.s /tmp/f77pass1.01358.i.1.s /tmp/f77pass1.01358.d.2.s
+nextsh.f:
+	nextsh:
+/usr/lang/SC0.0/as -o nextsh.o -Q -cg87 /tmp/f77pass1.01358.s.0.s /tmp/f77pass1.01358.i.1.s /tmp/f77pass1.01358.d.2.s
+rm /tmp/f77pass1.01358.s.0.s
+rm /tmp/f77pass1.01358.i.1.s
+rm /tmp/f77pass1.01358.d.2.s
+f77 -v -Nx300 -sun4 -c  pgform.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" pgform.f /tmp/f77pass1.01362.s.0.s /tmp/f77pass1.01362.i.1.s /tmp/f77pass1.01362.d.2.s
+pgform.f:
+	pgform:
+/usr/lang/SC0.0/as -o pgform.o -Q -cg87 /tmp/f77pass1.01362.s.0.s /tmp/f77pass1.01362.i.1.s /tmp/f77pass1.01362.d.2.s
+rm /tmp/f77pass1.01362.s.0.s
+rm /tmp/f77pass1.01362.i.1.s
+rm /tmp/f77pass1.01362.d.2.s
+f77 -v -Nx300 -sun4 -c  hdpage.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" hdpage.f /tmp/f77pass1.01366.s.0.s /tmp/f77pass1.01366.i.1.s /tmp/f77pass1.01366.d.2.s
+hdpage.f:
+	hdpage:
+/usr/lang/SC0.0/as -o hdpage.o -Q -cg87 /tmp/f77pass1.01366.s.0.s /tmp/f77pass1.01366.i.1.s /tmp/f77pass1.01366.d.2.s
+rm /tmp/f77pass1.01366.s.0.s
+rm /tmp/f77pass1.01366.i.1.s
+rm /tmp/f77pass1.01366.d.2.s
+f77 -v -Nx300 -sun4 -c  hdcol.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" hdcol.f /tmp/f77pass1.01370.s.0.s /tmp/f77pass1.01370.i.1.s /tmp/f77pass1.01370.d.2.s
+hdcol.f:
+	hdcol:
+/usr/lang/SC0.0/as -o hdcol.o -Q -cg87 /tmp/f77pass1.01370.s.0.s /tmp/f77pass1.01370.i.1.s /tmp/f77pass1.01370.d.2.s
+rm /tmp/f77pass1.01370.s.0.s
+rm /tmp/f77pass1.01370.i.1.s
+rm /tmp/f77pass1.01370.d.2.s
+f77 -v -Nx300 -sun4 -c  detlit.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" detlit.f /tmp/f77pass1.01374.s.0.s /tmp/f77pass1.01374.i.1.s /tmp/f77pass1.01374.d.2.s
+detlit.f:
+	detlit:
+/usr/lang/SC0.0/as -o detlit.o -Q -cg87 /tmp/f77pass1.01374.s.0.s /tmp/f77pass1.01374.i.1.s /tmp/f77pass1.01374.d.2.s
+rm /tmp/f77pass1.01374.s.0.s
+rm /tmp/f77pass1.01374.i.1.s
+rm /tmp/f77pass1.01374.d.2.s
+f77 -v -Nx300 -sun4 -c  tset.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" tset.f /tmp/f77pass1.01378.s.0.s /tmp/f77pass1.01378.i.1.s /tmp/f77pass1.01378.d.2.s
+tset.f:
+	tset:
+/usr/lang/SC0.0/as -o tset.o -Q -cg87 /tmp/f77pass1.01378.s.0.s /tmp/f77pass1.01378.i.1.s /tmp/f77pass1.01378.d.2.s
+rm /tmp/f77pass1.01378.s.0.s
+rm /tmp/f77pass1.01378.i.1.s
+rm /tmp/f77pass1.01378.d.2.s
+f77 -v -Nx300 -sun4 -c  ptrig.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" ptrig.f /tmp/f77pass1.01382.s.0.s /tmp/f77pass1.01382.i.1.s /tmp/f77pass1.01382.d.2.s
+ptrig.f:
+	ptrig:
+/usr/lang/SC0.0/as -o ptrig.o -Q -cg87 /tmp/f77pass1.01382.s.0.s /tmp/f77pass1.01382.i.1.s /tmp/f77pass1.01382.d.2.s
+rm /tmp/f77pass1.01382.s.0.s
+rm /tmp/f77pass1.01382.i.1.s
+rm /tmp/f77pass1.01382.d.2.s
+f77 -v -Nx300 -sun4 -c  ctrig.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" ctrig.f /tmp/f77pass1.01386.s.0.s /tmp/f77pass1.01386.i.1.s /tmp/f77pass1.01386.d.2.s
+ctrig.f:
+	ctrig:
+/usr/lang/SC0.0/as -o ctrig.o -Q -cg87 /tmp/f77pass1.01386.s.0.s /tmp/f77pass1.01386.i.1.s /tmp/f77pass1.01386.d.2.s
+rm /tmp/f77pass1.01386.s.0.s
+rm /tmp/f77pass1.01386.i.1.s
+rm /tmp/f77pass1.01386.d.2.s
+f77 -v -Nx300 -sun4 -c  nopage.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" nopage.f /tmp/f77pass1.01390.s.0.s /tmp/f77pass1.01390.i.1.s /tmp/f77pass1.01390.d.2.s
+nopage.f:
+	nopage:
+/usr/lang/SC0.0/as -o nopage.o -Q -cg87 /tmp/f77pass1.01390.s.0.s /tmp/f77pass1.01390.i.1.s /tmp/f77pass1.01390.d.2.s
+rm /tmp/f77pass1.01390.s.0.s
+rm /tmp/f77pass1.01390.i.1.s
+rm /tmp/f77pass1.01390.d.2.s
+f77 -v -Nx300 -sun4 -c  thead.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" thead.f /tmp/f77pass1.01394.s.0.s /tmp/f77pass1.01394.i.1.s /tmp/f77pass1.01394.d.2.s
+thead.f:
+	thead:
+/usr/lang/SC0.0/as -o thead.o -Q -cg87 /tmp/f77pass1.01394.s.0.s /tmp/f77pass1.01394.i.1.s /tmp/f77pass1.01394.d.2.s
+rm /tmp/f77pass1.01394.s.0.s
+rm /tmp/f77pass1.01394.i.1.s
+rm /tmp/f77pass1.01394.d.2.s
+f77 -v -Nx300 -o sheet sheet.o shtrd.o nextsh.o pgform.o hdpage.o hdcol.o detlit.o tset.o  ptrig.o ctrig.o nopage.o thead.o  argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o 
+/bin/ld -dc -dp -e start -u _MAIN_ -X -o sheet /usr/lang/SC0.0/crt0.o /usr/lang/SC0.0/cg87/_crt1.o -L/usr/lang/SC0.0/cg87 -L/usr/lang/SC0.0 sheet.o shtrd.o nextsh.o pgform.o hdpage.o hdcol.o detlit.o tset.o ptrig.o ctrig.o nopage.o thead.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o -lF77 -lm -lc
+size sheet
+text	data	bss	dec	hex
+147456	868352	1880	1017688	f8758
+f77 -v -Nx300 -sun4 -c  undo.f
+/usr/lang/SC0.0/f77pass1 -Nx300 "-P -cg87" undo.f /tmp/f77pass1.01402.s.0.s /tmp/f77pass1.01402.i.1.s /tmp/f77pass1.01402.d.2.s
+undo.f:
+ MAIN undo:
+/usr/lang/SC0.0/as -o undo.o -Q -cg87 /tmp/f77pass1.01402.s.0.s /tmp/f77pass1.01402.i.1.s /tmp/f77pass1.01402.d.2.s
+rm /tmp/f77pass1.01402.s.0.s
+rm /tmp/f77pass1.01402.i.1.s
+rm /tmp/f77pass1.01402.d.2.s
+f77 -v -Nx300 -o undo undo.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o 
+/bin/ld -dc -dp -e start -u _MAIN_ -X -o undo /usr/lang/SC0.0/crt0.o /usr/lang/SC0.0/cg87/_crt1.o -L/usr/lang/SC0.0/cg87 -L/usr/lang/SC0.0 undo.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o -lF77 -lm -lc
+size undo
+text	data	bss	dec	hex
+122880	16384	0	139264	22000
+84.6u 68.2s 6:11 41% 0+668k 396+5092io 417pf+0w

@@ -1,0 +1,191 @@
+MAINFILES = calc.f cardim.f ckcalc.f count.f create.f dupchk.f \
+	editr.f join9.f listnf.f listns.f marry.f match.f\
+	nuform.f reclen.f recode.f reform.f remake.f reseq.f\
+	select.f sheet.f undo.f 
+SUBFILES = argopn.f errr.f eofr.f eofw.f jobend.f blkdta.f recwr.f exceed.f \
+	intck.f chint.f readch.f reof.f weof.f nextrf.f \
+	calcrd.f nextdp.f nextc.f intch.f recout.f recoutc.f dpchar.f rltst.f \
+	cntrd.f hdset.f chdp.f dpform.f flist.f blankc.f blanks.f sdest.f \
+	seqerr.f nextct.f rlform.f cnthd.f\
+	dujoin9.f comfld.f \
+	linest.f edrd.f setlen.f recadd.f inted.f nexted.f\
+	cntse1.f lincn1.f\
+	cntset.f lincnt.f\
+	matrd.f ckseq.f\
+	rdrec.f\
+	recrd.f nextrs.f selcomr.f setlitf.f maxrl.f recif.f fldckc.f\
+	refrd.f rlmax.f fldckf.f\
+	selrd.f nextsf.f selcomp.f \
+	shtrd.f nextsh.f pgform.f hdpage.f hdcol.f detlit.f tset.f\
+	ptrig.f ctrig.f nopage.f thead.f
+
+SUB1OBJS = argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o
+SUB2OBJS = intck.o chint.o readch.o 
+SUB3OBJS = reof.o weof.o nextrf.o
+CALCOBJS = calc.o calcrd.o nextdp.o nextc.o intch.o recout.o recoutc.o\
+	dpchar.o rltst.o $(SUB1OBJS) $(SUB2OBJS) $(SUB3OBJS)
+CKCALCOBJS = ckcalc.o
+CARDIMOBJS = cardim.o $(SUB1OBJS)
+COUNTOBJS = count.o cntrd.o hdset.o chdp.o dpform.o flist.o blankc.o\
+	blanks.o sdest.o\
+	seqerr.o nextct.o rlform.o cnthd.o $(SUB1OBJS) $(SUB2OBJS)\
+	$(SUB3OBJS)
+CREATEOBJS = create.o $(SUB1OBJS)
+DUPCHKOBJS = dupchk.o duprd.o comfld.o nextrf.o $(SUB1OBJS) $(SUB2OBJS)
+EDITROBJS = editr.o linest.o edrd.o setlen.o recadd.o inted.o nexted.o \
+	    $(SUB1OBJS) $(SUB2OBJS)
+JOIN9OBJS = join9.o readch.o setblk.o \
+	    $(SUB1OBJS)
+LISTNFOBJS = listnf.o cntset.o lincnt.o $(SUB1OBJS) $(SUB2OBJS)\
+	     rdrec.o
+LISTNSOBJS = listns.o cntse1.o lincn1.o $(SUB1OBJS) $(SUB2OBJS)
+MARRYOBJS = marry.o readch.o $(SUB1OBJS)
+MATCHOBJS = match.o matrd.o comfld.o nextrf.o ckseq.o $(SUB1OBJS) $(SUB2OBJS)
+NUFORMOBJS = nuform.o recrd1.o recwr1.o  $(SUB1OBJS)
+RECLENOBJS = reclen.o $(SUB1OBJS)
+RECODEOBJS = recode.o recrd.o nextrs.o selcomr.o setlitf.o \
+	     maxrl.o recif.o fldckc.o $(SUB1OBJS) $(SUB2OBJS)\
+	     $(SUB3OBJS)
+REFORMOBJS = reform.o nextrf.f refrd.o rlmax.o fldckf.o $(SUB1OBJS) $(SUB2OBJS)
+REMAKEOBJS = remake.o $(SUB1OBJS)
+RESEQOBJS =  reseq.o $(SUB1OBJS) $(SUB2OBJS)
+SELECTOBJS = select.o selrd.o nextsf.o intck.o selcomp.o setlitf.o \
+	     chint.o readch.o $(SUB1OBJS)
+SHEETOBJS = sheet.o shtrd.o nextsh.o pgform.o hdpage.o hdcol.o detlit.o tset.o \
+	    ptrig.o ctrig.o nopage.o thead.o \
+	    $(SUB1OBJS) $(SUB2OBJS)
+UNDOOBJS = undo.o $(SUB1OBJS) $(SUB2OBJS)
+
+LIBS = 
+FFLAGS = -f68881 -v -Nx300
+HOMEDIR = $$HOME
+BINDIR  = $(HOMEDIR)/bin
+SRCDIR  = $(HOMEDIR)/src
+MANDIR =  $(HOMEDIR)/man
+MANSUF = l
+
+all:	calc cardim ckcalc count create dupchk editr join9 listnf listns\
+	marry match nuform reclen recode reform remake reseq select\
+	sheet undo 
+calc:	$(CALCOBJS)
+	f77 $(FFLAGS) -c  $(CALCOBJS) $(LIBS)
+	ar rcv calc.a $(CALCOBJS)
+	ranlib calc.a
+
+cardim:	$(CARDIMOBJS)
+	f77 $(FFLAGS) -o cardim $(CARDIMOBJS) $(LIBS)
+	size cardim
+
+ckcalc:	$(CKCALCOBJS)
+	f77 $(FLAGS) -o ckcalc $(CKCALCOBJS) $(LIBS)
+	size ckcalc
+
+count:	$(COUNTOBJS)
+	f77 $(FFLAGS) -o count $(COUNTOBJS) $(LIBS)
+	size count
+
+create:	$(CREATEOBJS)
+	f77 $(FFLAGS) -o create $(CREATEOBJS) $(LIBS)
+	size create
+
+dupchk:	$(DUPCHKOBJS)
+	f77 $(FFLAGS) -o dupchk $(DUPCHKOBJS) $(LIBS)
+	size dupchk
+
+editr:	$(EDITROBJS)
+	f77 $(FFLAGS) -o editr $(EDITROBJS) $(LIBS)
+	size editr
+
+join9:	$(JOIN9OBJS)
+	f77 $(FFLAGS) -o join9 $(JOIN9OBJS) $(LIBS)
+	size join9
+
+listnf:	$(LISTNFOBJS)
+	f77 $(FFLAGS) -o listnf $(LISTNFOBJS) $(LIBS)
+	size listnf
+
+listns:	$(LISTNSOBJS)
+	f77 $(FFLAGS) -o listns $(LISTNSOBJS) $(LIBS)
+	size listns
+
+marry:	$(MARRYOBJS)
+	f77 $(FFLAGS) -o marry $(MARRYOBJS) $(LIBS)
+	size marry
+
+match:	$(MATCHOBJS)
+	f77 $(FFLAGS) -o match $(MATCHOBJS) $(LIBS)
+	size match
+
+nuform:	$(NUFORMOBJS)
+	f77 $(FFLAGS) -o nuform $(NUFORMOBJS) $(LIBS)
+	size nuform
+
+reclen:	$(RECLENOBJS)
+	f77 $(FFLAGS) -o reclen $(RECLENOBJS) $(LIBS)
+	size reclen
+
+recode:	$(RECODEOBJS)
+	f77 $(FFLAGS) -o recode $(RECODEOBJS) $(LIBS)
+	size recode
+
+reform:	$(REFORMOBJS)
+	f77 $(FFLAGS) -o reform $(REFORMOBJS) $(LIBS)
+	size reform
+
+remake:	$(REMAKEOBJS)
+	f77 $(FFLAGS) -o remake $(REMAKEOBJS) $(LIBS)
+	size remake
+
+reseq:	$(RESEQOBJS)
+	f77 $(FFLAGS) -o reseq $(RESEQOBJS) $(LIBS)
+	size reseq
+
+select:	$(SELECTOBJS)
+	f77 $(FFLAGS) -o select $(SELECTOBJS) $(LIBS)
+	size select
+
+sheet:	$(SHEETOBJS)
+	f77 $(FFLAGS) -o sheet $(SHEETOBJS) $(LIBS)
+	size sheet
+
+undo:	$(UNDOOBJS)
+	f77 $(FFLAGS) -o undo $(UNDOOBJS) $(LIBS)
+	size undo
+
+clean:
+	rm *.o
+	rm cardim ckcalc count create dupchk editr join9 listnf listns
+	rm marry match nuform reclen recode reform remake reseq select
+	rm sheet undo 
+	rm calcobj
+
+install: 
+		mv calc.a $(BINDIR)
+		install -s cardim $(BINDIR)
+		install -s ckcalc $(BINDIR)
+		install -s count $(BINDIR)
+		install -s create $(BINDIR)
+		install -s dupchk $(BINDIR)
+		install -s editr $(BINDIR)
+		install -s join9 $(BINDIR)
+		install -s listnf $(BINDIR)
+		install -s listns $(BINDIR)
+		install -s marry $(BINDIR)
+		install -s match $(BINDIR)
+		install -s nuform $(BINDIR)
+		install -s reclen $(BINDIR)
+		install -s recode $(BINDIR)
+		install -s reform $(BINDIR)
+		install -s remake $(BINDIR)
+		install -s reseq $(BINDIR)
+		install -s select $(BINDIR)
+		install -s sheet $(BINDIR)
+		install -s undo $(BINDIR)
+
+manual:
+	cp ./doc/*.l $(MANDIR)
+
+print:	$(MAINFILES)
+	cat $? | pr | lpr
+	touch print
+

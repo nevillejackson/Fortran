@@ -1,0 +1,156 @@
+f77 -v -c  calc.o calcrd.o nextdp.o nextc.o intch.o recout.o recoutc.o dpchar.o rltst.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o reof.o weof.o nextrf.o 
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+f77: calc.o: linker input file unused since linking not done
+f77: calcrd.o: linker input file unused since linking not done
+f77: nextdp.o: linker input file unused since linking not done
+f77: nextc.o: linker input file unused since linking not done
+f77: intch.o: linker input file unused since linking not done
+f77: recout.o: linker input file unused since linking not done
+f77: recoutc.o: linker input file unused since linking not done
+f77: dpchar.o: linker input file unused since linking not done
+f77: rltst.o: linker input file unused since linking not done
+f77: argopn.o: linker input file unused since linking not done
+f77: errr.o: linker input file unused since linking not done
+f77: eofr.o: linker input file unused since linking not done
+f77: eofw.o: linker input file unused since linking not done
+f77: jobend.o: linker input file unused since linking not done
+f77: blkdta.o: linker input file unused since linking not done
+f77: recwr.o: linker input file unused since linking not done
+f77: exceed.o: linker input file unused since linking not done
+f77: intck.o: linker input file unused since linking not done
+f77: chint.o: linker input file unused since linking not done
+f77: readch.o: linker input file unused since linking not done
+f77: reof.o: linker input file unused since linking not done
+f77: weof.o: linker input file unused since linking not done
+f77: nextrf.o: linker input file unused since linking not done
+ar rcv calc.a calc.o calcrd.o nextdp.o nextc.o intch.o recout.o recoutc.o dpchar.o rltst.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o reof.o weof.o nextrf.o
+r - calc.o
+r - calcrd.o
+r - nextdp.o
+r - nextc.o
+r - intch.o
+r - recout.o
+r - recoutc.o
+r - dpchar.o
+r - rltst.o
+r - argopn.o
+r - errr.o
+r - eofr.o
+r - eofw.o
+r - jobend.o
+r - blkdta.o
+r - recwr.o
+r - exceed.o
+r - intck.o
+r - chint.o
+r - readch.o
+r - reof.o
+r - weof.o
+r - nextrf.o
+ranlib calc.a
+f77   -v -c sheet.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 sheet.f -quiet -dumpbase sheet.f -version -fversion -o /tmp/ccMAMjjv.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o sheet.o /tmp/ccMAMjjv.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c shtrd.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 shtrd.f -quiet -dumpbase shtrd.f -version -fversion -o /tmp/cco32u3i.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o shtrd.o /tmp/cco32u3i.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c nextsh.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 nextsh.f -quiet -dumpbase nextsh.f -version -fversion -o /tmp/ccQQv9gF.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o nextsh.o /tmp/ccQQv9gF.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c pgform.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 pgform.f -quiet -dumpbase pgform.f -version -fversion -o /tmp/ccdB38Ji.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o pgform.o /tmp/ccdB38Ji.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c hdpage.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 hdpage.f -quiet -dumpbase hdpage.f -version -fversion -o /tmp/ccONtpnV.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o hdpage.o /tmp/ccONtpnV.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c hdcol.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 hdcol.f -quiet -dumpbase hdcol.f -version -fversion -o /tmp/ccli7Zzw.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o hdcol.o /tmp/ccli7Zzw.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c detlit.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 detlit.f -quiet -dumpbase detlit.f -version -fversion -o /tmp/cct5qEms.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o detlit.o /tmp/cct5qEms.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c tset.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 tset.f -quiet -dumpbase tset.f -version -fversion -o /tmp/cc7kzAt3.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o tset.o /tmp/cc7kzAt3.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c ptrig.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 ptrig.f -quiet -dumpbase ptrig.f -version -fversion -o /tmp/cc3Jveq8.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ptrig.f: In subroutine `ptrig':
+ptrig.f:5: 
+         dimension com(100),icom(100,10),para(100,3),lenp(100,3)
+                            1
+ptrig.f:10: (continued):
+         common /cint/ knt,icom(100,10),ncom(100),lenp(100,3)
+                           2
+Invalid declaration of or reference to symbol `icom' at (2) [initially seen at (1)]
+ptrig.f:6: 
+         dimension ncom(100)
+                   1
+ptrig.f:10: (continued):
+         common /cint/ knt,icom(100,10),ncom(100),lenp(100,3)
+                                        2
+Invalid declaration of or reference to symbol `ncom' at (2) [initially seen at (1)]
+ptrig.f:5: 
+         dimension com(100),icom(100,10),para(100,3),lenp(100,3)
+                                                     1
+ptrig.f:10: (continued):
+         common /cint/ knt,icom(100,10),ncom(100),lenp(100,3)
+                                                  2
+Invalid declaration of or reference to symbol `lenp' at (2) [initially seen at (1)]
+*** Error code 1
+
+Stop in /usr2/home/nevj/src/Charm.

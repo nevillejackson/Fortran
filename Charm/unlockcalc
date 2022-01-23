@@ -1,0 +1,2 @@
+"lock" file to prevent 2 calc jobs running at the same time with the second
+one overwriting the first ... leading to errors

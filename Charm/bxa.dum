@@ -1,0 +1,9 @@
+      subroutine bxa (afld,bfld,cfld,dfld,ta,tb,achar,bchar)
+      dimension afld(100),bfld(100),ta(100),tb(100),cfld(100)
+      dimension dfld(100),achar(100),bchar(100)
+      character cfld*10,dfld*10,achar*10,bchar*10
+      double precision afld,bfld
+      logical ta,tb
+c-----dummy bxa deck
+      return
+      end

@@ -1,0 +1,13 @@
+man charm/count | lpr
+man charm/create |lpr
+man charm/dupchk |lpr
+man charm/editr |lpr
+man charm/listnf |lpr
+man charm/listns |lpr
+man charm/match |lpr
+man charm/recode |lpr
+man charm/reform |lpr
+man charm/reseq |lpr
+man charm/select |lpr
+man charm/sheet |lpr
+man charm/undo |lpr

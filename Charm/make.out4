@@ -1,0 +1,108 @@
+f77 -v -c  calc.o calcrd.o nextdp.o nextc.o intch.o recout.o recoutc.o dpchar.o rltst.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o reof.o weof.o nextrf.o 
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+f77: calc.o: linker input file unused since linking not done
+f77: calcrd.o: linker input file unused since linking not done
+f77: nextdp.o: linker input file unused since linking not done
+f77: nextc.o: linker input file unused since linking not done
+f77: intch.o: linker input file unused since linking not done
+f77: recout.o: linker input file unused since linking not done
+f77: recoutc.o: linker input file unused since linking not done
+f77: dpchar.o: linker input file unused since linking not done
+f77: rltst.o: linker input file unused since linking not done
+f77: argopn.o: linker input file unused since linking not done
+f77: errr.o: linker input file unused since linking not done
+f77: eofr.o: linker input file unused since linking not done
+f77: eofw.o: linker input file unused since linking not done
+f77: jobend.o: linker input file unused since linking not done
+f77: blkdta.o: linker input file unused since linking not done
+f77: recwr.o: linker input file unused since linking not done
+f77: exceed.o: linker input file unused since linking not done
+f77: intck.o: linker input file unused since linking not done
+f77: chint.o: linker input file unused since linking not done
+f77: readch.o: linker input file unused since linking not done
+f77: reof.o: linker input file unused since linking not done
+f77: weof.o: linker input file unused since linking not done
+f77: nextrf.o: linker input file unused since linking not done
+ar rcv calc.a calc.o calcrd.o nextdp.o nextc.o intch.o recout.o recoutc.o dpchar.o rltst.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o reof.o weof.o nextrf.o
+r - calc.o
+r - calcrd.o
+r - nextdp.o
+r - nextc.o
+r - intch.o
+r - recout.o
+r - recoutc.o
+r - dpchar.o
+r - rltst.o
+r - argopn.o
+r - errr.o
+r - eofr.o
+r - eofw.o
+r - jobend.o
+r - blkdta.o
+r - recwr.o
+r - exceed.o
+r - intck.o
+r - chint.o
+r - readch.o
+r - reof.o
+r - weof.o
+r - nextrf.o
+ranlib calc.a
+f77   -v -c ctrig.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 ctrig.f -quiet -dumpbase ctrig.f -version -fversion -o /tmp/ccv2kTNR.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o ctrig.o /tmp/ccv2kTNR.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c nopage.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 nopage.f -quiet -dumpbase nopage.f -version -fversion -o /tmp/ccs55vKp.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o nopage.o /tmp/ccs55vKp.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77   -v -c thead.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 thead.f -quiet -dumpbase thead.f -version -fversion -o /tmp/cchpxmRz.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o thead.o /tmp/cchpxmRz.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77 -v -o sheet sheet.o shtrd.o nextsh.o pgform.o hdpage.o hdcol.o detlit.o tset.o  ptrig.o ctrig.o nopage.o thead.o  argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o 
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Driving: f77 -v -o sheet sheet.o shtrd.o nextsh.o pgform.o hdpage.o hdcol.o detlit.o tset.o ptrig.o ctrig.o nopage.o thead.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o -lg2c -lm
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/elf/ld -dynamic-linker /usr/libexec/ld-elf.so.1 -o sheet /usr/lib/crt1.o /usr/lib/crti.o /usr/lib/crtbegin.o -L/usr/lib sheet.o shtrd.o nextsh.o pgform.o hdpage.o hdcol.o detlit.o tset.o ptrig.o ctrig.o nopage.o thead.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o -lg2c -lm -lgcc -lc -lgcc /usr/lib/crtend.o /usr/lib/crtn.o
+/usr/lib/libg2c.so: warning: tempnam() possibly used unsafely; consider using mkstemp()
+size sheet
+   text	   data	    bss	    dec	    hex	filename
+  18365	  50064	 807716	 876145	  d5e71	sheet
+f77   -v -c undo.f
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/f771 undo.f -quiet -dumpbase undo.f -version -fversion -o /tmp/cc8rPTss.s
+GNU F77 version 2.95.3 20010315 (release) [FreeBSD] (i386-unknown-freebsd) compiled by GNU C version 2.95.3 20010315 (release) [FreeBSD].
+GNU Fortran Front End version 0.5.25 20010315 (release)
+ /usr/libexec/elf/as -v -o undo.o /tmp/cc8rPTss.s
+GNU assembler version 2.11.2 20010719 [FreeBSD] (i386-unknown-freebsd4) using BFD version 2.11.2 20010719 [FreeBSD]
+f77 -v -o undo undo.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o 
+g77 version 2.95.3 20010315 (release) [FreeBSD] (from FSF-g77 version 0.5.25 20010315 (release))
+Driving: f77 -v -o undo undo.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o -lg2c -lm
+Using builtin specs.
+gcc version 2.95.3 20010315 (release) [FreeBSD]
+ /usr/libexec/elf/ld -dynamic-linker /usr/libexec/ld-elf.so.1 -o undo /usr/lib/crt1.o /usr/lib/crti.o /usr/lib/crtbegin.o -L/usr/lib undo.o argopn.o errr.o eofr.o eofw.o jobend.o blkdta.o recwr.o exceed.o intck.o chint.o readch.o -lg2c -lm -lgcc -lc -lgcc /usr/lib/crtend.o /usr/lib/crtn.o
+/usr/lib/libg2c.so: warning: tempnam() possibly used unsafely; consider using mkstemp()
+size undo
+   text	   data	    bss	    dec	    hex	filename
+   3660	   2312	     28	   6000	   1770	undo
