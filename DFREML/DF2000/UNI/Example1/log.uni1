@@ -1,0 +1,86 @@
+ TIME AT START =     0
+"DFREML" version  3.1.000          last modified  Jan. 24, 2000  
+
+
+                   $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+                   $                             $
+                   $    PROGRAM " D F U N I "    $
+                   $                             $
+                   $$$$$$$$$$$$$$$$$$$$$$$$$*KM*$$
+
+ Today is   1/ 2/2001    Time is 13: 9
+
+ Running on host : "metz.une.edu.au                         " 
+  
+ GIVE RUN OPTION :
+       -1   ...  PREPARE : Read Info on Model of Analysis 
+       -2   ...  ORDER : Re-order equations               
+        0/1 ...  ESTIMATE : Carry out estimation step(s)  
+        5   ...  SOLVE : Obtain Backsolutions             
+        8  ...  BEST : Pick out best point so far
+LOGICAL UNIT NO.  =  11  DF11#DAT                 
+LOGICAL UNIT NO.  =  22  DF22#DAT                 
+LOGICAL UNIT NO.  =  23  DF23#DAT                 
+LOGICAL UNIT NO.  =  13  DF13#DAT                 
+LOGICAL UNIT NO.  =  51  DF51#DAT                 
+LOGICAL UNIT NO.  =  52  DF52#DAT                 
+LOGICAL UNIT NO.  =  44  DF44#DAT                 
+LOGICAL UNIT NO.  =  59  DF59#DAT                 
+LOGICAL UNIT NO.  =  66  DF66#DAT                 
+
+****************************************
+          DESCRIPTION FOR DATA SET 
+****************************************
+
+ TYPE COMMENTS - max. 6 lines & 80 characters per line
+ terminate with "*" in col. 1 or blank line !
+ NO. OF COMMENT LINES READ =           2
+
+****************************************
+          TRAITS TO BE ANALYSED
+****************************************
+
+ NO. OF TRAITS (=RHS) ?     
+ <RETURN> FOR VALUE =           1
+  GIVE NAME (MAX. 12 CHAR.S) FOR TRAIT 1
+
+****************************************
+          FIXED PART OF THE MODEL
+****************************************
+
+ *Total* no. of covariables to be fitted ?     
+ <RETURN> FOR VALUE =           0
+   
+ NO. OF FIXED EFFECTS TO BE FITTED ?     
+ <RETURN> FOR VALUE =           1
+ NAME (MAX. 12 CHAR.S) FOR FIXED EFFECT NO. 1
+ NO. OF LEVELS FOR  generation    ?
+ <RETURN> FOR VALUE =           2
+
+****************************************
+          RANDOM PART OF THE MODEL
+****************************************
+
+ NO. OF LEVELS OF MAIN RANDOM EFFECT (ANIMALS) ?    
+ <RETURN> FOR VALUE =         306
+  
+ NO. OF ADDITIONAL RANDOM EFFECTS CODES =           0
+  
+        NO. OF MODEL TO BE FITTED =         1
+  
+ "DFMME1" : NO. OF RECORDS PROCESSED    =         282
+            TOTAL NO. OF EQUATIONS      =         309
+ give value for "MAXZHZ" 
+ <RETURN> FOR VALUE =          75
+ SMALLEST VALUE TO BE TREATED DIFFERENT FROM ZERO ?
+        5  ...  0.00001     
+        6  ...  0.000001    
+           ...          
+        N  ...  10**(-N)
+ <RETURN> FOR VALUE =           8
+ OPERATIONAL ZERO FOR THIS RUN SET TO   0.1000E-07
+  
+ "DFLSQ1" : NO. OF FIXED EFFECTS EQUATIONS =           2
+            RANK OF COEFFICIENT MATRIX     =           2
+            ... EXPECTED VALUE             =           2
+ TIME AT END           =     0

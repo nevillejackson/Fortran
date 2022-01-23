@@ -1,0 +1,64 @@
+ TIME AT START =     0
+ Today is   1/ 2/2001    Time is 13:17
+
+ Running on host : "metz.une.edu.au                         " 
+"DFREML" version  3.1.000          last modified  Jan. 24, 2000  
+
+
+                   $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+                   $                             $
+                   $    PROGRAM " D x M u X "    $
+                   $                             $
+                   $$$$$$$$$$$$$$$$$$$$$$$$$*KM*$$
+
+ GIVE RUN OPTION :
+       -1  ...  PREPARE : Read Info on Model of Analysis,
+                check codes & set up files "51" and "52" 
+       -2  ...  ORDER : Attempt to re-order equations 
+                to reduce fill-in 
+        0/1...  ESTIMATE : 0=Read starting values,    
+                           1=Continue                 
+        5  ...  SOLVE : Obtain Backsolutions for Fixed
+                Or Random Effects 
+        8  ...  BEST : Pick out currently best point  
+          & write out results file for it 
+LOGICAL UNIT NO.  =  11  DF11#DAT                 
+LOGICAL UNIT NO.  =  22  DF22#DAT                 
+LOGICAL UNIT NO.  =  23  DF23#DAT                 
+LOGICAL UNIT NO.  =  54  DF54#DAT                 
+LOGICAL UNIT NO.  =  13  DF13#DAT                 
+LOGICAL UNIT NO.  =  51  DF51#DAT                 
+LOGICAL UNIT NO.  =  52  DF52#DAT                 
+LOGICAL UNIT NO.  =  44  DF44#DAT                 
+LOGICAL UNIT NO.  =  66  DF66#DAT                 
+ SMALLEST VALUE TO BE TREATED DIFFERENT FROM ZERO ?
+        5  ...  0.00001     
+        6  ...  0.000001    
+           ...          
+        N  ...  10**(-N)
+ <RETURN> FOR VALUE =           8
+ OPERATIONAL ZERO FOR THIS RUN SET TO   0.1000E-07
+  
+ give value for "MAXSPA" (halfstored)  
+ <RETURN> FOR VALUE =       19250
+ "dvord3" : new no. of rows                  =         762
+ data : no. of connections in lower triangle =        4816
+ ped. : no. of off-diagonal elements added   =        3011
+      : no. of add. conn.s in lower triangle =        2685
+ all  : no. of connections in lower triangle =        7501
+ genmmd         250          81          12
+ end of genmmd         762   nofsub=        4395
+ dxa         763       38500           9           1
+ data : no. of connections in lower triangle =        4816
+ row for rhs         763         672        4816
+ data : no. of connections in lower triangle =        5488
+ ped. : no. of off-diagonal elements added   =        3011
+      : no. of add. conn.s in lower triangle =        2685
+ all  : no. of connections in lower triangle =        8173
+ end of smbfct : maxsub        4514
+                 maxlnz       10859
+ Routine "DVORD3" : cpu time used =    0.0342
+        NO. OF RECORDS PROCESSED    =     568
+        NO. OF ANIMALS IN THE DATA  =     284
+        TOTAL NO. OF EQUATIONS      =     767
+ TIME AT END           =     0

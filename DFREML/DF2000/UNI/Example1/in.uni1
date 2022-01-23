@@ -1,0 +1,13 @@
+-1                                                      run option
+test data, univariate analysis, Meyer (1989), GSE 21 : 317-340
+Model 1 (simple animal model)
+*
+1                                                       no. RHS
+weight                                                  trait name
+0                                                       no. covariables
+1                                                       no. fixed eff.s
+generation                                              name, fix. eff.
+2                                                       no. levels, ...
+306                                                     no. animals
+75                                                      value maxzhz
+8                                                       operational zero

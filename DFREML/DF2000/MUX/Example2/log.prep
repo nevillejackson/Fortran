@@ -1,0 +1,181 @@
+ TIME AT START =     0
+"DFREML" version  3.1.000          last modified  Jan. 24, 2000  
+
+
+                   $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+                   $                             $
+                   $    PROGRAM " D F P R E P "  $
+                   $                             $
+                   $$$$$$$$$$$$$$$$$$$$$$$$$*KM*$$
+
+ Today is   1/ 2/2001    Time is 13:17
+
+ Running on host : "metz.une.edu.au                         " 
+
+****************************************
+          INPUT/OUTPUT FILES
+****************************************
+
+LOGICAL UNIT NO.  =  11  DF11#DAT                 
+LOGICAL UNIT NO.  =  22  DF22#DAT                 
+LOGICAL UNIT NO.  =  23  DF23#DAT                 
+LOGICAL UNIT NO.  =  44  DF44#DAT                 
+LOGICAL UNIT NO.  =  66  DF66#DAT                 
+
+****************************************
+          PEDIGREE FILE : 
+****************************************
+
+ FILE NAME ?  
+  
+ FORMAT OF muexped.d                  :
+     1  ...  UNFORMATTED (BINARY)              
+     2  ...  FORMATTED - LIST DIRECTED INPUT   
+     3  ...            - TO BE SPECIFIED       
+ <RETURN> FOR VALUE =           2
+  
+ HIGHEST ANIMAL IDENTITY ?
+ <RETURN> FOR VALUE =      999999
+  
+            SUMMARY OF DETAILS GIVEN FOR PEDIGREE FILE :
+            --------------------------------------------
+            NAME                          = muexped.d                
+            CONNECTED AS FORTRAN UNIT NO. =         33
+            INPUT MODE                    = LIST DIRECTED
+            HIGHEST ANIMAL ID ALLOWED     =  324567890
+  
+            RECORD LAYOUT 
+               1   INTEGER      ANIMAL ID
+               2   INTEGER      SIRE ID
+               3   INTEGER      DAM ID
+            --------------------------------------------
+  
+ CONTINUE ?
+         1  ...  YES       
+         0  ...  NO        
+ <RETURN> FOR OPTION =            1
+LOGICAL UNIT NO.  =  33  muexped.d                
+
+****************************************
+          DATA FILE :
+****************************************
+
+ RECORD LAYOUT : DATA CODED FOR 
+     1  ...  UNIVARIATE ANALYSIS   ("DFUNI")     
+     2  ...  MULTIVARIATE ANALYSIS ("DxMUX") - same model all traits
+     3  ...  MULTIVARIATE ANALYSIS ("DxMUX") - different models
+     5  ...  COVARIANCE FUNCTION   ("DxMRR") 
+  
+ NAME OF DATA FILE ?
+ FORMAT OF muwex2.d                   :
+     1  ...  UNFORMATTED (BINARY)              
+     2  ...  FORMATTED - LIST DIRECTED INPUT   
+     3  ...            - TO BE SPECIFIED       
+ <RETURN> FOR VALUE =           2
+LOGICAL UNIT NO.  =  34  muwex2.d                 
+  
+ NO. OF TRAITS IN MULTIVARIATE ANALYSIS  ?     
+ <RETURN> FOR VALUE =           2
+ NO. OF RHS PER RECORD FOR TRAIT NO.           1   ??
+ <RETURN> FOR VALUE =           1
+ NO. OF RHS PER RECORD FOR TRAIT NO.           2   ??
+ <RETURN> FOR VALUE =           1
+   
+ * * * TRAIT NO. * * *            1
+  
+ NO. OF COVARIABLES TO BE FITTED ?
+ NO. OF FIXED EFFECTS TO BE FITTED ?
+ NO. OF "ADDITIONAL" (uncorrelated) RANDOM EFFECTS ?
+ Fit A  "SECOND ANIMAL" EFFECT ?
+      0  ...  NO  
+      1  ...  ANIMAL (insert code) 
+      2  ...  SIRE   (insert)         4  ...  SIRE   (recode)
+      3  ...  DAM    (insert)         5  ...  DAM    (recode)
+ <RETURN> FOR VALUE =           0
+   
+ * * * TRAIT NO. * * *            2
+  
+ NO. OF COVARIABLES TO BE FITTED ?
+ <RETURN> FOR VALUE =           0
+ NO. OF FIXED EFFECTS TO BE FITTED ?
+ <RETURN> FOR VALUE =           3
+ NO. OF "ADDITIONAL" (uncorrelated) RANDOM EFFECTS ?
+ <RETURN> FOR VALUE =           1
+ Fit A  "SECOND ANIMAL" EFFECT ?
+      0  ...  NO  
+      1  ...  ANIMAL (insert code) 
+      2  ...  SIRE   (insert)         4  ...  SIRE   (recode)
+      3  ...  DAM    (insert)         5  ...  DAM    (recode)
+ <RETURN> FOR VALUE =           0
+  
+ SPECIAL EFFECTS OPTION
+        0  ...  NONE  
+        3  ...  DO NOT "PRUNE" ALL SINGLE-LINK PARENTS
+        4  ...  FIT SIRE MODEL                       
+ <RETURN> FOR VALUE =           0
+  
+            SUMMARY OF DETAILS GIVEN FOR DATA FILE :
+            ----------------------------------------
+            NAME                          = muwex2.d                 
+            CONNECTED AS FORTRAN UNIT NO. =         34
+            INPUT MODE                    = LIST DIRECTED
+  
+            RECORD LAYOUT 
+               1   INTEGER      TRAIT NO.
+               2   INTEGER      ANIMAL ID
+               3   INTEGER      SIRE ID
+               4   INTEGER      DAM ID
+            FOR TRAIT NO. =         1
+               5   INTEGER      FIXED EFFECT CODE
+               6   INTEGER      FIXED EFFECT CODE
+               7   INTEGER      FIXED EFFECT CODE
+               8   INTEGER      ADD. RANDOM EFFECT CODE
+               9   REAL*8       TRAIT/RHS 
+            FOR TRAIT NO. =         2
+               5   INTEGER      FIXED EFFECT CODE
+               6   INTEGER      FIXED EFFECT CODE
+               7   INTEGER      FIXED EFFECT CODE
+               8   INTEGER      ADD. RANDOM EFFECT CODE
+               9   REAL*8       TRAIT/RHS 
+            ----------------------------------------
+  
+ CONTINUE ?
+         1  ...  YES       
+         0  ...  NO        
+ <RETURN> FOR OPTION =            1
+ MAXIMUM NO. OF ANIMALS ?
+ <RETURN> FOR VALUE =       50000
+ NO. OF PEDIGREES READ                       =             339
+ NO. OF IDENTITIES FOUND                     =             339
+ NO. OF "BASE" ANIMALS                       =               0
+ HIGHEST ID                                  =        31041615
+ NO. OF ANIMALS IN DATA                      =             284
+ NO. OF PEDIGREE LOOPS CARRIED OUT           =             251
+ NO. OF PARENTS "PRUNED"                     =              10
+ NEW NO. OF ANIMALS IN ANALYSIS              =             329
+ Max. no. of non-zero elements in NRM inverse ?
+ <RETURN> FOR VALUE =       33900
+ begin backward loop ..
+ end backward loop         544
+ NO. OF "EFFECTIVE" ANIMALS IN THE ANALYSIS  =             329
+ NO. OF NON-ZERO ELEMENTS OF NRM INVERSE     =             989
+ LOG DETERMINANT OF NRM                      =      -210.71674
+ NO. OF INBRED ANIMALS                       =               0
+ TOTAL NO. OF ANIMALS                        =             339
+ ... WITH AVERAGE INBREEDING COEFFICIENT     =         1.00000
+ DATA FILE : NO. OF RECORDS PROCESSED=            568
+ no. of animals in data w. unkn./pruned sire =           0
+ no. of animals in data w. unkn./pruned dam  =           0
+ no. of rec.s w. missing/pruned sire ID      =           0
+ no. of rec.s w. missing/pruned dam ID       =           0
+ no. of sires  ... in total                  =          50
+               ... with progeny in the data  =          40
+ no. of dams   ... in total                  =          52
+               ... with progeny in the data  =          42
+ DATA FOR "DXMUX" 
+ TRAIT NO.           1    NO. OF RECORDS =         284
+   1   1    24.0687        3.30236       13.72    14.600        34.500    
+ TRAIT NO.           2    NO. OF RECORDS =         284
+   2   1    64.2556        5.93258        9.23    46.900        82.100    
+  
+ TIME AT END           =     0

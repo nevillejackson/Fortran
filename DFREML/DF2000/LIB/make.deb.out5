@@ -1,0 +1,111 @@
+gfortran --verbose -static  -c modules_all.f90
+Using built-in specs.
+Target: i486-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 4.3.2-1.1' --with-bugurl=file:///usr/share/doc/gcc-4.3/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.3 --program-suffix=-4.3 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-targets=all --enable-cld --enable-checking=release --build=i486-linux-gnu --host=i486-linux-gnu --target=i486-linux-gnu
+Thread model: posix
+gcc version 4.3.2 (Debian 4.3.2-1.1) 
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-mtune=generic'
+ /usr/lib/gcc/i486-linux-gnu/4.3.2/f951 modules_all.f90 -quiet -dumpbase modules_all.f90 -mtune=generic -auxbase modules_all -version -fintrinsic-modules-path /usr/lib/gcc/i486-linux-gnu/4.3.2/finclude -o /tmp/ccd83edf.s
+GNU F95 (Debian 4.3.2-1.1) version 4.3.2 (i486-linux-gnu)
+	compiled by GNU C version 4.3.2, GMP version 4.2.2, MPFR version 2.3.2.
+warning: MPFR header version 2.3.2 differs from library version 2.3.1.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-mtune=generic'
+ as -V -Qy -o modules_all.o /tmp/ccd83edf.s
+GNU assembler version 2.18.0 (i486-linux-gnu) using BFD version (GNU Binutils for Debian) 2.18.0.20080103
+COMPILER_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-mtune=generic'
+gfortran --verbose -static  -c  -c -o times.o times.f
+Using built-in specs.
+Target: i486-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 4.3.2-1.1' --with-bugurl=file:///usr/share/doc/gcc-4.3/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.3 --program-suffix=-4.3 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-targets=all --enable-cld --enable-checking=release --build=i486-linux-gnu --host=i486-linux-gnu --target=i486-linux-gnu
+Thread model: posix
+gcc version 4.3.2 (Debian 4.3.2-1.1) 
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'times.o' '-mtune=generic'
+ /usr/lib/gcc/i486-linux-gnu/4.3.2/f951 times.f -ffixed-form -quiet -dumpbase times.f -mtune=generic -auxbase-strip times.o -version -fintrinsic-modules-path /usr/lib/gcc/i486-linux-gnu/4.3.2/finclude -o /tmp/cc2C3bGW.s
+GNU F95 (Debian 4.3.2-1.1) version 4.3.2 (i486-linux-gnu)
+	compiled by GNU C version 4.3.2, GMP version 4.2.2, MPFR version 2.3.2.
+warning: MPFR header version 2.3.2 differs from library version 2.3.1.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'times.o' '-mtune=generic'
+ as -V -Qy -o times.o /tmp/cc2C3bGW.s
+GNU assembler version 2.18.0 (i486-linux-gnu) using BFD version (GNU Binutils for Debian) 2.18.0.20080103
+COMPILER_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'times.o' '-mtune=generic'
+gfortran --verbose -static  -c canon.o chkdig.o chklev.o correl.o dfanim.o dfconv.o dferrs.o dfkzer.o dfparm.o dfpopt.o dfstep.o dfwarn.o dfwdis.o dkmwhf.o eigen.o fconct.o genmmd.o gsfct.o gsslv.o ihmssf.o invgj.o ipsmin.o kount.o mulaba.o option.o opzero.o pedsum.o rvalue.o smbfct.o times.o triord.o vratio.o 
+Using built-in specs.
+Target: i486-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 4.3.2-1.1' --with-bugurl=file:///usr/share/doc/gcc-4.3/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.3 --program-suffix=-4.3 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-targets=all --enable-cld --enable-checking=release --build=i486-linux-gnu --host=i486-linux-gnu --target=i486-linux-gnu
+Thread model: posix
+gcc version 4.3.2 (Debian 4.3.2-1.1) 
+COMPILER_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-mtune=generic'
+gfortran: canon.o: linker input file unused because linking not done
+gfortran: chkdig.o: linker input file unused because linking not done
+gfortran: chklev.o: linker input file unused because linking not done
+gfortran: correl.o: linker input file unused because linking not done
+gfortran: dfanim.o: linker input file unused because linking not done
+gfortran: dfconv.o: linker input file unused because linking not done
+gfortran: dferrs.o: linker input file unused because linking not done
+gfortran: dfkzer.o: linker input file unused because linking not done
+gfortran: dfparm.o: linker input file unused because linking not done
+gfortran: dfpopt.o: linker input file unused because linking not done
+gfortran: dfstep.o: linker input file unused because linking not done
+gfortran: dfwarn.o: linker input file unused because linking not done
+gfortran: dfwdis.o: linker input file unused because linking not done
+gfortran: dkmwhf.o: linker input file unused because linking not done
+gfortran: eigen.o: linker input file unused because linking not done
+gfortran: fconct.o: linker input file unused because linking not done
+gfortran: genmmd.o: linker input file unused because linking not done
+gfortran: gsfct.o: linker input file unused because linking not done
+gfortran: gsslv.o: linker input file unused because linking not done
+gfortran: ihmssf.o: linker input file unused because linking not done
+gfortran: invgj.o: linker input file unused because linking not done
+gfortran: ipsmin.o: linker input file unused because linking not done
+gfortran: kount.o: linker input file unused because linking not done
+gfortran: mulaba.o: linker input file unused because linking not done
+gfortran: option.o: linker input file unused because linking not done
+gfortran: opzero.o: linker input file unused because linking not done
+gfortran: pedsum.o: linker input file unused because linking not done
+gfortran: rvalue.o: linker input file unused because linking not done
+gfortran: smbfct.o: linker input file unused because linking not done
+gfortran: times.o: linker input file unused because linking not done
+gfortran: triord.o: linker input file unused because linking not done
+gfortran: vratio.o: linker input file unused because linking not done
+ar rv /home/nevj/lib/libkmdeb.a *.o
+r - canon.o
+r - chkdig.o
+r - chklev.o
+r - correl.o
+r - dfanim.o
+r - dfconv.o
+r - dferrs.o
+r - dfkzer.o
+r - dfparm.o
+r - dfpopt.o
+r - dfstep.o
+r - dfwarn.o
+r - dfwdis.o
+r - dkmwhf.o
+r - eigen.o
+r - fconct.o
+r - genmmd.o
+r - gsfct.o
+r - gsslv.o
+r - ihmssf.o
+r - invgj.o
+r - ipsmin.o
+r - kount.o
+r - modules_all.o
+r - mulaba.o
+r - option.o
+r - opzero.o
+r - pedsum.o
+r - rvalue.o
+r - smbfct.o
+r - times.o
+r - triord.o
+r - vratio.o

@@ -1,0 +1,314 @@
+                   *** DFREML 3.1.000        ***
+                   Last modified : Jan. 24, 2000  
+
+
+********************************************************************************
+
+                    PROGRAM " D F P R E P " 
+  
+                  SET UP RELATIONSHIP MATRIX      
+                              &                   
+               RECODE ANIMAL IDS IN RUNNING ORDER 
+
+****************************************************************************KM**
+
+ Today is  1/ 2/2001    Time is 14:28
+
+ Current directory is : /home/agbu/kmeyer/DF2000/MRR/Example3b  
+ Running on host : "metz.une.edu.au                         " 
+ ---------------------------
+ DATA AND PEDIGREE STRUCTURE
+ ---------------------------
+  
+ READ DATA FROM FILE : "mrrtstb.dat              " 
+ NO. OF RECORDS IN DATA                      =            1626
+ NO. OF ANIMALS WITH RECORDS                 =             436
+  
+ READ PEDIGREES FROM FILE : "mrrped.dat               "  
+ NO. OF PEDIGREE RECORDS                     =             526
+ NO. OF ANIMALS IN TOTAL                     =             783
+ NO. OF "SINGLE CONNECTION" PARENTS          =             198
+ NO. OF ANIMALS IN ANIMAL MODEL              =             585
+  
+ NO. OF RECORDS IN NRM INVERSE (HALFST.)     =            1748
+ LOG DETERMINANT OF NRM                      =      -279.88253
+ AVERAGE INBREEDING COEFFICIENT              =         1.00130
+ NO. OF INBRED ANIMALS                       =              11
+ ... WITH AVERAGE INBREEDING COEFFICIENT     =         1.09233
+  
+ ----------------------------------------------
+ DATA STRUCTURE : OFFSPRING-PARENT COMBINATIONS
+ ----------------------------------------------
+  
+ *** Pedigrees have been "pruned" !
+ no. of animals with great-grand parent(s)   =          68
+ no. of  "base" animals                      =         272
+ no. of animals in the data                  =         436
+  ... which are "base" animals               =           2
+  ... with unknown/pruned sire               =           3
+  ... with unknown/pruned dam                =         138
+ no. of records
+  ... with unknown/pruned sire               =          11
+  ... with unknown/pruned dam                =         484
+ no. of sires :
+  ... in total                               =          80
+  ... with progeny in the data               =          75
+  ... with own record as well                =           0
+  ... sire-offspring record pairs            =           0
+  ... which are also grand sires             =          47
+  ... which also have grandprogeny records   =          42
+  ... with own record as well                =           0
+  ... paternal half-sib record pairs         =       45634
+  ... av. no. progeny rec.s/sire             =       21.53
+ no. of dams :
+  ... in total                               =         214
+  ... with progeny in the data               =         208
+  ... with own record as well                =         141
+  ... dam-offspring record pairs             =         651
+  ... which are also grand dams              =          70
+  ... which also have grandprogeny records   =          64
+  ... with own record as well                =          16
+  ... maternal half-sib record pairs         =        7782
+  ... av. no. progeny rec.s/dam              =        5.49
+ no. of paternal grand sires :
+  ... in total                               =          27
+  ... with progeny in the data               =          27
+  ... with own record as well                =           0
+  ... grand sire-offspring record pairs      =           0
+  ... quarter-sib record pairs               =       43738
+  ... av. no. progeny rec.s/grand sire       =       31.19
+ no. of maternal grand sires :
+  ... in total                               =          45
+  ... with progeny in the data               =          45
+  ... with own record as well                =           0
+  ... grand sire-offspring record pairs      =           0
+  ... quarter-sib record pairs               =       25984
+  ... av. no. progeny rec.s/grand sire       =       18.78
+ no. of grand sires together :
+  ... in total                               =          72
+  ... with progeny in the data               =          72
+  ... with own record as well                =           0
+  ... grand sire-offspring record pairs      =           0
+  ... quarter-sib record pairs               =       69722
+  ... av. no. progeny rec.s/grand sire       =       23.43
+ no. of paternal grand dams :
+  ... in total                               =          18
+  ... with progeny in the data               =          18
+  ... with own record as well                =           8
+  ... grand dam-offspring record pairs       =         141
+  ... quarter-sib record pairs               =        8336
+  ... av. no. progeny rec.s/grand dam        =       20.33
+ no. of maternal grand dams :
+  ... in total                               =          57
+  ... with progeny in the data               =          56
+  ... with own record as well                =          12
+  ... grand dam-offspring record pairs       =          61
+  ... quarter-sib record pairs               =        3026
+  ... av. no. progeny rec.s/grand dam        =        6.14
+ no. of grand dams together :
+  ... in total                               =          75
+  ... with progeny in the data               =          74
+  ... with own record as well                =          20
+  ... grand dam-offspring record pairs       =         202
+  ... quarter-sib record pairs               =       11362
+  ... av. no. progeny rec.s/grand dam        =        9.59
+  
+ distribution over no.s of progeny for : sires                         
+ nprog       0       1       2       3       4       5       6       7       8       9
+ nanim     510       2       2       1       2       0       0       0       2       3
+  
+ nprog      10      11      12      13      14      15      16      17      18      19
+ nanim       0       3       7       1       2       2       3       3       3       1
+  
+ nprog   20-29   30-39   40-49   50-59   60-69   70-79   80-89   90-99
+ nanim      19      14       1       4       0       0       0       0
+  
+  
+ distribution over no.s of progeny for : dams                          
+ nprog       0       1       2       3       4       5       6       7       8       9
+ nanim     377      35      24      10      13      17      54       6      10       3
+  
+ nprog      10      11      12      13      14      15      16      17      18      19
+ nanim       5      14      13       2       0       0       1       1       0       0
+  
+  
+ distribution over no.s of progeny for : paternal grand sires          
+ nprog       0       1       2       3       4       5       6       7       8       9
+ nanim     558       1       1       0       0       0       0       0       0       2
+  
+ nprog      10      11      12      13      14      15      16      17      18      19
+ nanim       0       0       1       0       2       0       0       1       3       0
+  
+ nprog   20-29   30-39   40-49   50-59   60-69   70-79   80-89   90-99
+ nanim       6       5       1       0       2       0       0       1
+  
+ nprog  100-99  200-99  300-99  400-99  500-99  600-99  700-99  800-99  900-99
+ nanim       1       0       0       0       0       0       0       0       0
+  
+  
+ distribution over no.s of progeny for : maternal grand sires          
+ nprog       0       1       2       3       4       5       6       7       8       9
+ nanim     567       0       0       0       1       0       0       0       0       1
+  
+ nprog      10      11      12      13      14      15      16      17      18      19
+ nanim       0       0       2       0       1       0       1       2       1       0
+  
+ nprog   20-29   30-39   40-49   50-59   60-69   70-79   80-89   90-99
+ nanim       6       3       0       0       0       0       0       0
+  
+  
+ distribution over no.s of progeny for : paternal grand dams           
+ nprog       0       1       2       3       4       5       6       7       8       9
+ nanim     540       2       2       0       3       2       3       1       0       2
+  
+ nprog      10      11      12      13      14      15      16      17      18      19
+ nanim       1       2       1       0       3       1       3       4       0       0
+  
+ nprog   20-29   30-39   40-49   50-59   60-69   70-79   80-89   90-99
+ nanim       5       5       1       3       1       0       0       0
+  
+  
+ distribution over no.s of progeny for : maternal grand dams           
+ nprog       0       1       2       3       4       5       6       7       8       9
+ nanim     529      12       2       3       3       7      11       4       3       2
+  
+ nprog      10      11      12      13      14      15      16      17      18      19
+ nanim       0       1       3       0       0       0       2       0       2       0
+  
+ nprog   20-29   30-39   40-49   50-59   60-69   70-79   80-89   90-99
+ nanim       1       0       0       0       0       0       0       0
+  
+  
+ ----------------------
+ TRAITS AND COVARIABLES
+ ----------------------
+  
+ DATA FOR COVARIANCE FUNCTION ANALYSIS USING RANDOM REGRESSIONS 
+  
+   
+ TRAIT NO.           1    NO. OF RECORDS =        1626
+   1   1    535.493        98.5788       18.41    259.00        849.00       -2.80    3.18
+  
+ ------------------------
+ FIXED EFFECTS SUBCLASSES
+ ------------------------
+  
+ FIXED EFFECT NO. =           1     WITH NO. OF LEVELS =          83
+       1    770001      54       398.55556    
+       2    770002      72       470.66667    
+       3    780002      25       428.56000    
+       4    781251      25       413.56000    
+       5    781281      24       404.45833    
+       6    789911      24       375.87500    
+       7    790003     122       568.44262    
+       8    791241      25       388.88000    
+       9    791252      23       499.52174    
+      10    791281      27       388.81481    
+      11    791282      22       490.72727    
+      12    791411      26       404.23077    
+      13    799912      22       499.27273    
+      14    800003      91       558.49451    
+      15    801242      16       497.00000    
+      16    801253      15       535.66667    
+      17    801282      14       497.64286    
+      18    801283      13       555.76923    
+      19    801412      13       492.76923    
+      20    802261      21       416.95238    
+      21    802271      25       438.00000    
+      22    809913      15       532.00000    
+      23    810003      90       611.25556    
+      24    811243      16       586.56250    
+      25    811253      15       591.13333    
+      26    811283      27       612.03704    
+      27    811411      13       447.76923    
+      28    811413      13       574.53846    
+      29    811421      16       456.75000    
+      30    812251      14       443.57143    
+      31    812261      15       413.73333    
+      32    812262      21       511.52381    
+      33    812272      22       533.95455    
+      34    819913      13       586.84615    
+      35    820003      30       593.56667    
+      36    821243      13       578.53846    
+      37    821253      11       629.18182    
+      38    821283      22       594.13636    
+      39    821411      12       417.75000    
+      40    821412       6       517.66667    
+      41    821413       9       583.88889    
+      42    821421      13       416.15385    
+      43    821422       9       514.66667    
+      44    822251      14       399.21429    
+      45    822252      10       533.30000    
+      46    822261      15       416.60000    
+      47    822262       5       530.80000    
+      48    822263      14       515.14286    
+      49    822273      16       547.81250    
+      50    829913      10       615.90000    
+      51    831243      13       609.15385    
+      52    831253       9       634.44444    
+      53    831283      22       630.27273    
+      54    831412      11       607.45455    
+      55    831413      15       589.06667    
+      56    831422      13       584.38462    
+      57    831423       9       601.77778    
+      58    832252      14       572.21429    
+      59    832253      10       569.30000    
+      60    832262      15       581.46667    
+      61    832263      18       600.72222    
+      62    832273      16       599.12500    
+      63    839913      10       637.80000    
+      64    841243       6       610.66667    
+      65    841283       9       617.66667    
+      66    841413      17       604.70588    
+      67    841423      17       595.94118    
+      68    842253      16       602.56250    
+      69    842263      23       599.65217    
+      70    842273      11       616.18182    
+      71    851413      11       634.72727    
+      72    851423      17       632.70588    
+      73    852253      16       615.68750    
+      74    852263      22       634.45455    
+      75    852273      11       633.90909    
+      76    861413       9       664.11111    
+      77    861423      15       649.06667    
+      78    862253      13       627.23077    
+      79    862263      14       660.57143    
+      80    871413       4       710.50000    
+      81    871423       7       660.42857    
+      82    872253       5       560.60000    
+      83    872263      10       648.10000    
+ no. of single observation subclasses =           0
+   
+  
+ ------------------------
+ Ages found in the data  
+ ------------------------
+  
+ "meta-meter" no.   1
+   1      19        21   385.86    
+   2      20       122   399.20    
+   3      21       204   419.49    
+   4      22        16   403.13    
+   5      31        16   485.38    
+   6      32       103   506.33    
+   7      33       184   512.80    
+   8      34        30   471.63    
+   9      43         9   592.22    
+  10      44        83   547.54    
+  11      45       131   569.07    
+  12      46        15   554.87    
+  13      55        11   595.18    
+  14      56        80   589.21    
+  15      57       169   595.91    
+  16      58         9   562.11    
+  17      67         8   622.38    
+  18      68        58   607.38    
+  19      69       146   610.72    
+  20      70        15   575.93    
+  21      79         9   613.22    
+  22      80        46   622.17    
+  23      81       130   627.91    
+  24      82        11   598.36    
+
+********************************************************************************
+

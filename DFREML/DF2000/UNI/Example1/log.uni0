@@ -1,0 +1,60 @@
+ TIME AT START =     0
+"DFREML" version  3.1.000          last modified  Jan. 24, 2000  
+
+
+                   $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+                   $                             $
+                   $    PROGRAM " D F U N I "    $
+                   $                             $
+                   $$$$$$$$$$$$$$$$$$$$$$$$$*KM*$$
+
+ Today is   1/ 2/2001    Time is 13: 9
+
+ Running on host : "metz.une.edu.au                         " 
+  
+ GIVE RUN OPTION :
+       -1   ...  PREPARE : Read Info on Model of Analysis 
+       -2   ...  ORDER : Re-order equations               
+        0/1 ...  ESTIMATE : Carry out estimation step(s)  
+        5   ...  SOLVE : Obtain Backsolutions             
+        8  ...  BEST : Pick out best point so far
+LOGICAL UNIT NO.  =  11  DF11#DAT                 
+LOGICAL UNIT NO.  =  13  DF13#DAT                 
+LOGICAL UNIT NO.  =  51  DF51#DAT                 
+LOGICAL UNIT NO.  =  52  DF52#DAT                 
+LOGICAL UNIT NO.  =  54  DF54#DAT                 
+LOGICAL UNIT NO.  =  44  DF44#DAT                 
+LOGICAL UNIT NO.  =  59  DF59#DAT                 
+LOGICAL UNIT NO.  =  66  DF66#DAT                 
+ SMALLEST VALUE TO BE TREATED DIFFERENT FROM ZERO ?
+        5  ...  0.00001     
+        6  ...  0.000001    
+           ...          
+        N  ...  10**(-N)
+ <RETURN> FOR VALUE =           8
+ OPERATIONAL ZERO FOR THIS RUN SET TO   0.1000E-07
+  
+ STARTING VALUE FOR HERITABILITY ?
+  
+ xspars allocated         966
+  
+ Routine "DFLIK1" : cpu time used =    0.0050
+    1     -760.742317772     0.300000   62.123324
+ CPU TIME (SEC.S) REQUIRED PER LOG L =           0
+ Routine "DFLIK1" : cpu time used =    0.0058
+    2     -759.841402359     0.375000   56.955893
+ Routine "DFLIK1" : cpu time used =    0.0067
+    3     -759.510854481     0.450000   51.852923
+    4     -759.659562982     0.525000   46.651107
+    5     -759.503473386     0.464228   50.877959
+    6     -759.503441443     0.463415   50.933767
+    7     -759.503441252     0.463349   50.938297
+    8     -759.503441252     0.463348   50.938423
+ av. time / DFLIK1     =  5.831000084678332E-003
+ LOG LIKELIHOOD (WITH NRM)                       =  -759.5034413    
+ PHENOTYPIC VARIANCE   1                         =   94.91884871    
+ NORM OF GRADIENT VECTOR                         =  0.1405648218E-03
+   1  HERITABILITY                     :   0.463348       0.109633    
+ NORM OF GRADIENT VECTOR                         =  0.7416465643E-02
+   1  HERITABILITY                     :   0.463348       0.109171    
+ TIME AT END           =     0

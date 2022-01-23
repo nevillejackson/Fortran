@@ -1,0 +1,45 @@
+GFORTRAN module created from modules.f90 on Tue Apr 27 17:36:33 2010
+MD5:9f24f134a3175cf3bdadeac0fbba64a4 -- If you edit this, you'll get what you deserve.
+
+(() () () () () () () () () () () () () () () () () () () () () () () ()
+() () ())
+
+()
+
+()
+
+()
+
+()
+
+(2 'covar' 'names' 'covar' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXPLICIT-SAVE ALLOCATABLE DIMENSION) (CHARACTER 1 0 0 CHARACTER
+((CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '12'))) 0 0 () (1 DEFERRED () ())
+0 () () 0 0)
+3 'cwdir' 'names' 'cwdir' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXPLICIT-SAVE) (CHARACTER 1 0 0 CHARACTER ((CONSTANT (INTEGER 4
+0 0 INTEGER ()) 0 '50'))) 0 0 () () 0 () () 0 0)
+4 'fdata' 'names' 'fdata' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXPLICIT-SAVE) (CHARACTER 1 0 0 CHARACTER ((CONSTANT (INTEGER 4
+0 0 INTEGER ()) 0 '25'))) 0 0 () () 0 () () 0 0)
+5 'fixed' 'names' 'fixed' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXPLICIT-SAVE ALLOCATABLE DIMENSION) (CHARACTER 1 0 0 CHARACTER
+((CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '12'))) 0 0 () (1 DEFERRED () ())
+0 () () 0 0)
+6 'fped' 'names' 'fped' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+EXPLICIT-SAVE) (CHARACTER 1 0 0 CHARACTER ((CONSTANT (INTEGER 4 0 0
+INTEGER ()) 0 '25'))) 0 0 () () 0 () () 0 0)
+7 'names' 'names' 'names' 1 ((MODULE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN) (UNKNOWN 0 0 0 UNKNOWN ()) 0 0 () () 0 () () 0 0)
+8 'param' 'names' 'param' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXPLICIT-SAVE ALLOCATABLE DIMENSION) (CHARACTER 1 0 0 CHARACTER
+((CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '12'))) 0 0 () (1 DEFERRED () ())
+0 () () 0 0)
+9 'trait' 'names' 'trait' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXPLICIT-SAVE ALLOCATABLE DIMENSION) (CHARACTER 1 0 0 CHARACTER
+((CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '12'))) 0 0 () (1 DEFERRED () ())
+0 () () 0 0)
+)
+
+('covar' 0 2 'cwdir' 0 3 'fdata' 0 4 'fixed' 0 5 'fped' 0 6 'names' 0 7
+'param' 0 8 'trait' 0 9)

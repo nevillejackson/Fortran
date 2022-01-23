@@ -1,0 +1,14 @@
+5                                                    run option 
+8                                                    operational zero
+3                                                    read start.value file
+Start_values                                         file name
+6                                                    no. measurem.error var.
+2                                                    read from DF20#DAT
+6                                                    op. zero for eigenvalues
+2                                                    Solutions : all effects
+1                                                    fixed reg. all ages : yes
+1                                                    breeding values : yes
+1                                                    no. of ages
+60                                                   age
+
+

@@ -1,0 +1,42 @@
+gfortran -O -static  -L/home/nevj/lib  -o modules_all.o -c  /home/nevj/DFREML.work/DF2000/LIB/modules_all.f90
+gfortran -O -static  -L/home/nevj/lib  -o modules.o -c modules.f90 
+gfortran -O -static  -L/home/nevj/lib   -c -o dxmux.o dxmux.f
+gfortran -O -static  -L/home/nevj/lib   -c -o df51u3.o df51u3.f
+gfortran -O -static  -L/home/nevj/lib   -c -o df59r3.o df59r3.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dxadj3.o dxadj3.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dfcor3.o dfcor3.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dfinp3.o dfinp3.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dfipm3.o dfipm3.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dxlik3.o dxlik3.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dxmmd3.o dxmmd3.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dxmmp3.o dxmmp3.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dfmme3.o dfmme3.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dfmmp3.o dfmmp3.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dxnrp3.o dxnrp3.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dxest3.o dxest3.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dxsrch.o dxsrch.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dxord3.o dxord3.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dxpbl3.o dxpbl3.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dfspa3.o dfspa3.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dfwrh3.o dfwrh3.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dfwrt3.o dfwrt3.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dfwrv3.o dfwrv3.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dxcmb3.o dxcmb3.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dxran3.o dxran3.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dxres3.o dxres3.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dxcovm.o dxcovm.f
+gfortran -O -static  -L/home/nevj/lib   -c -o isplc3.o isplc3.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dxspa3.o dxspa3.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dxspb3.o dxspb3.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dxslw3.o dxslw3.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dxypy3.o dxypy3.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dfpre3.o dfpre3.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dflsq3.o dflsq3.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dxsca3.o dxsca3.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dxchn3.o dxchn3.f
+dxchn3.f:33.72:
+
+      call second (nparm,ivar,xvec)                                     
+                                                                       1
+Error: Too many arguments in call to 'second' at (1)
+make: *** [dxchn3.o] Error 1

@@ -1,0 +1,19 @@
+1                                                    run option 
+8                                                    operational zero
+6                                                    no. measurem.error var.
+2                                                    read from DF20#DAT
+6                                                    oper. zero - eigenvalues
+-2                                                    maximisation : powell
+0
+2                                                    transform : chol+log
+1                                                    forwards
+1                                                    start at 1st parameter
+20                                                   no. iterates
+0.1                                                  tolerance
+
+0                                                    full log L : no
+0                                                    approx. se : no
+0                                                    cov matrices : no
+                 
+
+

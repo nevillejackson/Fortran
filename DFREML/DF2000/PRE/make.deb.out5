@@ -1,0 +1,20 @@
+gfortran -O --static   -c modules.f90 /home/nevj/DFREML.work/DF2000/LIB/modules_all.f90 
+gfortran -O --static    -c -o dfcfix.o dfcfix.f
+gfortran -O --static    -c -o dfpcnt.o dfpcnt.f
+gfortran -O --static    -c -o dfprep.o dfprep.f
+gfortran -O --static    -c -o dfread.o dfread.f
+gfortran -O --static    -c -o lnkfnd.o lnkfnd.f
+gfortran -O --static    -c -o dfages.o dfages.f
+gfortran -O --static    -c -o dfpids.o dfpids.f
+gfortran -O --static    -c -o dfown.o dfown.f
+gfortran -O --static    -c -o dfprec.o dfprec.f
+gfortran -O --static    -c -o dfdfil.o dfdfil.f
+gfortran -O --static    -c -o dxainv.o dxainv.f
+gfortran -O --static    -c -o dxbinv.o dxbinv.f
+gfortran -O --static   dfcfix.o dfpcnt.o dfprep.o dfread.o lnkfnd.o dfages.o dfpids.o dfown.o dfprec.o dfdfil.o dxainv.o  dxainv_old.o dxbinv.o modules.o  modules_all.o -o /home/nevj/bin/dfprep -L /home/nevj/lib -l kmdeb
+/home/nevj/lib/libkmdeb.a(times.o): In function `dfhost_':
+times.f:(.text+0x664): undefined reference to `hostnm_'
+/home/nevj/lib/libkmdeb.a(times.o): In function `dfcwd_':
+times.f:(.text+0x8d4): undefined reference to `getcwd_'
+collect2: ld returned 1 exit status
+make: *** [dfprep] Error 1

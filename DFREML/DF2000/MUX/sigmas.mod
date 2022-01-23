@@ -1,0 +1,69 @@
+GFORTRAN module created from modules.f90 on Tue Apr 27 17:45:15 2010
+MD5:42ac5c64d2bed0d9dbf83a05b64f5191 -- If you edit this, you'll get what you deserve.
+
+(() () () () () () () () () () () () () () () () () () () () () () () ()
+() () ())
+
+()
+
+()
+
+()
+
+()
+
+(2 'eiga' 'sigmas' 'eiga' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXPLICIT-SAVE ALLOCATABLE DIMENSION) (REAL 8 0 0 REAL ()) 0 0 ()
+(1 DEFERRED () ()) 0 () () 0 0)
+3 'eigam' 'sigmas' 'eigam' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXPLICIT-SAVE ALLOCATABLE DIMENSION) (REAL 8 0 0 REAL ()) 0 0 ()
+(1 DEFERRED () ()) 0 () () 0 0)
+4 'eigc' 'sigmas' 'eigc' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXPLICIT-SAVE ALLOCATABLE DIMENSION) (REAL 8 0 0 REAL ()) 0 0 ()
+(1 DEFERRED () ()) 0 () () 0 0)
+5 'eige' 'sigmas' 'eige' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXPLICIT-SAVE ALLOCATABLE DIMENSION) (REAL 8 0 0 REAL ()) 0 0 ()
+(1 DEFERRED () ()) 0 () () 0 0)
+6 'eigm' 'sigmas' 'eigm' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXPLICIT-SAVE ALLOCATABLE DIMENSION) (REAL 8 0 0 REAL ()) 0 0 ()
+(1 DEFERRED () ()) 0 () () 0 0)
+7 'eigp' 'sigmas' 'eigp' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXPLICIT-SAVE ALLOCATABLE DIMENSION) (REAL 8 0 0 REAL ()) 0 0 ()
+(1 DEFERRED () ()) 0 () () 0 0)
+8 'eigq' 'sigmas' 'eigq' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXPLICIT-SAVE ALLOCATABLE DIMENSION) (REAL 8 0 0 REAL ()) 0 0 ()
+(1 DEFERRED () ()) 0 () () 0 0)
+9 'eigr' 'sigmas' 'eigr' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXPLICIT-SAVE ALLOCATABLE DIMENSION) (REAL 8 0 0 REAL ()) 0 0 ()
+(1 DEFERRED () ()) 0 () () 0 0)
+10 'siga' 'sigmas' 'siga' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXPLICIT-SAVE ALLOCATABLE DIMENSION) (REAL 8 0 0 REAL ()) 0 0 ()
+(2 DEFERRED () () () ()) 0 () () 0 0)
+11 'sigam' 'sigmas' 'sigam' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXPLICIT-SAVE ALLOCATABLE DIMENSION) (REAL 8 0 0 REAL ()) 0 0 ()
+(2 DEFERRED () () () ()) 0 () () 0 0)
+12 'sigc' 'sigmas' 'sigc' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXPLICIT-SAVE ALLOCATABLE DIMENSION) (REAL 8 0 0 REAL ()) 0 0 ()
+(2 DEFERRED () () () ()) 0 () () 0 0)
+13 'sige' 'sigmas' 'sige' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXPLICIT-SAVE ALLOCATABLE DIMENSION) (REAL 8 0 0 REAL ()) 0 0 ()
+(2 DEFERRED () () () ()) 0 () () 0 0)
+14 'sigm' 'sigmas' 'sigm' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXPLICIT-SAVE ALLOCATABLE DIMENSION) (REAL 8 0 0 REAL ()) 0 0 ()
+(2 DEFERRED () () () ()) 0 () () 0 0)
+15 'sigmas' 'sigmas' 'sigmas' 1 ((MODULE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN) (UNKNOWN 0 0 0 UNKNOWN ()) 0 0 () () 0 () () 0 0)
+16 'sigp' 'sigmas' 'sigp' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXPLICIT-SAVE ALLOCATABLE DIMENSION) (REAL 8 0 0 REAL ()) 0 0 ()
+(2 DEFERRED () () () ()) 0 () () 0 0)
+17 'sigq' 'sigmas' 'sigq' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXPLICIT-SAVE ALLOCATABLE DIMENSION) (REAL 8 0 0 REAL ()) 0 0 ()
+(2 DEFERRED () () () ()) 0 () () 0 0)
+18 'sigr' 'sigmas' 'sigr' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXPLICIT-SAVE ALLOCATABLE DIMENSION) (REAL 8 0 0 REAL ()) 0 0 ()
+(2 DEFERRED () () () ()) 0 () () 0 0)
+)
+
+('eiga' 0 2 'eigam' 0 3 'eigc' 0 4 'eige' 0 5 'eigm' 0 6 'eigp' 0 7 'eigq'
+0 8 'eigr' 0 9 'siga' 0 10 'sigam' 0 11 'sigc' 0 12 'sige' 0 13 'sigm' 0
+14 'sigmas' 0 15 'sigp' 0 16 'sigq' 0 17 'sigr' 0 18)

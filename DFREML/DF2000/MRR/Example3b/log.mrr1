@@ -1,0 +1,179 @@
+ TIME AT START =     0
+ maximum no. of parameters to be estimated ? 
+"DFREML" version  3.1.000          last modified  Jan. 24, 2000  
+
+
+                   $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+                   $                             $
+                   $    PROGRAM " D x M R R "    $
+                   $                             $
+                   $$$$$$$$$$$$$$$$$$$$$$$$$*KM*$$
+
+ Today is   1/ 2/2001    Time is 14:28
+
+ Running on host : "metz.une.edu.au                         " 
+ GIVE RUN OPTION :
+       -1    ... PREPARE : Read Info on Model etc.           
+       -2    ... ORDER : Re-order equations (reduce fill-in) 
+        0/1  ... ESTIMATE : 0 - First run/ 1 - continue      
+        8    ... BEST : Pick out best point so far           
+       10    ... GRID : Generate covariances    
+LOGICAL UNIT NO.  =  11  DF11#DAT                 
+LOGICAL UNIT NO.  =  22  DF22#DAT                 
+LOGICAL UNIT NO.  =  23  DF23#DAT                 
+LOGICAL UNIT NO.  =  13  DF13#DAT                 
+LOGICAL UNIT NO.  =  51  DF51#DAT                 
+LOGICAL UNIT NO.  =  52  DF52#DAT                 
+LOGICAL UNIT NO.  =  44  DF44#DAT                 
+LOGICAL UNIT NO.  =  66  DF66#DAT                 
+LOGICAL UNIT NO.  =  88  DF88#DAT                 
+
+****************************************
+          DESCRIPTION FOR DATA SET 
+****************************************
+
+TYPE COMMENTS - max. 6 lines & 80 char.s per line
+ terminate with "*" in col. 1 or blank line !
+ NO. OF COMMENT LINES READ =           3
+
+****************************************
+          TRAIT(S) TO BE ANALYSED
+****************************************
+
+ NO. OF TRAITS IN ANALYSIS ?
+ <RETURN> FOR VALUE =           1
+ Give name (max. 12 char.s) for trait 1
+ MAXIMUM NO. OF RECORDS PER ANIMAL FOR maturewgt    ?
+ <RETURN> FOR VALUE =          24
+ ... NO. OF RIGHT HAND SIDES PER RECORD for maturewgt   ?
+ <RETURN> FOR VALUE =           1
+
+****************************************
+          FIXED PART OF THE MODEL
+****************************************
+
+ 
+Fit fixed regression on "age" to model population trajectory for trait no.  1?
+       0  ...  No 
+       N  ...  Yes, to order "N" - give value for N
+ Fit *fixed* regression on ... ?           
+        0  ...  Ordinary polynomial of "age"    
+        1  ...  Orthogonal (Legendre) polynomials of "age" 
+        2  ...  User defined fuction of "age"         
+ <RETURN> FOR VALUE =           1
+ NO. OF COVARIABLES TO BE FITTED FOR maturewgt    ?
+ <RETURN> FOR VALUE =           0
+   
+ NO. OF FIXED EFFECTS TO BE FITTED FOR maturewgt     ?
+ <RETURN> FOR VALUE =           1
+ GIVE NAME (MAX 12 CHAR.S) FOR FIXED EFFECT 1
+ NO. OF LEVELS FOR  yearpaddock  FOR AGE maturewgt     ?
+ <RETURN> FOR VALUE =          83
+
+ COEFFICIENCT MATRIX FOR FIXED EFFECTS NOT OF FULL RANK
+  --> PROGRAM SETS *FIRST* LEVEL OF EACH FIXED EFFECT  
+      TO ZERO (EXCEPT 1ST FE)                          
+  --> SPECIFY ANY ADDITIONAL KNOWN DEPENDENCIES  :     
+      (E.G. DUE TO HIERARCHICAL STRUCTURE OF FE)       
+
+ NO. OF ADDITIONAL DEPENDENCIES ? (GIVE 0 IF NONE)     
+ <RETURN> FOR VALUE =           0
+
+****************************************
+          RANDOM PART OF THE MODEL
+****************************************
+
+ NO. OF LEVELS OF MAIN RANDOM EFFECT (ANIMALS) ?    
+ <RETURN> FOR VALUE =         585
+  
+ Fit *random* regression on ... ?           
+        0  ...  Ordinary polynomial of "age"    
+        1  ...  Orthogonal (Legendre) polynomials of "age" 
+        2  ...  User defined fuction of "age"         
+ <RETURN> FOR VALUE =           1
+ Order of fit for "animal" CF (2=lin,3=quad,4=cub,..) for trait  1 ?
+ <RETURN> FOR VALUE =           3
+ Fit permanent environmental effects for animals
+        0  ... N0  
+        1  ... YES - explicitely 
+        2  ... YES - implicitely 
+ Fit *random* regression on ... ?           
+        0  ...  Ordinary polynomial of "age"    
+        1  ...  Orthogonal (Legendre) polynomials of "age" 
+        2  ...  User defined fuction of "age"         
+        4  ...  VF + parametric cov. structure
+ <RETURN> FOR VALUE =           1
+ Order of fit for "perm. env." CF (2=lin,3=quad,4=cub,..) for trait  1 ?
+ <RETURN> FOR VALUE =           3
+  
+ IS THERE A SECOND RANDOM EFFECT FOR EACH ANIMAL ?   
+         1  ...  YES       
+         0  ...  NO        
+ <RETURN> FOR OPTION =            0
+  
+        NO. OF MODEL TO BE FITTED =       2
+  
+ neq        1842
+ mme3
+        NO. OF RECORDS PROCESSED    =    1626
+        NO. OF ANIMALS IN THE DATA  =     436
+        TOTAL NO. OF EQUATIONS      =    1842
+ max. no. for "nr" =           9
+ mme3
+ give value for "MAXZHZ" 
+ <RETURN> FOR VALUE =        3915
+ Transform ages to log scale ?
+         1  ...  YES       
+         0  ...  NO        
+ <RETURN> FOR OPTION =            0
+ SMALLEST VALUE TO BE TREATED DIFFERENT FROM ZERO ?
+        5  ...  0.00001     
+        6  ...  0.000001    
+           ...          
+        N  ...  10**(-N)
+ <RETURN> FOR VALUE =           8
+ OPERATIONAL ZERO FOR THIS RUN SET TO   0.1000E-07
+  
+ "DFLSQ3" : NO. OF FIXED EFFECTS EQUATIONS =          86
+            RANK OF COEFFICIENT MATRIX     =          85
+            ... EXPECTED VALUE             =          85
+age= 19 n=   21 obs=  385.9     res= -19.81    
+age= 20 n=  122 obs=  399.2     res= -8.596    
+age= 21 n=  204 obs=  419.5     res=  7.635    
+age= 22 n=   16 obs=  403.1     res= -5.804    
+age= 31 n=   16 obs=  485.4     res= -8.070    
+age= 32 n=  103 obs=  506.3     res=  4.898    
+age= 33 n=  184 obs=  512.8     res= 0.4164    
+age= 34 n=   30 obs=  471.6     res= -15.07    
+age= 43 n=    9 obs=  592.2     res=  35.56    
+age= 44 n=   83 obs=  547.5     res= -6.280    
+age= 45 n=  131 obs=  569.1     res=  3.995    
+age= 46 n=   15 obs=  554.9     res= -21.32    
+age= 55 n=   11 obs=  595.2     res=  9.940    
+age= 56 n=   80 obs=  589.2     res= 0.9106    
+age= 57 n=  169 obs=  595.9     res=  1.934    
+age= 58 n=    9 obs=  562.1     res= -22.49    
+age= 67 n=    8 obs=  622.4     res=  8.864    
+age= 68 n=   58 obs=  607.4     res= -4.112    
+age= 69 n=  146 obs=  610.7     res=-0.6206E-01
+age= 70 n=   15 obs=  575.9     res= -31.26    
+age= 79 n=    9 obs=  613.2     res= -5.832    
+age= 80 n=   46 obs=  622.2     res= 0.9690    
+age= 81 n=  130 obs=  627.9     res=  3.824    
+age= 82 n=   11 obs=  598.4     res= -13.87    
+ variance =       3640.66           2823.32           2823.32      1602
+ St.Dev. =        60.3378           53.1349           53.1349    
+ ss total        0.157914E+08      0.461353E+07      0.111779E+08   70.78
+ MSE              2993.86        85  1541
+LOGICAL UNIT NO.  =  59  DF59#DAT                 
+ ANALYSIS UNDER MODEL NUMBER           2
+
+ NO. OF ANIMALS WITH N RECORDS
+ N=           1   NO. OF ANIMALS =          78
+ N=           2   NO. OF ANIMALS =          76
+ N=           3   NO. OF ANIMALS =          28
+ N=           4   NO. OF ANIMALS =          85
+ N=           5   NO. OF ANIMALS =          42
+ N=           6   NO. OF ANIMALS =         127
+ NO. OF EQUATIONS IN TOTAL                       =                1842
+ TIME AT END           =     0

@@ -1,0 +1,22 @@
+gfortran -O -static  -L/home/nevj/lib  -o modules_all.o  -c  /home/nevj/DFREML.work/DF2000/LIB/modules_all.f90
+gfortran -O -static  -L/home/nevj/lib  -o modules.o -c modules.f90 
+gfortran -O -static  -L/home/nevj/lib   -c -o dfuni.o dfuni.f
+gfortran -O -static  -L/home/nevj/lib   -c -o df51u1.o df51u1.f
+gfortran -O -static  -L/home/nevj/lib   -c -o df59r1.o df59r1.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dfadj1.o dfadj1.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dfase1.o dfase1.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dfinp1.o dfinp1.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dflik1.o dflik1.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dflsq1.o dflsq1.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dfmmd1.o dfmmd1.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dfmme1.o dfmme1.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dfmmp1.o dfmmp1.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dford1.o dford1.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dfpow1.o dfpow1.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dfpre1.o dfpre1.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dfqua1.o dfqua1.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dfslw1.o dfslw1.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dfspa1.o dfspa1.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dfspx1.o dfspx1.f
+gfortran -O -static  -L/home/nevj/lib   -c -o dfwrt1.o dfwrt1.f
+gfortran -O -static  -L/home/nevj/lib  dfuni.o df51u1.o df59r1.o dfadj1.o dfase1.o dfinp1.o dflik1.o dflsq1.o dfmmd1.o dfmme1.o dfmmp1.o dford1.o dfpow1.o dfpre1.o dfqua1.o dfslw1.o dfspa1.o dfspx1.o dfwrt1.o modules_all.o modules.o  -o /home/nevj/bin/dfuni  -lkmdeb

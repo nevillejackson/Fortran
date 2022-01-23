@@ -1,0 +1,18 @@
+rm -f DF*DAT MAXPARM Iterates
+/home/agbu/kmeyer/bin/dfprep <in.prep >log.prep
+mv -f DF66#DAT df66.prep
+/home/agbu/kmeyer/bin/dxmrr <in.mrr1 >log.mrr1
+mv -f DF66#DAT df66.mrr1
+/home/agbu/kmeyer/bin/dxmrr <in.mrr2 >log.mrr2
+mv -f DF66#DAT df66.mrr2
+cp -f Measure_error DF20#DAT
+/home/agbu/kmeyer/bin/dxmrr <in.mrr0a >log.mrr0a
+mv -f DF66#DAT df66.mrr0a
+/home/agbu/kmeyer/bin/dxmrr <in.mrr0b >log.mrr0b
+mv -f DF66#DAT df66.mrr0b
+/home/agbu/kmeyer/bin/dxmrr <in.mrr0c >log.mrr0c
+mv -f  DF66#DAT df66.mrr0c
+/home/agbu/kmeyer/bin/dxmrr <in.mrr5 >log.mrr5
+mv -f  DF66#DAT df66.mrr5
+
+rm -f DF*#DAT MAXPARM Iterates fort.* Orth* EBV*

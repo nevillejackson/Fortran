@@ -1,0 +1,42 @@
+ TIME AT START =     0
+"DFREML" version  3.1.000          last modified  Jan. 24, 2000  
+
+
+                   $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+                   $                             $
+                   $    PROGRAM " D F U N I "    $
+                   $                             $
+                   $$$$$$$$$$$$$$$$$$$$$$$$$*KM*$$
+
+ Today is   1/ 2/2001    Time is 13: 9
+
+ Running on host : "metz.une.edu.au                         " 
+  
+ GIVE RUN OPTION :
+       -1   ...  PREPARE : Read Info on Model of Analysis 
+       -2   ...  ORDER : Re-order equations               
+        0/1 ...  ESTIMATE : Carry out estimation step(s)  
+        5   ...  SOLVE : Obtain Backsolutions             
+        8  ...  BEST : Pick out best point so far
+LOGICAL UNIT NO.  =  11  DF11#DAT                 
+LOGICAL UNIT NO.  =  13  DF13#DAT                 
+LOGICAL UNIT NO.  =  51  DF51#DAT                 
+LOGICAL UNIT NO.  =  52  DF52#DAT                 
+LOGICAL UNIT NO.  =  54  DF54#DAT                 
+LOGICAL UNIT NO.  =  44  DF44#DAT                 
+LOGICAL UNIT NO.  =  59  DF59#DAT                 
+LOGICAL UNIT NO.  =  66  DF66#DAT                 
+ SMALLEST VALUE TO BE TREATED DIFFERENT FROM ZERO ?
+        5  ...  0.00001     
+        6  ...  0.000001    
+           ...          
+        N  ...  10**(-N)
+ <RETURN> FOR VALUE =           8
+ OPERATIONAL ZERO FOR THIS RUN SET TO   0.1000E-07
+  
+  
+ LOG LIKELIHOOD (WITH NRM)                       =  -759.5034413    
+ PHENOTYPIC VARIANCE   1                         =   94.91884871    
+ backsolutions
+ vector of solutions recovered from DF54#DAT
+ TIME AT END           =     0

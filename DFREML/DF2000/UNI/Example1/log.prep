@@ -1,0 +1,142 @@
+ TIME AT START =     0
+"DFREML" version  3.1.000          last modified  Jan. 24, 2000  
+
+
+                   $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+                   $                             $
+                   $    PROGRAM " D F P R E P "  $
+                   $                             $
+                   $$$$$$$$$$$$$$$$$$$$$$$$$*KM*$$
+
+ Today is   1/ 2/2001    Time is 13: 9
+
+ Running on host : "metz.une.edu.au                         " 
+
+****************************************
+          INPUT/OUTPUT FILES
+****************************************
+
+LOGICAL UNIT NO.  =  11  DF11#DAT                 
+LOGICAL UNIT NO.  =  22  DF22#DAT                 
+LOGICAL UNIT NO.  =  23  DF23#DAT                 
+LOGICAL UNIT NO.  =  44  DF44#DAT                 
+LOGICAL UNIT NO.  =  66  DF66#DAT                 
+
+****************************************
+          PEDIGREE FILE : 
+****************************************
+
+ FILE NAME ?  
+  
+ FORMAT OF tstmo1.d                   :
+     1  ...  UNFORMATTED (BINARY)              
+     2  ...  FORMATTED - LIST DIRECTED INPUT   
+     3  ...            - TO BE SPECIFIED       
+ <RETURN> FOR VALUE =           2
+  
+ HIGHEST ANIMAL IDENTITY ?
+ <RETURN> FOR VALUE =      999999
+  
+            SUMMARY OF DETAILS GIVEN FOR PEDIGREE FILE :
+            --------------------------------------------
+            NAME                          = tstmo1.d                 
+            CONNECTED AS FORTRAN UNIT NO. =         33
+            INPUT MODE                    = LIST DIRECTED
+            HIGHEST ANIMAL ID ALLOWED     =     999999
+  
+            RECORD LAYOUT 
+               1   INTEGER      ANIMAL ID
+               2   INTEGER      SIRE ID
+               3   INTEGER      DAM ID
+            --------------------------------------------
+  
+ CONTINUE ?
+         1  ...  YES       
+         0  ...  NO        
+ <RETURN> FOR OPTION =            1
+LOGICAL UNIT NO.  =  33  tstmo1.d                 
+
+****************************************
+          DATA FILE :
+****************************************
+
+ RECORD LAYOUT : DATA CODED FOR 
+     1  ...  UNIVARIATE ANALYSIS   ("DFUNI")     
+     2  ...  MULTIVARIATE ANALYSIS ("DxMUX") - same model all traits
+     3  ...  MULTIVARIATE ANALYSIS ("DxMUX") - different models
+     5  ...  COVARIANCE FUNCTION   ("DxMRR") 
+  
+ NAME OF DATA FILE ?
+  
+ NO. OF RIGHT HAND SIDES PER RECORD ?     
+ <RETURN> FOR VALUE =           1
+ NO. OF COVARIABLES TO BE FITTED ?
+ NO. OF FIXED EFFECTS TO BE FITTED ?
+ NO. OF "ADDITIONAL" (uncorrelated) RANDOM EFFECTS ?
+ Fit A  "SECOND ANIMAL" EFFECT ?
+      0  ...  NO  
+      1  ...  ANIMAL (insert code) 
+      2  ...  SIRE   (insert)         4  ...  SIRE   (recode)
+      3  ...  DAM    (insert)         5  ...  DAM    (recode)
+ <RETURN> FOR VALUE =           0
+  
+ SPECIAL EFFECTS OPTION
+        0  ...  NONE  
+        3  ...  DO NOT "PRUNE" ALL SINGLE-LINK PARENTS
+        4  ...  FIT SIRE MODEL                       
+        5  ...  MULTIPLE NRM            
+ <RETURN> FOR VALUE =           0
+  
+            SUMMARY OF DETAILS GIVEN FOR DATA FILE :
+            ----------------------------------------
+            NAME                          = tstmo1.d                 
+            CONNECTED AS FORTRAN UNIT NO. =         33
+            INPUT MODE                    = LIST DIRECTED
+  
+            RECORD LAYOUT 
+               1   INTEGER      ANIMAL ID
+               2   INTEGER      SIRE ID
+               3   INTEGER      DAM ID
+               4   INTEGER      FIXED EFFECT CODE
+               5   REAL*8       TRAIT/RHS 
+            ----------------------------------------
+  
+ CONTINUE ?
+         1  ...  YES       
+         0  ...  NO        
+ <RETURN> FOR OPTION =            1
+ MAXIMUM NO. OF ANIMALS ?
+ <RETURN> FOR VALUE =       50000
+ NO. OF PEDIGREES READ                       =             282
+ NO. OF IDENTITIES FOUND                     =             306
+ NO. OF "BASE" ANIMALS                       =              24
+ HIGHEST ID                                  =           20306
+ NO. OF ANIMALS IN DATA                      =             282
+ NO. OF PEDIGREE LOOPS CARRIED OUT           =               1
+ NO. OF PARENTS "PRUNED"                     =               0
+ NEW NO. OF ANIMALS IN ANALYSIS              =             306
+ Max. no. of non-zero elements in NRM inverse ?
+ <RETURN> FOR VALUE =       30600
+ begin backward loop ..
+ end backward loop         116
+ NO. OF "EFFECTIVE" ANIMALS IN THE ANALYSIS  =             306
+ NO. OF NON-ZERO ELEMENTS OF NRM INVERSE     =             906
+ LOG DETERMINANT OF NRM                      =      -195.46750
+ NO. OF INBRED ANIMALS                       =              38
+ ... WITH AVERAGE INBREEDING COEFFICIENT     =         1.17763
+ TOTAL NO. OF ANIMALS                        =             306
+ ... WITH AVERAGE INBREEDING COEFFICIENT     =         1.02206
+ DATA FILE : NO. OF RECORDS PROCESSED=            282
+ no. of animals in data w. unkn./pruned sire =           0
+ no. of animals in data w. unkn./pruned dam  =           0
+ no. of rec.s w. missing/pruned sire ID      =           0
+ no. of rec.s w. missing/pruned dam ID       =           0
+ no. of sires  ... in total                  =          12
+               ... with progeny in the data  =          12
+ no. of dams   ... in total                  =          36
+               ... with progeny in the data  =          36
+ DATA FOR "DFUNI" 
+ TRAIT NO.           1    NO. OF RECORDS =         282
+   1   1    229.787        13.4939        5.87    194.00        269.00    
+  
+ TIME AT END           =     0

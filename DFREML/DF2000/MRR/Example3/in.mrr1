@@ -1,0 +1,32 @@
+26                                                max. no. of parameters
+-1                                                run option
+Test data for DXMRR
+January weights, Wokalup cows, borm 1974-1980, 19-82 months old
+*
+1                                                 no. of traits
+maturewgt                                         name for trait
+6                                                 max. no rec.s/animal
+1                                                 no. RHS
+3                                                 fixed regr. : quadratic
+1                                                 Legendre polynomials
+0                                                 no. covariables
+1                                                 no. fixed effects
+yearpaddock                                       name, fixed effect
+83                                                no. levels, ......
+0                                                 no. add. dependencies
+585                                               no. animals
+1                                                 Legendre polynomials
+3                                                 order of fit : quadratic
+1                                                 fit explicitly
+436                                               no. levels, perm. env. eff.
+1                                                 Legendre polynomials
+3                                                 order of fit : quadratic
+0                                                 no add. r.e.
+0                                                 no 2nd animal effect
+3915                                              default value for maxzhz
+0                                                 do not transform to logscale
+8                                                 operational zero
+
+
+
+ 

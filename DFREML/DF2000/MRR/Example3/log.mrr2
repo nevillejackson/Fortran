@@ -1,0 +1,76 @@
+ TIME AT START =     0
+"DFREML" version  3.1.000          last modified  Jan. 24, 2000  
+
+
+                   $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+                   $                             $
+                   $    PROGRAM " D x M R R "    $
+                   $                             $
+                   $$$$$$$$$$$$$$$$$$$$$$$$$*KM*$$
+
+ Today is   1/ 2/2001    Time is 13:43
+
+ Running on host : "metz.une.edu.au                         " 
+ GIVE RUN OPTION :
+       -1    ... PREPARE : Read Info on Model etc.           
+       -2    ... ORDER : Re-order equations (reduce fill-in) 
+        0/1  ... ESTIMATE : 0 - First run/ 1 - continue      
+        8    ... BEST : Pick out best point so far           
+       10    ... GRID : Generate covariances    
+LOGICAL UNIT NO.  =  11  DF11#DAT                 
+LOGICAL UNIT NO.  =  22  DF22#DAT                 
+LOGICAL UNIT NO.  =  23  DF23#DAT                 
+LOGICAL UNIT NO.  =  54  DF54#DAT                 
+LOGICAL UNIT NO.  =  13  DF13#DAT                 
+LOGICAL UNIT NO.  =  51  DF51#DAT                 
+LOGICAL UNIT NO.  =  52  DF52#DAT                 
+LOGICAL UNIT NO.  =  44  DF44#DAT                 
+LOGICAL UNIT NO.  =  66  DF66#DAT                 
+LOGICAL UNIT NO.  =  88  DF88#DAT                 
+ 51           0
+ SMALLEST VALUE TO BE TREATED DIFFERENT FROM ZERO ?
+        5  ...  0.00001     
+        6  ...  0.000001    
+           ...          
+        N  ...  10**(-N)
+ <RETURN> FOR VALUE =           8
+ OPERATIONAL ZERO FOR THIS RUN SET TO   0.1000E-07
+  
+ ANALYSIS UNDER MODEL NUMBER           1
+
+ NO. OF ANIMALS WITH N RECORDS
+ N=           1   NO. OF ANIMALS =          78
+ N=           2   NO. OF ANIMALS =          76
+ N=           3   NO. OF ANIMALS =          28
+ N=           4   NO. OF ANIMALS =          85
+ N=           5   NO. OF ANIMALS =          42
+ N=           6   NO. OF ANIMALS =         127
+ NO. OF EQUATIONS IN TOTAL                       =                3150
+ give value for "MAXSPA"  
+ <RETURN> FOR VALUE =      237000
+  "dvord3" : new no. of rows                  =        3148
+data : no. of connections in lower triangle =     24069
+ped. : no. of off-diagonal elements added   =     13530
+     : no. of add. conn.s in lower triangle =     10914
+all  : no. of connections in lower triangle =     34983
+ genmmd         250        2885          13
+ genmmd         500        2957          15
+ genmmd         750        3077          18
+ genmmd        1000        1966         119
+  end of genmmd        3148   nofsub=       22226
+data : no. of connections in lower triangle =     24069
+row for rhs      3149      2701     24069
+data : no. of connections in lower triangle =     26770
+ped. : no. of off-diagonal elements added   =     13530
+     : no. of add. conn.s in lower triangle =     10914
+all  : no. of connections in lower triangle =     37684
+end of smbfct : maxsub     18345
+                maxlnz     72640
+ Routine "DVORD3" : time at end   =      0.27
+                  : cpu time used =    0.2591
+        NO. OF RECORDS PROCESSED    =    1626
+        NO. OF ANIMALS IN THE DATA  =     436
+        TOTAL NO. OF EQUATIONS      =    3150
+ max. no. for "nr" =          12
+LOGICAL UNIT NO.  =  59  DF59#DAT                 
+ TIME AT END           =     0

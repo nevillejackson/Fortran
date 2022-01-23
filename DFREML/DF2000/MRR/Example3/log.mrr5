@@ -1,0 +1,150 @@
+ TIME AT START =     0
+"DFREML" version  3.1.000          last modified  Jan. 24, 2000  
+
+
+                   $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+                   $                             $
+                   $    PROGRAM " D x M R R "    $
+                   $                             $
+                   $$$$$$$$$$$$$$$$$$$$$$$$$*KM*$$
+
+ Today is   1/ 2/2001    Time is 14: 6
+
+ Running on host : "metz.une.edu.au                         " 
+ GIVE RUN OPTION :
+       -1    ... PREPARE : Read Info on Model etc.           
+       -2    ... ORDER : Re-order equations (reduce fill-in) 
+        0/1  ... ESTIMATE : 0 - First run/ 1 - continue      
+        8    ... BEST : Pick out best point so far           
+       10    ... GRID : Generate covariances    
+LOGICAL UNIT NO.  =  11  DF11#DAT                 
+LOGICAL UNIT NO.  =  54  DF54#DAT                 
+LOGICAL UNIT NO.  =  13  DF13#DAT                 
+LOGICAL UNIT NO.  =  51  DF51#DAT                 
+LOGICAL UNIT NO.  =  52  DF52#DAT                 
+LOGICAL UNIT NO.  =  44  DF44#DAT                 
+LOGICAL UNIT NO.  =  66  DF66#DAT                 
+LOGICAL UNIT NO.  =  88  DF88#DAT                 
+ 51        3149
+ SMALLEST VALUE TO BE TREATED DIFFERENT FROM ZERO ?
+        5  ...  0.00001     
+        6  ...  0.000001    
+           ...          
+        N  ...  10**(-N)
+ <RETURN> FOR VALUE =           8
+ OPERATIONAL ZERO FOR THIS RUN SET TO   0.1000E-07
+  
+ ANALYSIS UNDER MODEL NUMBER           1
+
+ NO. OF ANIMALS WITH N RECORDS
+ N=           1   NO. OF ANIMALS =          78
+ N=           2   NO. OF ANIMALS =          76
+ N=           3   NO. OF ANIMALS =          28
+ N=           4   NO. OF ANIMALS =          85
+ N=           5   NO. OF ANIMALS =          42
+ N=           6   NO. OF ANIMALS =         127
+ NO. OF EQUATIONS IN TOTAL                       =                3150
+  
+ Read starting values from ... ? 
+       1  ...  Standard input      
+       2  ...  File "DF18#DAT"     
+       3  ...  Other File      
+ Give name for file of starting values
+LOGICAL UNIT NO.  =  18  Start_values             
+ ORDER(S) OF POLYNOMIAL FIT FOR "SIG A" =   3
+  READ : KMAT A    1  1 =    4500.00000000000     
+  READ : KMAT A    1  2 =    800.000000000000     
+  READ : KMAT A    1  3 =    10.0000000000000     
+  READ : KMAT A    2  2 =    300.000000000000     
+  READ : KMAT A    2  3 =    10.0000000000000     
+  READ : KMAT A    3  3 =    100.000000000000     
+  
+ ORDER OF POLYNOMIAL FIT FOR "SIG C" =   3
+  READ : KMAT C    1  1 =    1500.00000000000     
+  READ : KMAT C    1  2 =    10.0000000000000     
+  READ : KMAT C    1  3 =    10.0000000000000     
+  READ : KMAT C    2  2 =    100.000000000000     
+  READ : KMAT C    2  3 =    10.0000000000000     
+  READ : KMAT C    3  3 =    50.0000000000000     
+  
+ Measurement error variances : 
+   Individual variances - give no. to be fitted 
+   Single variance + function 
+   -> regression : give order as *negative* no. 
+      (-1 = linear, -2 = quadratic, etc.)       
+ <RETURN> FOR VALUE =           1
+  READ : SIG ME    1  1 =    800.000000000000     
+  READ : SIG ME    2  2 =    1000.00000000000     
+  READ : SIG ME    3  3 =    1400.00000000000     
+  READ : SIG ME    4  4 =    1300.00000000000     
+  READ : SIG ME    5  5 =    1200.00000000000     
+  READ : SIG ME    6  6 =    1000.00000000000     
+  
+ Assign measurement errors to ages - read from ?
+       1  ...  Standard input 
+       2  ...  "DF20#DAT"     
+ <RETURN> FOR VALUE =           2
+LOGICAL UNIT NO.  =  20  DF20#DAT                 
+  READ : age no.           1  m.e. no. =           1
+  READ : age no.           2  m.e. no. =           1
+  READ : age no.           3  m.e. no. =           1
+  READ : age no.           4  m.e. no. =           1
+  READ : age no.           5  m.e. no. =           2
+  READ : age no.           6  m.e. no. =           2
+  READ : age no.           7  m.e. no. =           2
+  READ : age no.           8  m.e. no. =           2
+  READ : age no.           9  m.e. no. =           3
+  READ : age no.          10  m.e. no. =           3
+  READ : age no.          11  m.e. no. =           3
+  READ : age no.          12  m.e. no. =           3
+  READ : age no.          13  m.e. no. =           4
+  READ : age no.          14  m.e. no. =           4
+  READ : age no.          15  m.e. no. =           4
+  READ : age no.          16  m.e. no. =           4
+  READ : age no.          17  m.e. no. =           5
+  READ : age no.          18  m.e. no. =           5
+  READ : age no.          19  m.e. no. =           5
+  READ : age no.          20  m.e. no. =           5
+  READ : age no.          21  m.e. no. =           6
+  READ : age no.          22  m.e. no. =           6
+  READ : age no.          23  m.e. no. =           6
+  READ : age no.          24  m.e. no. =           6
+ Operational zero for eigenvalues ?
+        3  ...  0.001      
+        4  ...  0.0001     
+           ...             
+        N  ...  10**(-N)   
+ <RETURN> FOR VALUE =           6
+LOGICAL UNIT NO.  =  59  DF59#DAT                 
+  
+ Point recovered from "DF59#DAT" - log L =    -7083.2188876799
+    2878.16        500.911       -267.118        218.524       -103.653    
+    52.5511        1387.37        99.2760       -182.513        7.15948    
+   -13.0046        24.0655        285.138        1676.67        1406.90    
+    1430.81        630.895        1455.00    
+LOGICAL UNIT NO.  =  17  DF17#DAT                 
+ vector of solutions recovered from DF54#DAT
+  
+ write out solutions for ...
+        1  ...  fixed effects only
+        2  ...  all effects 
+ <RETURN> FOR VALUE =           1
+ calculate fixed regression for ages in data ? 
+         1  ...  YES       
+         0  ...  NO        
+ <RETURN> FOR OPTION =            1
+     Output file = "Orth_reg_fix" - Done ! 
+LOGICAL UNIT NO.  =  55  DF55#DAT                 
+ File DF55#DAT (binary) with estimates of genetic 
+ regression coefficients written !
+  
+ Calculate breeding values for selected ages ?
+         1  ...  YES       
+         0  ...  NO        
+ <RETURN> FOR OPTION =            0
+ No. of ages to be evaluated ?
+ <RETURN> FOR VALUE =           1
+ Valid range of ages is    19 to    82
+ Value for age no.  1?    
+     Output file = "EBVs_for_ages" - Done ! 
+ TIME AT END           =     0

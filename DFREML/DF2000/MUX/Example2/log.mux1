@@ -1,0 +1,165 @@
+ TIME AT START =     0
+ Today is   1/ 2/2001    Time is 13:17
+
+ Running on host : "metz.une.edu.au                         " 
+"DFREML" version  3.1.000          last modified  Jan. 24, 2000  
+
+
+                   $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+                   $                             $
+                   $    PROGRAM " D x M u X "    $
+                   $                             $
+                   $$$$$$$$$$$$$$$$$$$$$$$$$*KM*$$
+
+ GIVE RUN OPTION :
+       -1  ...  PREPARE : Read Info on Model of Analysis,
+                check codes & set up files "51" and "52" 
+       -2  ...  ORDER : Attempt to re-order equations 
+                to reduce fill-in 
+        0/1...  ESTIMATE : 0=Read starting values,    
+                           1=Continue                 
+        5  ...  SOLVE : Obtain Backsolutions for Fixed
+                Or Random Effects 
+        8  ...  BEST : Pick out currently best point  
+          & write out results file for it 
+LOGICAL UNIT NO.  =  11  DF11#DAT                 
+LOGICAL UNIT NO.  =  22  DF22#DAT                 
+LOGICAL UNIT NO.  =  23  DF23#DAT                 
+LOGICAL UNIT NO.  =  13  DF13#DAT                 
+LOGICAL UNIT NO.  =  51  DF51#DAT                 
+LOGICAL UNIT NO.  =  52  DF52#DAT                 
+LOGICAL UNIT NO.  =  44  DF44#DAT                 
+LOGICAL UNIT NO.  =  66  DF66#DAT                 
+
+****************************************
+          DESCRIPTION FOR DATA SET 
+****************************************
+
+ TYPE COMMENTS - max. 6 lines & 80 characters per line
+ terminate with "*" in col. 1 or blank line !
+ NO. OF COMMENT LINES READ =           2
+
+****************************************
+          TRAITS TO BE ANALYSED
+****************************************
+
+ NO. OF TRAITS IN MULTIVARIATE ANALYSIS ?
+ <RETURN> FOR VALUE =           2
+ GIVE NAME (MAX. 12 CHAR.S) FOR TRAIT 1
+ GIVE NAME (MAX. 12 CHAR.S) FOR TRAIT 2
+  
+ ARE THERE REPEATED RECORDS PER ANIMAL ?
+         1  ...  YES       
+         0  ...  NO        
+ <RETURN> FOR OPTION =            0
+ ... NO. OF RIGHT HAND SIDES PER RECORD ?           1
+ <RETURN> FOR VALUE =           1
+ ... NO. OF RIGHT HAND SIDES PER RECORD ?           2
+ <RETURN> FOR VALUE =           1
+
+****************************************
+          FIXED PART OF THE MODEL
+****************************************
+
+ NO. OF COVARIABLES TO BE FITTED FOR weight       ?
+ <RETURN> FOR VALUE =           0
+ NO. OF COVARIABLES TO BE FITTED FOR foodintake   ?
+ <RETURN> FOR VALUE =           0
+   
+ NO. OF FIXED EFFECTS TO BE FITTED FOR weight        ?
+ <RETURN> FOR VALUE =           3
+ GIVE NAME (MAX 12 CHAR.S) FOR FIXED EFFECT NO.  1
+  FOR TRAIT :  weight      
+ NO. OF LEVELS FOR  generation    ?
+ <RETURN> FOR VALUE =           3
+ GIVE NAME (MAX 12 CHAR.S) FOR FIXED EFFECT NO.  2
+  FOR TRAIT :  weight      
+ NO. OF LEVELS FOR  sex           ?
+ <RETURN> FOR VALUE =           2
+ GIVE NAME (MAX 12 CHAR.S) FOR FIXED EFFECT NO.  3
+  FOR TRAIT :  weight      
+ NO. OF LEVELS FOR  littersize    ?
+ <RETURN> FOR VALUE =           7
+
+ COEFFICIENCT MATRIX FOR FIXED EFFECTS NOT OF FULL RANK
+  --> PROGRAM SETS *FIRST* LEVEL OF EACH FIXED EFFECT  
+      TO ZERO (EXCEPT 1ST FE)                          
+  --> SPECIFY ANY ADDITIONAL KNOWN DEPENDENCIES  :     
+      (E.G. DUE TO HIERARCHICAL STRUCTURE OF FE)       
+
+ NO. OF ADDITIONAL DEPENDENCIES ? (GIVE 0 IF NONE)     
+ <RETURN> FOR VALUE =           0
+ NO. OF FIXED EFFECTS TO BE FITTED FOR foodintake    ?
+ <RETURN> FOR VALUE =           3
+ GIVE NAME (MAX 12 CHAR.S) FOR FIXED EFFECT NO.  1
+  FOR TRAIT :  foodintake  
+ NO. OF LEVELS FOR  generation    ?
+ <RETURN> FOR VALUE =           3
+ GIVE NAME (MAX 12 CHAR.S) FOR FIXED EFFECT NO.  2
+  FOR TRAIT :  foodintake  
+ NO. OF LEVELS FOR  sex           ?
+ <RETURN> FOR VALUE =           2
+ GIVE NAME (MAX 12 CHAR.S) FOR FIXED EFFECT NO.  3
+  FOR TRAIT :  foodintake  
+ NO. OF LEVELS FOR  littersize    ?
+ <RETURN> FOR VALUE =           7
+
+ COEFFICIENCT MATRIX FOR FIXED EFFECTS NOT OF FULL RANK
+  --> PROGRAM SETS *FIRST* LEVEL OF EACH FIXED EFFECT  
+      TO ZERO (EXCEPT 1ST FE)                          
+  --> SPECIFY ANY ADDITIONAL KNOWN DEPENDENCIES  :     
+      (E.G. DUE TO HIERARCHICAL STRUCTURE OF FE)       
+
+ NO. OF ADDITIONAL DEPENDENCIES ? (GIVE 0 IF NONE)     
+ <RETURN> FOR VALUE =           0
+  
+ NO. OF EFFECTS SET TO ZERO IN TOTAL =           4
+    1   ... EQUATION NO. :      5
+    2   ... EQUATION NO. :      7
+    3   ... EQUATION NO. :     17
+    4   ... EQUATION NO. :     19
+
+****************************************
+          RANDOM PART OF THE MODEL
+****************************************
+
+ NO. OF LEVELS OF MAIN RANDOM EFFECT (ANIMALS) ?    
+ <RETURN> FOR VALUE =         329
+  
+ FIT AN ADDITIONAL (UNCORRELATED) RANDOM EFFECT ?
+         1  ...  YES       
+         0  ...  NO        
+ <RETURN> FOR OPTION =            1
+ NAME FOR THIS EFFECT ? (MAX. 12 CHAR.S) 
+ NO. OF LEVELS FOR  litter        ? 
+ <RETURN> FOR VALUE =          42
+ IS litter       FITTED FOR ALL TRAITS ?
+         1  ...  YES       
+         0  ...  NO        
+ <RETURN> FOR OPTION =            1
+  
+ IS THERE A SECOND RANDOM EFFECT FOR EACH ANIMAL ?   
+         1  ...  YES       
+         0  ...  NO        
+ <RETURN> FOR OPTION =            0
+  
+        NO. OF MODEL TO BE FITTED =       2
+  
+        NO. OF RECORDS PROCESSED    =     568
+        NO. OF ANIMALS IN THE DATA  =     284
+        TOTAL NO. OF EQUATIONS      =     767
+ give value for "MAXZHZ" 
+ <RETURN> FOR VALUE =        5369
+ zhz allocated :            8
+ SMALLEST VALUE TO BE TREATED DIFFERENT FROM ZERO ?
+        5  ...  0.00001     
+        6  ...  0.000001    
+           ...          
+        N  ...  10**(-N)
+ <RETURN> FOR VALUE =           8
+ OPERATIONAL ZERO FOR THIS RUN SET TO   0.1000E-07
+  
+ "DFLSQ3" : NO. OF FIXED EFFECTS EQUATIONS =          24
+            RANK OF COEFFICIENT MATRIX     =          20
+            ... EXPECTED VALUE             =          20
+ TIME AT END           =     0

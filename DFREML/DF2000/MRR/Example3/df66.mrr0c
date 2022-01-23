@@ -1,0 +1,83 @@
+                   *** DFREML 3.1.000        ***
+                   Last modified : Jan. 24, 2000  
+
+ Today is  1/ 2/2001    Time is 13:33
+
+ Current directory is : /home/agbu/kmeyer/DF2000/MRR/Example3   
+ Running on host : "metz.une.edu.au                         " 
+
+************************************************************************
+
+                     PROGRAM " D x M R R " 
+  
+     ESTIMATE COVARIANCE FUNCTIONS FOR AN ANIMAL MODEL
+  
+
+********************************************************************KM**
+
+ -----------------------------------
+ DESCRIPTION OF DATA SET
+ -----------------------------------
+  
+ Test data for DXMRR                                                             
+ January weights, Wokalup cows, borm 1974-1980, 19-82 months old                 
+  
+ Data file used      : "mrrtst.dat"
+ Pedigree file used  : "mrrped.dat"
+ Data directory      : "/home/agbu/kmeyer/DF2000/MRR/Example3"
+  
+ ----------------------------------
+ MODEL OF ANALYSIS & DATA STRUCTURE
+ ----------------------------------
+  
+ ANALYSIS UNDER MODEL NUMBER                     =                   1
+  
+ NO. OF RECORDS                                  =                1626
+ NO. OF ANIMALS                                  =                 585
+ ... WITH RECORDS                                =                 436
+  
+ NO. OF TRAITS IN MULTIVARIATE ANALYSIS          =                   1
+ NO. OF COMBINATIONS OF TRAITS RECORDED          =                  83
+
+ NO. OF ANIMALS WITH N RECORDS
+ N=           1   NO. OF ANIMALS =          78
+ N=           2   NO. OF ANIMALS =          76
+ N=           3   NO. OF ANIMALS =          28
+ N=           4   NO. OF ANIMALS =          85
+ N=           5   NO. OF ANIMALS =          42
+ N=           6   NO. OF ANIMALS =         127
+  
+ NO. OF RECORDS                                  =                1626
+ MAX. NO. OF RECORDS PER ANIMAL                  =                   6
+ MEAN                                            =   535.492609515    
+ STANDARD DEVIATION                              =   98.5788031269    
+ COEFFICIENT OF VARIATION                        =   18.4089941439    
+ PHENOTYPIC RANGE                                =     259.000         849.000    
+ STANDARDIZED RANGE                              =    -2.80479         3.18027    
+ NO. OF FIXED EFFECTS FITTED                     =                   1
+   1   "yearpaddock "    NO. OF LEVELS =    83
+ TOTAL NO. OF LEVELS FOR THIS TRAIT              =                  83
+ NO. OF COVARIABLES FITTED                       =                   0
+ NO. OF REGRESSION COEFFICIENTS FOR THIS TRAIT   =                   3
+  
+ PERMANENT ENVIRON. EFFECT FITTED :  "P.env.animal"
+ ... WITH NO. OF LEVELS                          =                 436
+  
+ NO. OF FIXED EFFECTS LEVELS IN TOTAL            =                  83
+ NO. OF REGRESSION COEFFICIENTS IN TOTAL         =                   3
+ NO. OF ANIMAL EFFECTS IN TOTAL                  =                 585
+ NO. OF ADDITIONAL RANDOM EFFECTS LEVELS IN TOTAL=                 436
+ NO. OF EQUATIONS IN TOTAL                       =                3150
+  
+ -----------------------------
+ SUMMARY OF PEDIGREE STRUCTURE
+ -----------------------------
+  
+ NO. OF "BASE" ANIMALS                       =         273
+ NO. OF ANIMALS WITH RECORDS                 =         436
+  ... WITH UNKNOWN/PRUNED SIRE               =           3
+  ... WITH UNKNOWN/PRUNED DAM                =         138
+ NO. OF SIRES WITH PROGENY RECORDS           =          75
+ NO. OF DAMS WITH PROGENY RECORDS            =         208
+ NO. OF GRAND-SIRES W. PROGENY RECORDS       =          72
+ NO. OF GRAND-DAMS W. PROGENY RECORDS        =          74

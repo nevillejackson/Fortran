@@ -1,0 +1,29 @@
+muexped.d                                             pedigree file
+2                                                     formatted
+324567890                                             highest animal ID
+1                                                     continue
+3                                                     dxmux
+muwex2.d                                              data file
+2                                                     formatted
+2                                                     no. of traits
+1                                                     no. of RHS 1
+1                                                                2
+0                                                     no. of covariables 1
+3                                                     no. of fixed effects 1
+1                                                     no. of add. RE 1
+0                                                     2nd animal effect opt. 1
+0                                                     no. of covariables 2
+3                                                     no. of fixed effects 2
+1                                                     no. of add. RE 2
+0                                                     2nd animal effect opt. 2
+0                                                     special effect option
+1                                                     continue
+800                                                   max. no. of animals
+
+
+
+
+
+
+
+

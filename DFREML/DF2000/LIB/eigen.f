@@ -1,0 +1,161 @@
+C     Last change:  KM   29 Jun 98    1:37 pm
+C=======================================================================
+      SUBROUTINE EIGNHF(A,EIG,EPS,V,IV,N,MAX,ICODE)
+C=======================================================================
+
+C     PURPOSE : ROUTINE TO CALCULATE ALL EIGENVALUES AND, OPTIONALLY,
+C               ALL EIGENVECTORS OF A HALFSTORED SYMMETRIC MATRIX,
+C               USING THE 'SPECIAL CYCLIC JACOBI METHOD'
+
+C               PROGRAMMED AFTER SCHWARZ ET AL. (1973). "NUMERICAL
+C               ANALYSIS OF SYMMETRIC MATRICES", PRENTICE-HALL,INC.,
+C               SERIES IN AUTOMATIC COMPUTING, PP.121 FF
+
+C     PARAMETERS
+C     A   : HALFSTORED SYMMETRIC MATRIX, REDUCED TO DIAGONAL FORM
+C           ON EXIT, DOUBLE PRECISION, LENGTH N*(N+1)/2
+C     EIG : VECTOR OF EIGENVALUES (=DIAGONAL ELEMENTS OF A),
+C           DOUBLE PRECISION, LENGTH N
+C     EPS : TOLERANCE (ABSOLUTE VALUE) FOR THE ACCURACY OF EACH
+C           EIGENVALUE, DOUBLE PRECISION
+C     V   : MATRIX OF EIGENVECTORS, DOUBLE PRECISION,
+C           DECLARED AS V(IV,N) IN CALLING PROGRAM, IV=N OR IV>N
+C     IV  : ROW DIMENSION OF V
+C     N   : ORDER OF THE MATRIX
+C     MAX : MAX. NO. OF SWEEPS
+C     ICODE : TO CALCULATE  EIGENVECTORS IN ADDITION TO EIGENVALUES
+C           SET ICODE=1 ON ENTRY, ON RETURN CODE SET TO ICODE=9 IF
+C           DESIRED ACCURACY IS NOT REACHED WITHIN MAX SWEEPS
+
+C     KARIN MEYER, JULY 1985
+C-----------------------------------------------------------------------
+
+     
+      IMPLICIT DOUBLE PRECISION (A-H,O-Z)
+      DIMENSION A(*),EIG(*),V(IV,N)
+
+      NSWEEP=0
+      N1=N+1
+      NM1=N-1
+      EPSQU=EPS*EPS
+
+      IF(ICODE.EQ.1)THEN
+         DO 11 I=1,N
+         DO 11 J=1,N
+         IF(I.EQ.J)THEN
+           V(J,I)=1.D0
+         ELSE
+           V(J,I)=0.D0
+         END IF
+11       CONTINUE
+      END IF
+
+C     CALCULATE SUM OF SQUARES OF OFF-DIAGONAL ELEMENTS
+
+5     SS=0.D0
+      NSWEEP=NSWEEP+1
+      IJ=0
+      DO 1 I=1,NM1
+      IJ=IJ+1
+      DO 1 J=I+1,N
+      IJ=IJ+1
+      X=A(IJ)
+1     SS=SS+X*X
+      SS=2.D0*SS
+
+C     TEST WHETHER SS ARE SUFFICIENTLY SMALL
+      IF(SS.LT.EPSQU)THEN
+         eig(:n)=a( (/ (ihmii(i,n),i=1,n) /) )
+         RETURN
+      END IF
+
+C     MATRIX NOT DIAGONAL YET, NEED MORE TRANSFORMATIONS
+
+      IPP=-N
+      IPQ=0
+      DO 2 IP=1,NM1
+
+      IPP=IPP+N1
+      APP=A(IPP)
+      IPQ=IPQ+1
+      DO 3 IQ=IP+1,N
+      IPQ=IPQ+1
+      APQ=A(IPQ)
+
+      IF(APQ.NE.0)THEN
+
+C     APPLY P-Q ROTATION TO MATRIX A
+
+      IQQ=IHMII(IQ,N)
+      AQQ=A(IQQ)
+      THETA=0.5D0*(A(IQQ)-APP)/APQ
+      IF(THETA.EQ.0)THEN
+         T=1.D0
+      ELSE
+         X=DSQRT(1.D0+THETA*THETA)
+         IF(THETA.LT.0)X=-X
+         T=1.D0/(THETA+X)
+      END IF
+      C=1.D0/DSQRT(1.D0+T*T)
+      S=C*T
+      CC=C*C
+      CS=C*S
+      SS=S*S
+      CSA=2.D0*CS*APQ
+
+      A(IPP)=CC*APP-CSA+SS*AQQ
+      A(IPQ)=CS*(APP-AQQ)+(CC-SS)*APQ
+      A(IQQ)=SS*APP+CSA+CC*AQQ
+      APP=A(IPP)
+
+      DO 7 J=1,IP-1
+      IJP=IHMJI(IP,J,N)
+      IJQ=IHMSSF(IQ,J,N)
+      AIJP=A(IJP)
+      AIJQ=A(IJQ)
+      A(IJP)=C*AIJP-S*AIJQ
+7     A(IJQ)=S*AIJP+C*AIJQ
+
+      IJP=IPP
+      DO 8 J=IP+1,IQ-1
+      IJP=IJP+1
+      IJQ=IHMJI(IQ,J,N)
+      AIJP=A(IJP)
+      AIJQ=A(IJQ)
+      A(IJP)=C*AIJP-S*AIJQ
+8     A(IJQ)=S*AIJP+C*AIJQ
+
+      IJQ=IQQ
+      DO 9 J=IQ+1,N
+      IJP=IHMIJ(IP,J,N)
+      IJQ=IJQ+1
+      AIJP=A(IJP)
+      AIJQ=A(IJQ)
+      A(IJP)=C*AIJP-S*AIJQ
+9     A(IJQ)=S*AIJP+C*AIJQ
+
+C     ACCUMULATE TRANSFORMATIONS TO FORM MATRIX OF EIGENVECTORS
+
+      IF(ICODE.EQ.1)THEN
+         DO 12 I=1,N
+         VP=V(I,IP)
+         VQ=V(I,IQ)
+         V(I,IP)=C*VP-S*VQ
+12       V(I,IQ)=S*VP+C*VQ
+      END IF
+
+      END IF
+
+3     CONTINUE
+2     IPP=IPP-IP
+
+      IF(NSWEEP.LT.MAX)GO TO 5
+
+      ICODE=9
+      PRINT *,'MAX. NO. OF SWEEPS REACHED    =',MAX
+      PRINT *,'LAST SS OF OFF-DIAG. ELEMENTS =',SS
+      PRINT *,'ACCURACY TOLERANCE GIVEN      =',EPSQU,EPS
+
+      RETURN
+      END
+

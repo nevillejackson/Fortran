@@ -1,0 +1,89 @@
+#########################################################################
+#                      Makefile for dfprep  : LF95 under linux          #
+#########################################################################
+
+#-------------------- Customize for local installation -----------------
+
+# my home directory  - setting on "whip" !
+# my home directory ...
+HMDIR =/mounts/didgeridoo/kmeyer
+MYDIR = $(HMDIR)/xlash
+
+# DFREML directory
+DFDIR = $(MYDIR)/DF2000
+
+# directory where executable file "dxmrr" is to be placed
+BINDIR = $(HMDIR)/bin
+
+# directory where library file "libkm.a" is held
+LIBDIR = $(BINDIR)
+
+# directory for modules used by all programs
+MODIR =$(DFDIR)/LIB
+
+# FORTRAN compiler
+FC=lf95
+
+# Compiler options : LF95 under Linux 
+FFLAGS= -O --staticlink --mod $(DFDIR)/PRE  -L $(LIBDIR) 
+LDFLAGS= -lkmlnx
+#----------------------end of changes ----------------------------------
+
+# Object files
+OBJECTS=modules_all.o modules.o \
+dfcfix.o \
+dfpcnt.o \
+dfprep.o \
+dfread.o \
+lnkfnd.o \
+dfages.o \
+dfpids.o \
+dfown.o \
+dfprec.o \
+dfdfil.o \
+dxainv.o  dxainv_old.o\
+dxbinv.o 
+
+
+# Build program
+all: modall modules dfprep
+
+modall:
+	$(FC) $(FFLAGS) -o modules_all.o -c  $(MODIR)/modules_all.f90
+modules:
+	$(FC) $(FFLAGS) -o modules.o -c modules.f90 
+
+dfprep: $(OBJECTS)
+	$(FC) $(FFLAGS) $(OBJECTS) -o $(BINDIR)/dfprep $(LDFLAGS)
+
+# Dependencies
+dfages.o : modules.o
+dfcfix.o : modules.o
+dfpcnt.o : modules.o
+dfprep.o : modules.o 
+dfread.o : modules.o 
+lnkfnd.o : modules.o
+dfpids.o : modules.o
+dfown.o  : modules.o
+dfprec.o : modules.o
+dfdfil.o : modules.o
+dxainv.o : modules.o
+dxbinv.o : modules.o
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

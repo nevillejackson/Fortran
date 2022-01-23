@@ -1,0 +1,149 @@
+                   *** DFREML 3.1.000        ***
+                   Last modified : Jan. 24, 2000  
+
+ Today is  1/ 2/2001    Time is 13:17
+
+ Current directory is : /home/agbu/kmeyer/DF2000/MUX/Example2   
+ Running on host : "metz.une.edu.au                         " 
+
+********************************************************************************
+
+                     PROGRAM " D x M u X " 
+  
+     ESTIMATE COVARIANCES AND FUNCTIONS FOR AN ANIMAL MODEL
+  
+
+****************************************************************************KM**
+
+
+****************************************
+
+ -----------------------------------
+ DESCRIPTION OF DATA SET
+ -----------------------------------
+  
+ mouse test data (Meyer 1991, GSE 23:67-83)                                      
+ model 2                                                                         
+  
+ Data file used      : muwex2.d                 
+ Pedigree file used  : muexped.d                
+ Data directory      : /home/agbu/kmeyer/DF2000/MUX/Example2             
+  
+ ----------------------------------
+ MODEL OF ANALYSIS & DATA STRUCTURE
+ ----------------------------------
+  
+ ANALYSIS UNDER MODEL NUMBER                     =                   2
+  
+ NO. OF RECORDS                                  =                 568
+ NO. OF ANIMALS                                  =                 329
+ ... WITH RECORDS                                =                 284
+  
+ NO. OF TRAITS IN MULTIVARIATE ANALYSIS          =                   2
+ NO. OF COMBINATIONS OF TRAITS RECORDED          =                   1
+   1   NO. ANIMALS     284    COMBINATION :   1  1
+
+ NO. OF ANIMALS WITH RECORDS FOR PAIRS OF TRAITS
+  1  2   weight         foodintake         284
+  
+ TRAIT NO.   1      weight      
+ NO. OF RECORDS                                  =                 284
+ MAX. NO. OF RECORDS PER ANIMAL                  =                   1
+ MEAN                                            =   24.0686615235    
+ STANDARD DEVIATION                              =   3.30235710856    
+ COEFFICIENT OF VARIATION                        =   13.7205681560    
+ PHENOTYPIC RANGE                                =     14.6000         34.5000    
+ STANDARDIZED RANGE                              =    -2.86724         3.15876    
+ NO. OF FIXED EFFECTS FITTED                     =                   3
+   1   "generation  "    NO. OF LEVELS =     3
+   2   "sex         "    NO. OF LEVELS =     2
+   3   "littersize  "    NO. OF LEVELS =     7
+ TOTAL NO. OF LEVELS FOR THIS TRAIT              =                  12
+ NO. OF COVARIABLES FITTED                       =                   0
+  
+ ADDITIONAL RANDOM EFFECT FITTED :  "litter      "
+ ... WITH NO. OF LEVELS                          =                  42
+  
+ TRAIT NO.   2      foodintake  
+ NO. OF RECORDS                                  =                 284
+ MAX. NO. OF RECORDS PER ANIMAL                  =                   1
+ MEAN                                            =   64.2556326060    
+ STANDARD DEVIATION                              =   5.93258442522    
+ COEFFICIENT OF VARIATION                        =   9.23278502541    
+ PHENOTYPIC RANGE                                =     46.9000         82.1000    
+ STANDARDIZED RANGE                              =    -2.92548         3.00786    
+ NO. OF FIXED EFFECTS FITTED                     =                   3
+   1   "generation  "    NO. OF LEVELS =     3
+   2   "sex         "    NO. OF LEVELS =     2
+   3   "littersize  "    NO. OF LEVELS =     7
+ TOTAL NO. OF LEVELS FOR THIS TRAIT              =                  12
+ NO. OF COVARIABLES FITTED                       =                   0
+  
+ ADDITIONAL RANDOM EFFECT FITTED :  "litter      "
+ ... WITH NO. OF LEVELS                          =                  42
+  
+ NO. OF FIXED EFFECTS LEVELS IN TOTAL            =                  24
+ NO. OF REGRESSION COEFFICIENTS IN TOTAL         =                   0
+ NO. OF ANIMAL EFFECTS IN TOTAL                  =                 658
+ NO. OF ADDITIONAL RANDOM EFFECTS LEVELS IN TOTAL=                  42
+ NO. OF EQUATIONS IN TOTAL                       =                 767
+  
+ -----------------------------
+ SUMMARY OF PEDIGREE STRUCTURE
+ -----------------------------
+  
+ NO. OF "BASE" ANIMALS                       =          35
+ NO. OF ANIMALS WITH RECORDS                 =         284
+  ... WITH UNKNOWN/PRUNED SIRE               =           0
+  ... WITH UNKNOWN/PRUNED DAM                =           0
+ NO. OF SIRES WITH PROGENY RECORDS           =          40
+ NO. OF DAMS WITH PROGENY RECORDS            =          42
+ NO. OF GRAND-SIRES W. PROGENY RECORDS       =          66
+ NO. OF GRAND-DAMS W. PROGENY RECORDS        =          67
+   
+ ----------------------------------------------
+ LSQ SOLUTION FOR FIXED EFFECTS AND COVARIABLES
+ ----------------------------------------------
+
+ EQ.NO.                    TRAIT         NREC              MEAN          SOLUTION
+
+ FIXED EFFECT NO.   1    generation  
+    2  LEVEL             1     1           93       23.72365591        1.40944511
+    3  LEVEL             2     1           84       23.06309524        0.22418617
+    4  LEVEL             3     1          107       25.15794393        2.16545242
+
+ FIXED EFFECT NO.   2    sex         
+    5  LEVEL             1     1          150       22.65600000        0.00000000
+    6  LEVEL             2     1          134       25.65000000        2.97245265
+
+ FIXED EFFECT NO.   3    littersize  
+    7  LEVEL             1     1           11       26.60909091        0.00000000
+    8  LEVEL             2     1           41       23.72195122       -3.04613513
+    9  LEVEL             3     1           25       24.86400000       -2.02038467
+   10  LEVEL             4     1           36       24.02777778       -3.08355671
+   11  LEVEL             5     1           96       24.26458333       -2.26943652
+   12  LEVEL             6     1           45       24.33333333       -3.07492032
+   13  LEVEL             7     1           30       21.97333333       -4.57584890
+
+ EQ.NO.                    TRAIT         NREC              MEAN          SOLUTION
+
+ FIXED EFFECT NO.   1    generation  
+   14  LEVEL             1     2           93       62.88387097      -10.81672952
+   15  LEVEL             2     2           84       64.22857143       -9.19861142
+   16  LEVEL             3     2          107       65.46915888       -7.37658784
+
+ FIXED EFFECT NO.   2    sex         
+   17  LEVEL             1     2          150       61.39200000        0.00000000
+   18  LEVEL             2     2          134       67.46119403        5.87965135
+
+ FIXED EFFECT NO.   3    littersize  
+   19  LEVEL             1     2           11       58.35454545        0.00000000
+   20  LEVEL             2     2           41       61.57804878        3.57393367
+   21  LEVEL             3     2           25       65.02000000        6.04753174
+   22  LEVEL             4     2           36       61.53055556        4.48291016
+   23  LEVEL             5     2           96       65.28645833        7.55934143
+   24  LEVEL             6     2           45       66.24222222        6.68193766
+   25  LEVEL             7     2           30       66.43333333        9.81909485
+
+********************************************************************************
+

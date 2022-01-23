@@ -1,0 +1,10 @@
+gfortran -O --static  -c modules.f90 
+gfortran -O --static   -c -o dfcfix.o dfcfix.f
+gfortran -O --static   -c -o dfpcnt.o dfpcnt.f
+gfortran -O --static   -c -o dfprep.o dfprep.f
+dfprep.f:16.72:
+
+      use version                                                       
+                                                                       1
+Fatal Error: Can't open module file 'version.mod' for reading at (1): No such file or directory
+make: *** [dfprep.o] Error 1

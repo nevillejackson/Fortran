@@ -1,0 +1,23 @@
+mrrped.dat                                               pedigree file
+2                                                        formatted, list-dir in
+999999                                                   highest animal ID
+1                                                        continue
+5                                                        analysis : DXMRR
+mrrtst.dat                                               data file
+2                                                        formatted, list-dir in
+1                                                        no. of traits
+1                                                        no. RHS
+0                                                        no. covariables
+1                                                        no. fixed effects
+1                                                        add. rand. eff. : yes
+0                                                        2nd anim. eff. : no
+1                                                        no. of meta-meters
+0                                                        special opt. : none
+1                                                        continue
+2000                                                     max. no. animals
+ 
+ 
+ 
+  
+
+ 

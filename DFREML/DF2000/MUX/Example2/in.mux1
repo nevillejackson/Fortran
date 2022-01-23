@@ -1,0 +1,37 @@
+-1                                             run option
+mouse test data (Meyer 1991, GSE 23:67-83)
+model 2
+*
+2                                              no. traits
+weight                                         trait 1
+foodintake                                     trait 2
+0                                              repeated records : no
+1                                              no. RHS, trait 1
+1                                              .............. 2
+0                                              no. covariables, trait 1
+0                                              ...................... 2
+3                                              no. fixed effects, trait 1
+generation                                     name, FE 1, trait 1
+3                                              no. levels, FE 1, trait 1
+sex                                            name, FE 2, trait 1
+2                                              no. levels, FE 2, trait 1
+littersize                                     name, FE 3, trait 1
+7                                              no. levels, FE 3, trait 1
+0                                              no. addit. dependencies, trait 1
+3                                              no. fixed effects, trait 2
+generation                                     name, FE 1, trait 2
+3                                              no. levels, FE 1, trait 2
+sex                                            name, FE 2, trait 2
+2                                              no. levels, FE 2, trait 2
+littersize                                     name, FE 3, trait 2
+7                                              no. levels, FE 3, trait 2
+0                                              no. addit. dependencies, trait 2
+329                                            no. of animals
+1                                              fit add. random effect : yes
+litter                                         name for add. RE
+42                                             no. levels add RE
+1                                              add RE fitted for all tr. : yes
+0                                              fit 2nd animal effect : 0
+8                                              operational zero
+
+

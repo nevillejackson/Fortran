@@ -1,0 +1,71 @@
+#########################################################################
+#                      Makefile for dfprep  : gfortran under Debian linux          #
+#########################################################################
+
+#-------------------- Customize for local installation -----------------
+
+# my home directory  - setting on "whip" !
+# my home directory ...
+HMDIR =/home/nevj
+MYDIR = $(HMDIR)/xlash
+
+# DFREML directory
+DFDIR = $(HMDIR)/DFREML.work/DF2000
+
+# directory where executable file "dxmrr" is to be placed
+BINDIR = $(HMDIR)/bin
+
+# directory where library file "libkm.a" is held
+LIBDIR = $(HMDIR)/lib
+
+# directory for modules used by all programs
+MODIR =$(DFDIR)/LIB
+
+# FORTRAN compiler
+FC=gfortran
+
+# Compiler options : gfortran under Linux 
+FFLAGS= -O --static  
+LDFLAGS= -L $(LIBDIR) -l kmdeb
+#----------------------end of changes ----------------------------------
+
+# Object files
+OBJECTS=dfcfix.o \
+dfpcnt.o \
+dfprep.o \
+dfread.o \
+lnkfnd.o \
+dfages.o \
+dfpids.o \
+dfown.o \
+dfprec.o \
+dfdfil.o \
+dxainv.o  dxainv_old.o\
+dxbinv.o \
+modules.o 
+
+
+# Build program
+all: modules dfprep
+
+modules:
+	$(FC) $(FFLAGS) -c modules.f90 $(MODIR)/modules_all.f90 
+
+dfprep: $(OBJECTS)
+	$(FC) $(FFLAGS) $(OBJECTS)  -o $(BINDIR)/dfprep $(LDFLAGS)
+
+# Dependencies
+dfages.o : modules.o
+dfcfix.o : modules.o
+dfpcnt.o : modules.o
+dfprep.o : modules.o 
+dfread.o : modules.o 
+lnkfnd.o : modules.o
+dfpids.o : modules.o
+dfown.o  : modules.o
+dfprec.o : modules.o
+dfdfil.o : modules.o
+dxainv.o : modules.o
+dxbinv.o : modules.o
+
+

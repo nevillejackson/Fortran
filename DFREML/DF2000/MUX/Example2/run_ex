@@ -1,0 +1,10 @@
+rm -f DF*DAT MAXPARM Iterates
+/home/agbu/kmeyer/bin/dfprep <in.prep >log.prep
+mv -f DF66#DAT df66.prep
+/home/agbu/kmeyer/bin/dxmux <in.mux1 >log.mux1
+mv -f DF66#DAT df66.mux1
+/home/agbu/kmeyer/bin/dxmux <in.mux2 >log.mux2
+mv -f DF66#DAT df66.mux2
+/home/agbu/kmeyer/bin/dxmux <in.mux0 >log.mux0
+mv -f DF66#DAT df66.mux0
+rm -f DF*#DAT Iterates

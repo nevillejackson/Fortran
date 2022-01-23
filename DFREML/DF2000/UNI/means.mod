@@ -1,0 +1,50 @@
+GFORTRAN module created from modules.f90 on Tue Apr 27 17:36:33 2010
+MD5:ea7e6a98c0635906dfd44f28ab6e02fb -- If you edit this, you'll get what you deserve.
+
+(() () () () () () () () () () () () () () () () () () () () () () () ()
+() () ())
+
+()
+
+()
+
+()
+
+()
+
+(2 'cbar' 'means' 'cbar' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXPLICIT-SAVE ALLOCATABLE DIMENSION) (REAL 8 0 0 REAL ()) 0 0 ()
+(1 DEFERRED () ()) 0 () () 0 0)
+3 'ccv' 'means' 'ccv' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+EXPLICIT-SAVE ALLOCATABLE DIMENSION) (REAL 8 0 0 REAL ()) 0 0 () (1
+DEFERRED () ()) 0 () () 0 0)
+4 'cmax' 'means' 'cmax' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+EXPLICIT-SAVE ALLOCATABLE DIMENSION) (REAL 8 0 0 REAL ()) 0 0 () (1
+DEFERRED () ()) 0 () () 0 0)
+5 'cmin' 'means' 'cmin' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+EXPLICIT-SAVE ALLOCATABLE DIMENSION) (REAL 8 0 0 REAL ()) 0 0 () (1
+DEFERRED () ()) 0 () () 0 0)
+6 'csdev' 'means' 'csdev' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXPLICIT-SAVE ALLOCATABLE DIMENSION) (REAL 8 0 0 REAL ()) 0 0 ()
+(1 DEFERRED () ()) 0 () () 0 0)
+7 'means' 'means' 'means' 1 ((MODULE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN) (UNKNOWN 0 0 0 UNKNOWN ()) 0 0 () () 0 () () 0 0)
+8 'ybar' 'means' 'ybar' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+EXPLICIT-SAVE ALLOCATABLE DIMENSION) (REAL 8 0 0 REAL ()) 0 0 () (1
+DEFERRED () ()) 0 () () 0 0)
+9 'ycv' 'means' 'ycv' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+EXPLICIT-SAVE ALLOCATABLE DIMENSION) (REAL 8 0 0 REAL ()) 0 0 () (1
+DEFERRED () ()) 0 () () 0 0)
+10 'ymax' 'means' 'ymax' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXPLICIT-SAVE ALLOCATABLE DIMENSION) (REAL 8 0 0 REAL ()) 0 0 ()
+(1 DEFERRED () ()) 0 () () 0 0)
+11 'ymin' 'means' 'ymin' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXPLICIT-SAVE ALLOCATABLE DIMENSION) (REAL 8 0 0 REAL ()) 0 0 ()
+(1 DEFERRED () ()) 0 () () 0 0)
+12 'ysdev' 'means' 'ysdev' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXPLICIT-SAVE ALLOCATABLE DIMENSION) (REAL 8 0 0 REAL ()) 0 0 ()
+(1 DEFERRED () ()) 0 () () 0 0)
+)
+
+('cbar' 0 2 'ccv' 0 3 'cmax' 0 4 'cmin' 0 5 'csdev' 0 6 'means' 0 7 'ybar'
+0 8 'ycv' 0 9 'ymax' 0 10 'ymin' 0 11 'ysdev' 0 12)

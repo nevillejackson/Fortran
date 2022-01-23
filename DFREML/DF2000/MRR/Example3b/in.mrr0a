@@ -1,0 +1,18 @@
+0                                                    run option 
+8                                                    operational zero
+3                                                    read start.value file
+Start_values                                         file name
+6                                                    no. measurem.error var.
+2                                                    read from DF20#DAT
+6                                                    oper. zero - eigenvalues
+3                                                    maximise :AIREML
+2                                                    transform : chol+log
+
+
+
+0                                                    full log L : no
+0                                                    cov matrices : no
+
+
+                 
+

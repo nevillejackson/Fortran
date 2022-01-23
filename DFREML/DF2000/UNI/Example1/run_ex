@@ -1,0 +1,11 @@
+rm -f DF*DAT 
+/home/agbu/kmeyer/bin/dfprep <in.prep >log.prep
+mv -f DF66#DAT df66.prep
+/home/agbu/kmeyer/bin/dfuni <in.uni1 >log.uni1
+mv -f DF66#DAT df66.uni1
+/home/agbu/kmeyer/bin/dfuni <in.uni2 >log.uni2
+mv -f DF66#DAT df66.uni2
+/home/agbu/kmeyer/bin/dfuni <in.uni0 >log.uni0
+mv -f DF66#DAT df66.uni0
+/home/agbu/kmeyer/bin/dfuni <in.uni5 >log.uni5
+mv -f DF66#DAT df66.uni5

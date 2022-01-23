@@ -1,0 +1,15 @@
+F DF66.MUX0;1                           	df66.mux0
+F DF66.MUX1;1                           	df66.mux1
+F DF66.MUX2;1                           	df66.mux2
+F DF66.PREP;1                           	df66.prep
+F IN.MUX0;1                             	in.mux0
+F IN.MUX1;1                             	in.mux1
+F IN.MUX2;1                             	in.mux2
+F IN.PREP;1                             	in.prep
+F LOG.MUX0;1                            	log.mux0
+F LOG.MUX1;1                            	log.mux1
+F LOG.MUX2;1                            	log.mux2
+F LOG.PREP;1                            	log.prep
+F MUEXPED.D;1                           	muexped.d
+F MUWEX2.D;1                            	muwex2.d
+F RUN_EX.;1                             	run_ex

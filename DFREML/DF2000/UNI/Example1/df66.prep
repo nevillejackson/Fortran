@@ -1,0 +1,192 @@
+                   *** DFREML 3.1.000        ***
+                   Last modified : Jan. 24, 2000  
+
+
+********************************************************************************
+
+                    PROGRAM " D F P R E P " 
+  
+                  SET UP RELATIONSHIP MATRIX      
+                              &                   
+               RECODE ANIMAL IDS IN RUNNING ORDER 
+
+****************************************************************************KM**
+
+ Today is  1/ 2/2001    Time is 13: 9
+
+ Current directory is : /home/agbu/kmeyer/DF2000/UNI/Example1   
+ Running on host : "metz.une.edu.au                         " 
+ ---------------------------
+ DATA AND PEDIGREE STRUCTURE
+ ---------------------------
+  
+ READ DATA FROM FILE : "tstmo1.d                 " 
+ NO. OF RECORDS IN DATA                      =             282
+ NO. OF ANIMALS WITH RECORDS                 =             282
+  
+ READ PEDIGREES FROM FILE : "tstmo1.d                 "  
+ NO. OF PEDIGREE RECORDS                     =             282
+ NO. OF ANIMALS IN TOTAL                     =             306
+ NO. OF "SINGLE CONNECTION" PARENTS          =               0
+ NO. OF ANIMALS IN ANIMAL MODEL              =             306
+  
+ NO. OF RECORDS IN NRM INVERSE (HALFST.)     =             906
+ LOG DETERMINANT OF NRM                      =      -195.46750
+ AVERAGE INBREEDING COEFFICIENT              =         1.02206
+ NO. OF INBRED ANIMALS                       =              38
+ ... WITH AVERAGE INBREEDING COEFFICIENT     =         1.17763
+  
+ ----------------------------------------------
+ DATA STRUCTURE : OFFSPRING-PARENT COMBINATIONS
+ ----------------------------------------------
+  
+ no. of  "base" animals                      =          24
+ no. of animals in the data                  =         282
+  ... which are "base" animals               =           0
+  ... with unknown/pruned sire               =           0
+  ... with unknown/pruned dam                =           0
+ no. of sires :
+  ... in total                               =          12
+  ... with progeny in the data               =          12
+  ... with own record as well                =           6
+  ... sire-offspring record pairs            =         144
+  ... which are also grand sires             =           6
+  ... which also have grandprogeny records   =           6
+  ... with own record as well                =           0
+  ... paternal half-sib record pairs         =        6368
+  ... av. no. progeny rec.s/sire             =       23.50
+ no. of dams :
+  ... in total                               =          36
+  ... with progeny in the data               =          36
+  ... with own record as well                =          18
+  ... dam-offspring record pairs             =         144
+  ... which are also grand dams              =          12
+  ... which also have grandprogeny records   =          12
+  ... with own record as well                =           0
+  ... maternal half-sib record pairs         =        1964
+  ... av. no. progeny rec.s/dam              =        7.83
+ no. of paternal grand sires :
+  ... in total                               =           4
+  ... with progeny in the data               =           4
+  ... with own record as well                =           0
+  ... grand sire-offspring record pairs      =           0
+  ... quarter-sib record pairs               =        5718
+  ... av. no. progeny rec.s/grand sire       =       36.00
+ no. of maternal grand sires :
+  ... in total                               =           6
+  ... with progeny in the data               =           6
+  ... with own record as well                =           0
+  ... grand sire-offspring record pairs      =           0
+  ... quarter-sib record pairs               =        3866
+  ... av. no. progeny rec.s/grand sire       =       24.00
+ no. of grand sires together :
+  ... in total                               =          10
+  ... with progeny in the data               =          10
+  ... with own record as well                =           0
+  ... grand sire-offspring record pairs      =           0
+  ... quarter-sib record pairs               =        9584
+  ... av. no. progeny rec.s/grand sire       =       28.80
+ no. of paternal grand dams :
+  ... in total                               =           6
+  ... with progeny in the data               =           6
+  ... with own record as well                =           0
+  ... grand dam-offspring record pairs       =           0
+  ... quarter-sib record pairs               =        3322
+  ... av. no. progeny rec.s/grand dam        =       24.00
+ no. of maternal grand dams :
+  ... in total                               =          12
+  ... with progeny in the data               =          12
+  ... with own record as well                =           0
+  ... grand dam-offspring record pairs       =           0
+  ... quarter-sib record pairs               =        1766
+  ... av. no. progeny rec.s/grand dam        =       12.00
+ no. of grand dams together :
+  ... in total                               =          18
+  ... with progeny in the data               =          18
+  ... with own record as well                =           0
+  ... grand dam-offspring record pairs       =           0
+  ... quarter-sib record pairs               =        5088
+  ... av. no. progeny rec.s/grand dam        =       16.00
+  
+ distribution over no.s of progeny for : sires                         
+ nprog       0       1       2       3       4       5       6       7       8       9
+ nanim     294       0       0       0       0       0       0       0       0       0
+  
+ nprog      10      11      12      13      14      15      16      17      18      19
+ nanim       0       0       0       0       0       0       0       0       0       0
+  
+ nprog   20-29   30-39   40-49   50-59   60-69   70-79   80-89   90-99
+ nanim      12       0       0       0       0       0       0       0
+  
+  
+ distribution over no.s of progeny for : dams                          
+ nprog       0       1       2       3       4       5       6       7       8       9
+ nanim     270       0       0       0       0       0       3      11      13       7
+  
+ nprog      10      11      12      13      14      15      16      17      18      19
+ nanim       2       0       0       0       0       0       0       0       0       0
+  
+  
+ distribution over no.s of progeny for : paternal grand sires          
+ nprog       0       1       2       3       4       5       6       7       8       9
+ nanim     302       0       0       0       0       0       0       0       0       0
+  
+ nprog      10      11      12      13      14      15      16      17      18      19
+ nanim       0       0       0       0       0       0       0       0       0       0
+  
+ nprog   20-29   30-39   40-49   50-59   60-69   70-79   80-89   90-99
+ nanim       2       0       2       0       0       0       0       0
+  
+  
+ distribution over no.s of progeny for : maternal grand sires          
+ nprog       0       1       2       3       4       5       6       7       8       9
+ nanim     300       0       0       0       0       0       0       0       0       0
+  
+ nprog      10      11      12      13      14      15      16      17      18      19
+ nanim       0       0       0       0       0       0       0       0       0       0
+  
+ nprog   20-29   30-39   40-49   50-59   60-69   70-79   80-89   90-99
+ nanim       6       0       0       0       0       0       0       0
+  
+  
+ distribution over no.s of progeny for : paternal grand dams           
+ nprog       0       1       2       3       4       5       6       7       8       9
+ nanim     300       0       0       0       0       0       0       0       0       1
+  
+ nprog      10      11      12      13      14      15      16      17      18      19
+ nanim       0       0       0       0       0       0       0       0       1       0
+  
+ nprog   20-29   30-39   40-49   50-59   60-69   70-79   80-89   90-99
+ nanim       2       1       1       0       0       0       0       0
+  
+  
+ distribution over no.s of progeny for : maternal grand dams           
+ nprog       0       1       2       3       4       5       6       7       8       9
+ nanim     294       0       0       0       0       0       0       1       2       3
+  
+ nprog      10      11      12      13      14      15      16      17      18      19
+ nanim       0       0       0       0       2       2       0       0       2       0
+  
+  
+ ----------------------
+ TRAITS AND COVARIABLES
+ ----------------------
+  
+ DATA FOR UNIVARIATE ANALYSIS
+  
+   
+ TRAIT NO.           1    NO. OF RECORDS =         282
+   1   1    229.787        13.4939        5.87    194.00        269.00       -2.65    2.91
+  
+ ------------------------
+ FIXED EFFECTS SUBCLASSES
+ ------------------------
+  
+ FIXED EFFECT NO. =           1     WITH NO. OF LEVELS =           2
+       1         1     138       220.46377    
+       2         2     144       238.72222    
+ no. of single observation subclasses =           0
+   
+
+********************************************************************************
+

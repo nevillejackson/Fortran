@@ -1,0 +1,670 @@
+gfortran --verbose -static  -c modules_all.f90
+Using built-in specs.
+Target: i486-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 4.3.2-1.1' --with-bugurl=file:///usr/share/doc/gcc-4.3/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.3 --program-suffix=-4.3 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-targets=all --enable-cld --enable-checking=release --build=i486-linux-gnu --host=i486-linux-gnu --target=i486-linux-gnu
+Thread model: posix
+gcc version 4.3.2 (Debian 4.3.2-1.1) 
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-mtune=generic'
+ /usr/lib/gcc/i486-linux-gnu/4.3.2/f951 modules_all.f90 -quiet -dumpbase modules_all.f90 -mtune=generic -auxbase modules_all -version -fintrinsic-modules-path /usr/lib/gcc/i486-linux-gnu/4.3.2/finclude -o /tmp/ccik9zyt.s
+GNU F95 (Debian 4.3.2-1.1) version 4.3.2 (i486-linux-gnu)
+	compiled by GNU C version 4.3.2, GMP version 4.2.2, MPFR version 2.3.2.
+warning: MPFR header version 2.3.2 differs from library version 2.3.1.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-mtune=generic'
+ as -V -Qy -o modules_all.o /tmp/ccik9zyt.s
+GNU assembler version 2.18.0 (i486-linux-gnu) using BFD version (GNU Binutils for Debian) 2.18.0.20080103
+COMPILER_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-mtune=generic'
+gfortran --verbose -static  -c  -c -o canon.o canon.f
+Using built-in specs.
+Target: i486-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 4.3.2-1.1' --with-bugurl=file:///usr/share/doc/gcc-4.3/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.3 --program-suffix=-4.3 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-targets=all --enable-cld --enable-checking=release --build=i486-linux-gnu --host=i486-linux-gnu --target=i486-linux-gnu
+Thread model: posix
+gcc version 4.3.2 (Debian 4.3.2-1.1) 
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'canon.o' '-mtune=generic'
+ /usr/lib/gcc/i486-linux-gnu/4.3.2/f951 canon.f -ffixed-form -quiet -dumpbase canon.f -mtune=generic -auxbase-strip canon.o -version -fintrinsic-modules-path /usr/lib/gcc/i486-linux-gnu/4.3.2/finclude -o /tmp/ccjJ78Dz.s
+GNU F95 (Debian 4.3.2-1.1) version 4.3.2 (i486-linux-gnu)
+	compiled by GNU C version 4.3.2, GMP version 4.2.2, MPFR version 2.3.2.
+warning: MPFR header version 2.3.2 differs from library version 2.3.1.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'canon.o' '-mtune=generic'
+ as -V -Qy -o canon.o /tmp/ccjJ78Dz.s
+GNU assembler version 2.18.0 (i486-linux-gnu) using BFD version (GNU Binutils for Debian) 2.18.0.20080103
+COMPILER_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'canon.o' '-mtune=generic'
+gfortran --verbose -static  -c  -c -o chkdig.o chkdig.f
+Using built-in specs.
+Target: i486-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 4.3.2-1.1' --with-bugurl=file:///usr/share/doc/gcc-4.3/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.3 --program-suffix=-4.3 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-targets=all --enable-cld --enable-checking=release --build=i486-linux-gnu --host=i486-linux-gnu --target=i486-linux-gnu
+Thread model: posix
+gcc version 4.3.2 (Debian 4.3.2-1.1) 
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'chkdig.o' '-mtune=generic'
+ /usr/lib/gcc/i486-linux-gnu/4.3.2/f951 chkdig.f -ffixed-form -quiet -dumpbase chkdig.f -mtune=generic -auxbase-strip chkdig.o -version -fintrinsic-modules-path /usr/lib/gcc/i486-linux-gnu/4.3.2/finclude -o /tmp/ccAwlCyG.s
+GNU F95 (Debian 4.3.2-1.1) version 4.3.2 (i486-linux-gnu)
+	compiled by GNU C version 4.3.2, GMP version 4.2.2, MPFR version 2.3.2.
+warning: MPFR header version 2.3.2 differs from library version 2.3.1.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'chkdig.o' '-mtune=generic'
+ as -V -Qy -o chkdig.o /tmp/ccAwlCyG.s
+GNU assembler version 2.18.0 (i486-linux-gnu) using BFD version (GNU Binutils for Debian) 2.18.0.20080103
+COMPILER_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'chkdig.o' '-mtune=generic'
+gfortran --verbose -static  -c  -c -o chklev.o chklev.f
+Using built-in specs.
+Target: i486-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 4.3.2-1.1' --with-bugurl=file:///usr/share/doc/gcc-4.3/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.3 --program-suffix=-4.3 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-targets=all --enable-cld --enable-checking=release --build=i486-linux-gnu --host=i486-linux-gnu --target=i486-linux-gnu
+Thread model: posix
+gcc version 4.3.2 (Debian 4.3.2-1.1) 
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'chklev.o' '-mtune=generic'
+ /usr/lib/gcc/i486-linux-gnu/4.3.2/f951 chklev.f -ffixed-form -quiet -dumpbase chklev.f -mtune=generic -auxbase-strip chklev.o -version -fintrinsic-modules-path /usr/lib/gcc/i486-linux-gnu/4.3.2/finclude -o /tmp/ccfsgs9K.s
+GNU F95 (Debian 4.3.2-1.1) version 4.3.2 (i486-linux-gnu)
+	compiled by GNU C version 4.3.2, GMP version 4.2.2, MPFR version 2.3.2.
+warning: MPFR header version 2.3.2 differs from library version 2.3.1.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'chklev.o' '-mtune=generic'
+ as -V -Qy -o chklev.o /tmp/ccfsgs9K.s
+GNU assembler version 2.18.0 (i486-linux-gnu) using BFD version (GNU Binutils for Debian) 2.18.0.20080103
+COMPILER_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'chklev.o' '-mtune=generic'
+gfortran --verbose -static  -c  -c -o correl.o correl.f
+Using built-in specs.
+Target: i486-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 4.3.2-1.1' --with-bugurl=file:///usr/share/doc/gcc-4.3/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.3 --program-suffix=-4.3 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-targets=all --enable-cld --enable-checking=release --build=i486-linux-gnu --host=i486-linux-gnu --target=i486-linux-gnu
+Thread model: posix
+gcc version 4.3.2 (Debian 4.3.2-1.1) 
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'correl.o' '-mtune=generic'
+ /usr/lib/gcc/i486-linux-gnu/4.3.2/f951 correl.f -ffixed-form -quiet -dumpbase correl.f -mtune=generic -auxbase-strip correl.o -version -fintrinsic-modules-path /usr/lib/gcc/i486-linux-gnu/4.3.2/finclude -o /tmp/cc8M3lcN.s
+GNU F95 (Debian 4.3.2-1.1) version 4.3.2 (i486-linux-gnu)
+	compiled by GNU C version 4.3.2, GMP version 4.2.2, MPFR version 2.3.2.
+warning: MPFR header version 2.3.2 differs from library version 2.3.1.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'correl.o' '-mtune=generic'
+ as -V -Qy -o correl.o /tmp/cc8M3lcN.s
+GNU assembler version 2.18.0 (i486-linux-gnu) using BFD version (GNU Binutils for Debian) 2.18.0.20080103
+COMPILER_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'correl.o' '-mtune=generic'
+gfortran --verbose -static  -c  -c -o dfanim.o dfanim.f
+Using built-in specs.
+Target: i486-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 4.3.2-1.1' --with-bugurl=file:///usr/share/doc/gcc-4.3/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.3 --program-suffix=-4.3 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-targets=all --enable-cld --enable-checking=release --build=i486-linux-gnu --host=i486-linux-gnu --target=i486-linux-gnu
+Thread model: posix
+gcc version 4.3.2 (Debian 4.3.2-1.1) 
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'dfanim.o' '-mtune=generic'
+ /usr/lib/gcc/i486-linux-gnu/4.3.2/f951 dfanim.f -ffixed-form -quiet -dumpbase dfanim.f -mtune=generic -auxbase-strip dfanim.o -version -fintrinsic-modules-path /usr/lib/gcc/i486-linux-gnu/4.3.2/finclude -o /tmp/ccZY5kNP.s
+GNU F95 (Debian 4.3.2-1.1) version 4.3.2 (i486-linux-gnu)
+	compiled by GNU C version 4.3.2, GMP version 4.2.2, MPFR version 2.3.2.
+warning: MPFR header version 2.3.2 differs from library version 2.3.1.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'dfanim.o' '-mtune=generic'
+ as -V -Qy -o dfanim.o /tmp/ccZY5kNP.s
+GNU assembler version 2.18.0 (i486-linux-gnu) using BFD version (GNU Binutils for Debian) 2.18.0.20080103
+COMPILER_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'dfanim.o' '-mtune=generic'
+gfortran --verbose -static  -c  -c -o dfconv.o dfconv.f
+Using built-in specs.
+Target: i486-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 4.3.2-1.1' --with-bugurl=file:///usr/share/doc/gcc-4.3/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.3 --program-suffix=-4.3 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-targets=all --enable-cld --enable-checking=release --build=i486-linux-gnu --host=i486-linux-gnu --target=i486-linux-gnu
+Thread model: posix
+gcc version 4.3.2 (Debian 4.3.2-1.1) 
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'dfconv.o' '-mtune=generic'
+ /usr/lib/gcc/i486-linux-gnu/4.3.2/f951 dfconv.f -ffixed-form -quiet -dumpbase dfconv.f -mtune=generic -auxbase-strip dfconv.o -version -fintrinsic-modules-path /usr/lib/gcc/i486-linux-gnu/4.3.2/finclude -o /tmp/ccY4TJZR.s
+GNU F95 (Debian 4.3.2-1.1) version 4.3.2 (i486-linux-gnu)
+	compiled by GNU C version 4.3.2, GMP version 4.2.2, MPFR version 2.3.2.
+warning: MPFR header version 2.3.2 differs from library version 2.3.1.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'dfconv.o' '-mtune=generic'
+ as -V -Qy -o dfconv.o /tmp/ccY4TJZR.s
+GNU assembler version 2.18.0 (i486-linux-gnu) using BFD version (GNU Binutils for Debian) 2.18.0.20080103
+COMPILER_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'dfconv.o' '-mtune=generic'
+gfortran --verbose -static  -c  -c -o dferrs.o dferrs.f
+Using built-in specs.
+Target: i486-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 4.3.2-1.1' --with-bugurl=file:///usr/share/doc/gcc-4.3/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.3 --program-suffix=-4.3 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-targets=all --enable-cld --enable-checking=release --build=i486-linux-gnu --host=i486-linux-gnu --target=i486-linux-gnu
+Thread model: posix
+gcc version 4.3.2 (Debian 4.3.2-1.1) 
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'dferrs.o' '-mtune=generic'
+ /usr/lib/gcc/i486-linux-gnu/4.3.2/f951 dferrs.f -ffixed-form -quiet -dumpbase dferrs.f -mtune=generic -auxbase-strip dferrs.o -version -fintrinsic-modules-path /usr/lib/gcc/i486-linux-gnu/4.3.2/finclude -o /tmp/cchDKs8T.s
+GNU F95 (Debian 4.3.2-1.1) version 4.3.2 (i486-linux-gnu)
+	compiled by GNU C version 4.3.2, GMP version 4.2.2, MPFR version 2.3.2.
+warning: MPFR header version 2.3.2 differs from library version 2.3.1.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'dferrs.o' '-mtune=generic'
+ as -V -Qy -o dferrs.o /tmp/cchDKs8T.s
+GNU assembler version 2.18.0 (i486-linux-gnu) using BFD version (GNU Binutils for Debian) 2.18.0.20080103
+COMPILER_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'dferrs.o' '-mtune=generic'
+gfortran --verbose -static  -c  -c -o dfkzer.o dfkzer.f
+Using built-in specs.
+Target: i486-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 4.3.2-1.1' --with-bugurl=file:///usr/share/doc/gcc-4.3/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.3 --program-suffix=-4.3 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-targets=all --enable-cld --enable-checking=release --build=i486-linux-gnu --host=i486-linux-gnu --target=i486-linux-gnu
+Thread model: posix
+gcc version 4.3.2 (Debian 4.3.2-1.1) 
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'dfkzer.o' '-mtune=generic'
+ /usr/lib/gcc/i486-linux-gnu/4.3.2/f951 dfkzer.f -ffixed-form -quiet -dumpbase dfkzer.f -mtune=generic -auxbase-strip dfkzer.o -version -fintrinsic-modules-path /usr/lib/gcc/i486-linux-gnu/4.3.2/finclude -o /tmp/ccOOkP1V.s
+GNU F95 (Debian 4.3.2-1.1) version 4.3.2 (i486-linux-gnu)
+	compiled by GNU C version 4.3.2, GMP version 4.2.2, MPFR version 2.3.2.
+warning: MPFR header version 2.3.2 differs from library version 2.3.1.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'dfkzer.o' '-mtune=generic'
+ as -V -Qy -o dfkzer.o /tmp/ccOOkP1V.s
+GNU assembler version 2.18.0 (i486-linux-gnu) using BFD version (GNU Binutils for Debian) 2.18.0.20080103
+COMPILER_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'dfkzer.o' '-mtune=generic'
+gfortran --verbose -static  -c  -c -o dfparm.o dfparm.f
+Using built-in specs.
+Target: i486-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 4.3.2-1.1' --with-bugurl=file:///usr/share/doc/gcc-4.3/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.3 --program-suffix=-4.3 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-targets=all --enable-cld --enable-checking=release --build=i486-linux-gnu --host=i486-linux-gnu --target=i486-linux-gnu
+Thread model: posix
+gcc version 4.3.2 (Debian 4.3.2-1.1) 
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'dfparm.o' '-mtune=generic'
+ /usr/lib/gcc/i486-linux-gnu/4.3.2/f951 dfparm.f -ffixed-form -quiet -dumpbase dfparm.f -mtune=generic -auxbase-strip dfparm.o -version -fintrinsic-modules-path /usr/lib/gcc/i486-linux-gnu/4.3.2/finclude -o /tmp/ccB4lC70.s
+GNU F95 (Debian 4.3.2-1.1) version 4.3.2 (i486-linux-gnu)
+	compiled by GNU C version 4.3.2, GMP version 4.2.2, MPFR version 2.3.2.
+warning: MPFR header version 2.3.2 differs from library version 2.3.1.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'dfparm.o' '-mtune=generic'
+ as -V -Qy -o dfparm.o /tmp/ccB4lC70.s
+GNU assembler version 2.18.0 (i486-linux-gnu) using BFD version (GNU Binutils for Debian) 2.18.0.20080103
+COMPILER_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'dfparm.o' '-mtune=generic'
+gfortran --verbose -static  -c  -c -o dfpopt.o dfpopt.f
+Using built-in specs.
+Target: i486-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 4.3.2-1.1' --with-bugurl=file:///usr/share/doc/gcc-4.3/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.3 --program-suffix=-4.3 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-targets=all --enable-cld --enable-checking=release --build=i486-linux-gnu --host=i486-linux-gnu --target=i486-linux-gnu
+Thread model: posix
+gcc version 4.3.2 (Debian 4.3.2-1.1) 
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'dfpopt.o' '-mtune=generic'
+ /usr/lib/gcc/i486-linux-gnu/4.3.2/f951 dfpopt.f -ffixed-form -quiet -dumpbase dfpopt.f -mtune=generic -auxbase-strip dfpopt.o -version -fintrinsic-modules-path /usr/lib/gcc/i486-linux-gnu/4.3.2/finclude -o /tmp/ccWpc1R2.s
+GNU F95 (Debian 4.3.2-1.1) version 4.3.2 (i486-linux-gnu)
+	compiled by GNU C version 4.3.2, GMP version 4.2.2, MPFR version 2.3.2.
+warning: MPFR header version 2.3.2 differs from library version 2.3.1.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'dfpopt.o' '-mtune=generic'
+ as -V -Qy -o dfpopt.o /tmp/ccWpc1R2.s
+GNU assembler version 2.18.0 (i486-linux-gnu) using BFD version (GNU Binutils for Debian) 2.18.0.20080103
+COMPILER_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'dfpopt.o' '-mtune=generic'
+gfortran --verbose -static  -c  -c -o dfstep.o dfstep.f
+Using built-in specs.
+Target: i486-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 4.3.2-1.1' --with-bugurl=file:///usr/share/doc/gcc-4.3/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.3 --program-suffix=-4.3 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-targets=all --enable-cld --enable-checking=release --build=i486-linux-gnu --host=i486-linux-gnu --target=i486-linux-gnu
+Thread model: posix
+gcc version 4.3.2 (Debian 4.3.2-1.1) 
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'dfstep.o' '-mtune=generic'
+ /usr/lib/gcc/i486-linux-gnu/4.3.2/f951 dfstep.f -ffixed-form -quiet -dumpbase dfstep.f -mtune=generic -auxbase-strip dfstep.o -version -fintrinsic-modules-path /usr/lib/gcc/i486-linux-gnu/4.3.2/finclude -o /tmp/cc5u4wU4.s
+GNU F95 (Debian 4.3.2-1.1) version 4.3.2 (i486-linux-gnu)
+	compiled by GNU C version 4.3.2, GMP version 4.2.2, MPFR version 2.3.2.
+warning: MPFR header version 2.3.2 differs from library version 2.3.1.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'dfstep.o' '-mtune=generic'
+ as -V -Qy -o dfstep.o /tmp/cc5u4wU4.s
+GNU assembler version 2.18.0 (i486-linux-gnu) using BFD version (GNU Binutils for Debian) 2.18.0.20080103
+COMPILER_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'dfstep.o' '-mtune=generic'
+gfortran --verbose -static  -c  -c -o dfwarn.o dfwarn.f
+Using built-in specs.
+Target: i486-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 4.3.2-1.1' --with-bugurl=file:///usr/share/doc/gcc-4.3/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.3 --program-suffix=-4.3 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-targets=all --enable-cld --enable-checking=release --build=i486-linux-gnu --host=i486-linux-gnu --target=i486-linux-gnu
+Thread model: posix
+gcc version 4.3.2 (Debian 4.3.2-1.1) 
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'dfwarn.o' '-mtune=generic'
+ /usr/lib/gcc/i486-linux-gnu/4.3.2/f951 dfwarn.f -ffixed-form -quiet -dumpbase dfwarn.f -mtune=generic -auxbase-strip dfwarn.o -version -fintrinsic-modules-path /usr/lib/gcc/i486-linux-gnu/4.3.2/finclude -o /tmp/ccMT0G46.s
+GNU F95 (Debian 4.3.2-1.1) version 4.3.2 (i486-linux-gnu)
+	compiled by GNU C version 4.3.2, GMP version 4.2.2, MPFR version 2.3.2.
+warning: MPFR header version 2.3.2 differs from library version 2.3.1.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'dfwarn.o' '-mtune=generic'
+ as -V -Qy -o dfwarn.o /tmp/ccMT0G46.s
+GNU assembler version 2.18.0 (i486-linux-gnu) using BFD version (GNU Binutils for Debian) 2.18.0.20080103
+COMPILER_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'dfwarn.o' '-mtune=generic'
+gfortran --verbose -static  -c  -c -o dfwdis.o dfwdis.f
+Using built-in specs.
+Target: i486-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 4.3.2-1.1' --with-bugurl=file:///usr/share/doc/gcc-4.3/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.3 --program-suffix=-4.3 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-targets=all --enable-cld --enable-checking=release --build=i486-linux-gnu --host=i486-linux-gnu --target=i486-linux-gnu
+Thread model: posix
+gcc version 4.3.2 (Debian 4.3.2-1.1) 
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'dfwdis.o' '-mtune=generic'
+ /usr/lib/gcc/i486-linux-gnu/4.3.2/f951 dfwdis.f -ffixed-form -quiet -dumpbase dfwdis.f -mtune=generic -auxbase-strip dfwdis.o -version -fintrinsic-modules-path /usr/lib/gcc/i486-linux-gnu/4.3.2/finclude -o /tmp/cclc16Pc.s
+GNU F95 (Debian 4.3.2-1.1) version 4.3.2 (i486-linux-gnu)
+	compiled by GNU C version 4.3.2, GMP version 4.2.2, MPFR version 2.3.2.
+warning: MPFR header version 2.3.2 differs from library version 2.3.1.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'dfwdis.o' '-mtune=generic'
+ as -V -Qy -o dfwdis.o /tmp/cclc16Pc.s
+GNU assembler version 2.18.0 (i486-linux-gnu) using BFD version (GNU Binutils for Debian) 2.18.0.20080103
+COMPILER_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'dfwdis.o' '-mtune=generic'
+gfortran --verbose -static  -c  -c -o dkmwhf.o dkmwhf.f
+Using built-in specs.
+Target: i486-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 4.3.2-1.1' --with-bugurl=file:///usr/share/doc/gcc-4.3/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.3 --program-suffix=-4.3 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-targets=all --enable-cld --enable-checking=release --build=i486-linux-gnu --host=i486-linux-gnu --target=i486-linux-gnu
+Thread model: posix
+gcc version 4.3.2 (Debian 4.3.2-1.1) 
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'dkmwhf.o' '-mtune=generic'
+ /usr/lib/gcc/i486-linux-gnu/4.3.2/f951 dkmwhf.f -ffixed-form -quiet -dumpbase dkmwhf.f -mtune=generic -auxbase-strip dkmwhf.o -version -fintrinsic-modules-path /usr/lib/gcc/i486-linux-gnu/4.3.2/finclude -o /tmp/ccOzsTue.s
+GNU F95 (Debian 4.3.2-1.1) version 4.3.2 (i486-linux-gnu)
+	compiled by GNU C version 4.3.2, GMP version 4.2.2, MPFR version 2.3.2.
+warning: MPFR header version 2.3.2 differs from library version 2.3.1.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'dkmwhf.o' '-mtune=generic'
+ as -V -Qy -o dkmwhf.o /tmp/ccOzsTue.s
+GNU assembler version 2.18.0 (i486-linux-gnu) using BFD version (GNU Binutils for Debian) 2.18.0.20080103
+COMPILER_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'dkmwhf.o' '-mtune=generic'
+gfortran --verbose -static  -c  -c -o eigen.o eigen.f
+Using built-in specs.
+Target: i486-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 4.3.2-1.1' --with-bugurl=file:///usr/share/doc/gcc-4.3/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.3 --program-suffix=-4.3 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-targets=all --enable-cld --enable-checking=release --build=i486-linux-gnu --host=i486-linux-gnu --target=i486-linux-gnu
+Thread model: posix
+gcc version 4.3.2 (Debian 4.3.2-1.1) 
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'eigen.o' '-mtune=generic'
+ /usr/lib/gcc/i486-linux-gnu/4.3.2/f951 eigen.f -ffixed-form -quiet -dumpbase eigen.f -mtune=generic -auxbase-strip eigen.o -version -fintrinsic-modules-path /usr/lib/gcc/i486-linux-gnu/4.3.2/finclude -o /tmp/cc61v4jb.s
+GNU F95 (Debian 4.3.2-1.1) version 4.3.2 (i486-linux-gnu)
+	compiled by GNU C version 4.3.2, GMP version 4.2.2, MPFR version 2.3.2.
+warning: MPFR header version 2.3.2 differs from library version 2.3.1.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'eigen.o' '-mtune=generic'
+ as -V -Qy -o eigen.o /tmp/cc61v4jb.s
+GNU assembler version 2.18.0 (i486-linux-gnu) using BFD version (GNU Binutils for Debian) 2.18.0.20080103
+COMPILER_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'eigen.o' '-mtune=generic'
+gfortran --verbose -static  -c  -c -o fconct.o fconct.f
+Using built-in specs.
+Target: i486-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 4.3.2-1.1' --with-bugurl=file:///usr/share/doc/gcc-4.3/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.3 --program-suffix=-4.3 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-targets=all --enable-cld --enable-checking=release --build=i486-linux-gnu --host=i486-linux-gnu --target=i486-linux-gnu
+Thread model: posix
+gcc version 4.3.2 (Debian 4.3.2-1.1) 
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'fconct.o' '-mtune=generic'
+ /usr/lib/gcc/i486-linux-gnu/4.3.2/f951 fconct.f -ffixed-form -quiet -dumpbase fconct.f -mtune=generic -auxbase-strip fconct.o -version -fintrinsic-modules-path /usr/lib/gcc/i486-linux-gnu/4.3.2/finclude -o /tmp/ccDUozij.s
+GNU F95 (Debian 4.3.2-1.1) version 4.3.2 (i486-linux-gnu)
+	compiled by GNU C version 4.3.2, GMP version 4.2.2, MPFR version 2.3.2.
+warning: MPFR header version 2.3.2 differs from library version 2.3.1.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'fconct.o' '-mtune=generic'
+ as -V -Qy -o fconct.o /tmp/ccDUozij.s
+GNU assembler version 2.18.0 (i486-linux-gnu) using BFD version (GNU Binutils for Debian) 2.18.0.20080103
+COMPILER_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'fconct.o' '-mtune=generic'
+gfortran --verbose -static  -c  -c -o genmmd.o genmmd.f
+Using built-in specs.
+Target: i486-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 4.3.2-1.1' --with-bugurl=file:///usr/share/doc/gcc-4.3/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.3 --program-suffix=-4.3 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-targets=all --enable-cld --enable-checking=release --build=i486-linux-gnu --host=i486-linux-gnu --target=i486-linux-gnu
+Thread model: posix
+gcc version 4.3.2 (Debian 4.3.2-1.1) 
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'genmmd.o' '-mtune=generic'
+ /usr/lib/gcc/i486-linux-gnu/4.3.2/f951 genmmd.f -ffixed-form -quiet -dumpbase genmmd.f -mtune=generic -auxbase-strip genmmd.o -version -fintrinsic-modules-path /usr/lib/gcc/i486-linux-gnu/4.3.2/finclude -o /tmp/cc01hn3j.s
+GNU F95 (Debian 4.3.2-1.1) version 4.3.2 (i486-linux-gnu)
+	compiled by GNU C version 4.3.2, GMP version 4.2.2, MPFR version 2.3.2.
+warning: MPFR header version 2.3.2 differs from library version 2.3.1.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'genmmd.o' '-mtune=generic'
+ as -V -Qy -o genmmd.o /tmp/cc01hn3j.s
+GNU assembler version 2.18.0 (i486-linux-gnu) using BFD version (GNU Binutils for Debian) 2.18.0.20080103
+COMPILER_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'genmmd.o' '-mtune=generic'
+gfortran --verbose -static  -c  -c -o gsfct.o gsfct.f
+Using built-in specs.
+Target: i486-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 4.3.2-1.1' --with-bugurl=file:///usr/share/doc/gcc-4.3/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.3 --program-suffix=-4.3 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-targets=all --enable-cld --enable-checking=release --build=i486-linux-gnu --host=i486-linux-gnu --target=i486-linux-gnu
+Thread model: posix
+gcc version 4.3.2 (Debian 4.3.2-1.1) 
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'gsfct.o' '-mtune=generic'
+ /usr/lib/gcc/i486-linux-gnu/4.3.2/f951 gsfct.f -ffixed-form -quiet -dumpbase gsfct.f -mtune=generic -auxbase-strip gsfct.o -version -fintrinsic-modules-path /usr/lib/gcc/i486-linux-gnu/4.3.2/finclude -o /tmp/cc3gw7Mu.s
+GNU F95 (Debian 4.3.2-1.1) version 4.3.2 (i486-linux-gnu)
+	compiled by GNU C version 4.3.2, GMP version 4.2.2, MPFR version 2.3.2.
+warning: MPFR header version 2.3.2 differs from library version 2.3.1.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'gsfct.o' '-mtune=generic'
+ as -V -Qy -o gsfct.o /tmp/cc3gw7Mu.s
+GNU assembler version 2.18.0 (i486-linux-gnu) using BFD version (GNU Binutils for Debian) 2.18.0.20080103
+COMPILER_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'gsfct.o' '-mtune=generic'
+gfortran --verbose -static  -c  -c -o gsslv.o gsslv.f
+Using built-in specs.
+Target: i486-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 4.3.2-1.1' --with-bugurl=file:///usr/share/doc/gcc-4.3/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.3 --program-suffix=-4.3 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-targets=all --enable-cld --enable-checking=release --build=i486-linux-gnu --host=i486-linux-gnu --target=i486-linux-gnu
+Thread model: posix
+gcc version 4.3.2 (Debian 4.3.2-1.1) 
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'gsslv.o' '-mtune=generic'
+ /usr/lib/gcc/i486-linux-gnu/4.3.2/f951 gsslv.f -ffixed-form -quiet -dumpbase gsslv.f -mtune=generic -auxbase-strip gsslv.o -version -fintrinsic-modules-path /usr/lib/gcc/i486-linux-gnu/4.3.2/finclude -o /tmp/cceON1ux.s
+GNU F95 (Debian 4.3.2-1.1) version 4.3.2 (i486-linux-gnu)
+	compiled by GNU C version 4.3.2, GMP version 4.2.2, MPFR version 2.3.2.
+warning: MPFR header version 2.3.2 differs from library version 2.3.1.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'gsslv.o' '-mtune=generic'
+ as -V -Qy -o gsslv.o /tmp/cceON1ux.s
+GNU assembler version 2.18.0 (i486-linux-gnu) using BFD version (GNU Binutils for Debian) 2.18.0.20080103
+COMPILER_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'gsslv.o' '-mtune=generic'
+gfortran --verbose -static  -c  -c -o ihmssf.o ihmssf.f
+Using built-in specs.
+Target: i486-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 4.3.2-1.1' --with-bugurl=file:///usr/share/doc/gcc-4.3/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.3 --program-suffix=-4.3 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-targets=all --enable-cld --enable-checking=release --build=i486-linux-gnu --host=i486-linux-gnu --target=i486-linux-gnu
+Thread model: posix
+gcc version 4.3.2 (Debian 4.3.2-1.1) 
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'ihmssf.o' '-mtune=generic'
+ /usr/lib/gcc/i486-linux-gnu/4.3.2/f951 ihmssf.f -ffixed-form -quiet -dumpbase ihmssf.f -mtune=generic -auxbase-strip ihmssf.o -version -fintrinsic-modules-path /usr/lib/gcc/i486-linux-gnu/4.3.2/finclude -o /tmp/ccvGAVgz.s
+GNU F95 (Debian 4.3.2-1.1) version 4.3.2 (i486-linux-gnu)
+	compiled by GNU C version 4.3.2, GMP version 4.2.2, MPFR version 2.3.2.
+warning: MPFR header version 2.3.2 differs from library version 2.3.1.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'ihmssf.o' '-mtune=generic'
+ as -V -Qy -o ihmssf.o /tmp/ccvGAVgz.s
+GNU assembler version 2.18.0 (i486-linux-gnu) using BFD version (GNU Binutils for Debian) 2.18.0.20080103
+COMPILER_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'ihmssf.o' '-mtune=generic'
+gfortran --verbose -static  -c  -c -o invgj.o invgj.f
+Using built-in specs.
+Target: i486-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 4.3.2-1.1' --with-bugurl=file:///usr/share/doc/gcc-4.3/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.3 --program-suffix=-4.3 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-targets=all --enable-cld --enable-checking=release --build=i486-linux-gnu --host=i486-linux-gnu --target=i486-linux-gnu
+Thread model: posix
+gcc version 4.3.2 (Debian 4.3.2-1.1) 
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'invgj.o' '-mtune=generic'
+ /usr/lib/gcc/i486-linux-gnu/4.3.2/f951 invgj.f -ffixed-form -quiet -dumpbase invgj.f -mtune=generic -auxbase-strip invgj.o -version -fintrinsic-modules-path /usr/lib/gcc/i486-linux-gnu/4.3.2/finclude -o /tmp/ccoCfjwy.s
+GNU F95 (Debian 4.3.2-1.1) version 4.3.2 (i486-linux-gnu)
+	compiled by GNU C version 4.3.2, GMP version 4.2.2, MPFR version 2.3.2.
+warning: MPFR header version 2.3.2 differs from library version 2.3.1.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'invgj.o' '-mtune=generic'
+ as -V -Qy -o invgj.o /tmp/ccoCfjwy.s
+GNU assembler version 2.18.0 (i486-linux-gnu) using BFD version (GNU Binutils for Debian) 2.18.0.20080103
+COMPILER_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'invgj.o' '-mtune=generic'
+gfortran --verbose -static  -c  -c -o ipsmin.o ipsmin.f
+Using built-in specs.
+Target: i486-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 4.3.2-1.1' --with-bugurl=file:///usr/share/doc/gcc-4.3/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.3 --program-suffix=-4.3 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-targets=all --enable-cld --enable-checking=release --build=i486-linux-gnu --host=i486-linux-gnu --target=i486-linux-gnu
+Thread model: posix
+gcc version 4.3.2 (Debian 4.3.2-1.1) 
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'ipsmin.o' '-mtune=generic'
+ /usr/lib/gcc/i486-linux-gnu/4.3.2/f951 ipsmin.f -ffixed-form -quiet -dumpbase ipsmin.f -mtune=generic -auxbase-strip ipsmin.o -version -fintrinsic-modules-path /usr/lib/gcc/i486-linux-gnu/4.3.2/finclude -o /tmp/ccnlSF5C.s
+GNU F95 (Debian 4.3.2-1.1) version 4.3.2 (i486-linux-gnu)
+	compiled by GNU C version 4.3.2, GMP version 4.2.2, MPFR version 2.3.2.
+warning: MPFR header version 2.3.2 differs from library version 2.3.1.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'ipsmin.o' '-mtune=generic'
+ as -V -Qy -o ipsmin.o /tmp/ccnlSF5C.s
+GNU assembler version 2.18.0 (i486-linux-gnu) using BFD version (GNU Binutils for Debian) 2.18.0.20080103
+COMPILER_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'ipsmin.o' '-mtune=generic'
+gfortran --verbose -static  -c  -c -o kount.o kount.f
+Using built-in specs.
+Target: i486-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 4.3.2-1.1' --with-bugurl=file:///usr/share/doc/gcc-4.3/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.3 --program-suffix=-4.3 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-targets=all --enable-cld --enable-checking=release --build=i486-linux-gnu --host=i486-linux-gnu --target=i486-linux-gnu
+Thread model: posix
+gcc version 4.3.2 (Debian 4.3.2-1.1) 
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'kount.o' '-mtune=generic'
+ /usr/lib/gcc/i486-linux-gnu/4.3.2/f951 kount.f -ffixed-form -quiet -dumpbase kount.f -mtune=generic -auxbase-strip kount.o -version -fintrinsic-modules-path /usr/lib/gcc/i486-linux-gnu/4.3.2/finclude -o /tmp/ccuy8zNG.s
+GNU F95 (Debian 4.3.2-1.1) version 4.3.2 (i486-linux-gnu)
+	compiled by GNU C version 4.3.2, GMP version 4.2.2, MPFR version 2.3.2.
+warning: MPFR header version 2.3.2 differs from library version 2.3.1.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'kount.o' '-mtune=generic'
+ as -V -Qy -o kount.o /tmp/ccuy8zNG.s
+GNU assembler version 2.18.0 (i486-linux-gnu) using BFD version (GNU Binutils for Debian) 2.18.0.20080103
+COMPILER_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'kount.o' '-mtune=generic'
+gfortran --verbose -static  -c  -c -o mulaba.o mulaba.f
+Using built-in specs.
+Target: i486-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 4.3.2-1.1' --with-bugurl=file:///usr/share/doc/gcc-4.3/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.3 --program-suffix=-4.3 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-targets=all --enable-cld --enable-checking=release --build=i486-linux-gnu --host=i486-linux-gnu --target=i486-linux-gnu
+Thread model: posix
+gcc version 4.3.2 (Debian 4.3.2-1.1) 
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'mulaba.o' '-mtune=generic'
+ /usr/lib/gcc/i486-linux-gnu/4.3.2/f951 mulaba.f -ffixed-form -quiet -dumpbase mulaba.f -mtune=generic -auxbase-strip mulaba.o -version -fintrinsic-modules-path /usr/lib/gcc/i486-linux-gnu/4.3.2/finclude -o /tmp/cc9uXEDI.s
+GNU F95 (Debian 4.3.2-1.1) version 4.3.2 (i486-linux-gnu)
+	compiled by GNU C version 4.3.2, GMP version 4.2.2, MPFR version 2.3.2.
+warning: MPFR header version 2.3.2 differs from library version 2.3.1.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'mulaba.o' '-mtune=generic'
+ as -V -Qy -o mulaba.o /tmp/cc9uXEDI.s
+GNU assembler version 2.18.0 (i486-linux-gnu) using BFD version (GNU Binutils for Debian) 2.18.0.20080103
+COMPILER_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'mulaba.o' '-mtune=generic'
+gfortran --verbose -static  -c  -c -o option.o option.f
+Using built-in specs.
+Target: i486-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 4.3.2-1.1' --with-bugurl=file:///usr/share/doc/gcc-4.3/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.3 --program-suffix=-4.3 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-targets=all --enable-cld --enable-checking=release --build=i486-linux-gnu --host=i486-linux-gnu --target=i486-linux-gnu
+Thread model: posix
+gcc version 4.3.2 (Debian 4.3.2-1.1) 
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'option.o' '-mtune=generic'
+ /usr/lib/gcc/i486-linux-gnu/4.3.2/f951 option.f -ffixed-form -quiet -dumpbase option.f -mtune=generic -auxbase-strip option.o -version -fintrinsic-modules-path /usr/lib/gcc/i486-linux-gnu/4.3.2/finclude -o /tmp/ccY0HJcN.s
+GNU F95 (Debian 4.3.2-1.1) version 4.3.2 (i486-linux-gnu)
+	compiled by GNU C version 4.3.2, GMP version 4.2.2, MPFR version 2.3.2.
+warning: MPFR header version 2.3.2 differs from library version 2.3.1.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'option.o' '-mtune=generic'
+ as -V -Qy -o option.o /tmp/ccY0HJcN.s
+GNU assembler version 2.18.0 (i486-linux-gnu) using BFD version (GNU Binutils for Debian) 2.18.0.20080103
+COMPILER_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'option.o' '-mtune=generic'
+gfortran --verbose -static  -c  -c -o opzero.o opzero.f
+Using built-in specs.
+Target: i486-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 4.3.2-1.1' --with-bugurl=file:///usr/share/doc/gcc-4.3/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.3 --program-suffix=-4.3 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-targets=all --enable-cld --enable-checking=release --build=i486-linux-gnu --host=i486-linux-gnu --target=i486-linux-gnu
+Thread model: posix
+gcc version 4.3.2 (Debian 4.3.2-1.1) 
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'opzero.o' '-mtune=generic'
+ /usr/lib/gcc/i486-linux-gnu/4.3.2/f951 opzero.f -ffixed-form -quiet -dumpbase opzero.f -mtune=generic -auxbase-strip opzero.o -version -fintrinsic-modules-path /usr/lib/gcc/i486-linux-gnu/4.3.2/finclude -o /tmp/ccPzFA5O.s
+GNU F95 (Debian 4.3.2-1.1) version 4.3.2 (i486-linux-gnu)
+	compiled by GNU C version 4.3.2, GMP version 4.2.2, MPFR version 2.3.2.
+warning: MPFR header version 2.3.2 differs from library version 2.3.1.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'opzero.o' '-mtune=generic'
+ as -V -Qy -o opzero.o /tmp/ccPzFA5O.s
+GNU assembler version 2.18.0 (i486-linux-gnu) using BFD version (GNU Binutils for Debian) 2.18.0.20080103
+COMPILER_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'opzero.o' '-mtune=generic'
+gfortran --verbose -static  -c  -c -o pedsum.o pedsum.f
+Using built-in specs.
+Target: i486-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 4.3.2-1.1' --with-bugurl=file:///usr/share/doc/gcc-4.3/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.3 --program-suffix=-4.3 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-targets=all --enable-cld --enable-checking=release --build=i486-linux-gnu --host=i486-linux-gnu --target=i486-linux-gnu
+Thread model: posix
+gcc version 4.3.2 (Debian 4.3.2-1.1) 
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'pedsum.o' '-mtune=generic'
+ /usr/lib/gcc/i486-linux-gnu/4.3.2/f951 pedsum.f -ffixed-form -quiet -dumpbase pedsum.f -mtune=generic -auxbase-strip pedsum.o -version -fintrinsic-modules-path /usr/lib/gcc/i486-linux-gnu/4.3.2/finclude -o /tmp/ccm6AijR.s
+GNU F95 (Debian 4.3.2-1.1) version 4.3.2 (i486-linux-gnu)
+	compiled by GNU C version 4.3.2, GMP version 4.2.2, MPFR version 2.3.2.
+warning: MPFR header version 2.3.2 differs from library version 2.3.1.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'pedsum.o' '-mtune=generic'
+ as -V -Qy -o pedsum.o /tmp/ccm6AijR.s
+GNU assembler version 2.18.0 (i486-linux-gnu) using BFD version (GNU Binutils for Debian) 2.18.0.20080103
+COMPILER_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'pedsum.o' '-mtune=generic'
+gfortran --verbose -static  -c  -c -o rvalue.o rvalue.f
+Using built-in specs.
+Target: i486-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 4.3.2-1.1' --with-bugurl=file:///usr/share/doc/gcc-4.3/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.3 --program-suffix=-4.3 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-targets=all --enable-cld --enable-checking=release --build=i486-linux-gnu --host=i486-linux-gnu --target=i486-linux-gnu
+Thread model: posix
+gcc version 4.3.2 (Debian 4.3.2-1.1) 
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'rvalue.o' '-mtune=generic'
+ /usr/lib/gcc/i486-linux-gnu/4.3.2/f951 rvalue.f -ffixed-form -quiet -dumpbase rvalue.f -mtune=generic -auxbase-strip rvalue.o -version -fintrinsic-modules-path /usr/lib/gcc/i486-linux-gnu/4.3.2/finclude -o /tmp/cc1SOQuW.s
+GNU F95 (Debian 4.3.2-1.1) version 4.3.2 (i486-linux-gnu)
+	compiled by GNU C version 4.3.2, GMP version 4.2.2, MPFR version 2.3.2.
+warning: MPFR header version 2.3.2 differs from library version 2.3.1.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'rvalue.o' '-mtune=generic'
+ as -V -Qy -o rvalue.o /tmp/cc1SOQuW.s
+GNU assembler version 2.18.0 (i486-linux-gnu) using BFD version (GNU Binutils for Debian) 2.18.0.20080103
+COMPILER_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'rvalue.o' '-mtune=generic'
+gfortran --verbose -static  -c  -c -o smbfct.o smbfct.f
+Using built-in specs.
+Target: i486-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 4.3.2-1.1' --with-bugurl=file:///usr/share/doc/gcc-4.3/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.3 --program-suffix=-4.3 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-targets=all --enable-cld --enable-checking=release --build=i486-linux-gnu --host=i486-linux-gnu --target=i486-linux-gnu
+Thread model: posix
+gcc version 4.3.2 (Debian 4.3.2-1.1) 
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'smbfct.o' '-mtune=generic'
+ /usr/lib/gcc/i486-linux-gnu/4.3.2/f951 smbfct.f -ffixed-form -quiet -dumpbase smbfct.f -mtune=generic -auxbase-strip smbfct.o -version -fintrinsic-modules-path /usr/lib/gcc/i486-linux-gnu/4.3.2/finclude -o /tmp/cc8h32BZ.s
+GNU F95 (Debian 4.3.2-1.1) version 4.3.2 (i486-linux-gnu)
+	compiled by GNU C version 4.3.2, GMP version 4.2.2, MPFR version 2.3.2.
+warning: MPFR header version 2.3.2 differs from library version 2.3.1.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'smbfct.o' '-mtune=generic'
+ as -V -Qy -o smbfct.o /tmp/cc8h32BZ.s
+GNU assembler version 2.18.0 (i486-linux-gnu) using BFD version (GNU Binutils for Debian) 2.18.0.20080103
+COMPILER_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'smbfct.o' '-mtune=generic'
+gfortran --verbose -static  -c  -c -o times.o times.f
+Using built-in specs.
+Target: i486-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 4.3.2-1.1' --with-bugurl=file:///usr/share/doc/gcc-4.3/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.3 --program-suffix=-4.3 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-targets=all --enable-cld --enable-checking=release --build=i486-linux-gnu --host=i486-linux-gnu --target=i486-linux-gnu
+Thread model: posix
+gcc version 4.3.2 (Debian 4.3.2-1.1) 
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'times.o' '-mtune=generic'
+ /usr/lib/gcc/i486-linux-gnu/4.3.2/f951 times.f -ffixed-form -quiet -dumpbase times.f -mtune=generic -auxbase-strip times.o -version -fintrinsic-modules-path /usr/lib/gcc/i486-linux-gnu/4.3.2/finclude -o /tmp/ccrPEIi0.s
+GNU F95 (Debian 4.3.2-1.1) version 4.3.2 (i486-linux-gnu)
+	compiled by GNU C version 4.3.2, GMP version 4.2.2, MPFR version 2.3.2.
+warning: MPFR header version 2.3.2 differs from library version 2.3.1.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'times.o' '-mtune=generic'
+ as -V -Qy -o times.o /tmp/ccrPEIi0.s
+GNU assembler version 2.18.0 (i486-linux-gnu) using BFD version (GNU Binutils for Debian) 2.18.0.20080103
+COMPILER_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'times.o' '-mtune=generic'
+gfortran --verbose -static  -c  -c -o triord.o triord.f
+Using built-in specs.
+Target: i486-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 4.3.2-1.1' --with-bugurl=file:///usr/share/doc/gcc-4.3/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.3 --program-suffix=-4.3 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-targets=all --enable-cld --enable-checking=release --build=i486-linux-gnu --host=i486-linux-gnu --target=i486-linux-gnu
+Thread model: posix
+gcc version 4.3.2 (Debian 4.3.2-1.1) 
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'triord.o' '-mtune=generic'
+ /usr/lib/gcc/i486-linux-gnu/4.3.2/f951 triord.f -ffixed-form -quiet -dumpbase triord.f -mtune=generic -auxbase-strip triord.o -version -fintrinsic-modules-path /usr/lib/gcc/i486-linux-gnu/4.3.2/finclude -o /tmp/ccKc5mM5.s
+GNU F95 (Debian 4.3.2-1.1) version 4.3.2 (i486-linux-gnu)
+	compiled by GNU C version 4.3.2, GMP version 4.2.2, MPFR version 2.3.2.
+warning: MPFR header version 2.3.2 differs from library version 2.3.1.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'triord.o' '-mtune=generic'
+ as -V -Qy -o triord.o /tmp/ccKc5mM5.s
+GNU assembler version 2.18.0 (i486-linux-gnu) using BFD version (GNU Binutils for Debian) 2.18.0.20080103
+COMPILER_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'triord.o' '-mtune=generic'
+gfortran --verbose -static  -c  -c -o vratio.o vratio.f
+Using built-in specs.
+Target: i486-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 4.3.2-1.1' --with-bugurl=file:///usr/share/doc/gcc-4.3/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.3 --program-suffix=-4.3 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-targets=all --enable-cld --enable-checking=release --build=i486-linux-gnu --host=i486-linux-gnu --target=i486-linux-gnu
+Thread model: posix
+gcc version 4.3.2 (Debian 4.3.2-1.1) 
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'vratio.o' '-mtune=generic'
+ /usr/lib/gcc/i486-linux-gnu/4.3.2/f951 vratio.f -ffixed-form -quiet -dumpbase vratio.f -mtune=generic -auxbase-strip vratio.o -version -fintrinsic-modules-path /usr/lib/gcc/i486-linux-gnu/4.3.2/finclude -o /tmp/cclDmAN8.s
+GNU F95 (Debian 4.3.2-1.1) version 4.3.2 (i486-linux-gnu)
+	compiled by GNU C version 4.3.2, GMP version 4.2.2, MPFR version 2.3.2.
+warning: MPFR header version 2.3.2 differs from library version 2.3.1.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'vratio.o' '-mtune=generic'
+ as -V -Qy -o vratio.o /tmp/cclDmAN8.s
+GNU assembler version 2.18.0 (i486-linux-gnu) using BFD version (GNU Binutils for Debian) 2.18.0.20080103
+COMPILER_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-c' '-o' 'vratio.o' '-mtune=generic'
+gfortran --verbose -static  -c canon.o chkdig.o chklev.o correl.o dfanim.o dfconv.o dferrs.o dfkzer.o dfparm.o dfpopt.o dfstep.o dfwarn.o dfwdis.o dkmwhf.o eigen.o fconct.o genmmd.o gsfct.o gsslv.o ihmssf.o invgj.o ipsmin.o kount.o mulaba.o option.o opzero.o pedsum.o rvalue.o smbfct.o times.o triord.o vratio.o 
+Using built-in specs.
+Target: i486-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 4.3.2-1.1' --with-bugurl=file:///usr/share/doc/gcc-4.3/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.3 --program-suffix=-4.3 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-targets=all --enable-cld --enable-checking=release --build=i486-linux-gnu --host=i486-linux-gnu --target=i486-linux-gnu
+Thread model: posix
+gcc version 4.3.2 (Debian 4.3.2-1.1) 
+COMPILER_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/i486-linux-gnu/4.3.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-static' '-c' '-mtune=generic'
+gfortran: canon.o: linker input file unused because linking not done
+gfortran: chkdig.o: linker input file unused because linking not done
+gfortran: chklev.o: linker input file unused because linking not done
+gfortran: correl.o: linker input file unused because linking not done
+gfortran: dfanim.o: linker input file unused because linking not done
+gfortran: dfconv.o: linker input file unused because linking not done
+gfortran: dferrs.o: linker input file unused because linking not done
+gfortran: dfkzer.o: linker input file unused because linking not done
+gfortran: dfparm.o: linker input file unused because linking not done
+gfortran: dfpopt.o: linker input file unused because linking not done
+gfortran: dfstep.o: linker input file unused because linking not done
+gfortran: dfwarn.o: linker input file unused because linking not done
+gfortran: dfwdis.o: linker input file unused because linking not done
+gfortran: dkmwhf.o: linker input file unused because linking not done
+gfortran: eigen.o: linker input file unused because linking not done
+gfortran: fconct.o: linker input file unused because linking not done
+gfortran: genmmd.o: linker input file unused because linking not done
+gfortran: gsfct.o: linker input file unused because linking not done
+gfortran: gsslv.o: linker input file unused because linking not done
+gfortran: ihmssf.o: linker input file unused because linking not done
+gfortran: invgj.o: linker input file unused because linking not done
+gfortran: ipsmin.o: linker input file unused because linking not done
+gfortran: kount.o: linker input file unused because linking not done
+gfortran: mulaba.o: linker input file unused because linking not done
+gfortran: option.o: linker input file unused because linking not done
+gfortran: opzero.o: linker input file unused because linking not done
+gfortran: pedsum.o: linker input file unused because linking not done
+gfortran: rvalue.o: linker input file unused because linking not done
+gfortran: smbfct.o: linker input file unused because linking not done
+gfortran: times.o: linker input file unused because linking not done
+gfortran: triord.o: linker input file unused because linking not done
+gfortran: vratio.o: linker input file unused because linking not done
+ar rv /home/nevj/lib/libkmdeb.a *.o
+ar: creating /home/nevj/lib/libkmdeb.a
+a - canon.o
+a - chkdig.o
+a - chklev.o
+a - correl.o
+a - dfanim.o
+a - dfconv.o
+a - dferrs.o
+a - dfkzer.o
+a - dfparm.o
+a - dfpopt.o
+a - dfstep.o
+a - dfwarn.o
+a - dfwdis.o
+a - dkmwhf.o
+a - eigen.o
+a - fconct.o
+a - genmmd.o
+a - gsfct.o
+a - gsslv.o
+a - ihmssf.o
+a - invgj.o
+a - ipsmin.o
+a - kount.o
+a - modules_all.o
+a - mulaba.o
+a - option.o
+a - opzero.o
+a - pedsum.o
+a - rvalue.o
+a - smbfct.o
+a - times.o
+a - triord.o
+a - vratio.o

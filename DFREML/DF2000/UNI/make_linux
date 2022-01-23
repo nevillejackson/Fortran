@@ -1,0 +1,90 @@
+#########################################################################
+#                      Makefile for DFUNI                               #
+#                      Version for LF95 under Linux                     #
+#########################################################################
+
+#--------------------- change as necessary ---------------------------------
+
+# my home directory ...
+HMDIR =/mounts/didgeridoo/kmeyer
+MYDIR = $(HMDIR)/xlash
+
+# DFREML directory
+DFDIR = $(MYDIR)/DF2000
+
+# directory where executable file "dxmrr" is to be placed
+BINDIR = $(HMDIR)/bin
+
+# directory where library file "libkm.a" is held
+LIBDIR = $(BINDIR)
+
+# directory for modules used by all programs
+MODIR =$(DFDIR)/LIB
+
+# FORTRAN compiler
+FC=lf95
+
+# Compiler options : LF95 under Linux 
+FFLAGS= -O --staticlink  -L$(LIBDIR) 
+LDFLAGS= -lkmlnx
+#--------------------- end of changable section------------------------------
+
+# Object files
+OBJECTS= dfuni.o \
+df51u1.o \
+df59r1.o \
+dfadj1.o \
+dfase1.o \
+dfinp1.o \
+dflik1.o \
+dflsq1.o \
+dfmmd1.o \
+dfmme1.o \
+dfmmp1.o \
+dford1.o \
+dfpow1.o \
+dfpre1.o \
+dfqua1.o \
+dfslw1.o \
+dfspa1.o \
+dfspx1.o \
+dfwrt1.o \
+modules_all.o modules.o 
+
+
+# Build program
+all: modall modules dfuni
+
+modall:
+	$(FC) $(FFLAGS) -o modules_all.o -c  $(MODIR)/modules_all.f90
+modules:
+	$(FC) $(FFLAGS) -o modules.o -c modules.f90 
+
+dfuni: $(OBJECTS)
+	$(FC) $(FFLAGS) $(OBJECTS) -o $(BINDIR)/dfuni  $(LDFLAGS)
+
+# Dependencies
+dfuni.o  : modules.o
+df51u1.o : modules.o
+df59r1.o : modules.o 
+dfadj1.o : modules.o 
+dfase1.o : modules.o 
+dfinp1.o : modules.o
+dflik1.o : modules.o 
+dflsq1.o : modules.o
+dfmmd1.o : modules.o
+dfmme1.o : modules.o
+dfmmp1.o : modules.o
+dford1.o : modules.o
+dfpow1.o : modules.o
+dfpre1.o : modules.o
+dfqua1.o : modules.o 
+dfslw1.o : modules.o
+dfspa1.o : modules.o 
+dfspx1.o : modules.o
+dfwrt1.o : modules.o
+modules.o :  $(MODIR)/modules_all.f90
+
+
+
+

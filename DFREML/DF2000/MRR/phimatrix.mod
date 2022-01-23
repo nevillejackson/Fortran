@@ -1,0 +1,75 @@
+GFORTRAN module created from modules.f90 on Tue Apr 27 18:02:35 2010
+MD5:6c24b73a8b1b568293f04f2399d41c7a -- If you edit this, you'll get what you deserve.
+
+(() () () () () () () ()
+() () () () () () () () () () () () () () () () () () ())
+
+()
+
+()
+
+()
+
+()
+
+(2 'irrmet' 'phimatrix' 'irrmet' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXPLICIT-SAVE DIMENSION) (INTEGER 4 0 0 INTEGER ())
+0 0 () (2 EXPLICIT (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '0') (
+CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '7') (CONSTANT (INTEGER 4 0 0
+INTEGER ()) 0 '1') (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '3')) 0 () ()
+0 0)
+3 'irropt' 'phimatrix' 'irropt' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXPLICIT-SAVE DIMENSION) (INTEGER 4 0 0 INTEGER ()) 0 0 () (2
+EXPLICIT (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '0') (CONSTANT (INTEGER
+4 0 0 INTEGER ()) 0 '7') (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') (
+CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '3')) 0 () () 0 0)
+4 'maxage' 'params' 'maxage' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE) (INTEGER 4 0 0 INTEGER ()) 0 0 () (CONSTANT (
+INTEGER 4 0 0 INTEGER ()) 0 '3') () 0 () () 0 0)
+5 'maxcov' 'params' 'maxcov' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE) (INTEGER 4 0 0 INTEGER ()) 0 0 () (CONSTANT (
+INTEGER 4 0 0 INTEGER ()) 0 '30') () 0 () () 0 0)
+6 'maxfix' 'params' 'maxfix' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE) (INTEGER 4 0 0 INTEGER ()) 0 0 () (CONSTANT (
+INTEGER 4 0 0 INTEGER ()) 0 '50') () 0 () () 0 0)
+7 'maxnq' 'params' 'maxnq' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE) (INTEGER 4 0 0 INTEGER ()) 0 0 () (CONSTANT (
+INTEGER 4 0 0 INTEGER ()) 0 '3') () 0 () () 0 0)
+8 'maxnq2' 'params' 'maxnq2' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE) (INTEGER 4 0 0 INTEGER ()) 0 0 () (CONSTANT (
+INTEGER 4 0 0 INTEGER ()) 0 '6') () 0 () () 0 0)
+9 'maxnqq' 'params' 'maxnqq' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE) (INTEGER 4 0 0 INTEGER ()) 0 0 () (CONSTANT (
+INTEGER 4 0 0 INTEGER ()) 0 '6') () 0 () () 0 0)
+10 'maxspa' 'params' 'maxspa' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE) (INTEGER 4 0 0 INTEGER ()) 0 0 () (CONSTANT (
+INTEGER 4 0 0 INTEGER ()) 0 '2000000') () 0 () () 0 0)
+11 'maxxhx' 'params' 'maxxhx' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE) (INTEGER 4 0 0 INTEGER ()) 0 0 () (CONSTANT (
+INTEGER 4 0 0 INTEGER ()) 0 '500') () 0 () () 0 0)
+12 'mxcomb' 'params' 'mxcomb' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE) (INTEGER 4 0 0 INTEGER ()) 0 0 () (CONSTANT (
+INTEGER 4 0 0 INTEGER ()) 0 '5210') () 0 () () 0 0)
+13 'mxfunc' 'params' 'mxfunc' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE) (INTEGER 4 0 0 INTEGER ()) 0 0 () (CONSTANT (
+INTEGER 4 0 0 INTEGER ()) 0 '500') () 0 () () 0 0)
+14 'mxnqq2' 'params' 'mxnqq2' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE) (INTEGER 4 0 0 INTEGER ()) 0 0 () (CONSTANT (
+INTEGER 4 0 0 INTEGER ()) 0 '21') () 0 () () 0 0)
+15 'mxxzhz' 'params' 'mxxzhz' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE) (INTEGER 4 0 0 INTEGER ()) 0 0 () (CONSTANT (
+INTEGER 4 0 0 INTEGER ()) 0 '9999999') () 0 () () 0 0)
+16 'params' 'params' 'params' 1 ((MODULE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN) (UNKNOWN 0 0 0 UNKNOWN ()) 0 0 () () 0 () () 0 0)
+17 'phi' 'phimatrix' 'phi' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXPLICIT-SAVE ALLOCATABLE DIMENSION) (REAL 8 0 0 REAL ()) 0 0 ()
+(4 DEFERRED () () () () () () () ()) 0 () () 0 0)
+18 'phimatrix' 'phimatrix' 'phimatrix' 1 ((MODULE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN) (UNKNOWN 0 0 0 UNKNOWN ()) 0 0 () () 0 ()
+() 0 0)
+)
+
+('irrmet' 0 2 'irropt' 0 3 'maxage' 0 4 'maxcov' 0 5 'maxfix' 0 6 'maxnq'
+0 7 'maxnq2' 0 8 'maxnqq' 0 9 'maxspa' 0 10 'maxxhx' 0 11 'mxcomb' 0 12
+'mxfunc' 0 13 'mxnqq2' 0 14 'mxxzhz' 0 15 'params' 0 16 'phi' 0 17
+'phimatrix' 0 18)

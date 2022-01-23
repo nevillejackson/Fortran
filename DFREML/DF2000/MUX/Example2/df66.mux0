@@ -1,0 +1,430 @@
+                   *** DFREML 3.1.000        ***
+                   Last modified : Jan. 24, 2000  
+
+ Today is  1/ 2/2001    Time is 13:17
+
+ Current directory is : /home/agbu/kmeyer/DF2000/MUX/Example2   
+ Running on host : "metz.une.edu.au                         " 
+
+********************************************************************************
+
+                     PROGRAM " D x M u X " 
+  
+     ESTIMATE COVARIANCES AND FUNCTIONS FOR AN ANIMAL MODEL
+  
+
+****************************************************************************KM**
+
+
+****************************************
+
+ -----------------------------------
+ DESCRIPTION OF DATA SET
+ -----------------------------------
+  
+ mouse test data (Meyer 1991, GSE 23:67-83)                                      
+ model 2                                                                         
+  
+ Data file used      : muwex2.d                 
+ Pedigree file used  : muexped.d                
+ Data directory      : /home/agbu/kmeyer/DF2000/MUX/Example2             
+  
+ ----------------------------------
+ MODEL OF ANALYSIS & DATA STRUCTURE
+ ----------------------------------
+  
+ ANALYSIS UNDER MODEL NUMBER                     =                   2
+  
+ NO. OF RECORDS                                  =                 568
+ NO. OF ANIMALS                                  =                 329
+ ... WITH RECORDS                                =                 284
+  
+ NO. OF TRAITS IN MULTIVARIATE ANALYSIS          =                   2
+ NO. OF COMBINATIONS OF TRAITS RECORDED          =                   1
+   1   NO. ANIMALS     284    COMBINATION :   1  1
+
+ NO. OF ANIMALS WITH RECORDS FOR PAIRS OF TRAITS
+  1  2   weight         foodintake         284
+  
+ TRAIT NO.   1      weight      
+ NO. OF RECORDS                                  =                 284
+ MAX. NO. OF RECORDS PER ANIMAL                  =                   1
+ MEAN                                            =   24.0686615235    
+ STANDARD DEVIATION                              =   3.30235710856    
+ COEFFICIENT OF VARIATION                        =   13.7205681560    
+ PHENOTYPIC RANGE                                =     14.6000         34.5000    
+ STANDARDIZED RANGE                              =    -2.86724         3.15876    
+ NO. OF FIXED EFFECTS FITTED                     =                   3
+   1   "generation  "    NO. OF LEVELS =     3
+   2   "sex         "    NO. OF LEVELS =     2
+   3   "littersize  "    NO. OF LEVELS =     7
+ TOTAL NO. OF LEVELS FOR THIS TRAIT              =                  12
+ NO. OF COVARIABLES FITTED                       =                   0
+  
+ ADDITIONAL RANDOM EFFECT FITTED :  "litter      "
+ ... WITH NO. OF LEVELS                          =                  42
+  
+ TRAIT NO.   2      foodintake  
+ NO. OF RECORDS                                  =                 284
+ MAX. NO. OF RECORDS PER ANIMAL                  =                   1
+ MEAN                                            =   64.2556326060    
+ STANDARD DEVIATION                              =   5.93258442522    
+ COEFFICIENT OF VARIATION                        =   9.23278502541    
+ PHENOTYPIC RANGE                                =     46.9000         82.1000    
+ STANDARDIZED RANGE                              =    -2.92548         3.00786    
+ NO. OF FIXED EFFECTS FITTED                     =                   3
+   1   "generation  "    NO. OF LEVELS =     3
+   2   "sex         "    NO. OF LEVELS =     2
+   3   "littersize  "    NO. OF LEVELS =     7
+ TOTAL NO. OF LEVELS FOR THIS TRAIT              =                  12
+ NO. OF COVARIABLES FITTED                       =                   0
+  
+ ADDITIONAL RANDOM EFFECT FITTED :  "litter      "
+ ... WITH NO. OF LEVELS                          =                  42
+  
+ NO. OF FIXED EFFECTS LEVELS IN TOTAL            =                  24
+ NO. OF REGRESSION COEFFICIENTS IN TOTAL         =                   0
+ NO. OF ANIMAL EFFECTS IN TOTAL                  =                 658
+ NO. OF ADDITIONAL RANDOM EFFECTS LEVELS IN TOTAL=                  42
+ NO. OF EQUATIONS IN TOTAL                       =                 767
+  
+ -----------------------------
+ SUMMARY OF PEDIGREE STRUCTURE
+ -----------------------------
+  
+ NO. OF "BASE" ANIMALS                       =          35
+ NO. OF ANIMALS WITH RECORDS                 =         284
+  ... WITH UNKNOWN/PRUNED SIRE               =           0
+  ... WITH UNKNOWN/PRUNED DAM                =           0
+ NO. OF SIRES WITH PROGENY RECORDS           =          40
+ NO. OF DAMS WITH PROGENY RECORDS            =          42
+ NO. OF GRAND-SIRES W. PROGENY RECORDS       =          66
+ NO. OF GRAND-DAMS W. PROGENY RECORDS        =          67
+  
+ Newton-Raphson iteration : round no. =           1
+ norm of gradient vector (orig. scale) =   6.19036124791474     
+ norm of gradient vector (new scale)   =   15.5754691995283     
+ optimal value for "tau" =   1.00000000000000     
+ current max. log L      =  -919.123530265734       -921.393316031170     
+   1    SIG A    1 1  0.77731484      0.76505062    
+   2    SIG A    1 2  0.40824829      0.56842326    
+   3    SIG A    2 2  0.89587973      0.83104416    
+   4    SIG C    1 1  0.77075340E-01  0.36367837    
+   5    SIG C    1 2  0.57735027     -0.86895036    
+   6    SIG C    2 2  0.54930614      0.96984725    
+   7    SIG E    1 1  0.24140900      0.21212789    
+   8    SIG E    1 2  0.28171808      0.42037413    
+   9    SIG E    2 2   1.2668484       1.2587341    
+  
+ Newton-Raphson iteration : round no. =           2
+ norm of gradient vector (orig. scale) =   2.62309041950463     
+ norm of gradient vector (new scale)   =   12.5051393588334     
+ optimal value for "tau" =  0.000000000000000E+000
+ current max. log L      =  -916.459098309169       -919.123530265734     
+   1    SIG A    1 1  0.76505062      0.78593205    
+   2    SIG A    1 2  0.56842326      0.17346738    
+   3    SIG A    2 2  0.83104416      0.73172382    
+   4    SIG C    1 1  0.36367837      0.20046107    
+   5    SIG C    1 2 -0.86895036     -0.43973120    
+   6    SIG C    2 2  0.96984725      0.74583534    
+   7    SIG E    1 1  0.21212789      0.17298468    
+   8    SIG E    1 2  0.42037413      0.65733706    
+   9    SIG E    2 2   1.2587341       1.3035013    
+  
+ Newton-Raphson iteration : round no. =           3
+ norm of gradient vector (orig. scale) =   1.20907463242116     
+ norm of gradient vector (new scale)   =   6.17179328742860     
+ optimal value for "tau" =   1.00000000000000     
+ current max. log L      =  -916.196946664568       -916.459098309169     
+   1    SIG A    1 1  0.78593205      0.78171241    
+   2    SIG A    1 2  0.17346738      0.12048736    
+   3    SIG A    2 2  0.73172382      0.77536051    
+   4    SIG C    1 1  0.20046107      0.17223723    
+   5    SIG C    1 2 -0.43973120     -0.41046918    
+   6    SIG C    2 2  0.74583534      0.68719767    
+   7    SIG E    1 1  0.17298468      0.15632619    
+   8    SIG E    1 2  0.65733706      0.65922279    
+   9    SIG E    2 2   1.3035013       1.2972897    
+  
+ Newton-Raphson iteration : round no. =           4
+ norm of gradient vector (orig. scale) =  0.633732954673820     
+ norm of gradient vector (new scale)   =   3.71205916609971     
+ optimal value for "tau" =  0.000000000000000E+000
+ current max. log L      =  -916.017862560438       -916.196946664568     
+   1    SIG A    1 1  0.78171241      0.78953116    
+   2    SIG A    1 2  0.12048736     -0.19760788    
+   3    SIG A    2 2  0.77536051       1.0117099    
+   4    SIG C    1 1  0.17223723      0.14391614    
+   5    SIG C    1 2 -0.41046918     -0.41184964    
+   6    SIG C    2 2  0.68719767      0.54851377    
+   7    SIG E    1 1  0.15632619      0.70622363E-01
+   8    SIG E    1 2  0.65922279      0.77633094    
+   9    SIG E    2 2   1.2972897       1.2535296    
+  
+ Newton-Raphson iteration : round no. =           5
+ norm of gradient vector (orig. scale) =  0.860984439958531     
+ norm of gradient vector (new scale)   =   6.44826083222269     
+ optimal value for "tau" =  0.000000000000000E+000
+ current max. log L      =  -915.889256315964       -916.017862560438     
+   1    SIG A    1 1  0.78953116      0.79402417    
+   2    SIG A    1 2 -0.19760788     -0.18507994    
+   3    SIG A    2 2   1.0117099      0.94525094    
+   4    SIG C    1 1  0.14391614      0.13515084    
+   5    SIG C    1 2 -0.41184964     -0.44461123    
+   6    SIG C    2 2  0.54851377      0.55429686    
+   7    SIG E    1 1  0.70622363E-01  0.31788462E-01
+   8    SIG E    1 2  0.77633094      0.78782896    
+   9    SIG E    2 2   1.2535296       1.2580175    
+  
+ Newton-Raphson iteration : round no. =           6
+ norm of gradient vector (orig. scale) =  9.023897077865173E-002
+ norm of gradient vector (new scale)   =  0.511417602780791     
+ optimal value for "tau" =  0.000000000000000E+000
+ current max. log L      =  -915.884754540672       -915.889256315964     
+   1    SIG A    1 1  0.79402417      0.80292742    
+   2    SIG A    1 2 -0.18507994     -0.18884101    
+   3    SIG A    2 2  0.94525094      0.92453943    
+   4    SIG C    1 1  0.13515084      0.13855467    
+   5    SIG C    1 2 -0.44461123     -0.43799867    
+   6    SIG C    2 2  0.55429686      0.55468740    
+   7    SIG E    1 1  0.31788462E-01  0.11594360E-01
+   8    SIG E    1 2  0.78782896      0.78353915    
+   9    SIG E    2 2   1.2580175       1.2624442    
+  
+ Newton-Raphson iteration : round no. =           7
+ norm of gradient vector (orig. scale) =  2.387319466549195E-002
+ norm of gradient vector (new scale)   =  8.220488843383721E-002
+ optimal value for "tau" =  0.000000000000000E+000
+ current max. log L      =  -915.884626367262       -915.884754540672     
+   1    SIG A    1 1  0.80292742      0.80487272    
+   2    SIG A    1 2 -0.18884101     -0.18796236    
+   3    SIG A    2 2  0.92453943      0.92672691    
+   4    SIG C    1 1  0.13855467      0.13910355    
+   5    SIG C    1 2 -0.43799867     -0.43882487    
+   6    SIG C    2 2  0.55468740      0.55264688    
+   7    SIG E    1 1  0.11594360E-01  0.58522865E-02
+   8    SIG E    1 2  0.78353915      0.78382537    
+   9    SIG E    2 2   1.2624442       1.2617774    
+  
+ Newton-Raphson iteration : round no. =           8
+ norm of gradient vector (orig. scale) =  3.066916986302224E-003
+ norm of gradient vector (new scale)   =  8.571054639560849E-003
+ optimal value for "tau" =  0.000000000000000E+000
+ current max. log L      =  -915.884621392263       -915.884626367262     
+   1    SIG A    1 1  0.80487272      0.80528215    
+   2    SIG A    1 2 -0.18796236     -0.18845041    
+   3    SIG A    2 2  0.92672691      0.92622462    
+   4    SIG C    1 1  0.13910355      0.13921810    
+   5    SIG C    1 2 -0.43882487     -0.43881396    
+   6    SIG C    2 2  0.55264688      0.55295771    
+   7    SIG E    1 1  0.58522865E-02  0.46754548E-02
+   8    SIG E    1 2  0.78382537      0.78387563    
+   9    SIG E    2 2   1.2617774       1.2619039    
+ no. of calls to "DXLIK3"    =           8
+ no. of calls to "DFLIKE"    =          10
+ no. of "re-uses" of fact.    =           7
+   1    SIG A    1 1   4.900000000       5.041148708    
+   2    SIG A    1 2   1.000000000     -0.4758294603    
+   3    SIG A    2 2   6.000000000       6.375415375    
+   4    SIG C    1 1   1.500000000       1.513620005    
+   5    SIG C    1 2   1.000000000     -0.7628285099    
+   6    SIG C    2 2   3.000000000       3.021989598    
+   7    SIG E    1 1   1.700000000       1.623855773    
+   8    SIG E    1 2   1.000000000       2.768758364    
+   9    SIG E    2 2   12.60000000       12.47601196    
+   0    -2 LOG L       12.60000000       1831.769243    
+ IMPROVEMENT IN LOG L       909.584621392263     
+
+ -----------------------------
+ RUN OPTIONS & CHARACTERISTICS
+ -----------------------------
+  
+ RUN OPTION CHOSEN                               =                   0
+ PREVIOUS MAX. LIKELIHOOD                        =  -6.30000000000    
+ STARTING VALUES GIVEN :
+   1    SIG A    1 1     4.900000000    
+   2    SIG A    1 2     1.000000000    
+   3    SIG A    2 2     6.000000000    
+   4    SIG C    1 1     1.500000000    
+   5    SIG C    1 2     1.000000000    
+   6    SIG C    2 2     3.000000000    
+   7    SIG E    1 1     1.700000000    
+   8    SIG E    1 2     1.000000000    
+   9    SIG E    2 2     12.60000000    
+  
+ MAX. NUMBER OF ITERATES ALLOWED                 =                  13
+  
+ NO. OF LIKELIHOODS EVALUATED                    =                  18
+ NO. OF ITERATES CARRIED OUT                     =                   8
+ STORAGE SCHEME USED                             :    COMPRESSED
+ RE-ORDERING STRATEGY                            :    MINIMUM DEGREE
+ COMPUTING PROCEDURE                             :    FACTORISATION
+ NO. OF ROWS IN P.D. SUBMATRIX                   =                 763
+ NO. OF SUBSCRIPTS USED IN STORAGE               =                4514
+ NO. OF NON-ZERO ELEMENTS IN FACT.               =               10859
+
+ ---------------------------------
+ LOG LIKELIHOOD & ITS CONSTITUENTS
+ ---------------------------------
+  
+ WEIGHTED SUMS OF SQUARES                        =
+    ... TOTAL (Y'R**(-1)Y)                       =   3616.76796305    
+    ... ABSORBING ALL EFFECTS (Y'PY)             =   547.999699550    
+ LOG DETERMINANT OF COEFFICIENT MATRIX           =  -211.688224308    
+ LOG DETERMINANT OF RELATIONSHIP MATRIX          =  -210.716742890    
+  
+ LOG LIKELIHOOD INCORPORATING LOG |NRM|          =  -915.884621392263    
+  
+ OPERATIONAL ZERO - overall                      =  0.100000000000E-07
+ OPERATIONAL ZERO - eigenvalues                  =  0.110000000000E-07
+
+ -------------------------------------------
+ ESTIMATES OF VARIANCES & GENETIC PARAMETERS
+ -------------------------------------------
+  
+
+ ADDITIV-GENETIC (DIRECT) COVARIANCE MATRIX
+   1   5.0411    
+   2 -0.47583       6.3754    
+ ... WITH EIGENVALUES 
+       4.8888       6.5277    
+
+ COVARIANCE MATRIX FOR ADD. RANDOM EFFECT
+   1   1.5136    
+   2 -0.76283       3.0220    
+ ... WITH EIGENVALUES 
+       1.1951       3.3405    
+
+ ERROR COVARIANCE MATRIX
+   1   1.6239    
+   2   2.7688       12.476    
+ ... WITH EIGENVALUES 
+      0.95827       13.142    
+
+ PHENOTYPIC COVARIANCE MATRIX
+   1   8.1786    
+   2   1.5301       21.873    
+ ... WITH EIGENVALUES 
+       8.0098       22.042    
+
+ HERITABILITIES & ADDITIV-GENETIC CORRELATIONS
+   1       0.6164
+   2      -0.0839       0.2915
+
+ MATRIX OF "C-SQUARED" VALUES & CORRELATIONS
+   1       0.1851
+   2      -0.3567       0.1382
+
+ MATRIX OF "E-SQUARED" VALUES & CORRELATIONS
+   1       0.1985
+   2       0.6151       0.5704
+
+ MATRIX OF PHENOTYPIC CORRELATIONS
+   1       1.0000
+   2       0.1144       1.0000
+  
+ -----------------------------------
+ APPROXIMATION OF SAMPLING VARIANCES
+ -----------------------------------
+  
+ NUMBER OF (CO)VARIANCE COMPONENTS               =               9
+ RANK OF APPROXIMATE INFORMATION MATRIX          =               9
+ LOG DETERMINANT ......................          =  -2.143245079    
+ DETERMINANT ......................              =  0.1172736626    
+  
+ PARAMETER ESTIMATES WITH THEIR APPROX. S.E.
+   1  SIG A    1 1      :     5.0411487         1.8887530    
+   2  SIG A    1 2      :   -0.47582946         1.9956181    
+   3  SIG A    2 2      :     6.3754154         3.9083558    
+   4  SIG C    1 1      :     1.5136200        0.69385058    
+   5  SIG C    1 2      :   -0.76282851        0.78387808    
+   6  SIG C    2 2      :     3.0219896         1.8088353    
+   7  SIG E    1 1      :     1.6238558        0.95972187    
+   8  SIG E    1 2      :     2.7687584         1.0864396    
+   9  SIG E    2 2      :     12.476012         2.3449901    
+  
+ phenotypic variance components
+  10  SIG P    1 1      :     8.1786245         1.2655369    
+  11  SIG P    1 2      :     1.5301004         1.2798274    
+  12  SIG P    2 2      :     21.873417         2.5446543    
+  
+ APPROXIMATE SAMPLING ERRORS OF GENETIC PARAMETERS
+   1  Heritability         1      :    0.6164    0.1631
+   2  Genetic correlation  1 2    :   -0.0839    0.3553
+   3  Heritability         2      :    0.2915    0.1613
+   4  "C-squared"          1      :    0.1851    0.0736
+   5  Perm. env. correl.   1 2    :   -0.3567    0.3840
+   6  "C-squared"          2      :    0.1382    0.0779
+   8  Residual correlation 1 2    :    0.6151    0.2834
+  
+ APPROXIMATE SAMPLING CORRELATIONS (AMONG COV. COMPONENTS)
+ SIG A    1 1  1.00
+ SIG A    1 2  0.05  1.00
+ SIG A    2 2  0.02  0.04  1.00
+ SIG C    1 1  0.04 -0.12 -0.02  1.00
+ SIG C    1 2 -0.09 -0.16 -0.14 -0.07  1.00
+ SIG C    2 2 -0.02 -0.10 -0.31  0.02 -0.02  1.00
+ SIG E    1 1 -0.92 -0.05 -0.02 -0.09  0.07  0.01  1.00
+ SIG E    1 2 -0.05 -0.87 -0.03  0.08  0.07  0.06  0.12  1.00
+ SIG E    2 2 -0.02 -0.03 -0.80  0.01  0.09  0.17  0.04  0.15  1.00
+  
+  
+ ------------------------------------------
+ SOLUTION FOR FIXED EFFECTS AND COVARIABLES
+ ------------------------------------------
+
+ EQ.NO.                      ORIG.ID.  TRAIT  NREC     MEAN        SOLUTION         LSQ-SOL.N
+
+ FIXED EFFECT NO.   1    generation  
+    2  LEVEL            1           1     1    93   23.7237        3.074365        1.409445
+    3  LEVEL            2           2     1    84   23.0631        1.761076        0.224186
+    4  LEVEL            3           3     1   107   25.1579        3.635103        2.165452
+
+ FIXED EFFECT NO.   2    sex         
+    5  LEVEL            1           1     1   150   22.6560        0.000000        0.000000
+    6  LEVEL            2           2     1   134   25.6500        3.031015        2.972453
+
+ FIXED EFFECT NO.   3    littersize  
+    7  LEVEL            1           1     1    11   26.6091        0.000000        0.000000
+    8  LEVEL            2           2     1    41   23.7220       -4.079479       -3.046135
+    9  LEVEL            3           3     1    25   24.8640       -3.131376       -2.020385
+   10  LEVEL            4           4     1    36   24.0278       -5.205704       -3.083557
+   11  LEVEL            5           5     1    96   24.2646       -3.718540       -2.269437
+   12  LEVEL            6           6     1    45   24.3333       -4.572735       -3.074920
+   13  LEVEL            7           7     1    30   21.9733       -6.279832       -4.575849
+
+ EQ.NO.                      ORIG.ID.  TRAIT  NREC     MEAN        SOLUTION         LSQ-SOL.N
+
+ FIXED EFFECT NO.   1    generation  
+   14  LEVEL            1           1     2    93   62.8839      -13.430242      -10.816730
+   15  LEVEL            2           2     2    84   64.2286      -12.048306       -9.198611
+   16  LEVEL            3           3     2   107   65.4692      -10.948396       -7.376588
+
+ FIXED EFFECT NO.   2    sex         
+   17  LEVEL            1           1     2   150   61.3920        0.000000        0.000000
+   18  LEVEL            2           2     2   134   67.4612        6.109058        5.879651
+
+ FIXED EFFECT NO.   3    littersize  
+   19  LEVEL            1           1     2    11   58.3545        0.000000        0.000000
+   20  LEVEL            2           2     2    41   61.5780        6.385461        3.573934
+   21  LEVEL            3           3     2    25   65.0200        8.425473        6.047532
+   22  LEVEL            4           4     2    36   61.5306        7.029181        4.482910
+   23  LEVEL            5           5     2    96   65.2865        9.842829        7.559341
+   24  LEVEL            6           6     2    45   66.2422        9.399351        6.681938
+   25  LEVEL            7           7     2    30   66.4333       11.973869        9.819095
+
+********************************************************************************
+
+  
+   5.041149              SIG A    1 1
+ -0.4758295              SIG A    1 2
+   6.375415              SIG A    2 2
+   1.513620              SIG C    1 1
+ -0.7628285              SIG C    1 2
+   3.021990              SIG C    2 2
+   1.623856              SIG E    1 1
+   2.768758              SIG E    1 2
+   12.47601              SIG E    2 2
+
+********************************************************************************
+

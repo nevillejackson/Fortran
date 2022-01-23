@@ -1,0 +1,16 @@
+0                                                  run option
+8                                                  operational zero
+1                                                  input : from terminal
+4.9                                                starting value : sig a 11
+1.0                                                                 sig a 12
+6.0                                                                 sig a 22
+1.5                                                                 sig c 11
+1.0                                                                 sig c 12
+3.0                                                                 sig c 22
+1.7                                                                 sig e 11
+1.0                                                                 sig e 12
+12.6                                                                sig e 22
+3                                                  algorithm : AI-REML
+2                                                  transform : cholesky+log-dia
+4                                                  convergence criterion
+13                                                 max. no. of NR iterates

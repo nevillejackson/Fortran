@@ -1,0 +1,20 @@
+tstmo1.d                                                  pedigree file
+2                                                         formatted input
+999999                                                    highest animal ID
+1                                                         continue
+1                                                         analysis : DFUNI
+tstmo1.d                                                  data file
+1                                                         no. RHS
+0                                                         no. covariables
+1                                                         no. fixed effects
+0                                                         no. add. random eff.
+0                                                         2nd anim. eff. : no
+0                                                         special option : none
+1                                                         continue
+800                                                       max. no. animals
+
+
+
+
+
+

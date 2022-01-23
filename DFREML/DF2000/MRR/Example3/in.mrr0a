@@ -1,0 +1,21 @@
+0                                                    run option 
+8                                                    operational zero
+3                                                    read start.value file
+Start_values                                         file name
+6                                                    no. measurem.error var.
+2                                                    read from DF20#DAT
+6                                                    oper. zero - eigenvalues
+-2                                                    maximisation : powell
+0                                                    estimate sigeps indirectly
+2                                                    transform : chol+log
+2                                                    backwards
+18                                                   start at last parameter
+2                                                    no. iterates
+0.2                                                  tolerance
+4                                                    conv. criterion 1
+2.0                                                  ..............  2
+0                                                    full log L : no
+0                                                    approx. se : no
+0                                                    cov matrices : no
+                 
+

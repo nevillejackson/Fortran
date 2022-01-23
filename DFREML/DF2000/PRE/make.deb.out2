@@ -1,0 +1,3 @@
+gfortran -O --static --mod /home/nevj/DFREML.work/DF2000/PRE -c modules.f90 
+f951: error: unrecognized command line option "-fmod"
+make: *** [modules] Error 1

@@ -1,0 +1,74 @@
+                   *** DFREML 3.1.000        ***
+                   Last modified : Jan. 24, 2000  
+
+
+********************************************************************************
+
+                     PROGRAM " D F U N I" 
+  
+     ESTIMATE VARIANCE COMPONENTS FOR AN INDIVIDUAL ANIMAL MODEL
+
+****************************************************************************KM**
+
+ Today is  1/ 2/2001    Time is 13: 9
+
+ Current directory is : /home/agbu/kmeyer/DF2000/UNI/Example1   
+ Running on host : "metz.une.edu.au                         " 
+ -----------------------------------
+ DESCRIPTION OF DATA SET
+ -----------------------------------
+  
+ test data, univariate analysis, Meyer (1989), GSE 21 : 317-340                  
+ Model 1 (simple animal model)                                                   
+  
+  
+ Data file used      : tstmo1.d                 
+ Pedigree file used  : tstmo1.d                 
+ Data directory      : /home/agbu/kmeyer/DF2000/UNI/Example1             
+  
+ ----------------------------------
+ MODEL OF ANALYSIS & DATA STRUCTURE
+ ----------------------------------
+  
+ ANALYSIS FITTING MODEL NO.                      =              1
+  
+ NO. OF RECORDS                                  =            282
+ NO. OF ANIMALS                                  =            306
+  
+ NO. OF TRAITS                                   =              1
+    1    weight         MEAN =    229.787        SDEV =    13.4939    
+  
+ NO. OF FIXED EFFECTS                            =              1
+ ... WITH TOTAL NO. OF LEVELS                    =              2
+    1    generation     NO. OF LEVELS =     2
+  
+ NO. OF COVARIABLES                              =              0
+  
+ NO. OF EQUATIONS IN TOTAL                       =            309
+  
+ -----------------------------
+ SUMMARY OF PEDIGREE STRUCTURE
+ -----------------------------
+  
+ NO. OF "BASE" ANIMALS                       =          24
+ NO. OF ANIMALS WITH RECORDS                 =         282
+  ... WITH UNKNOWN/PRUNED SIRE               =           0
+  ... WITH UNKNOWN/PRUNED DAM                =           0
+ NO. OF SIRES WITH PROGENY RECORDS           =          12
+ NO. OF DAMS WITH PROGENY RECORDS            =          36
+ NO. OF GRAND-SIRES W. PROGENY RECORDS       =          10
+ NO. OF GRAND-DAMS W. PROGENY RECORDS        =          18
+   
+ ----------------------------------------------
+ LSQ SOLUTION FOR FIXED EFFECTS AND COVARIABLES
+ ----------------------------------------------
+
+ FIXED EFFECT NO.   1    generation  
+
+ EQ.NO.                                  NREC              MEAN          SOLUTION
+    2  LEVEL             1                138      220.46376812       -9.32345865
+    3  LEVEL             2                144      238.72222222        8.93499546
+ no. of subclasses of size 1 =           0
+
+********************************************************************************
+

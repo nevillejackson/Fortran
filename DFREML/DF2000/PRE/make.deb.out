@@ -1,0 +1,3 @@
+gfortran -O --static --mod /home/nevj/DFREML.work/DF2000/PRE -o modules.o -c modules.f90 /home/nevj/DFREML.work/DF2000/LIB/modules_all.f90
+gfortran: cannot specify -o with -c or -S with multiple files
+make: *** [modules] Error 1

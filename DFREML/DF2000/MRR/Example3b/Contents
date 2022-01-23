@@ -1,0 +1,9 @@
+This directory carries out the same analysis as Example3.
+
+The only difference is the use of an "equivalent model" to model
+covariances due to permanent environmental effects of the animal -
+instead of fitting corresponding sets of random regression
+coeffficients, these covariances are taken into account as covariances
+between residuals.  This results in less equations in the MMM,
+although there is no saving in computational requirements per
+likelihood evaluation.
