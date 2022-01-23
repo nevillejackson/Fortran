@@ -8,6 +8,9 @@ The subdirectory _abtest_ contains test data for the routines in subdirectory _a
 ## Data manipulation ##
 The subdirectory _charmcodedftn4_ contains programs for data manipulation using unit record principles.
 
+## DFREML ##
+The derivative-free REML program written by Karen Meyer. Estimates variance components and quantitative genetic parameters for mixed models.
+
 ## lsmlxxx ##
 The subdirectories _lsmlxxx_ contain a number of versions of Walter Harvey's least squares and maximum likelihood program
 
