@@ -11,8 +11,8 @@ The subdirectory _Charm_ contains Fortran5 programs for data manipulation using 
 ## DFREML ##
 The derivative-free REML program written by Karen Meyer. Estimates variance components and quantitative genetic parameters for mixed models.
 
-## lsmlxxx ##
-The subdirectories _lsmlxxx_ contain a number of versions of Walter Harvey's least squares and maximum likelihood program
+## Harvey least squares program ##
+The subdirectory _Harvey_ contain a number of modern versions of Walter Harvey's least squares and maximum likelihood program. The subdirectory _Harvey.old_ contains several older versions.
 
 ## mcano ##
 The subdirectory _mcano_ contains a program for canonical correlation analysis using IBM SSP subroutines

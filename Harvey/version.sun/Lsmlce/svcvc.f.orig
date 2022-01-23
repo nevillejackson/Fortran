@@ -1,0 +1,106 @@
+      subroutine svcvc                                                  
+c     -------------------------------------------                       
+c     subroutine used to compute variance and covariance components,    
+c     heritabilities, genetic, phenotypic and environmental correlations
+c     and standard errors                                               
+c     ----------------------------------------------------              
+      include 'decl1'
+      include 'com1'
+      include 'com2'
+      include 'com3'
+      include 'com4'
+      w=nw(l)                                                           
+      r1=nr1(l)                                                         
+      r1=r1/100.                                                        
+      w=w/100.                                                          
+      c=1./r1                                                           
+      d=(1.-w)/r1                                                       
+      e=w/r1                                                            
+      tn=(sdf+1.)*wk                                                    
+      sk3=wk-1.                                                         
+      sk4=wk*wk                                                         
+      c1=(c*c*2.)*(tn-1.)                                               
+      c2=sk4*sdf                                                        
+      c3=sk4*edf                                                        
+      sk5=2.*sk3                                                        
+      c4=c3*sdf                                                         
+      ident=0                                                           
+      write (6,1003)                                                    
+ 1003 format (1h0,15x,'negative variance component estimates set to zero
+     1 for these computations')                                         
+      write (6,1000)                                                    
+ 1000 format (1h0/1h ,76hestimates of heritabilities, genetic, phenotypi
+     1c, environmental correlations//1h ,110h job row col   rhm    rhm  
+     2 heritability  standard  phenotypic  environmental neg   variance 
+     3or cov components/ 1h ,28x, 47hor genetic r   errors   correlation
+     4 correlation,11x,5hamong,12x,6hwithin)                            
+      do 60 i=1,nrhm                                                    
+      write (6,1001)                                                    
+ 1001 format (1h )                                                      
+      do 60 j=i,nrhm                                                    
+      if (i-j) 16,12,12                                                 
+   12 k=nrhm*(i-1)-i*(i-3)/2                                            
+      h=(sss(k)*c)/(d*sss(k)+sscpr(k))                                  
+      t=sss(k)/(sss(k)+sscpr(k))                                        
+      t1=1.-t                                                           
+      seh=dsqrt((c1*t1*t1*(1.+(sk3*t))*(1.+(sk3*t)))/c4)                
+      rp=1.                                                             
+      re=1.                                                             
+      neg=0                                                             
+      go to 46                                                          
+   16 k=nrhm*(i-1)-i*(i-3)/2                                            
+      k1=nrhm*(j-1)-j*(j-3)/2                                           
+      k2=k+j-i                                                          
+      sum=sss(k)*sss(k1)                                                
+      if (sum) 18,18,20                                                 
+   18 h=0.0                                                             
+      seh=0.                                                            
+      go to 22                                                          
+   20 sum=dsqrt(sum)                                                    
+      h=sss(k2)/sum                                                     
+   22 dem1=(sscpr(k)+(d*sss(k)))*(sscpr(k1)+(d*sss(k1)))                
+      if (dem1.gt.0.0) go to 26                                         
+   24 rp=0.0                                                            
+      go to 28                                                          
+   26 rp=(sscpr(k2)+(d*sss(k2)))/dsqrt(dem1)                            
+   28 rg=h*h                                                            
+      if (h) 30,40,30                                                   
+   30 t2=sss(k1)/(sss(k1)+sscpr(k1))                                    
+      t3=t*t2                                                           
+      if (d-1.) 32,34,32                                                
+   32 rp1=(sscpr(k2)+sss(k2))/dsqrt((sscpr(k)+sss(k))*(sscpr(k1)+sss(k1)
+     1))                                                                
+      go to 36                                                          
+   34 rp1=rp                                                            
+   36 a1=1.+rg                                                          
+      b1=dsqrt(t3*rg)                                                   
+      c5=(t+t2)/t3                                                      
+      d1=(rg*((t-t2)**2))/(2.*t3)                                       
+      tk=(1.+(sk3*t))*(1.+(sk3*t2))                                     
+      rpb=rp1+(sk3*b1)                                                  
+      r=rp1-b1                                                          
+      serg1=((a1*(tk+(rpb*rpb)))-(2.*b1*rpb*(c5+sk5))+d1)/(c2*t3)       
+      serg2=((a1*(t1*(1.-t2)+(r**2)))-(2.*b1*r*(c5-2.))+d1)/(c3*t3)     
+      c5=serg1+serg2                                                    
+      if (c5.lt.0.0) c5=0.0                                             
+      seh=dsqrt(c5)                                                     
+   40 dem2=(sscpr(k)-(e*sss(k)))*(sscpr(k1)-(e*sss(k1)))                
+      if (dem2) 42,44,44                                                
+   42 dem2=-dem2                                                        
+      re=(sscpr(k2)-(e*sss(k2)))/(dsqrt(dem2)*(-1.))                    
+      neg=1                                                             
+      go to 48                                                          
+   44 re=(sscpr(k2)-(e*sss(k2)))/dsqrt(dem2)                            
+      neg=0                                                             
+      go to 48                                                          
+   46 k2=k                                                              
+   48 if (h.eq.0.0) go to 49                                            
+      write (6,1002) ijob,i,j,lity(i),lity(j),h,seh,rp,re,neg,sss(k2),ss
+     1cpr(k2)                                                           
+ 1002 format (1h ,3i4,2x,a6,1x,a6,4f11.3,i9,2f18.8)                     
+      go to 60                                                          
+   49 write (6,1004) ijob,i,j,lity(i),lity(j),rp,neg,sss(k2),sscpr(k2)  
+ 1004 format (1h ,3i4,2x,a6,1x,a6,22x,f11.3,11x,i9,2f18.8)              
+   60 continue                                                          
+      return                                                            
+      end                                                               

@@ -1,0 +1,94 @@
+FILES = Makefile \
+	blockdata.f candse.f code.f comprs.f div.f field.f \
+	intact.f itoa.f kovp29.f linfun.f lsanov.f lscomb.f \
+	lsmlce.f lsmns.f matinv.f mixed.f mixedf.f mtxmlt.f \
+	negf.f negz.f param.f pgt2ft.f polyab.f polyno.f prof.f \
+	rcard.f rcbm.f sclnos.f suafmm.f svcvc.f tgen.f tpage.f \
+	vector.f xmat.f \
+	ixa.f axi.f argopf.f opn.f jobend.f \
+	modf.f jlog10.f\
+	bput.f iloc.f\
+	com1 com1p com2 com3 com4 com5 com6 com7 com8 com9\
+	decl1 
+OBJECTS = blockdata.o candse.o code.o comprs.o div.o field.o \
+	intact.o itoa.o kovp29.o linfun.o lsanov.o lscomb.o \
+	lsmlce.o lsmns.o matinv.o mixed.o mixedf.o mtxmlt.o \
+	negf.o negz.o param.o pgt2ft.o polyab.o polyno.o prof.o \
+	rcard.o rcbm.o sclnos.o suafmm.o \
+	svcvc.o tgen.o tpage.o vector.o xmat.o \
+	ixa.o axi.o argopf.o opn.o jobend.o\
+	bput.o iloc.o\
+	modf.o jlog10.o
+LIBS = 
+FFLAGS = -f68881 -v
+HOMEDIR = $$HOME
+BINDIR  = $(HOMEDIR)/bin
+SRCDIR =  $(HOMEDIR)/src
+MANDIR = $(HOMEDIR)/man
+MANSUF = l
+
+lsmlce:	$(OBJECTS)
+	f77 $(FFLAGS)  -o lsmlce $(OBJECTS) $(LIBS)
+	size lsmlce
+
+blockdata.o:	com8 com9
+candse.o:	com9
+code.o:		com2 com3 com4 com6
+comprs.o:
+div.o:		
+field.o:	com8
+intact.o:
+itoa.o:		com8
+kovp29.o:
+linfun.o:
+lsanov.o:	com1 com2 com3 com4 com5 com9
+lscomb.o:	com1 com2 com3 com4 com5 com9
+lsmlce.o:	com1 com2 com3 com4 com5 com6 com7 com8
+lsmns.o:	com1 com2 com3 com4 com9
+matinv.o:
+mixed.o:	com9
+mixedf.o:	com9
+mtxmlt.o:
+negf.o:		com8
+negz.o:
+param.o:	com1 com2 com3 com4 com5 com9
+pgt2ft.o:
+polyab.o:	com1p com2 com3 com4 com5 com9
+polyno.o:	com1 com2 com3 com4
+prof.o:
+rcard.o:	com7 com8
+rcbm.o:		com1 com2 com3 com4 com5 com6 com7 com8 com9
+sclnos.o:	com1 com2 com3 com4
+suafmm.o:	com1 com2 com3 com4 com9
+svcvc.o:	com1 com2 com3 com4
+tgen.o:
+tpage.o:	com5
+vector.o:
+xmat.o:		com1 com2 com3 com4 com6
+$(OBJECTS):	decl1 
+
+clean:
+	rm *.o
+	rm lsmlce
+
+install:
+	@size lsmlce 
+	 install -s lsmlce $(BINDIR)
+
+test:
+	sh ./Test/harv.p103.scr 1> ./Test/harv.p103.out 2>&1 
+	@echo 'job finished ... output is in ./Test/harv.p103.out'
+
+manual:
+	cp ./Manual/lsmlce.man $(MANDIR)/lsmlce.$(MANSUF)
+
+print:	$(FILES)
+	cat $? | pr | lpr
+	touch print
+
+arch:
+	ar uv $(SRCDIR)/lsmlce.a $(FILES)
+	ranlib lsmlce.a
+
+docsprint:
+

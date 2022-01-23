@@ -1,0 +1,23 @@
+f77   -v -c jobend.f
+ cc -v -c jobend.f
+gcc version 2.6.3
+ /usr/bin/f2c -c jobend.f -o /var/tmp/cc000787.c
+jobend.f:
+   jobend:
+Warning on line 8 of jobend.f: statement cannot be reached
+ /usr/libexec/cpp -lang-c -v -undef -D__GNUC__=2 -D__GNUC_MINOR__=6 -Dunix -Di386 -D__FreeBSD__=2 -D__unix__ -D__i386__ -D__FreeBSD__=2 -D__unix -D__i386 -Asystem(unix) -Asystem(FreeBSD) -Acpu(i386) -Amachine(i386) /var/tmp/cc000787.c /var/tmp/cc000787.i
+GNU CPP version 2.6.3 (80386, BSD syntax)
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/include
+End of search list.
+ /usr/libexec/cc1 /var/tmp/cc000787.i -quiet -dumpbase jobend.c -version -o /var/tmp/cc000787.s
+GNU C version 2.6.3 (80386, BSD syntax) compiled by GNU C version 2.6.3.
+ /usr/bin/as -o jobend.o /var/tmp/cc000787.s
+f77 -v  -o lsmlce blockdata.o candse.o code.o comprs.o div.o field.o  intact.o itoa.o kovp29.o linfun.o lsanov.o lscomb.o  lsmlce.o lsmns.o matinv.o mixed.o mixedf.o mtxmlt.o  negf.o negz.o param.o pgt2ft.o polyab.o polyno.o prof.o  rcard.o rcbm.o sclnos.o suafmm.o  svcvc.o tgen.o tpage.o vector.o xmat.o  ixa.o axi.o argopf.o opn.o jobend.o bput.o iloc.o modf.o jlog10.o 
+ cc -v -o lsmlce blockdata.o candse.o code.o comprs.o div.o field.o intact.o itoa.o kovp29.o linfun.o lsanov.o lscomb.o lsmlce.o lsmns.o matinv.o mixed.o mixedf.o mtxmlt.o negf.o negz.o param.o pgt2ft.o polyab.o polyno.o prof.o rcard.o rcbm.o sclnos.o suafmm.o svcvc.o tgen.o tpage.o vector.o xmat.o ixa.o axi.o argopf.o opn.o jobend.o bput.o iloc.o modf.o jlog10.o -lf2c -lm
+gcc version 2.6.3
+ /usr/bin/ld -e start -dc -dp -o lsmlce /usr/lib/crt0.o blockdata.o candse.o code.o comprs.o div.o field.o intact.o itoa.o kovp29.o linfun.o lsanov.o lscomb.o lsmlce.o lsmns.o matinv.o mixed.o mixedf.o mtxmlt.o negf.o negz.o param.o pgt2ft.o polyab.o polyno.o prof.o rcard.o rcbm.o sclnos.o suafmm.o svcvc.o tgen.o tpage.o vector.o xmat.o ixa.o axi.o argopf.o opn.o jobend.o bput.o iloc.o modf.o jlog10.o -lf2c -lm /usr/lib/libgcc.a -lc /usr/lib/libgcc.a
+size lsmlce
+text	data	bss	dec	hex
+204800	24576	2056804	2286180	22e264

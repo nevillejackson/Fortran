@@ -1,0 +1,2 @@
+      character*1 blank,zero,nine,minus,plus
+      common /ascii/ blank,zero,nine,minus,plus

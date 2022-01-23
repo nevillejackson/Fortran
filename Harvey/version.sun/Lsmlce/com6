@@ -1,0 +1,2 @@
+      character*1000 ic
+      common /cmblk6/ic

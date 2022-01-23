@@ -1,0 +1,329 @@
+1
+
+
+ mixed model least-squares and maximum likelihood computer program
+ walter r. harvey     phone (614)-422-5763
+ dairy science dept., the ohio state univ., columbus ohio 43210
+
+
+0                    listing of parameter cards for problem no.  1
+0ijob nab ncd icn1 nlhm nrhm nmea nme nnea nne n2f npr nlc ncpr iran mpop liop in mty man nrun nrn ibet ibeg lthn nndc prb lpar ntit nsav
+   1   0   1    0   15    3    0   2    0   3   1   0   0    1    1    0   10  10  1   1    1   1    0    0    0    0 0.10   1    1    3
+0for i=   1  men(i)  lit(i)  ncl(i)  mpol  lme(i)  ibeg(i)
+              1      LINE     3       0     1        1
+0iden(j) where j=k2 by steps of one as long as j is less than k2+ncl(i)+1
+     1        2       3
+0for i=   2  men(i)  lit(i)  ncl(i)  mpol  lme(i)  ibeg(i)
+              2      AGE      3       0     1        3
+0iden(j) where j=k2 by steps of one as long as j is less than k2+ncl(i)+1
+     3        4       5
+0for i=   1  nma(i)  nmac(i)  nen(i)  nlit(i)  ncln(i)  mpol  lne(i)  nbeg(i)
+               1        1        3     SIR/L1    3        0     1       2
+0nden(j) where j=   1  incremented by one until j is greater than    0+   3
+    1     2     3
+0for i=   2  nma(i)  nmac(i)  nen(i)  nlit(i)  ncln(i)  mpol  lne(i)  nbeg(i)
+               1        2        4     SIR/L2    2        0     1       2
+0nden(j) where j=   4  incremented by one until j is greater than    3+   2
+    4     5
+0for i=   3  nma(i)  nmac(i)  nen(i)  nlit(i)  ncln(i)  mpol  lne(i)  nbeg(i)
+               1        3        5     SIR/L3    4        0     1       2
+0nden(j) where j=   6  incremented by one until j is greater than    5+   4
+    6     7     8     9
+0for i=   1  int1(i) int2(i)  nmc(i)
+              1       2       0
+0for i=  1  negy(i) lny(i) lhy(i) kbeg(i) ndecy(i)   ym(i)    lity(i)
+              0      0      3       6       0   0.        e+00 AGE   
+0for i=  2  negy(i) lny(i) lhy(i) kbeg(i) ndecy(i)   ym(i)    lity(i)
+              0      0      3       9       0   0.        e+00 INITWT
+0for i=  3  negy(i) lny(i) lhy(i) kbeg(i) ndecy(i)   ym(i)    lity(i)
+              0      0      3      12       2   0.        e+00 ADG   
+0classification  i309 nr1   nw  ns2  ms(1) ms(2)
+     SIRES          1   25   75    2    6   11
+ opened to unit  10  status = old  file = dcharv                                                                          
+ opened to unit  10  status = old  file = dcharv                                                                          
+ opened to unit  12  status = new  file = /tmp/nj9239.a                                                                   
+ opened to unit  12  status = new  file = /tmp/nj9239.a                                                                   
+ opened to unit  13  status = new  file = /tmp/nj9239.b                                                                   
+ opened to unit  13  status = new  file = /tmp/nj9239.b                                                                   
+ end of file on unit 10 ios =   -1
+1
+
+
+ test example from harvey(1960) p103 -- save option 3                                                                                
+
+
+
+0     total least-squares analysis.  no equations absorbed.     df=no. cards=    65
+0  distribution of class and subclass numbers for problem no.   1
+0                   identification             no.
+0                 total                         65
+ 
+                  LINE      1                   21        
+                  LINE      2                   15        
+                  LINE      3                   29        
+ 
+                  AGE       3                   12        
+                  AGE       4                   16        
+                  AGE       5                   37        
+ 
+                  SIR/L1    1                    8        
+                  SIR/L1    2                    8        
+                  SIR/L1    3                    5        
+ 
+                  SIR/L2    4                    8        
+                  SIR/L2    5                    7        
+ 
+                  SIR/L3    6                    6        
+                  SIR/L3    7                    8        
+                  SIR/L3    8                    7        
+                  SIR/L3    9                    8        
+ 
+                  LINE   x AGE       1    3      3        
+                  LINE   x AGE       1    4      5        
+                  LINE   x AGE       1    5     13        
+                  LINE   x AGE       2    3      3        
+                  LINE   x AGE       2    4      4        
+                  LINE   x AGE       2    5      8        
+                  LINE   x AGE       3    3      6        
+                  LINE   x AGE       3    4      7        
+                  LINE   x AGE       3    5     16        
+0               overall means and standard deviations of rhm
+ 
+             AGE       mean=   176.64615          s.d.=    14.70484
+             INITWT    mean=   416.84615          s.d.=    41.41491
+             ADG       mean=     2.41138          s.d.=     0.27781
+ 
+0               sums of squares, c.p. and correlations among rhm for problem no.  1
+0                    row   col    rhm    rhm               s.sqs. or c.p.    correlation
+ 
+                       1     1   AGE     AGE            2042090.00000000        1.0000
+                       1     2   AGE     INITWT         4801569.00000000        0.3936
+                       1     3   AGE     ADG              27603.64000000       -0.3208
+ 
+                       2     2   INITWT  INITWT        11404219.00000000        1.0000
+                       2     3   INITWT  ADG              65428.44000000        0.1249
+ 
+                       3     3   ADG     ADG                382.89980000        1.0000
+0                             listing of inverse elements for problem no.  1
+ 
+   0.21494150e-01   0.22993400e-02   0.50210011e-02   0.10987398e-01   0.70253278e-03  -0.61167228e-02   0.16273850e-02
+  -0.25252525e-02   0.40702980e-02  -0.83284080e-03  -0.18352266e-02   0.48375180e-02  -0.13759335e-02   0.37623856e-03
+   0.56009349e-03   0.45287641e-01  -0.28814492e-01   0.48375180e-02  -0.13759335e-02  -0.12233446e-01   0.32547699e-02
+   0.25252525e-02  -0.40702980e-02   0.83284080e-03   0.18352266e-02   0.26812314e-01   0.29132104e-04  -0.16201154e-01
+   0.11330719e-03   0.48009302e-01   0.37623856e-03   0.56009349e-03   0.61167228e-02  -0.16273850e-02  -0.50505051e-02
+  -0.40702980e-02   0.83284080e-03   0.18352266e-02  -0.16201154e-01   0.11330719e-03   0.22351034e-01   0.19651590e-02
+   0.56159770e-01  -0.34337404e-01  -0.90909091e-02   0.14141414e-01  -0.50505051e-02   0.11349908e-01  -0.38958818e-02
+  -0.12863230e-01   0.98334962e-02  -0.47198349e-02   0.82341696e-02  -0.48040100e-02   0.44407602e-01   0.23569024e-02
+  -0.57239057e-02   0.25252525e-02  -0.70145357e-02   0.57458573e-02   0.79498071e-02  -0.47198349e-02   0.13836443e-02
+  -0.48040100e-02   0.98853278e-02   0.96632997e-01  -0.40235690e-01  -0.17889336e-17  -0.17889336e-17   0.27105054e-19
+   0.17618285e-17  -0.18181818e-01   0.47138047e-02   0.90909091e-02  -0.23569024e-02   0.10168350e+00   0.17347235e-17
+   0.27647155e-17   0.54210109e-18  -0.28189256e-17   0.28282828e-01  -0.11447811e-01  -0.14141414e-01   0.57239057e-02
+   0.68181818e-01   0.54210109e-18  -0.54210109e-19  -0.65052130e-18   0.50505051e-02  -0.25252525e-02  -0.10101010e-01
+   0.50505051e-02   0.12847439e+00  -0.41214051e-01  -0.53937639e-01  -0.11349908e-01   0.70145357e-02  -0.11349908e-01
+   0.70145357e-02   0.10048444e+00  -0.28290743e-01   0.38958818e-02  -0.57458573e-02   0.38958818e-02  -0.57458573e-02
+   0.11946266e+00   0.12863230e-01  -0.79498071e-02   0.12863230e-01  -0.79498071e-02   0.12215304e+00  -0.73394643e-01
+  -0.74227436e-01   0.43861249e-01   0.90198847e-01   0.43861249e-01  -0.55676574e-01   0.12055371e+00  -0.73478818e-01
+   0.98700531e-01
+0                             listing of diagonal inverse elements
+ 
+   0.21494150e-01   0.45287641e-01   0.48009302e-01   0.56159770e-01   0.44407602e-01   0.96632997e-01   0.10168350e+00
+   0.68181818e-01   0.12847439e+00   0.10048444e+00   0.11946266e+00   0.12215304e+00   0.90198847e-01   0.12055371e+00
+   0.98700531e-01
+0the determinant of the correlation matrix is            0.0025647972362199      0.2564797236219928d-02
+ 
+ 
+ 
+0       listing of constants, least-squares means and standard errors for problem no.  1
+0                                                                            standard                          standard
+  rhm   row                              no.   effective    constant         error of      least-squares       error of
+  name  code  independent variable       obs.     no.       estimate         constant          mean            ls mean
+ 
+ AGE      1  mu                           65     46.5     174.85643855       1.67756608     174.85643855       1.67756608
+ AGE      2  LINE      1                  21     14.0       0.62739984       2.43505818     175.48383838       3.05709686
+ AGE      3  LINE      2                  15     12.6      -9.65568097       2.50716080     165.20075758       3.22720963
+ AGE      0  LINE      3                  29     23.5       9.02828113       2.16101921     183.88471968       2.35951864
+ AGE      4  AGE       3                  12     10.0       0.16828913       2.71164076     175.02472768       3.61170075
+ AGE      5  AGE       4                  16     14.9       2.16039776       2.41128282     177.01683631       2.96858180
+ AGE      0  AGE       5                  37     33.3      -2.32868689       2.04345089     172.52775165       1.98211895
+ AGE      6  SIR/L1    1                   8      7.6       1.41767677       3.55698650     176.90151515       4.14642269
+ AGE      7  SIR/L1    2                   8      5.5       4.22373737       3.64875531     179.70757576       4.89261659
+ AGE      0  SIR/L1    3                   5      4.6      -5.64141414       3.92803447     169.84242424       5.31996509
+ AGE      8  SIR/L2    4                   8      7.5      -8.68181818       2.98781554     156.51893939       4.16630972
+ AGE      0  SIR/L2    5                   7      6.1       8.68181818       2.98781554     173.88257576       4.61797691
+ AGE      9  SIR/L3    6                   6      5.1       0.33675130       4.10135886     184.22147097       5.05826216
+ AGE     10  SIR/L3    7                   8      7.2       5.09738027       3.62717830     188.98209994       4.25082202
+ AGE     11  SIR/L3    8                   7      6.6       0.38501520       3.95490065     184.26973488       4.44599266
+ AGE      0  SIR/L3    9                   8      7.4      -5.81914676       3.64611908     178.06557292       4.21425542
+ AGE     12  LINE   x AGE       1    3     3      2.7      -8.05010731       3.99918620     167.60202020       6.90645043
+ AGE     13  LINE   x AGE       1    4     5      4.9       4.82748103       3.43652879     182.47171717       5.17717754
+ AGE      0  LINE   x AGE       1    5    13     12.3       3.22262629       2.92986471     176.37777778       3.26624646
+ AGE     14  LINE   x AGE       2    3     3      2.9       5.85822602       3.97291965     171.22727273       6.68095866
+ AGE     15  LINE   x AGE       2    4     4      4.0      -1.11115534       3.59483728     166.25000000       5.72123119
+ AGE      0  LINE   x AGE       2    5     8      8.0      -4.74707068       3.07665246     158.12500000       4.04552137
+ AGE      0  LINE   x AGE       3    3     6      5.2       2.19188129       3.51288951     186.24489011       5.00651323
+ AGE      0  LINE   x AGE       3    4     7      6.6      -3.71632569       3.18639668     182.32879175       4.44709431
+ AGE      0  LINE   x AGE       3    5    16     15.7       1.52444440       2.64655468     183.08047718       2.88522976
+ 
+ INITWT   1  mu                           65     46.5     409.67929047       5.97865752     409.67929047       5.97865752
+ INITWT   2  LINE      1                  21     14.0      10.93434589       8.67827450     420.61363636      10.89515065
+ INITWT   3  LINE      2                  15     12.6     -13.11868441       8.93524015     396.56060606      11.50141351
+ INITWT   0  LINE      3                  29     23.5       2.18433851       7.70163030     411.86362898       8.40906005
+ INITWT   4  AGE       3                  12     10.0     -15.94202301       9.66398380     393.73726746      12.87169677
+ INITWT   5  AGE       4                  16     14.9       3.90475485       8.59354177     413.58404532      10.57969291
+ INITWT   0  AGE       5                  37     33.3      12.03726817       7.28263000     421.71655863       7.06404984
+ INITWT   6  SIR/L1    1                   8      7.6      10.81060606      12.67670131     431.42424242      14.77738583
+ INITWT   7  SIR/L1    2                   8      5.5     -12.07575758      13.00375506     408.53787879      17.43673727
+ INITWT   0  SIR/L1    3                   5      4.6       1.26515152      13.99907471     421.87878788      18.95975946
+ INITWT   8  SIR/L2    4                   8      7.5     -10.04545455      10.64823980     386.51515152      14.84826099
+ INITWT   0  SIR/L2    5                   7      6.1      10.04545455      10.64823980     406.60606061      16.45795226
+ INITWT   9  SIR/L3    6                   6      5.1     -20.22170804      14.61678339     391.64192094      18.02707953
+ INITWT  10  SIR/L3    7                   8      7.2      10.78978801      12.92685701     422.65341699      15.14945335
+ INITWT  11  SIR/L3    8                   7      6.6      -5.48206422      14.09482277     406.38156476      15.84501963
+ INITWT   0  SIR/L3    9                   8      7.4      14.91398426      12.99435983     426.77761324      15.01913408
+ INITWT  12  LINE   x AGE       1    3     3      2.7     -18.30040123      14.25265150     386.37121212      24.61381542
+ INITWT  13  LINE   x AGE       1    4     5      4.9       5.53463909      12.24740354     430.05303030      18.45088061
+ INITWT   0  LINE   x AGE       1    5    13     12.3      12.76576214      10.44170951     445.41666667      11.64053637
+ INITWT  14  LINE   x AGE       2    3     3      2.9       3.06323513      14.15904045     383.68181818      23.81018803
+ INITWT  15  LINE   x AGE       2    4     4      4.0       0.03463909      12.81159726     400.50000000      20.38982687
+ INITWT   0  LINE   x AGE       2    5     8      8.0      -3.09787423      10.96484460     405.50000000      14.41778484
+ INITWT   0  LINE   x AGE       3    3     6      5.2      15.23716610      12.51954456     411.15877207      17.84265214
+ INITWT   0  LINE   x AGE       3    4     7      6.6      -5.56927818      11.35596070     410.19910565      15.84894581
+ INITWT   0  LINE   x AGE       3    5    16     15.7      -9.66788791       9.43202434     414.23300924      10.28263556
+ 
+ ADG      1  mu                           65     46.5       2.44238428       0.03509503       2.44238428       0.03509503
+ ADG      2  LINE      1                  21     14.0      -0.06392468       0.05094192       2.37845960       0.06395510
+ ADG      3  LINE      2                  15     12.6       0.09019148       0.05245033       2.53257576       0.06751390
+ ADG      0  LINE      3                  29     23.5      -0.02626679       0.04520897       2.41611749       0.04936162
+ ADG      4  AGE       3                  12     10.0       0.03667386       0.05672809       2.47905814       0.07555753
+ ADG      5  AGE       4                  16     14.9      -0.01604143       0.05044454       2.42634285       0.06210335
+ ADG      0  AGE       5                  37     33.3      -0.02063244       0.04274942       2.42175184       0.04146634
+ ADG      6  SIR/L1    1                   8      7.6       0.10025253       0.07441290       2.47871212       0.08674402
+ ADG      7  SIR/L1    2                   8      5.5      -0.16573232       0.07633272       2.21272727       0.10235456
+ ADG      0  SIR/L1    3                   5      4.6       0.06547980       0.08217530       2.44393939       0.11129478
+ ADG      8  SIR/L2    4                   8      7.5      -0.06818182       0.06250572       2.46439394       0.08716007
+ ADG      0  SIR/L2    5                   7      6.1       0.06818182       0.06250572       2.60075758       0.09660904
+ ADG      9  SIR/L3    6                   6      5.1       0.12325952       0.08580128       2.53937701       0.10581990
+ ADG     10  SIR/L3    7                   8      7.2       0.02066180       0.07588132       2.43677929       0.08892808
+ ADG     11  SIR/L3    8                   7      6.6      -0.28302745       0.08273734       2.13309003       0.09301109
+ ADG      0  SIR/L3    9                   8      7.4       0.13910613       0.07627757       2.55522362       0.08816310
+ ADG     12  LINE   x AGE       1    3     3      2.7      -0.08046174       0.08366381       2.33467172       0.14448438
+ ADG     13  LINE   x AGE       1    4     5      4.9      -0.01532221       0.07189290       2.34709596       0.10830763
+ ADG      0  LINE   x AGE       1    5    13     12.3       0.09578395       0.06129338       2.45361111       0.06833055
+ ADG     14  LINE   x AGE       2    3     3      2.9      -0.01652235       0.08311430       2.55272727       0.13976704
+ ADG     15  LINE   x AGE       2    4     4      4.0      -0.07153433       0.07520474       2.44500000       0.11968935
+ ADG      0  LINE   x AGE       2    5     8      8.0       0.08805668       0.06436421       2.60000000       0.08463315
+ ADG      0  LINE   x AGE       3    3     6      5.2       0.09698409       0.07349038       2.54977544       0.10473730
+ ADG      0  LINE   x AGE       3    4     7      6.6       0.08685654       0.06666008       2.48693260       0.09303414
+ ADG      0  LINE   x AGE       3    5    16     15.7      -0.18384063       0.05536647       2.21164442       0.06035961
+0                      residual matrices for right hand members
+
+  job row col   rhm      rhm           error ss or cp       error ms or cov     correlation
+ 
+    1  1   1    AGE     AGE              6546.497263           130.92994526        1.0000
+    1  1   2    AGE     INITWT          10432.947704           208.65895407        0.4472
+    1  1   3    AGE     ADG               -32.828332            -0.65656664       -0.2397
+ 
+    1  2   2    INITWT  INITWT          83149.007932          1662.98015864        1.0000
+    1  2   3    INITWT  ADG                78.761205             1.57522411        0.1614
+ 
+    1  3   3    ADG     ADG                 2.865108             0.05730216        1.0000
+1
+
+
+ test example from harvey(1960) p103 -- save option 3                                                                                
+
+
+
+0                            least-squares analysis of variance
+ 
+                                          AGE   
+ 
+     source        d.f.        sum of squares      mean squares          f      prob
+ 
+ total                 65      2042090.000000
+ total reduction       15      2035543.502737     135702.900182     1036.454    0.    
+ mu-ym                1        1422469.532301    1422469.532301    10864.356    0.                
+ LINE                 2           2895.970386       1447.985193       11.059    0.0001            
+ AGE                  2            219.293821        109.646911        0.837    0.4388            
+ SIR/L1               2            293.667133        146.833566        1.121    0.3339            
+ SIR/L2               1           1105.484848       1105.484848        8.443    0.0054            
+ SIR/L3               3            455.751763        151.917254        1.160    0.3342            
+ LINE   x  AGE        4            706.283253        176.570813        1.349    0.2651            
+ remainder             50         6546.497263        130.929945
+0     mean =   176.64615  error standard deviation =    11.44246  cv =   6.48  r squared = 0.527  r = 0.726
+ 
+                                          INITWT
+ 
+     source        d.f.        sum of squares      mean squares          f      prob
+ 
+ total                 65     11404219.000000
+ total reduction       15     11321069.992068     754737.999471      453.847    0.0000
+ mu-ym                1        7808502.207700    7808502.207700     4695.487    0.                
+ LINE                 2           3919.363412       1959.681706        1.178    0.3162            
+ AGE                  2           5983.432408       2991.716204        1.799    0.1760            
+ SIR/L1               2           1884.939860        942.469930        0.567    0.5710            
+ SIR/L2               1           1480.030303       1480.030303        0.890    0.3500            
+ SIR/L3               3           5277.933626       1759.311209        1.058    0.3753            
+ LINE   x  AGE        4           4380.392355       1095.098089        0.659    0.6237            
+ remainder             50        83149.007932       1662.980159
+0     mean =   416.84615  error standard deviation =    40.77965  cv =   9.78  r squared = 0.243  r = 0.492
+ 
+                                          ADG   
+ 
+     source        d.f.        sum of squares      mean squares          f      prob
+ 
+ total                 65          382.899800
+ total reduction       15          380.034692         25.335646      442.141    0.    
+ mu-ym                1            277.528577        277.528577     4843.248    0.                
+ LINE                 2              0.172862          0.086431        1.508    0.2312            
+ AGE                  2              0.025689          0.012844        0.224    0.8000            
+ SIR/L1               2              0.285020          0.142510        2.487    0.0934            
+ SIR/L2               1              0.068182          0.068182        1.190    0.2806            
+ SIR/L3               3              0.706803          0.235601        4.112    0.0110            
+ LINE   x  AGE        4              0.648889          0.162222        2.831    0.0341            
+ remainder             50            2.865108          0.057302
+0     mean =     2.41138  error standard deviation =     0.23938  cv =   9.93  r squared = 0.420  r = 0.648
+1
+
+
+ test example from harvey(1960) p103 -- save option 3                                                                                
+
+
+
+0               variance and covariance component estimates from direct analysis
+ 
+0          k for random effects component (SIRES )=  6.7622   degrees of freedom =   6.
+0
+                         ss, cp, ms, mcp, variance and covariance components
+
+ job row col   rhm     rhm                    ss or cp                   ms or cov                  components
+ 
+   1   1   1  AGE     AGE                 1854.90374426               309.15062404                26.35544899
+   1   1   2  AGE     INITWT               690.69258942               115.11543157               -13.83330797
+   1   1   3  AGE     ADG                   -1.84730811                -0.30788469                 0.05156343
+ 
+   1   2   2  INITWT  INITWT              8642.90378952              1440.48396492               -32.90295562
+   1   2   3  INITWT  ADG                   47.97969030                 7.99661505                 0.94960160
+ 
+   1   3   3  ADG    matrix written: nrows & cols =    3   3 ms = * file = harvNZ.p103.B                                                                   
+ matrix written: nrows & cols =    3   3 ms = * file = harvNZ.p103.W                                                                   
+  ADG                    1.06000420                 0.17666737                 0.01765184
+ opened to unit  14  status = new  file = harvNZ.p103.B                                                                   
+ opened to unit  14  status = new  file = harvNZ.p103.B                                                                   
+ opened to unit  15  status = new  file = harvNZ.p103.W                                                                   
+ opened to unit  15  status = new  file = harvNZ.p103.W                                                                   
+0               negative variance component estimates NOT set to zero for these computations
+0
+ estimates of heritabilities, genetic, phenotypic, environmental correlations
+
+  job row col   rhm    rhm   heritability standard  phenotypic standard  environmental standard neg   variance or cov components
+                             or genetic r error     correlation error    correlation  error              among            within
+ 
+    1   1   1  AGE    AGE        0.670     0.538     1.000     0.        1.000     0.           0       26.35544899      130.92994526
+    1   1   2  AGE    INITWT                         0.385                                      0      -13.83330797      208.65895407
+    1   1   3  AGE    ADG        0.076     0.667    -0.176     0.133    -1.709     3.950        0        0.05156343       -0.65656664
+ 
+    1   2   2  INITWT INITWT    -0.081     0.296     1.000     0.        1.000     0.           0      -32.90295562     1662.98015864
+    1   2   3  INITWT ADG                            0.228                                      0        0.94960160        1.57522411
+ 
+    1   3   3  ADG    ADG        0.942     0.592     1.000     0.        1.000     0.           0        0.01765184        0.05730216

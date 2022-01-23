@@ -1,0 +1,178 @@
+.TH LSMLCE l ANPROD
+.SH NAME
+lsmlce - mixed model least squares and maximum likelihood program
+.SH SYNOPSIS
+.RS 3
+\fBlsmlce datafile tmpfilea tmpfileb [Pfile Gfile Efile] <fin >fout\fR
+\fB                                  [Bfile Wfile]                 \fR
+\fB                                  [Rfile]
+.RE
+.SH DESCRIPTION
+.PP
+In the following description the term "card" is purely a hangover from
+days gone by - it refers of course to an 80-character card image.
+.PP
+.I Lsmlce
+is a CHARM-compatible implementation of the mixed model least squares and maximum likelihood program 
+.I lsmlmw
+written by W. R. Harvey of Ohio State University.
+.I Lsmlce
+has its dimensions extended to deal with more RHM and LHM than the
+standard version.
+The current limits are 200 LHM and 200 RHM simultaneously.
+.I Lsmlce
+also computes standard errors for phenotypic and environmental
+correlations.
+.I Lsmlce
+allows (insists on) free format parameter cards.
+.I Lsmlce
+allows 
+.I matrix
+output of genetic parameter estimates or covariance matrices
+(see /usr/man/manl/matrix).
+.PP
+.I Lsmlce
+is documented by 'Users Guide for LSML76'
+and by 'Users Guide For LSMLMW'.
+The program PARMCARD referred to in the latter guide is not used by
+.I lsmlce
+but is available via the standard implementation, 
+.I lsmlmw.
+.
+Therefore you must run 
+.I lsmlce
+directly from its parameter cards as was the 
+case with the previous version LSML76.
+.PP
+The parameter cards are as in the LSML76 Guide,
+(but see "BUGS" section below) with several exceptions.
+For
+.I lsmlce
+all parameter cards are in free format.
+This means all fields must be present and be separated by blanks.
+Character strings (title,effect names,rhm names,etc) must be
+enclosed in single quotes.
+ Make the following changes to the LSML76 guide to suit
+.I lsmlce:-
+.TP 13
+.BI "page 13 add the following"
+.TP 15
+.BI "PRBMIN 54-58"
+(f5.4)
+.TP 15
+.BI "LPARM 59-60"
+Parameter cards listing option 0=nolist 1=list.
+.TP 15
+.BI "NTITL 61-62"
+Number of lines of title cards (0-5).
+Title cards if present must follow this card.
+.TP 15
+.BI "NSAVE 63-64"
+Save option for genetic parameters or covariances.
+for use with 'matrix' routines.
+.PP
+1 = P,G,E covariance matrices.
+.PP
+2 = Rp,Rg,Re correlations, phenotypic variance on diagonal
+    of Rp matrix, heritability on diagonal of Rg matrix,
+    and e**2 on diagonal of Re matrix.
+    File names are parameters 4,5,6 on command line.
+    Files are written in 'unix' matrix format (-u).
+.PP
+3 = Between & Within covariance matrices (for random effect)
+    File names are parameters 4,5 on command line
+    Files are written in 'blocked' matrix format (-b).
+.PP
+4 = Residual covariance matrix.
+    File name is parameter 4 on command line
+    File written in 'unix' matrix format (-u).
+
+.TP 13
+.BI "page 21-22 change the following columns"
+.TP 15
+.BI "XM 14-28"
+An approximate mean for X punched in E15.8 format.
+.TP 15
+.BI "LITR 29-34"
+Six character literal to describe this regression effect.
+.TP 15
+.BI "ICLR 35-36"
+Number of sets of individual class regressions.
+.TP 15
+.BI "LAD 37-38"
+Punch 01 if class means are to be adjusted to
+the approximate mean given for this X.
+Punch 03 .....
+.TP 15
+.BI "IRM(I) 39-40"
+Punch the main or nested effects number ......
+.TP 13
+.BI "page 22 change the following columns"
+.TP 15
+.BI "YM 10-24"
+Approximate mean for Y in e15.8 format.
+.TP 15
+.BI "LITY 25-30"
+Six character literal to describe this dependent variable.
+.TP 13
+.BI "page 23 change the following columns"
+.TP 15
+.BI "I309 7"
+Punch 00 if use is not to be made of variance & covariance
+component estimates ..........
+.TP 15
+.BI "NR1 8-10"
+Punch the percent of the genic variance expected in the "between family"
+variance component.....
+.TP 13
+.BI "page 22-23 change the following"
+.TP 15
+.BI "ERR T 14-15"
+Error term to use in calculating standard error (1,2, or 3)
+.TP 15
+.BI "NO. 16-17"
+Punch the number of constants ....
+.TP 15
+.BI "R(1) 21-22"
+Coded row number in the LS matrix for first constant
+.TP 15
+.BI "C(1) 23-30"
+Coefficient for the R(1) constant in f8.3 format
+.TP 15
+.BI "R(2) 31-32"
+Coded row number for the second constant.
+.TP 15
+.BI "C(2) 33-40"
+Coefficient for the R(2) constant.
+
+
+.SH EXAMPLES
+There is a demonstration shellscript in
+\fB/usr/local/src/Harvey/Lsmlmw/version.de/Lsmlce/Test/harv.p103.scr\fr
+The location of this script is applicable to anprod - check with
+your own system people for its location in other installations.
+.PP
+In the synopsis above fin is the input file containing parameter
+cards, fout is the output listing, and datafile is the data in CHARM file
+format,tmpfilea & tmpfileb are scratch files. Pfile, Gfile
+and Efile are save files (in 'unix' matrix format) 
+for genetic parameters (under save options 1 or 2),
+Bfile and Wfile are save files (in 'blocked' matrix format) for between
+and within random effect covariance matrices (under save option 3), and
+Rfile is save file (in 'unix' matrix format) for residual covariance
+matrix (under save option 4).
+Scratch files are normally placed in /tmp and removed at end of job.
+The redirection of input & output will of course be different in
+a shellscript from in the above synopsis.
+
+.SH SEE ALSO
+reg(l),charm/create(l), lsmlmw(l), lsmlch(l),matrix/intro(l)
+.SH AUTHORS
+W.R.Harvey, Ohio State University.- version.ibm - fortran 66
+N.Jackson & R.Evans, Csiro Div Animal Production - version.de - fortran 77
+.SH BUGS
+For model types 6 & 7 an extra run is performed, not documented in the 
+User Guides mentioned above. See User Guide for PC version for correct
+documentation of model types 6 & 7.
+For details on parameter cards necessary for this run,
+see Neville Jackson or Rod Evans (at host 'anprod').

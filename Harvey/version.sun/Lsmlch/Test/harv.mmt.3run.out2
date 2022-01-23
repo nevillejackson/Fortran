@@ -1,0 +1,674 @@
+1
+
+
+ mixed model least-squares and maximum likelihood computer program
+ walter r. harvey     phone (614)-422-5763
+ dairy science dept., the ohio state univ., columbus ohio 43210
+
+
+0                    listing of parameter cards for problem no. 32
+0ijob nab ncd icn1 nlhm nrhm nmea nme nnea nme n2f npr nlc ncpr iran mpop liop in mty man nrun nrn ibet ibeg lthn nndc prb lpar ntit
+  32   6   1    0   10    2    0   2    0   0   1   1   0    1    0    1   20  10  7   2    3   1    0    0    0    0 0.10   1    1
+0 name   iad  nr1   nw  ncc  ndc(i) where i=1,2,...ncc.
+ S/T       0    0    0    2    2    1
+0for i=   1  men(i)  lit(i)  ncl(i)  mpol  lme(i)  ibeg(i)
+              1      TRTS     3       1     1        2
+0iden(j) where j=k2 by steps of one as long as j is less than k2+ncl(i)+1
+     1        2       3
+0for i=   2  men(i)  lit(i)  ncl(i)  mpol  lme(i)  ibeg(i)
+              2      SEXES    3       0     1        3
+0iden(j) where j=k2 by steps of one as long as j is less than k2+ncl(i)+1
+     1        2       3
+0for i=   1  int1(i) int2(i)  nmc(i)
+              1       2       0
+0for k= 1  negx(k) loge(k) lqc(k) nregp(k) lgtx(k) jbeg(k) ndecx(k)     xm(k)     litr(k) iclr(k) lad(k)
+              0       0       1       1      2        6        0   0.        e+00  X VAR     0      0
+0for i= 1  negy(i) lny(i) lhy(i) kbeg(i) ndecy(i)   ym(i)    lity(i)
+              0      0      2       8       0   0.        e+00 Y VAR1
+0for i= 2  negy(i) lny(i) lhy(i) kbeg(i) ndecy(i)   ym(i)    lity(i)
+              0      0      2       8       0   0.        e+00 Y VAR2
+ opened to unit  10  status = old  file = mmt.32-34                                                                       
+ opened to unit  12  status = new  file = /tmp/nj22879.a                                                                  
+ opened to unit  13  status = new  file = /tmp/nj22879.b                                                                  
+ end of file on unit 10 ios =   -1
+1
+
+
+ model 7 test data - run 1                                                                                                           
+
+
+
+0     total least-squares analysis.  no equations absorbed.     df=no. cards=   131
+0  distribution of class and subclass numbers for problem no.  32
+0                   identification             no.
+0                 total                        131
+ 
+                  TRTS      1                   43        
+                  TRTS      2                   51        
+                  TRTS      3                   37        
+ 
+                  SEXES     1                   44        
+                  SEXES     2                   49        
+                  SEXES     3                   38        
+ 
+                  TRTS   x SEXES     1    1     14        
+                  TRTS   x SEXES     1    2     18        
+                  TRTS   x SEXES     1    3     11        
+                  TRTS   x SEXES     2    1     21        
+                  TRTS   x SEXES     2    2     13        
+                  TRTS   x SEXES     2    3     17        
+                  TRTS   x SEXES     3    1      9        
+                  TRTS   x SEXES     3    2     18        
+                  TRTS   x SEXES     3    3     10        
+0overall means and standard deviations of lhm for problem no. 32
+0 coded lhm    independent variables           mean         s.d.
+ 
+     10      rgrsn  X VAR  linear           25.58779      8.94072
+0               overall means and standard deviations of rhm
+ 
+             Y VAR1    mean=    56.98473          s.d.=    16.84636
+             Y VAR2    mean=    56.98473          s.d.=    16.84636
+ 
+0               sums of squares, c.p. and correlations among lhm for problem no. 32
+0 row  col               independent variables
+ code code         row                      column                       s.sqs. or c.p.   correlation
+ 
+  10   10  rgrsn  X VAR  linear      rgrsn  X VAR  linear               10391.74045802       1.0000
+ 
+0 sums of crossproducts and correlations of lhm with rhm for problem no. 32
+0rhm  lhm  rhm name   independent variable                c.p.       correlation
+ 
+   1   10   Y VAR1  rgrsn  X VAR  linear                1199.17557252    0.0612
+ 
+   2   10   Y VAR2  rgrsn  X VAR  linear                1199.17557252    0.0612
+  lsmlmw A  43  51  37  44  49  38  14  18  11  21  13  17  9  18  10  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+0the determinant of the correlation matrix is            0.0952757943982468      0.9527579439824677d-01
+0ns=  15   k--ab=     49.981095    tr d-1 u=     10.389313    tr c-1 (reduced f matrix) =     39.591782
+  tot4(100) =    49.981094555249    kd =   1
+ 
+ 
+0                      residual matrices for right hand members
+
+  job row col   rhm      rhm           error ss or cp       error ms or cov     correlation
+ 
+   32  1   1    Y VAR1  Y VAR1          11155.598201            92.19502646        1.0000
+   32  1   2    Y VAR1  Y VAR2          11155.598201            92.19502646        1.0000
+ 
+   32  2   2    Y VAR2  Y VAR2          11155.598201            92.19502646        1.0000
+0                    listing of polynomial regressions and standard errors
+0 rhm    high order   standard                     non-orthogonal regression coefficients
+  name   regression    error         b0         b1          b2          b3          b4          b5
+0                             TRTS    linear    mean of x =    2.0000
+ 
+ Y VAR1 -0.2589e+01  0.1502e+01  0.5693e+02 -0.2589e+01
+ Y VAR2 -0.2589e+01  0.1502e+01  0.5693e+02 -0.2589e+01
+0                             TRTS    quad      mean of x =    2.0000
+ 
+ Y VAR1 -0.1467e+02  0.1770e+01  0.6670e+02 -0.3763e+01 -0.1467e+02
+ Y VAR2 -0.1467e+02  0.1770e+01  0.6670e+02 -0.3763e+01 -0.1467e+02
+  lsmlmw B  43  51  37  44  49  38  14  18  11  21  13  17  9  18  10  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  lsmlmw C  43  51  37  44  49  38  14  18  11  21  13  17  9  18  10  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+1
+
+
+ mixed model least-squares and maximum likelihood computer program
+ walter r. harvey     phone (614)-422-5763
+ dairy science dept., the ohio state univ., columbus ohio 43210
+
+
+0                    listing of parameter cards for problem no. 33
+0ijob nab ncd icn1 nlhm nrhm nmea nme nnea nme n2f npr nlc ncpr iran mpop liop in mty man nrun nrn ibet ibeg lthn nndc prb lpar ntit
+  33   5   1    0    7    2    1   1    0   0   1   1   0    1    0    1   20  10  7   2    3   2    0    0    0    0 0.10   1    1
+0 nam5   iad  nr1   nw  nmjc  ndc(i) where i=1,2,...nmjc. 
+ S/T       1   25   75    2    2    1
+0                       nmic  nmi(i) where i=1,2,...nmic.
+                          1    3
+0for i=   1  men(i)  lit(i)  ncl(i)  mpol  lme(i)  ibeg(i)
+              1      TRTS     3       0     1        2
+0iden(j) where j=k2 by steps of one as long as j is less than k2+ncl(i)+1
+     1        2       3
+0for i=   2  men(i)  lit(i)  ncl(i)  mpol  lme(i)  ibeg(i)
+              2      SEXES    3       1     1        3
+0iden(j) where j=k2 by steps of one as long as j is less than k2+ncl(i)+1
+     1        2       3
+0for i=   1  int1(i) int2(i)  nmc(i)
+              1       2       0
+0for k= 1  negx(k) loge(k) lqc(k) nregp(k) lgtx(k) jbeg(k) ndecx(k)     xm(k)     litr(k) iclr(k) lad(k)
+              0       0       1       1      2        6        0   0.        e+00  X VAR     0      0
+0for i= 1  negy(i) lny(i) lhy(i) kbeg(i) ndecy(i)   ym(i)    lity(i)
+              0      0      2       8       0   0.        e+00 Y VAR1
+0for i= 2  negy(i) lny(i) lhy(i) kbeg(i) ndecy(i)   ym(i)    lity(i)
+              0      0      2       8       0   0.        e+00 Y VAR2
+ end of file on unit 10 ios =   -1
+1
+
+
+ model 7 test data - run 2                                                                                                           
+
+
+
+0          no. of classes or subclasses absorbed by least squares=    15     no. cards=   131     df=   116.
+0overall means and standard deviations of lhm for problem no. 33
+0 coded lhm    independent variables           mean         s.d.
+ 
+      7      rgrsn  X VAR  linear           25.58779      5.02853
+0               overall means and standard deviations of rhm
+ 
+             Y VAR1    mean=    56.98473          s.d.=     9.30610
+             Y VAR2    mean=    56.98473          s.d.=     9.30610
+ 
+0               sums of squares, c.p. and correlations among lhm for problem no. 33
+0 row  col               independent variables
+ code code         row                      column                       s.sqs. or c.p.   correlation
+ 
+   7    7  rgrsn  X VAR  linear      rgrsn  X VAR  linear                2933.18398268       1.0000
+ 
+0 sums of crossproducts and correlations of lhm with rhm for problem no. 33
+0rhm  lhm  rhm name   independent variable                c.p.       correlation
+ 
+   1    7   Y VAR1  rgrsn  X VAR  linear                1425.81709957    0.2627
+ 
+   2    7   Y VAR2  rgrsn  X VAR  linear                1425.81709957    0.2627
+  lsmlmw A  44  49  38  14  18  11  21  13  17  9  18  10  9  18  10  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+0the determinant of the correlation matrix is            0.0908140318256480      0.9081403182564801d-01
+0ns=  33   k--ab=     95.091142    tr d-1 u=     70.035065    tr c-1 (reduced f matrix) =     25.056077
+  tot4(100) =    49.981094555249    kd =   0
+ 
+ 
+  made it to 17  2  7  3  3
+  lscomb A  44  49  38  14  18  11  21  13  17  9  18  10  9  18  10  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0
+  lscomb B  44  49  38  14  18  11  21  13  17  9  18  10  9  18  10  44  49  38
+  14  18  11  14  18  11  21  13  17  9  18  10
+0                      residual matrices for right hand members
+
+  job row col   rhm      rhm           error ss or cp       error ms or cov     correlation
+ 
+   33  1   1    Y VAR1  Y VAR1           1758.883982            16.13655029        1.0000
+   33  1   2    Y VAR1  Y VAR2           1758.883982            16.13655029        1.0000
+ 
+   33  2   2    Y VAR2  Y VAR2           1758.883982            16.13655029        1.0000
+0                    listing of polynomial regressions and standard errors
+0 rhm    high order   standard                     non-orthogonal regression coefficients
+  name   regression    error         b0         b1          b2          b3          b4          b5
+0                             SEXES   linear    mean of x =    2.0000
+ 
+ Y VAR1  0.7968e+01  0.5130e+00  0.5698e+02  0.7968e+01
+ Y VAR2  0.7968e+01  0.5130e+00  0.5698e+02  0.7968e+01
+0                             SEXES   quad      mean of x =    2.0000
+ 
+ Y VAR1  0.1548e+02  0.1212e+01  0.4667e+02  0.7713e+01  0.1548e+02
+ Y VAR2  0.1548e+02  0.1212e+01  0.4667e+02  0.7713e+01  0.1548e+02
+  lsmlmw B  44  49  38  14  18  11  21  13  17  9  18  10  9  18  10  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  44  49  38  14  18  11  14  18  11  21  13  17  9  18  10
+  lsmlmw C  44  49  38  14  18  11  21  13  17  9  18  10  9  18  10  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  44  49  38  14  18  11  14  18  11  21  13  17  9  18  10
+1
+
+
+ mixed model least-squares and maximum likelihood computer program
+ walter r. harvey     phone (614)-422-5763
+ dairy science dept., the ohio state univ., columbus ohio 43210
+
+
+0                    listing of parameter cards for problem no. 34
+0ijob nab ncd icn1 nlhm nrhm nmea nme nnea nme n2f npr nlc ncpr iran mpop liop in mty man nrun nrn ibet ibeg lthn nndc prb lpar ntit
+  34   2   1    0    1    2    0   0    0   0   0   1   0    1    0    0    0  10  7   2    3   3    0    0    0    0 0.10   1    1
+0 name   iad  nr1   nw  nmjc  ndc(i) where i=1,2,...nmjc. 
+ SG/T      0    0    0    1    2
+0                       nint  mz(i)  where i=1,2,...nint.
+                          1    1
+0                       nmic  nmi(i) where i=1,2,...nmic.
+                          1    3
+0for k= 1  negx(k) loge(k) lqc(k) nregp(k) lgtx(k) jbeg(k) ndecx(k)     xm(k)     litr(k) iclr(k) lad(k)
+              0       0       1       1      2        6        0   0.        e+00  X VAR     0      0
+0for i= 1  negy(i) lny(i) lhy(i) kbeg(i) ndecy(i)   ym(i)    lity(i)
+              0      0      2       8       0   0.        e+00 Y VAR1
+0for i= 2  negy(i) lny(i) lhy(i) kbeg(i) ndecy(i)   ym(i)    lity(i)
+              0      0      2       8       0   0.        e+00 Y VAR2
+ end of file on unit 10 ios =   -1
+1
+
+
+ model 7 test data - run 3                                                                                                           
+
+
+
+0          no. of classes or subclasses absorbed by least squares=    33     no. cards=   131     df=    98.
+0overall means and standard deviations of lhm for problem no. 34
+0 coded lhm    independent variables           mean         s.d.
+ 
+      1      rgrsn  X VAR  linear           25.58779      2.79067
+0               overall means and standard deviations of rhm
+ 
+             Y VAR1    mean=    56.98473          s.d.=     3.29090
+             Y VAR2    mean=    56.98473          s.d.=     3.29090
+ 
+0               sums of squares, c.p. and correlations among lhm for problem no. 34
+0 row  col               independent variables
+ code code         row                      column                       s.sqs. or c.p.   correlation
+ 
+   1    1  rgrsn  X VAR  linear      rgrsn  X VAR  linear                 763.20555556       1.0000
+ 
+0 sums of crossproducts and correlations of lhm with rhm for problem no. 34
+0rhm  lhm  rhm name   independent variable                c.p.       correlation
+ 
+   1    1   Y VAR1  rgrsn  X VAR  linear                 -77.81666667   -0.0865
+ 
+   2    1   Y VAR2  rgrsn  X VAR  linear                 -77.81666667   -0.0865
+ 
+0               sums of squares, c.p. and correlations among rhm for problem no. 34
+0                    row   col    rhm    rhm               s.sqs. or c.p.    correlation
+ 
+                       1     1   Y VAR1  Y VAR1            1061.34047619        1.0000
+                       1     2   Y VAR1  Y VAR2            1061.34047619        1.0000
+ 
+                       2     2   Y VAR2  Y VAR2            1061.34047619        1.0000
+  lsmlmw A  44  49  38  14  18  11  21  13  17  9  18  10  9  18  10  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  44  49  38  14  18  11  14  18  11  21  13  17  9  18  10
+0                             listing of inverse elements for problem no. 34
+ 
+0row  col               independent variables                                  inverse element
+ code code         row                      column                fixed point format  floating point format
+ 
+   1    1  rgrsn  X VAR  linear      rgrsn  X VAR  linear               0.00131026         0.13102630e-02
+0the determinant of the correlation matrix is            1.0000000000000000      0.1000000000000000d+01
+0                  listing of constant estimates for problem no. 34
+0 rhm   row                                           constant estimates
+  name  code  independent variable         fixed point format  floating point format
+ 
+ Y VAR1   1  rgrsn  X VAR  linear              -0.10196030        -0.10196030e+00
+ 
+ Y VAR2   1  rgrsn  X VAR  linear              -0.10196030        -0.10196030e+00
+0                      residual matrices for right hand members
+
+  job row col   rhm      rhm           error ss or cp       error ms or cov     correlation
+ 
+   34  1   1    Y VAR1  Y VAR1           1053.406266            10.85985841        1.0000
+   34  1   2    Y VAR1  Y VAR2           1053.406266            10.85985841        1.0000
+ 
+   34  2   2    Y VAR2  Y VAR2           1053.406266            10.85985841        1.0000
+1
+
+
+ model 7 test data - run 3                                                                                                           
+
+
+
+0                        combined least-squares analysis of variance
+ 
+                                          Y VAR1
+ 
+     source        d.f.        sum of squares      mean squares          f      prob     error line
+ 
+ TRTS                 2           6600.530810       3300.265405        4.215    0.0411      S/T   
+     linear         1              273.729400        273.729400        0.350    0.5653      S/T   
+     quad           1             6326.801410       6326.801410        8.080    0.0148      S/T   
+ S/T                 12           9396.714220        783.059518       72.106    0.0000    remaindr
+ SEXES                2           6520.824992       3260.412496       55.459    0.0000    SG/T    
+     linear         1             3891.893668       3891.893668       66.200    0.0000    SG/T    
+     quad           1             2628.931323       2628.931323       44.717    0.0000    SG/T    
+ TRTS   x  SEXES      4            140.026445         35.006611        0.595    0.6728    SG/T    
+ SG/T                12            705.477716         58.789810        5.413    0.0000    remaindr
+   regressions 
+ X VAR  b  linear     1              7.934211          7.934211        0.731    0.3948      remain
+ remainder           97           1053.406266         10.859858
+ 
+                                          Y VAR2
+ 
+     source        d.f.        sum of squares      mean squares          f      prob     error line
+ 
+ TRTS                 2           6600.530810       3300.265405        4.215    0.0411      S/T   
+     linear         1              273.729400        273.729400        0.350    0.5653      S/T   
+     quad           1             6326.801410       6326.801410        8.080    0.0148      S/T   
+ S/T                 12           9396.714220        783.059518       72.106    0.0000    remaindr
+ SEXES                2           6520.824992       3260.412496       55.459    0.0000    SG/T    
+     linear         1             3891.893668       3891.893668       66.200    0.0000    SG/T    
+     quad           1             2628.931323       2628.931323       44.717    0.0000    SG/T    
+ TRTS   x  SEXES      4            140.026445         35.006611        0.595    0.6728    SG/T    
+ SG/T                12            705.477716         58.789810        5.413    0.0000    remaindr
+   regressions 
+ X VAR  b  linear     1              7.934211          7.934211        0.731    0.3948      remain
+ remainder           97           1053.406266         10.859858
+0*** tests of significance for all sets of effects where remainder is not used as the error term are approximate
+     with unbalanced data or in covariance analyses ***
+1
+
+
+ model 7 test data - run 3                                                                                                           
+
+
+
+0               variance and covariance component estimates from indirect analyses
+0          k for random effects component (SG/T  )=    2.9924   degrees of freedom =   12.
+0
+                         ss, cp, ms, mcp, variance and covariance components
+
+ job row col   rhm     rhm                    ss or cp                   ms or cov                  components
+ 
+  34   1   1  Y VAR1  Y VAR1               705.47771594                58.78980966                16.01720156
+  34   1   2  Y VAR1  Y VAR2               705.47771594                58.78980966                16.01720156
+ 
+  34   2   2  Y VAR2  Y VAR2               705.47771594                58.78980966                16.01720156
+  131   12.000000000000   49.981094555249  0.
+  131   12.000000000000   49.981094555249  0.   6.7515754537293
+  131   12.000000000000   49.981094555249  0.   6.7515754537293
+   3.7591706263968
+ 
+  tot4(100) =    49.981094555249
+0          k values (S/T   ) are: k2=    3.7592   k3=    6.7516   degrees of freedom =   12.
+0          negative variance component estimates for SG/T   set to zero to compute S/T    variance components
+0
+                         ss, cp, ms, mcp, variance and covariance components
+
+ job row col   rhm     rhm                    ss or cp                   ms or cov                  components
+ 
+  34   1   1  Y VAR1  Y VAR1              9396.71421968               783.05951831               105.45512987
+  34   1   2  Y VAR1  Y VAR2              9396.71421968               783.05951831               105.45512987
+ 
+  34   2   2  Y VAR2  Y VAR2              9396.71421968               783.05951831               105.45512987
+0               negative variance component estimates set to zero for these computations
+0
+ estimates of heritabilities, genetic, phenotypic, environmental correlations
+
+  job row col   rhm    rhm   heritability  standard  phenotypic  environmental neg   variance or cov components
+                             or genetic r   errors   correlation correlation           among            within
+ 
+   34   1   1  Y VAR1 Y VAR1      3.188      0.259      1.000      1.000        0      105.45512987       26.87705996
+   34   1   2  Y VAR1 Y VAR2      1.000      0.         1.000     -1.000        0      105.45512987       26.87705996
+ 
+   34   2   2  Y VAR2 Y VAR2      3.188      0.259      1.000      1.000        0      105.45512987       26.87705996
+  lsmlmw B  44  49  38  14  18  11  21  13  17  9  18  10  9  18  10  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  44  49  38  14  18  11  14  18  11  21  13  17  9  18  10
+  lsmlmw C  44  49  38  14  18  11  21  13  17  9  18  10  9  18  10  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  44  49  38  14  18  11  14  18  11  21  13  17  9  18  10
+  suafmm  44  49  38  14  18  11  21  13  17  9  18  10  9  18  10  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  44  49  38  14  18  11  14  18  11  21  13  17  9  18  10
+  suafmm  44  49  38  14  18  11  14  18  11  21  13  17  9  18  10  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  44  49  38  14  18  11  14  18  11  21  13  17  9  18  10
+0       listing of constants, least-squares means and standard errors for problem no. 34
+0                                                                            standard                          standard
+  rhm   row                              no.   effective    constant         error of      least-squares       error of
+  name  code  independent variable       obs.     no.       estimate         constant          mean            ls mean
+ 
+ Y VAR1   1  mu                          131  -Inf.7      56.00690666       0.              56.00690666       0.        
+ Y VAR1   2  TRTS      1                  44     44.0      -1.12570044       0.              54.88120622       0.        
+ Y VAR1   3  TRTS      2                  49     49.0       9.77782113       0.              65.78472779       0.        
+ Y VAR1   0  TRTS      3                  38     38.0      -8.65212069       0.              47.35478597       0.        
+ Y VAR1   4  SEXES     1                  14    343.5      -0.10196030       0.50624197      55.90494636       0.50624197
+ Y VAR1   5  SEXES     2                  18     18.0      -0.10196030       0.              55.90494636       0.        
+ Y VAR1   0  SEXES     3                  11     10.6       0.20392060       2.69238606      56.21082726       2.69238606
+ Y VAR1   6  TRTS   x SEXES     1    1    14     14.0      -0.10196030       0.              54.67728563       0.        
+ Y VAR1   7  TRTS   x SEXES     1    2    18     18.2      -0.10196030       0.              54.67728563       1.82130935
+ Y VAR1   0  TRTS   x SEXES     1    3    11     11.0       0.20392060       0.              55.28904742       0.        
+ Y VAR1   8  TRTS   x SEXES     2    1    21     25.2      -0.00685872       0.              65.67590877       1.71962840
+ Y VAR1   9  TRTS   x SEXES     2    2    13     13.0      -0.00278615       0.              65.67998134       0.        
+ Y VAR1   0  TRTS   x SEXES     2    3    17      7.5       0.00964487       0.              65.99829326       3.16338325
+ Y VAR1   0  TRTS   x SEXES     3    1     9     15.8       0.10881902       0.              47.36164469       1.97681768
+ Y VAR1   0  TRTS   x SEXES     3    2    18     21.8       0.10474645       0.              47.35757212       1.68408535
+ Y VAR1   0  TRTS   x SEXES     3    3    10     17.6      -0.21356547       0.              47.34514110       1.87245555
+ Y VAR1  10 rgrsn  X VAR  linear                           -0.10196030       0.11928651      -0.10196030       0.11928651
+ 
+ Y VAR2   1  mu                          131  -Inf.8      55.99982465       0.              55.99982465       0.        
+ Y VAR2   2  TRTS      1                  44     44.0      -1.12570044       0.              54.87412421       0.        
+ Y VAR2   3  TRTS      2                  49     49.0       9.77782113       0.              65.77764578       0.        
+ Y VAR2   0  TRTS      3                  38     38.0      -8.65212069       0.              47.34770396       0.        
+ Y VAR2   4  SEXES     1                  14    343.5      -0.10196030       0.50624197      55.89786435       0.50624197
+ Y VAR2   5  SEXES     2                  18     18.0      -0.00685872       0.              55.99296593       0.        
+ Y VAR2   0  SEXES     3                  11     10.6       0.10881902       2.69238606      56.10864367       2.69238606
+ Y VAR2   6  TRTS   x SEXES     1    1    14     14.0      -0.10196030       0.              54.67020362       0.        
+ Y VAR2   7  TRTS   x SEXES     1    2    18     18.2      -0.00685872       0.              54.86040677       1.82130935
+ Y VAR2   0  TRTS   x SEXES     1    3    11     11.0       0.10881902       0.              55.09176225       0.        
+ Y VAR2   8  TRTS   x SEXES     2    1    21     25.2      -0.00278615       0.              65.67289933       1.71962840
+ Y VAR2   9  TRTS   x SEXES     2    2    13     13.0       0.00085013       0.              65.77163719       0.        
+ Y VAR2   0  TRTS   x SEXES     2    3    17      7.5       0.00193602       0.              65.88840082       3.16338325
+ Y VAR2   0  TRTS   x SEXES     3    1     9     15.8       0.10474645       0.              47.35049011       1.97681768
+ Y VAR2   0  TRTS   x SEXES     3    2    18     21.8       0.00600859       0.              47.34685383       1.68408535
+ Y VAR2   0  TRTS   x SEXES     3    3    10     17.6      -0.11075504       0.              47.34576794       1.87245555
+ Y VAR2  10 rgrsn  X VAR  linear                           -0.10196030       0.11928651      -0.10196030       0.11928651
+0                             listing of inverse elements for problem no. 34
+ 
+   0.        e+00   0.        e+00   0.        e+00   0.        e+00   0.        e+00   0.        e+00   0.        e+00
+   0.        e+00   0.        e+00   0.        e+00   0.        e+00   0.        e+00   0.        e+00   0.        e+00
+   0.        e+00   0.27459345e-01  -0.21246278e-01   0.17103754e-02  -0.68587209e-02  -0.27861507e-02   0.85013093e-03
+  -0.19718547e-02   0.40491326e-01   0.43849454e-03   0.30982089e-02  -0.72399016e-02   0.70874340e-02   0.29111702e-02
+   0.45852203e-01  -0.25867364e-01  -0.18298555e-01   0.15805123e-01   0.74622936e-04   0.        e+00   0.        e+00
+   0.        e+00   0.        e+00   0.        e+00   0.        e+00   0.        e+00   0.        e+00   0.        e+00
+   0.        e+00   0.        e+00   0.        e+00   0.        e+00   0.        e+00   0.        e+00   0.        e+00
+   0.        e+00   0.        e+00   0.        e+00   0.        e+00   0.        e+00   0.13102630e-02
+0                             listing of diagonal inverse elements
+ 
+   0.        e+00   0.        e+00  -0.27861507e-02   0.29111702e-02   0.        e+00   0.        e+00   0.        e+00
+   0.        e+00   0.        e+00   0.13102630e-02
+1
+
+
+ model 7 test data - run 3                                                                                                           
+
+
+
+                            listing of polynomial coefficients and partitioning of subclass sum of squares
+
+                                                              Y VAR1
+                                                        TRTS    x  SEXES 
+
+                        coefficient standard error order
+    source               estimate   of coefficient  elim  d.f.   sum of squares       mean squares       f       prob  error
+
+ total                                                       8***********************************************   0.9999    1
+
+ TRTS  
+   linear                   **             **         7    1        1183.311698       1183.311698      1.5111   0.2425    3
+   quad                     **             **         6    1       -4596.182352      -4596.182352     -5.8695   0.9999    3
+ SEXES 
+   linear             -0.551366e+01   0.185963e+01    8    1         516.807046        516.807046      8.7908   0.0118    2
+   quad                     **             **         5    1   **********************************************   0.9999    1
+ TRTS    x  SEXES 
+   linear  x  linear        **             **         4    1   **********************************************   0.9999    2
+   linear  x  quad          **             **         3    1        -121.149024       -121.149024     -2.0607   0.9999    2
+   quad    x  linear        **             **         2    1          -4.185977         -4.185977     -0.0712   0.9999    2
+   quad    x  quad          **             **         1    1         173.743321        173.743321      2.9553   0.1113    2
+
+ error (3)                                                  12      9396.714220        783.059518
+
+ error (2)                                                  12       705.477716         58.789810
+
+ error (1)                                                  97      1053.406266         10.859858
+
+               intercept =    0.560069e+02     r squared = -.000     r =******
+
+          **  term was eliminated during stepdown procedures
+0                                            prediction equation
+
+                         coefficients              b                    x
+0                       intercept             56.006906661              1
+                        TRTS   linear             **                   **
+                        TRTS   quad               **                   **
+                        SEXES  linear         -5.513657084  (SEXES  -     2.0000)**1
+                        SEXES  quad               **                   **
+                        linear x linear           **                   **
+                        linear x quad             **                   **
+                        quad   x linear           **                   **
+                        quad   x quad             **                   **
+0               estimated TRTS   x SEXES  subclass means
+
+                         TRTS   SEXES      estimate
+
+                            1      1        61.5206
+                            1      2        56.0069
+                            1      3        50.4932
+                            2      1        61.5206
+                            2      2        56.0069
+                            2      3        50.4932
+                            3      1        61.5206
+                            3      2        56.0069
+                            3      3        50.4932
+
+                                                              Y VAR2
+                                                        TRTS    x  SEXES 
+
+                        coefficient standard error order
+    source               estimate   of coefficient  elim  d.f.   sum of squares       mean squares       f       prob  error
+
+ total                                                       8***********************************************   0.9999    1
+
+ TRTS  
+   linear                   **             **         7    1        1291.692932       1291.692932      1.6495   0.2233    3
+   quad                     **             **         6    1       -4699.863959      -4699.863959     -6.0019   0.9999    3
+ SEXES 
+   linear             -0.561413e+01   0.185963e+01    8    1         535.814090        535.814090      9.1141   0.0107    2
+   quad                     **             **         5    1   **********************************************   0.9999    1
+ TRTS    x  SEXES 
+   linear  x  linear        **             **         4    1   **********************************************   0.9999    2
+   linear  x  quad          **             **         3    1         -19.081954        -19.081954     -0.3246   0.9999    2
+   quad    x  linear        **             **         2    1          -5.142066         -5.142066     -0.0875   0.9999    2
+   quad    x  quad          **             **         1    1          95.674600         95.674600      1.6274   0.2262    2
+
+ error (3)                                                  12      9396.714220        783.059518
+
+ error (2)                                                  12       705.477716         58.789810
+
+ error (1)                                                  97      1053.406266         10.859858
+
+               intercept =    0.559998e+02     r squared = -.000     r =******
+
+          **  term was eliminated during stepdown procedures
+0                                            prediction equation
+
+                         coefficients              b                    x
+0                       intercept             55.999824652              1
+                        TRTS   linear             **                   **
+                        TRTS   quad               **                   **
+                        SEXES  linear         -5.614131799  (SEXES  -     2.0000)**1
+                        SEXES  quad               **                   **
+                        linear x linear           **                   **
+                        linear x quad             **                   **
+                        quad   x linear           **                   **
+                        quad   x quad             **                   **
+0               estimated TRTS   x SEXES  subclass means
+
+                         TRTS   SEXES      estimate
+
+                            1      1        61.6140
+                            1      2        55.9998
+                            1      3        50.3857
+                            2      1        61.6140
+                            2      2        55.9998
+                            2      3        50.3857
+                            3      1        61.6140
+                            3      2        55.9998
+                            3      3        50.3857

@@ -1,0 +1,28 @@
+c-----com1p is special for polyab.f
+c-----note lab arrays numeric
+c----- original dimensions
+c     dimension array(5000),fab(5000)
+c    + ,tot(106),tot2(106),tot3(106),tot4(106),tot5(106)
+c    + ,sss(630),tred(35),ym(35),xp(81),yp(41)
+c    + ,im(90),ms(50),ipl(13),nsp(13),nnd(13),mz(10)
+c    + ,iclr(90),irm(40),lad(90) 
+c    + ,xzx(5065),r1i(100),r2i(100)
+c     dimension lab2(200),lab3(200),lab4(200)
+c     character*6 lity(35)
+c----- nb xzx() should be 6080 default for this version
+c-----
+c----- current dimensions
+      dimension array(60100),fab(60100)
+     + ,tot(207),tot2(207),tot3(207),tot4(207),tot5(207)
+     + ,sss(20100),tred(200),ym(200),xp(200),yp(200)
+     + ,im(90),ms(50),ipl(13),nsp(13),nnd(13),mz(10)
+     + ,iclr(90),irm(40),lad(90) 
+     + ,xzx(103500),r1i(201),r2i(201)
+      dimension lab2(402),lab3(402),lab4(402)
+      character*6 lity(200)
+c-----
+c----- neg & prbmin not dimensioned?
+      common /cmblk1/array,fab,tot,tot2,tot3,tot4,tot5,  
+     * sss,tred,ym,xp,yp,im,ms,neg,ipl,nsp,nnd,mz,iclr,irm,   
+     * lad,xzx,r1i,r2i,prbmin                       
+      common /cmbl1/lab2,lab3,lab4,lity

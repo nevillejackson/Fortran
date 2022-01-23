@@ -1,0 +1,63 @@
+           EXTENDED DIMENSIONS IMPLEMENTATION
+
+ 1. lsmlce is an enhanced version of lsmlch with the following features
+      - dimensions altered to allow 200 lhm & 200 rhm simultaneously
+      - free format parameter cards
+      - standard errors for phenotypic & environmental correlations
+      - matrix output of correlation estimates
+ 2. Dimensions. com9 has been added. It contains array dimension limits as a
+  common block. Values are initialized in blockdata.f. Dimensions
+  must be changed in com1,com1p,com2,com3 if these limits are
+  changed. Also change arrays in certain subroutines - see below.
+c-----
+c-----dimensions defined for com9          orig value
+c-----  m5000 - lhm*(lhm+1)/2 + lhm*rhm    5000
+c-----  m4000 - random cl with blup        4000
+c-----  m1000 - major cl with nab=4        1000
+c-----   m300 - subclasses                  300
+c-----   m200 - cl for which const fitted   200
+c-----   m100 - sum of ncln, sum of ncl     100
+c-----    m99 - lhm                          99
+c-----    m91 - lines of anova               91
+c-----    m90 - npr                          90
+c-----    m81 - cl in me or ne with poly     81
+c-----    m50 - nne + nnea                   50
+c-----    m40 - me or ne with indiv regn     40
+c-----    m35 - rhm                          35
+c-----    m30 - n2f                          30
+c-----    m20 - nme + nmea                   20
+c-----    m13 - me or ne with poly           13
+c-----    m10 - control columns              10
+c-----
+c----- note - arrays in com1,com1p,com2,com3 must be adjusted 
+c-----        if these are changed
+c-----      - also local arrays in polyab.f, suafmm.f, vector.f
+c-----
+      data m5000,m4000,m1000,m300,m200,m100,m99,m91,m90,m81
+     +     ,m50,m40,m35,m30,m20,m13,m10
+     +    /5000,4000,1000,300,200,100,99,91,90,81
+     +     ,50,40,35,30,20,13,10/
+c-----
+
+ 3. Arrays rhm() onwards in com1 & xzx() onwards in com1p should
+not be changed unless you understand how to calculate addresses
+within cmblk1. Arrays before the above should be identical in
+com1 & com1p.
+
+ 4. Standard errors for rp and re are approximate using
+
+      V(rp) = (1-rp**2)/(N-2)
+
+      V(re) = [V(rp) + hi**2 * hj**2 * V(rg)]/[ei**2 * ej**2]
+
+   where N is edf+sdf+1.
+
+ 5. P, G, and E covariance matrices are written to units 13,14,15
+ in 'blocked' format for compatability with 'matrix' routines.
+
+ 6. Parameter cards are in free format. All fields must be present and
+ be separated by blanks. Character strings must be in single quotes.
+
+ 7. lscomb76.f is Rod's version based on lsml76 order of runs for
+  model type 7. It contains various debugging printouts. It has not
+  had extended dimension changes. A copy is kept in /usr/local/src/Harvey.

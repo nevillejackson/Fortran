@@ -1,0 +1,5 @@
+      character*8 name,nam5
+      common /cmblk4/ncc,nmjc,icn1,nmic,ncd,ml3,intv,k1,icod,isw2,isw3, 
+     1l,l7,ka,kb,kc,sof,nx,kd,mty,man,nrun,nrn,edff,edfs,ifp,n
+     2dfa,ifpc,ndfc,ndfac,nint,ibet,lbeg,lthn,nndc,wtt,swt1,lparm       
+      common /cmbl4/name,nam5

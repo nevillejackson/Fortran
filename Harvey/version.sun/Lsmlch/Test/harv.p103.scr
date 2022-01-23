@@ -1,0 +1,20 @@
+: t is a variable used to ensure scratch files are written in /tmp
+: with a unique name comprising user initials and process id.
+: these files are removed after job execution by the rm command.
+: the data file - dcharv in this example - needs to be in CHARM format
+t=/tmp/nj$$
+lsmlch ./Test/dcharv $t.a $t.b <<eoi
+ 1 0 1 015 3 0 2 0 3 1 0 0 1 1 0 310 1 1 1 1               1 1
+test example from harvey(1960) p103
+ 1  LINE 301 1   1   2   3
+ 2   AGE 301 3   3   4   5
+ 1 1 3SIR/L1 301 2   1   2   3
+ 1 2 4SIR/L2 201 2   4   5
+ 1 3 5SIR/L3 401 2   6   7   8   9
+ 1 2
+00 3  6 0               AGE
+00 3  9 0               INITWT
+00 3 12 2               ADG
+ SIRES1 2575 2 611
+eoi
+rm $t*

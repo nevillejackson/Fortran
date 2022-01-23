@@ -1,0 +1,9 @@
+c----- original dimensions
+c     dimension i309(15),nr1(15),nw(15),ns2(15)
+c----- current dimensions
+      dimension i309(15),nr1(15),nw(15),ns2(15)
+c-----
+      common /cmblk3/rr,rep,df,sdf,edf,wk,ijob,nab,nlhm,nrhm,nmea,nme,nn
+     1ea,nne,n2f,npr,iran,mpop,liop,iad,lgt,iei,ie,i309,nr1,nw,ns2,mull,
+     2nom,non,ml,mlb,ns,not,kput,mn2,ncds,matx,ncpr,nsme,ncas,nlc,in,i30
+     3,nsave

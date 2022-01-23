@@ -1,0 +1,205 @@
+t=/tmp/nj$$
+sort +2.107 -2.114 -o $t.s /dev2g/grp3/neville/ab32/ibasd
+awk -f /dev2g/grp3/neville/ab32/sireno.awk <$t.s >$t.awk
+create $t.awk $t.a 233
+reform $t.a $t.b <<eoi
+*c,1,11,223
+*e,224,'z'
+eoi
+just 231 233 <$t.b >$t.c
+reform $t.c $t.d <<finis
+*c,1,1,223
+*c,4,222,2
+*c,3,11,1
+*c,6,115,2
+*c,8,1,2
+*c,10,11,1
+*c,11,9,1
+finis
+select $t.d $t.dd $t.rej <<finis
+*i,7,1,eq,1,2,3
+*i,6,1,eq,1,2
+*i,11,1,eq,1,2
+*e,55,1,eq, ,-,+
+*e,67,1,eq, ,-,+
+*e,81,1,eq, ,-,+
+*e,59,1,eq, ,-
+*e,77,1,eq, ,-
+*e,63,1,eq, ,-
+finis
+# change line code for ab20's from blank to 9
+recode $t.dd $t.ddd $t.fa $t.fb <<finis
+*all,1,1,223
+*code,3,'9'
+*code,10,'9'
+*i,3,1,eq, 
+*code,3,3,1
+*i,3,1,eq,1,2,3
+finis
+fcalc amsbxa.f $t.calc
+cat amsbxa.f
+$t.calc $t.ddd $t.dddcal <<finis
+*a,w,53,3,2
+*a,d,57,3,1
+*a,b,65,3,1
+*a,dnlw,198,1,0
+*a,dp,14,4,2
+*a,ds,19,4,2
+*a,dps,24,4,2
+*a,cvdp,33,3,1
+*a,cvds,37,3,1
+*a,np,157,4,1
+*a,ns,161,4,1
+*c,dlx,8,4
+*b,ams,220,6,3
+*b,wp1(1),226,6,3
+*b,wp2(1),232,6,3
+*b,wp1(3),238,6,3
+*b,wp2(3),244,6,3
+*b,sdp,250,6,4
+*b,sds,256,6,4
+*b,sd,262,6,4
+*b,cvd,268,6,3
+*b,dp-ds,274,6,2
+*b,dp-ds2,280,6,2
+*b,vdp,286,6,3
+*b,vds,292,6,3
+*b,vd,298,6,3
+*b,pscore,304,6,4
+*b,pratio,310,6,4
+finis
+sort +2.0 -2.5 -o $t.e $t.dddcal
+../lsmlce $t.e $t.dumi $t.dumj <<eoi
+ 1 6 0 0 24 52 0 2 0 9 0 0 0 1 0 0 20 10 3 2 2 1 0 0 0 0 0.0   1 1
+ab32,20 82-85 drop ibas data + wool data - dl_nested model - run=1 mty=3
+srs/dl      05 1 2 3 4 5
+ 1dl    1403 1 821 822 823 831 832 833 839 841 842 843 851 852 853 859
+ 2agedam 201 6   1   2
+ 1 1 3sx/821 204 882118212
+ 1 2 4sx/822 204 882218222
+ 1 3 5sx/823 204 882318232
+ 1 4 6sx/831 204 883118312
+ 1 6 8sx/833 204 883318332
+ 11012sx/843 204 884318432
+ 11113sx/851 204 885118512
+ 11214sx/852 204 885218522
+ 11315sx/853 204 885318532
+00 4 14 2               Dp
+00 4 19 2               Ds
+00 4 24 2               Dps
+00 3 29 2               Dp/Ds
+00 3 33 1               CV(Dp)
+00 3 37 1               CV(Ds)
+00 6268 3               CV(Dps)
+00 6250 4               s(Dp)
+00 6256 4               s(Ds)
+00 6262 4               s(Dps)
+00 6274 2               Dp-Ds
+00 6280 2               Dp-Ds2
+00 6286 3               V(Dp)
+00 6292 3               V(Ds)
+00 6298 3               V(Dps)
+00 6304 4               Pscore
+00 6310 4               Pratio
+00 1197 0               dNLB
+00 1198 0               dNLW
+00 2200 1               avdNLB
+00 2202 1               avdNLW
+00 3205 2               GFW
+00 3208 1               yield
+00 3 53 2               cww
+00 3 57 1               air_D
+00 3 61 1               stalen
+00 3 65 1               bwt
+00 4 69 3               s_area
+00 3119 1               L/D
+00 3122 3               W/D3
+00 6226 3               WP1(1)
+00 6232 3               WP2(1)
+00 6238 3               WP1(3)
+00 6244 3               WP2(3)
+00 4 74 1               tfn
+00 4211 1               TPN
+00 4215 1               TSN
+00 3 79 1               Ns/Np
+00 1117 0               Bct_s 
+00 1118 0               Bct_b
+00 4157 1               Np
+00 4161 1               Ns
+00 4165 1               Np+Ns
+00 4169 4               Np/Ns
+00 5137 1               Ap
+00 5142 1               As
+00 5147 1               Aps
+00 5152 3               Ap/As
+00 6173 0               Cp
+00 6179 0               Cs
+00 6185 0               Cps
+00 6191 4               Cp/Cs
+ 1 2 0 0 10 52 0 1 0 9 0 0 0 1 0 0 10 10 3 2 2 2 0 0 0 0 0.0 1 1
+ab32,20 82-85 drop ibas data + wool data - dl_nested model - run=2 mty=3
+srs/dl1 2575 3 1 2 3 2 4 5
+ 1agedam 201 6   1   2
+ 0 1 2sx/821 204 882118212
+ 0 2 3sx/822 204 882218222
+ 0 3 4sx/823 204 882318232
+ 0 4 5sx/831 204 883118312
+ 0 6 7sx/833 204 883318332
+ 01011sx/843 204 884318432
+ 01112sx/851 204 885118512
+ 01213sx/852 204 885218522
+ 01314sx/853 204 885318532
+00 4 14 2               Dp
+00 4 19 2               Ds
+00 4 24 2               Dps
+00 3 29 2               Dp/Ds
+00 3 33 1               CV(Dp)
+00 3 37 1               CV(Ds)
+00 6268 3               CV(Dps)
+00 6250 4               s(Dp)
+00 6256 4               s(Ds)
+00 6262 4               s(Dps)
+00 6274 2               Dp-Ds
+00 6280 2               Dp-Ds2
+00 6286 3               V(Dp)
+00 6292 3               V(Ds)
+00 6298 3               V(Dps)
+00 6304 4               Pscore
+00 6310 4               Pratio
+00 1197 0               dNLB
+00 1198 0               dNLW
+00 2200 1               avdNLB
+00 2202 1               avdNLW
+00 3205 2               GFW
+00 3208 1               yield
+00 3 53 2               cww
+00 3 57 1               air_D
+00 3 61 1               stalen
+00 3 65 1               bwt
+00 4 69 3               s_area
+00 3119 1               L/D
+00 3122 3               W/D3
+00 6226 3               WP1(1)
+00 6232 3               WP2(1)
+00 6238 3               WP1(3)
+00 6244 3               WP2(3)
+00 4 74 1               tfn
+00 4211 1               TPN
+00 4215 1               TSN
+00 3 79 1               Ns/Np
+00 1117 0               Bct_s 
+00 1118 0               Bct_b
+00 4157 1               Np
+00 4161 1               Ns
+00 4165 1               Np+Ns
+00 4169 4               Np/Ns
+00 5137 1               Ap
+00 5142 1               As
+00 5147 1               Aps
+00 5152 3               Ap/As
+00 6173 0               Cp
+00 6179 0               Cs
+00 6185 0               Cps
+00 6191 4               Cp/Cs
+eoi
+rm /tmp/nj$$*

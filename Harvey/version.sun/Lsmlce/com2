@@ -1,0 +1,28 @@
+c----- original dimensions
+c     dimension xm(90)
+c    + ,eff1(50),eff2(50)
+c    + ,x(106),ndc(10),nmi(10),men(20),ncl(20),lme(20),ibeg(20)
+c    + ,iden(100),ncln(40),nen(40),lne(40),nbeg(40),nden(100)
+c    + ,nma(40),nmc(30),int1(30),int2(30)
+c    + ,mscl(100)
+c    + ,negx(90),loge(90),lqc(90),nregp(90),lgtx(90),jbeg(90),ndecx(90)
+c    + ,negy(35),lny(35),lhy(35),kbeg(35),ndecy(35)
+c    + ,nos(300),nmac(40)
+c     character*6 lit(20),litr(90),nlit(50)
+c-----
+c----- current dimensions
+      dimension xm(90)
+     + ,eff1(200),eff2(200)
+     + ,x(207),ndc(10),nmi(10),men(20),ncl(20),lme(20),ibeg(20)
+     + ,iden(100),ncln(50),nen(50),lne(50),nbeg(50),nden(100)
+     + ,nma(50),nmc(30),int1(30),int2(30)
+     + ,mscl(100)
+     + ,negx(90),loge(90),lqc(90),nregp(90),lgtx(90),jbeg(90),ndecx(90)
+     + ,negy(200),lny(200),lhy(200),kbeg(200),ndecy(200)
+     + ,nos(300),nmac(50)
+      character*6 lit(20),litr(90),nlit(50)
+c-----
+      common /cmblk2/xm,eff1,eff2,x,ndc,nmi,men,ncl,lme,ib
+     1eg,iden,ncln,nen,lne,nbeg,nden,nma,nmc,int1,int2,mscl,negx,loge,lq
+     2c,nregp,lgtx,jbeg,ndecx,negy,lny,lhy,kbeg,ndecy,nos,nmac       
+      common /cmbl2/ lit,litr,nlit

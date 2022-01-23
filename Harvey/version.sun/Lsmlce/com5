@@ -1,0 +1,3 @@
+      character*132 titl1,titl2,titl3,titl4,titl5
+      common /cmblk5/min,mjn
+      common /cmbl5/titl1,titl2,titl3,titl4,titl5              
