@@ -1,0 +1,69 @@
+      SUBROUTINE NROOT(M,A,B,XL,X)                                      
+      DIMENSION A(1),B(1),XL(1),X(1)                                    
+      K=1                                                               
+      DO 100 J=2,M                                                      
+      L=M*(J-1)                                                         
+      DO 100 I=1,J                                                      
+      L=L+1                                                             
+      K=K+1                                                             
+  100 B(K)=B(L)                                                         
+      MV=0                                                              
+      CALL EIGEN(B,X,M,MV)                                              
+      L=0                                                               
+      DO 110 J=1,M                                                      
+      L=L+J                                                             
+  110 XL(J)=1.0/SQRT(ABS(B(L)))                                         
+      K=0                                                               
+      DO 115 J=1,M                                                      
+      DO 115 I=1,M                                                      
+      K=K+1                                                             
+  115 B(K)=X(K)*XL(J)                                                   
+      DO 120 I=1,M                                                      
+      N2=0                                                              
+      DO 120 J=1,M                                                      
+      N1=M*(I-1)                                                        
+      L=M*(J-1)+I                                                       
+      X(L)=0.0                                                          
+      DO 120 K=1,M                                                      
+      N1=N1+1                                                           
+      N2=N2+1                                                           
+  120 X(L)=X(L)+B(N1)*A(N2)                                             
+      L=0                                                               
+      DO 130 J=1,M                                                      
+      DO 130 I=1,J                                                      
+      N1=I-M                                                            
+      N2=M*(J-1)                                                        
+      L=L+1                                                             
+      A(L)=0.0                                                          
+      DO 130 K=1,M                                                      
+      N1=N1+M                                                           
+      N2=N2+1                                                           
+  130 A(L)=A(L)+X(N1)*B(N2)                                             
+      CALL EIGEN(A,X,M,MV)                                              
+      L=0                                                               
+      DO 140 I=1,M                                                      
+      L=L+I                                                             
+  140 XL(I)=A(L)                                                        
+      DO 150 I=1,M                                                      
+      N2=0                                                              
+      DO 150 J=1,M                                                      
+      N1=I-M                                                            
+      L=M*(J-1)+I                                                       
+      A(L)=0.0                                                          
+      DO 150 K=1,M                                                      
+      N1=N1+M                                                           
+      N2=N2+1                                                           
+  150 A(L)=A(L)+B(N1)*X(N2)                                             
+      L=0                                                               
+      K=0                                                               
+      DO 180 J=1,M                                                      
+      SUMV=0.0                                                          
+      DO 170 I=1,M                                                      
+      L=L+1                                                             
+  170 SUMV=SUMV+A(L)*A(L)                                               
+  175 SUMV=SQRT(SUMV)                                                   
+      DO 180 I=1,M                                                      
+      K=K+1                                                             
+  180 X(K)=A(K)/SUMV                                                    
+      RETURN                                                            
+      END                                                               

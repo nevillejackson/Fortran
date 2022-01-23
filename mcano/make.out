@@ -1,0 +1,7 @@
+f77 -v -o mcano canor.o corre.o data.o eigen.o loc.o mcano.o minv.o nroot.o statin.o 
+ cc -v -o mcano canor.o corre.o data.o eigen.o loc.o mcano.o minv.o nroot.o statin.o -lf2c -lm
+gcc version 2.6.3
+ /usr/bin/ld -e start -dc -dp -o mcano /usr/lib/crt0.o canor.o corre.o data.o eigen.o loc.o mcano.o minv.o nroot.o statin.o -lf2c -lm /usr/lib/libgcc.a -lc /usr/lib/libgcc.a
+size mcano
+text	data	bss	dec	hex
+28672	4096	18468	51236	c824

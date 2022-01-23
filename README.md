@@ -1,5 +1,5 @@
 # Fortran #
-This repository contains various Fortran programs and subroutine libraries useful in statistical analysis and quantitative genetics. Some are my own software and some are collected from the public domain. All are free of copyright or other usage restrictions. Most of this software is documented in the traditional manner with comment lines at the beginning of each program. Programs nesreg and resi have pdf files.
+This repository contains various Fortran programs and subroutine libraries useful in statistical analysis and quantitative genetics. Some are my own software and some are collected from the public domain. All are free of copyright or other usage restrictions. Most of this software is documented in the traditional manner with comment lines at the beginning of each program. Some programs (eg nesreg, mcano, pivot) have pdf files.
 
 ## ab ##
 The subdirectory _ab_ contains programs used in animal breeding calculations
@@ -11,11 +11,17 @@ The subdirectory _charmcodedftn4_ contains programs for data manipulation using 
 ## lsmlxxx ##
 The subdirectories _lsmlxxx_ contain a number of versions of Walter Harvey's least squares and maximum likelihood program
 
+## mcano ##
+The subdirectory _mcano_ contains a program for canonical correlation analysis using IBM SSP subroutines
+
 ## Nested regression ##
 The subdirectories _nesregx_ contain contain the program versions nesreg2 and nesreg3. The subdirectory _nesregtest_ contains test data for nesreg. The subdirectory _nesregdoc_ contains documentation for all versions of nesreg.
 
 ## Pamfun ##
 The subdirectory _Pamfun_ contains a program for calculating  genetic and phenotypic parameters of a trait which is a linear or multiplicative function of several traits the parameters of which are known
+
+## pivot ##
+The subdirectory _pivot_ contains the pivot.f subroutine published by Garside(1971) as algorithm AS 37
 
 ## Restricted selection indices  ##
 The subdirectories _resix_ contain programs for calculation of selection indices with restrictions
