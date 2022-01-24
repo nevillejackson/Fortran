@@ -35,6 +35,9 @@ The subdirectory _pivot_ contains the pivot.f subroutine published by Garside(19
 ## Restricted selection indices  ##
 The subdirectories _resix_ contain programs for calculation of selection indices with restrictions
 
+## Selind ##
+The subdirectory _Selind_ contains a selection index program by E.P.Cunningham + G.A.T.Mahon.
+
 ## sr6600 ##
 The subdirectory _sr6600_ contains  a very old collection of fortran routines used on CSIRO Control Data mainframes in the 1970's
 
