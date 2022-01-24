@@ -11,6 +11,9 @@ The subdirectory _Charm_ contains Fortran5 programs for data manipulation using 
 ## DFREML ##
 The derivative-free REML program written by Karen Meyer. Estimates variance components and quantitative genetic parameters for mixed models.
 
+## Gflow ##
+The subdirectory _Gflow_ contains a program to calculate geneflow by the method of Hill(1974)
+
 ## Harvey least squares program ##
 The subdirectory _Harvey_ contain a number of modern versions of Walter Harvey's least squares and maximum likelihood program. The subdirectory _Harvey.old_ contains several older versions.
 
