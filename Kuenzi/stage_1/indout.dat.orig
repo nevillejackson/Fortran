@@ -1,0 +1,146 @@
+ PROJEKT:      PIPER                                                          
+==========================================================================================
+ 
+  NM= 11 IR(I)= 1 1 0 0 MAT.EFF.=  0
+ 
+ *  NAME      =    1. WW      2. HLW     3. HCW     4. HGW     5. FD      6. HTS     7. ECW     8. EBW     9. OR  
+ 
+ *  NAME      =   10. NLB    11. NLW 
+ 
+ ==========================================================================================
+ * INDEX     RELATIVES IGES ISUB  IA  IRET LIOP MPOP IS1  IS15 JSDA IZSME INR1
+ 
+     1        2        0    0    0    0    1    1    0    0    0     0     0
+ 
+ *INFORMATION FOR:      K  L  M  N  IC IQ NRE REP
+ 
+   1  IND       WW      1  1  1  1  0  0  1  1.0
+   2  IND       HLW     1  2  1  1  0  0  1  1.0
+   3  IND       HCW     1  3  1  1  0  0  1  1.0
+   4  IND       FD      1  5  1  1  0  0  1  1.0
+   5  MUT       NLB     3 10  1  1  0  0  3   .2
+ 
+ *SELECTION INDEX : MAIN INDEX
+ 
+      PHENOTYPIC INFORMATION          B-VALUE             VALUE OF INFORMATION
+ 
+  1  IND    1   1  WW                   .1335                   .3363
+  2  IND    1   1  HLW                  .3215                  3.5125
+  3  IND    1   1  HCW                 4.7727                 18.1221
+  4  IND    1   1  FD                  -.5323                  2.7612
+  5  MUT    1   1  NLB                 8.2264                 17.2244
+0 VARIANCE OF INDEX    =       14.9010 STAND. DEV. INDEX  =    3.8602
+  VARIANCE OF EBV      =      218.0391 STAND. DEV. EBV.   =   14.7661
+  R-SQUARED            =         .0683 CORR. INDEX-EBV          .2614
+ 
+ 
+ 
+ 
+ *RELATIONSHIPS BETWEEN INDIVIDUAL TRAITS IN EBV AND  INDEX
+ 
+              TRAIT           REGRESSION CORRELATION %-RESPONSE  RESPONSE/TRAIT
+ 
+  1  IND     WW               .0603           .1735     16.0405       .2328
+  2  IND     HLW              .1378           .2247       .0000       .5319
+  3  IND     HCW              .0248           .3235     42.4659       .0957
+  4  IND     HGW              .0260           .2686       .0000       .1004
+  5  IND     FD              -.0169          -.0531      2.6960      -.0650
+  6  IND     HTS              .0317           .3038       .0000       .1224
+  7  IND     ECW              .0243           .2504       .0000       .0937
+  8  IND     EBW              .1446           .2109       .0000       .5581
+  9  IND     OR               .0053           .1414       .0000       .0205
+ 10  IND     NLB              .0042           .1426       .0000       .0161
+ 11  IND     NLW              .0041           .1124     38.7976       .0159
+   
+ 
+ ==========================================================================================
+ * INDEX     RELATIVES IGES ISUB  IA  IRET LIOP MPOP IS1  IS15 JSDA IZSME INR1
+ 
+     2        2        0    0    0    0    1    1    0    0    0     0     0
+ 
+ *INFORMATION FOR:      K  L  M  N  IC IQ NRE REP
+ 
+   1  IND       WW      1  1  1  1  0  0  1  1.0
+   2  IND       HLW     1  2  1  1  0  0  1  1.0
+   3  IND       HCW     1  3  1  1  0  0  1  1.0
+   4  IND       FD      1  5  1  1  0  0  1  1.0
+   5  MUT       NLB     3 10  1  1  0  0  1  1.0
+ 
+ *SELECTION INDEX : MAIN INDEX
+ 
+      PHENOTYPIC INFORMATION          B-VALUE             VALUE OF INFORMATION
+ 
+  1  IND    1   1  WW                   .1319                   .4002
+  2  IND    1   1  HLW                  .3265                  4.4289
+  3  IND    1   1  HCW                 4.7641                 22.5227
+  4  IND    1   1  FD                  -.5331                  3.3805
+  5  MUT    1   1  NLB                 3.5644                  8.6780
+0 VARIANCE OF INDEX    =       12.2425 STAND. DEV. INDEX  =    3.4989
+  VARIANCE OF EBV      =      218.0391 STAND. DEV. EBV.   =   14.7661
+  R-SQUARED            =         .0561 CORR. INDEX-EBV          .2370
+ 
+ 
+ 
+ 
+ *RELATIONSHIPS BETWEEN INDIVIDUAL TRAITS IN EBV AND  INDEX
+ 
+              TRAIT           REGRESSION CORRELATION %-RESPONSE  RESPONSE/TRAIT
+ 
+  1  IND     WW               .0726           .1894     19.3163       .2541
+  2  IND     HLW              .1646           .2433       .0000       .5758
+  3  IND     HCW              .0301           .3561     51.5727       .1053
+  4  IND     HGW              .0316           .2957       .0000       .1106
+  5  IND     FD              -.0206          -.0588      3.2904      -.0720
+  6  IND     HTS              .0362           .3144       .0000       .1266
+  7  IND     ECW              .0295           .2756       .0000       .1032
+  8  IND     EBW              .1636           .2163       .0000       .5723
+  9  IND     OR               .0034           .0817       .0000       .0118
+ 10  IND     NLB              .0027           .0822       .0000       .0093
+ 11  IND     NLW              .0027           .0678     25.8206       .0096
+   
+ 
+ ==========================================================================================
+ * INDEX     RELATIVES IGES ISUB  IA  IRET LIOP MPOP IS1  IS15 JSDA IZSME INR1
+ 
+     3        1        0    0    0    0    1    0    0    0    0     0     0
+ 
+ *INFORMATION FOR:      K  L  M  N  IC IQ NRE REP
+ 
+   1  IND       WW      1  1  1  1  0  0  1  1.0
+   2  IND       HLW     1  2  1  1  0  0  1  1.0
+   3  IND       HCW     1  3  1  1  0  0  1  1.0
+   4  IND       FD      1  5  1  1  0  0  1  1.0
+ 
+ *SELECTION INDEX : MAIN INDEX
+ 
+      PHENOTYPIC INFORMATION          B-VALUE             VALUE OF INFORMATION
+ 
+  1  IND    1   1  WW                   .1308                   .4716
+  2  IND    1   1  HLW                  .3303                  5.4638
+  3  IND    1   1  HCW                 4.7575                 27.7490
+  4  IND    1   1  FD                  -.5336                  4.0764
+0 VARIANCE OF INDEX    =       10.2099 STAND. DEV. INDEX  =    3.1953
+  VARIANCE OF EBV      =      218.0391 STAND. DEV. EBV.   =   14.7661
+  R-SQUARED            =         .0468 CORR. INDEX-EBV          .2164
+ 
+ 
+ 
+ 
+ *RELATIONSHIPS BETWEEN INDIVIDUAL TRAITS IN EBV AND  INDEX
+ 
+              TRAIT           REGRESSION CORRELATION %-RESPONSE  RESPONSE/TRAIT
+ 
+  1  IND     WW               .0864           .2057     22.9717       .2759
+  2  IND     HLW              .1945           .2626       .0000       .6214
+  3  IND     HCW              .0360           .3893     61.7345       .1152
+  4  IND     HGW              .0378           .3232       .0000       .1209
+  5  IND     FD              -.0247          -.0645      3.9537      -.0790
+  6  IND     HTS              .0412           .3269       .0000       .1317
+  7  IND     ECW              .0353           .3012       .0000       .1128
+  8  IND     EBW              .1848           .2231       .0000       .5904
+  9  IND     OR               .0012           .0272       .0000       .0039
+ 10  IND     NLB              .0010           .0272       .0000       .0031
+ 11  IND     NLW              .0012           .0272     11.3401       .0038
+   
+
+

@@ -1,0 +1,8 @@
+1          
+           SELECT.   T E S T E D        %-SELECTED    CORRELATION-       FINIT   G-VALUE
+            PATH     A N I M A L S                    COEFFICIENT       INFINIT  (ZSI) 
+                    1.STF     2.STF      B1     B2     R1   R2   R12     KSD       G
+           =============================================================================
+0            1    1000.0       .0       .300 1.000   .392  .000  .000     1       .4542
+0            2    1000.0    500.0       .500  .600   .385  .392  .982     1       .4653
+

@@ -1,0 +1,9 @@
+
+Integrated Solutions F77, $Revision: 2.2 $
+zsi.f:
+   MAIN main:
+   ordin:
+   zsi:
+PASS2.  ASM.
+LOAD.
+33.5u 10.0s 0:53 81% 10+14k 152+133io 23pf+0w

@@ -17,6 +17,9 @@ The subdirectory _Gflow_ contains a program to calculate geneflow by the method 
 ## Harvey least squares program ##
 The subdirectory _Harvey_ contain a number of modern versions of Walter Harvey's least squares and maximum likelihood program. The subdirectory _Harvey.old_ contains several older versions.
 
+## Kuenzi ##
+The subdirectory _Kuenzi_ contains programs to calculate breeding values by Niklaus Kuenzi,eth,Zuerich.
+
 ## mcano ##
 The subdirectory _mcano_ contains a program for canonical correlation analysis using IBM SSP subroutines
 

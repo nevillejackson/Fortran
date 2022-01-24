@@ -1,0 +1,10 @@
+
+Integrated Solutions F77, $Revision: 2.2 $
+index.f:
+   MAIN indx:
+   selind:
+   zwstre:
+   indkor:
+PASS2.  ASM.
+LOAD.
+244.3u 21.9s 4:55 90% 10+18k 298+320io 72pf+0w

@@ -1,0 +1,7 @@
+1
+           select.   t e s t e d        %-selected    correlation-       finit   g-value
+            path     a n i m a l s                    coefficient       infinit  (zsi) 
+                    1.stf     2.stf      b1     b2     r1   r2   r12     ksd       g
+           =============================================================================
+0            1    1000.0      0.       0.300 1.000  0.392 0.    0.        1      0.4542
+0            2    1000.0    500.0      0.500 0.600  0.385 0.392 0.982     1      0.4653

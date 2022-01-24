@@ -1,0 +1,144 @@
+ projekt:      PIPER                                                          
+==========================================================================================
+
+  nm= 11 ir(i)= 1 1 0 0 mat.eff.=  0
+
+ *  name      =    1. WW      2. HLW     3. HCW     4. HGW     5. FD      6. HTS     7. ECW     8. EBW     9. OR  
+
+ *  name      =   10. NLB    11. NLW 
+
+ ==========================================================================================
+ * index     relatives iges isub  ia  iret liop mpop is1  is15 jsda izsme inr1
+
+     1        2        0    0    0    0    1    1    0    0    0     0     0
+
+ *information for:      k  l  m  n  ic iq nre rep
+
+   1  ind       WW      1  1  1  1  0  0  1  1.0
+   2  ind       HLW     1  2  1  1  0  0  1  1.0
+   3  ind       HCW     1  3  1  1  0  0  1  1.0
+   4  ind       FD      1  5  1  1  0  0  1  1.0
+   5  mut       NLB     3 10  1  1  0  0  3  0.2
+
+ *selection index : main index
+
+      phenotypic information          b-value             value of information
+
+  1  ind    1   1  WW                  0.1335                  0.3363
+  2  ind    1   1  HLW                 0.3215                  3.5125
+  3  ind    1   1  HCW                 4.7727                 18.1221
+  4  ind    1   1  FD                 -0.5323                  2.7612
+  5  mut    1   1  NLB                 8.2264                 17.2244
+0 variance of index    =       14.9010 stand. dev. index  =    3.8602
+  variance of ebv      =      218.0390 stand. dev. ebv.   =   14.7661
+  r-squared            =        0.0683 corr. index-ebv         0.2614
+
+
+
+
+ *relationships between individual traits in ebv and  index
+
+              trait           regression correlation %-response  response/trait
+
+  1  ind     WW              0.0603          0.1735     16.0405      0.2328
+  2  ind     HLW             0.1378          0.2247      0.          0.5319
+  3  ind     HCW             0.0248          0.3235     42.4659      0.0957
+  4  ind     HGW             0.0260          0.2686      0.          0.1004
+  5  ind     FD             -0.0169         -0.0531      2.6960     -0.0650
+  6  ind     HTS             0.0317          0.3038      0.          0.1224
+  7  ind     ECW             0.0243          0.2504      0.          0.0937
+  8  ind     EBW             0.1446          0.2109      0.          0.5581
+  9  ind     OR              0.0053          0.1414      0.          0.0205
+ 10  ind     NLB             0.0042          0.1426      0.          0.0161
+ 11  ind     NLW             0.0041          0.1124     38.7976      0.0159
+
+
+ ==========================================================================================
+ * index     relatives iges isub  ia  iret liop mpop is1  is15 jsda izsme inr1
+
+     2        2        0    0    0    0    1    1    0    0    0     0     0
+
+ *information for:      k  l  m  n  ic iq nre rep
+
+   1  ind       WW      1  1  1  1  0  0  1  1.0
+   2  ind       HLW     1  2  1  1  0  0  1  1.0
+   3  ind       HCW     1  3  1  1  0  0  1  1.0
+   4  ind       FD      1  5  1  1  0  0  1  1.0
+   5  mut       NLB     3 10  1  1  0  0  1  1.0
+
+ *selection index : main index
+
+      phenotypic information          b-value             value of information
+
+  1  ind    1   1  WW                  0.1319                  0.4002
+  2  ind    1   1  HLW                 0.3265                  4.4289
+  3  ind    1   1  HCW                 4.7641                 22.5227
+  4  ind    1   1  FD                 -0.5331                  3.3805
+  5  mut    1   1  NLB                 3.5644                  8.6780
+0 variance of index    =       12.2425 stand. dev. index  =    3.4989
+  variance of ebv      =      218.0390 stand. dev. ebv.   =   14.7661
+  r-squared            =        0.0561 corr. index-ebv         0.2370
+
+
+
+
+ *relationships between individual traits in ebv and  index
+
+              trait           regression correlation %-response  response/trait
+
+  1  ind     WW              0.0726          0.1894     19.3163      0.2541
+  2  ind     HLW             0.1646          0.2433      0.          0.5758
+  3  ind     HCW             0.0301          0.3561     51.5726      0.1053
+  4  ind     HGW             0.0316          0.2957      0.          0.1106
+  5  ind     FD             -0.0206         -0.0588      3.2904     -0.0720
+  6  ind     HTS             0.0362          0.3144      0.          0.1266
+  7  ind     ECW             0.0295          0.2756      0.          0.1032
+  8  ind     EBW             0.1636          0.2163      0.          0.5723
+  9  ind     OR              0.0034          0.0817      0.          0.0118
+ 10  ind     NLB             0.0027          0.0822      0.          0.0093
+ 11  ind     NLW             0.0027          0.0678     25.8206      0.0096
+
+
+ ==========================================================================================
+ * index     relatives iges isub  ia  iret liop mpop is1  is15 jsda izsme inr1
+
+     3        1        0    0    0    0    1    0    0    0    0     0     0
+
+ *information for:      k  l  m  n  ic iq nre rep
+
+   1  ind       WW      1  1  1  1  0  0  1  1.0
+   2  ind       HLW     1  2  1  1  0  0  1  1.0
+   3  ind       HCW     1  3  1  1  0  0  1  1.0
+   4  ind       FD      1  5  1  1  0  0  1  1.0
+
+ *selection index : main index
+
+      phenotypic information          b-value             value of information
+
+  1  ind    1   1  WW                  0.1308                  0.4716
+  2  ind    1   1  HLW                 0.3303                  5.4638
+  3  ind    1   1  HCW                 4.7575                 27.7490
+  4  ind    1   1  FD                 -0.5336                  4.0764
+0 variance of index    =       10.2099 stand. dev. index  =    3.1953
+  variance of ebv      =      218.0390 stand. dev. ebv.   =   14.7661
+  r-squared            =        0.0468 corr. index-ebv         0.2164
+
+
+
+
+ *relationships between individual traits in ebv and  index
+
+              trait           regression correlation %-response  response/trait
+
+  1  ind     WW              0.0864          0.2057     22.9717      0.2759
+  2  ind     HLW             0.1945          0.2626      0.          0.6214
+  3  ind     HCW             0.0360          0.3893     61.7345      0.1152
+  4  ind     HGW             0.0378          0.3232      0.          0.1209
+  5  ind     FD             -0.0247         -0.0645      3.9537     -0.0790
+  6  ind     HTS             0.0412          0.3269      0.          0.1317
+  7  ind     ECW             0.0353          0.3012      0.          0.1128
+  8  ind     EBW             0.1848          0.2231      0.          0.5904
+  9  ind     OR              0.0012          0.0272      0.          0.0039
+ 10  ind     NLB             0.0010          0.0272      0.          0.0031
+ 11  ind     NLW             0.0012          0.0272     11.3401      0.0038
+
